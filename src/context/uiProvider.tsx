@@ -26,7 +26,7 @@ export const useUIProvider = () => {
   return context;
 };
 
-export const UIProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
+export const UIProvider: FC<{children: React.ReactNode}> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
