@@ -1,14 +1,14 @@
-import { FC, useState, useEffect } from 'react';
-import * as Types from '../../lib/types';
+import { FC, useState, useEffect } from "react";
+import * as Types from "../../lib/types";
 
-import { useUIProvider } from '../../context/uiProvider';
+import { useUIProvider } from "../../context/uiProvider";
 
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { TextButton, PrimaryButton } from '../../base/Button';
-import ThemeSwitch from './ThemeSwitch';
-import { Close } from '../../svgs/Icons';
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { TextButton, PrimaryButton } from "../../base/Button";
+import ThemeSwitch from "./ThemeSwitch";
+import { Close } from "../../svgs/Icons";
 
-import cn from 'classnames';
+import cn from "classnames";
 
 type Props = {
   isOpen: boolean;
@@ -38,17 +38,17 @@ const MobileMenuModal: FC<Props> = ({ isOpen, close }) => {
     >
       <div
         className={cn(
-          'fixed bottom-0 left-0 right-0 flex w-screen translate-y-0 items-center transition-all',
+          "fixed bottom-0 left-0 right-0 flex w-screen translate-y-0 items-center transition-all",
           {
-            'opacity-1 translate-y-0': modalTransition,
-            'translate-y-4 opacity-0': !modalTransition,
-          },
+            "opacity-1 translate-y-0": modalTransition,
+            "translate-y-4 opacity-0": !modalTransition,
+          }
         )}
       >
         <DialogPanel
-          className={cn('w-full rounded-t-large border-t px-margin-mobile', {
-            'border-dark-surface-3 bg-dark-surface-1': theme === 'dark',
-            'border-light-surface-3 bg-light-surface-1': theme === 'light',
+          className={cn("w-full rounded-t-large border-t px-margin-mobile", {
+            "border-dark-surface-3 bg-dark-surface-1": theme === "dark",
+            "border-light-surface-3 bg-light-surface-1": theme === "light",
           })}
         >
           <div className="pt-padding-x-large">
@@ -85,16 +85,16 @@ const MobileMenuModal: FC<Props> = ({ isOpen, close }) => {
               </ul> */}
             </nav>
             <div
-              className={cn('my-3 border-t', {
-                'border-dark-surface-3': theme === 'dark',
-                'border-light-surface-3': theme === 'light',
+              className={cn("my-3 border-t", {
+                "border-dark-surface-3": theme === "dark",
+                "border-light-surface-3": theme === "light",
               })}
             />
             <div className="flex flex-row items-center justify-between">
               <h3
-                className={cn('body-1', {
-                  'text-light-neutral-1': theme === 'light',
-                  'text-dark-neutral-1': theme === 'dark',
+                className={cn("body-1", {
+                  "text-light-neutral-1": theme === "light",
+                  "text-dark-neutral-1": theme === "dark",
                 })}
               >
                 Theme

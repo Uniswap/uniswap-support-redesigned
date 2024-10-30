@@ -26,8 +26,8 @@ export const useUIProvider = () => {
   return context;
 };
 
-export const UIProvider: FC<{children: React.ReactNode}> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('light');
+export const UIProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -45,7 +45,7 @@ export const UIProvider: FC<{children: React.ReactNode}> = ({ children }) => {
     setTheme((prev) => {
       const newTheme = prev === "dark" ? "light" : "dark";
       ThemeManager.set(newTheme);
-      document.documentElement.classList.toggle('dark', newTheme === 'dark'); // Toggles the dark class
+      document.documentElement.classList.toggle("dark", newTheme === "dark"); // Toggles the dark class
       return newTheme;
     });
   };
