@@ -24,8 +24,8 @@ export const SCREEN_SIZE = {
 };
 
 const config: Config = {
-  content: ["./**/**/*.{ts,tsx, hbs}"],
-  darkMode: "class",
+  content: ["./**/**/*.{ts,tsx,hbs}"],
+  darkMode: "selector",
   theme: {
     screens: {
       /* Tablet */
@@ -36,11 +36,6 @@ const config: Config = {
       lg: `${SCREEN_SIZE.XL_DESKTOP.min}px`,
     },
     extend: {
-      fontFamily: {
-        "basel-grotesk": ["var(--font-basel-grotesk)"],
-        riegraf: ["var(--font-riegraf)"],
-        "fragment-mono": ["var(--font-fragment-mono)"],
-      },
       borderRadius: {
         large: rem(20),
         medium: rem(16),

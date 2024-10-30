@@ -234,11 +234,6 @@ a {
 a:visited {
   color: $visited_link_color;
 }
-a:hover,
-a:active,
-a:focus {
-  text-decoration: underline;
-}
 
 .hbs-form input,
 .hbs-form textarea,
@@ -785,20 +780,12 @@ ul {
 
 /***** Header *****/
 .header {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 5%;
+  width: 100%;
   position: relative;
   align-items: center;
   display: flex;
   height: 71px;
   justify-content: space-between;
-}
-@media (min-width: 1160px) {
-  .header {
-    padding: 0;
-    width: 90%;
-  }
 }
 
 .logo img {
@@ -3087,66 +3074,6 @@ ul {
   .post-comments {
     margin-bottom: 0;
   }
-}
-
-/***** Community Badges *****/
-/* Styles labels used next to the authors of article comments, community posts, and community comments */
-.community-badge-title {
-  background-color: #04444d;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 0px 8px;
-  vertical-align: top;
-  white-space: nowrap;
-  display: inline-block;
-  line-height: 18px;
-  vertical-align: middle;
-}
-
-.community-badge-titles {
-  display: inline;
-}
-
-.community-badge-achievement {
-  display: block;
-  height: 16px;
-  white-space: nowrap;
-  width: 16px;
-}
-.community-badge-achievement img {
-  width: 100%;
-  height: 100%;
-}
-
-.community-badge-achievements {
-  display: flex;
-}
-
-.community-badge-achievements-rest {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: top;
-}
-
-.community-badge {
-  margin: 2px;
-}
-
-.profile-info .community-badge-title {
-  padding: 2px 8px;
-  line-height: 20px;
-}
-.profile-info .community-badge-achievement {
-  height: 40px;
-  width: 40px;
-}
-.profile-info .community-badge-achievements-rest {
-  line-height: 40px;
-  font-size: 20px;
 }
 
 /* Navigation element that collapses on mobile */

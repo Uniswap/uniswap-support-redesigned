@@ -26,9 +26,7 @@ export const useUIProvider = () => {
   return context;
 };
 
-export const UIProvider: FC<PropsWithChildren<Record<string, never>>> = ({
-  children,
-}) => {
+export const UIProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
@@ -47,6 +45,7 @@ export const UIProvider: FC<PropsWithChildren<Record<string, never>>> = ({
     setTheme((prev) => {
       const newTheme = prev === "dark" ? "light" : "dark";
       ThemeManager.set(newTheme);
+      document.documentElement.classList.toggle("dark", newTheme === "dark"); // Toggles the dark class
       return newTheme;
     });
   };
