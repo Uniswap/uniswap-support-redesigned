@@ -1,25 +1,103 @@
-<footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+<div class="footer" id="new-footer">
+</div>
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
-    </div>
-  </div>
-</footer>
+<script type="module">
+  import { renderFooter } from "footer";
+
+  const container = document.getElementById("new-footer");
+
+  const settings = {{json settings}};
+
+  const footerPageData = {
+    footerGithubLink: 'https://github.com/Uniswap',
+    footerXLink: 'https://x.com/Uniswap',
+    footerDiscordLink: 'https://discord.com/invite/uniswap',
+    footerLinksSupport: [
+      {
+        label: 'Uniswap web app',
+        url: '/categories/8122316887181-Uniswap-web-app',
+      },
+      {
+        label: 'Uniswap Extension',
+        url: '/categories/25219141467405-Uniswap-Extension',
+      },
+      {
+        label: 'Uniswap Wallet',
+        url: '/categories/11301970439565-Uniswap-Wallet',
+      },
+      {
+        label: 'Limit orders',
+        url: '/categories/24325247851917-Limit-orders',
+      },
+      {
+        label: 'UniswapX',
+        url: '/categories/17081597600525-UniswapX',
+      },
+      {
+        label: 'Liquidity',
+        url: '/categories/8122334631437-Liquidity',
+      },
+      {
+        label: 'Networks',
+        url: '/categories/14366725384845-Networks',
+      },
+      {
+        label: 'Buying Crypto',
+        url: '/categories/11302011603341-Buying-Crypto',
+      },
+      {
+        label: 'General',
+        url: '/categories/5685161551629-General',
+      },
+    ],
+    footerLinksHelp: [
+      {
+        label: 'Help Center',
+        url: '/',
+      },
+      {
+        label: 'Contact Us',
+        url: '/requests/new',
+      },
+    ],
+    footerLinksCompany: [
+      {
+        label: 'Careers',
+        url: 'https://boards.greenhouse.io/uniswaplabs',
+      },
+      {
+        label: 'Brand Assets',
+        url: 'https://github.com/Uniswap/brand-assets/raw/main/Uniswap%20Brand%20Assets.zip',
+      },
+      {
+        label: 'Terms of Service',
+        url: '/articles/30935100859661-Uniswap-Labs-Terms-of-Service',
+      },
+      {
+        label: 'Privacy Policy',
+        url: '/articles/30934457771405-Uniswap-Labs-Privacy-Policy',
+      },
+      {
+        label: 'Trademark Policy',
+        url: '/articles/30934762216973-Uniswap-Labs-Trademark-Guidelines',
+      },
+    ],
+    footerLinksEcosystem: [
+      {
+        label: 'Uniswap App',
+        url: 'https://app.uniswap.org/',
+      },
+      {
+        label: 'Governance',
+        url: 'https://www.uniswapfoundation.org/governance',
+      },
+      {
+        label: 'Blog',
+        url: 'https://blog.uniswap.org/',
+      },
+    ]
+  }
+
+  // Make sure arguments are correctly typed. 
+  renderFooter(settings, footerPageData, container);
+</script>
