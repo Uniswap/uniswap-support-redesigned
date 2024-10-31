@@ -2,7 +2,6 @@
   .serif-heading-0 {
     font-family: var(--font-riegraf);
     font-size: 4rem;
-    font-style: normal;
     font-weight: 300;
     line-height: 4rem;
     letter-spacing: -0.08rem;
@@ -10,10 +9,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .serif-heading-0-mobile {
+    font-family: var(--font-riegraf);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 2.82rem;
+    letter-spacing: -0.03rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   .heading-0 {
     font-family: var(--font-basel-grotesk);
     font-size: 4rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 4rem;
     letter-spacing: -0.08rem;
@@ -21,10 +29,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .heading-0-mobile {
+    font-family: var(--font-basel-grotesk);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 2.88rem;
+    letter-spacing: -0.02rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   .heading-1 {
     font-family: var(--font-basel-grotesk);
     font-size: 3.25rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 3.75rem;
     -webkit-font-smoothing: antialiased;
@@ -34,7 +51,6 @@
   .serif-heading-2 {
     font-family: var(--font-riegraf);
     font-size: 2.25rem;
-    font-style: normal;
     font-weight: 300;
     line-height: 2.75rem;
     -webkit-font-smoothing: antialiased;
@@ -44,7 +60,6 @@
   .heading-2 {
     font-family: var(--font-basel-grotesk);
     font-size: 2.25rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 2.75rem;
     -webkit-font-smoothing: antialiased;
@@ -54,7 +69,6 @@
   .heading-3 {
     font-family: var(--font-basel-grotesk);
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 2rem;
     -webkit-font-smoothing: antialiased;
@@ -64,7 +78,6 @@
   .heading-4 {
     font-family: var(--font-basel-grotesk);
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1.625rem;
     -webkit-font-smoothing: antialiased;
@@ -74,7 +87,6 @@
   .serif-subheading-1 {
     font-family: var(--font-riegraf);
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
     -webkit-font-smoothing: antialiased;
@@ -84,7 +96,6 @@
   .subheading-1 {
     font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -94,7 +105,6 @@
   .subheading-2 {
     font-family: var(--font-basel-grotesk);
     font-size: 1rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -104,7 +114,6 @@
   .body-1 {
     font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -114,7 +123,6 @@
   .body-2 {
     font-family: var(--font-basel-grotesk);
     font-size: 1rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1/5rem;
     -webkit-font-smoothing: antialiased;
@@ -124,7 +132,6 @@
   .body-3 {
     font-family: var(--font-basel-grotesk);
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1/25rem;
     -webkit-font-smoothing: antialiased;
@@ -134,7 +141,6 @@
   .body-4 {
     font-family: var(--font-basel-grotesk);
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 485;
     line-height: 1rem;
     -webkit-font-smoothing: antialiased;
@@ -144,7 +150,6 @@
   .serif-caption-1 {
     font-family: var(--font-riegraf);
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
     -webkit-font-smoothing: antialiased;
@@ -154,7 +159,6 @@
   .caption-1 {
     font-family: var(--font-fragment-mono);
     font-size: 0.8125rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
     -webkit-font-smoothing: antialiased;
@@ -184,7 +188,6 @@
   .button-label-1 {
     font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -194,7 +197,6 @@
   .button-label-2 {
     font-family: var(--font-basel-grotesk);
     font-size: 1rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -204,7 +206,6 @@
   .button-label-3 {
     font-family: var(--font-basel-grotesk);
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.25rem;
     -webkit-font-smoothing: antialiased;
@@ -214,7 +215,6 @@
   .button-label-4 {
     font-family: var(--font-basel-grotesk);
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1rem;
     -webkit-font-smoothing: antialiased;

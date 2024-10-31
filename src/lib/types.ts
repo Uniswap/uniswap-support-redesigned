@@ -174,7 +174,17 @@ export type FooterPageData = {
   footerLinksEcosystem: Link[];
 };
 
+export type ConnectBlock = {
+  title: string;
+  supportTitle: string;
+  supportButton: Link;
+  socialTitle: string;
+  socialButton: Link;
+  newsletterTitle: string;
+};
+
 export type ColoredCardsColor = 'pink' | 'green' | 'blue' | 'orange';
+
 export type HomepageData = {
   hero: {
     headerLine1: string;
@@ -201,4 +211,5 @@ export type HomepageData = {
   topicsBlock: {
     categories: Category[];
   };
+  connectBlock: ConnectBlock;
 };

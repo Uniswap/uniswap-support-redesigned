@@ -37,6 +37,7 @@ export default defineConfig([
       'flash-notifications': 'src/modules/flash-notifications/index.ts',
       navigation: 'src/modules/navigation/index.ts',
       footer: 'src/modules/footer/index.ts',
+      homepage: 'src/modules/homepage/index.ts',
     },
     output: {
       dir: 'assets',
