@@ -1,9 +1,26 @@
 import { FC, PropsWithChildren } from 'react';
 
 import cn from 'classnames';
-import { Theme } from '../../../utils/storage';
-import formatHrefAsMailto from '../../../utils/formatHrefAsMailto';
+import { Theme } from '../../utils/storage';
 import React from 'react';
+
+function isValidEmail(href: string): boolean {
+  // Regular expression to validate email address
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(href);
+}
+
+function formatHrefAsMailto(href: string): string {
+  // Check if the href is a valid email address
+  if (isValidEmail(href)) {
+    // If it doesn't already start with "mailto:", add it
+    if (!href.startsWith('mailto:')) {
+      return `mailto:${href}`;
+    }
+  }
+  // Return the original href if it's not an email or already formatted correctly
+  return href;
+}
 
 interface PrimaryButtonProps extends ButtonBaseProps {
   label: string;

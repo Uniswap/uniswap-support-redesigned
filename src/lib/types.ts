@@ -124,7 +124,7 @@ export type Article = {
   comment_count: number;
   comments_disabled: boolean;
   author: Author;
-  vote: Function; // double check this.
+  vote: () => any; // double check this.
   path_steps: PathStep[];
   labels: ArticleLabel[];
   snippet: string;
