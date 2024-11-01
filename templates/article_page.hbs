@@ -10,7 +10,7 @@
         <h1 title="{{article.title}}" class="article-title heading-2 sm:heading-1 text-light-neutral-1 dark:text-dark-neutral-1">
           {{article.title}}
         </h1>
-        <div class="article-body my-5">{{article.body}}</div>
+        <div id='article-body-element' class="article-body my-5">{{article.body}}</div>
       </div>
       <div class="article-info-bottom py-8">
         {{#with article}}
@@ -40,6 +40,10 @@
 
       {{related_articles}} 
     </div>
+    <div id="article-content-nav-container" class="hidden sm:block sm:col-span-2">
+      <h2 class="subheading-2 text-light-neutral-1 dark:text-dark-neutral-1 mb-3">On this Page</h2>
+      <ul class="article-content-nav" id="article-content-nav"></ul>
+    </div>
   </div>
 </div>
 
@@ -56,5 +60,39 @@
   }
 
   // Make sure arguments are correctly typed. 
-  renderArticlePage(settings, articlePageData, container);
+  renderArticleBreadcrumbs(settings, articlePageData, container);
+</script>
+
+<script type="text/javascript">
+// Add anchor links to article content
+  const articleContentNav = document.getElementById("article-content-nav");
+  const articleBody = document.getElementById("article-body-element");
+  const hElements = articleBody.querySelectorAll('h1, h2, h3, h4');
+  let articleContentNavHasItems = false;
+
+  hElements.forEach((element) => {
+    const title = element.textContent;
+    const withoutSpaceTitle = title.replaceAll(/\s/g,'');
+
+    if (withoutSpaceTitle && withoutSpaceTitle.length > 0) {
+      const lowerCaseTitle = title.toLowerCase().replaceAll(/\s/g,'-');
+      const id = encodeURI(lowerCaseTitle);
+      element.id = id;
+
+      const li = document.createElement("li");
+      articleContentNav.appendChild(li);
+
+      const link = document.createElement("a");
+      link.setAttribute('href', `#${id}`);
+      link.innerHTML = title;
+
+      li.appendChild(link);
+      articleContentNavHasItems = true;
+    }
+  });
+
+  if (!articleContentNavHasItems) {
+    const articleContentNavContainer = document.getElementById("article-content-nav-container");
+    articleContentNavContainer.remove();
+  }
 </script>

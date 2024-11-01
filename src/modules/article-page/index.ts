@@ -1,1 +1,1 @@
-export { renderArticlePage } from './renderArticlePage';
+export { renderArticleBreadcrumbs } from './renderArticlePage';

@@ -6,8 +6,7 @@ type Props = {
   articlePageData: ArticlePageData;
 };
 
-const ArticlePage: FC<Props> = ({ articlePageData }) => {
-  console.log('!!!!!!!!!', articlePageData);
+export const ArticleBreadcrumbs: FC<Props> = ({ articlePageData }) => {
   return (
     <>
       <div className="Breadcrumbs mb-8 flex flex-row items-center overflow-scroll col-span-4 sm:col-span-8">
@@ -32,8 +31,6 @@ const ArticlePage: FC<Props> = ({ articlePageData }) => {
     </>
   );
 };
-
-export default ArticlePage;
 
 const Chevron: FC<{
   color?: 'neutral-1';

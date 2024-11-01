@@ -13,7 +13,7 @@
 }
 
 .page-wrapper {
-  @apply p-margin-mobile pb-margin-web sm:px-margin-web sm:pb-[7.5rem] mt-nav-h;
+  @apply w-full p-margin-mobile pb-margin-web sm:px-margin-web sm:pb-[7.5rem] mt-nav-h;
 }
 
 .divider {
@@ -192,4 +192,15 @@
       }
     }
   }
+
+  .article-content-nav {
+    a {
+      @apply body-3 text-light-neutral-2 dark:text-dark-neutral-2 transition hover:text-light-neutral-1 dark:hover:text-dark-neutral-1;
+    }
+  }
+}
+
+html:has(.ArticlePage) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px !important;
 }
