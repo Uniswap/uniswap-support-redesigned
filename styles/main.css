@@ -92,8 +92,6 @@
   }
 
   .article-info-bottom {
-    @apply flex flex-row justify-between items-center pt-margin-mobile sm:pt-padding-x-large;
-
     .article-votes,
     .article-votes-controls {
       @apply flex flex-row items-center;

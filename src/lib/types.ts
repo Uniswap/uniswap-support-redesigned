@@ -186,16 +186,17 @@ export type ConnectBlock = {
 export type ColoredCardsColor = 'pink' | 'green' | 'blue' | 'orange';
 
 export type HomepageData = {
-  hero: {
+  heros: {
     headerLine1: string;
     headerLine2: string;
-  };
+  }[];
   coloredCardsBlock: {
     cards: {
       icon: ColoredCardsIcon;
       title: string;
       description: string;
       color: ColoredCardsColor;
+      url: string;
     }[];
   };
   faqBlock: {
