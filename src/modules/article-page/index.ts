@@ -1,0 +1,1 @@
+export { renderArticlePage } from './renderArticlePage';

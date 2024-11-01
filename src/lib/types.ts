@@ -159,7 +159,7 @@ export interface Navigation {
 }
 
 export type Link = {
-  label: string;
+  name: string;
   url: string;
   target?: '_blank' | '_self';
 };
@@ -212,4 +212,8 @@ export type HomepageData = {
     categories: Category[];
   };
   connectBlock: ConnectBlock;
+};
+
+export type ArticlePageData = {
+  article: Article;
 };

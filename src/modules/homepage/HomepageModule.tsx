@@ -31,7 +31,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
   };
 
   return (
-    <div className="Homepage page-wrapper bg-light-surface-1 dark:bg-dark-surface-1">
+    <div className="page-wrapper">
       <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] bg-light-surface-2 dark:bg-dark-surface-2">
         <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1">
           <span className="heading-0-mobile sm:heading-0">{homepageData.hero.headerLine1}</span>
