@@ -37,8 +37,8 @@ const Homepage: FC<Props> = ({ homepageData }) => {
       {hero && (
         <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] bg-light-surface-2 dark:bg-dark-surface-2">
           <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1">
-            <span className="heading-0-mobile sm:heading-0">{hero.headerLine1}</span>
-            <span className="serif-heading-0-mobile sm:serif-heading-0 italic">
+            <span className="heading-0-mobile sm:heading-0 text-center">{hero.headerLine1}</span>
+            <span className="serif-heading-0-mobile sm:serif-heading-0 italic text-center">
               {hero.headerLine2}
             </span>
           </h2>
