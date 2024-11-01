@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Envlope } from './Icons';
-import { ButtonBase } from '../../base/Button';
 import cn from 'classnames';
 
 interface NewsletterFormProps {

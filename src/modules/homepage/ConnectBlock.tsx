@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { ConnectBlock as ConnectBlockType } from '../../lib/types';
 
 import { HelpCircle, Chat } from './Icons';
-import { LinkBase } from '../../base/Button';
 
 import cn from 'classnames';
 import NewsletterForm from './NewsletterForm';
