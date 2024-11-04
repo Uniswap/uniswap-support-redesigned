@@ -1,10 +1,10 @@
-import { FC } from 'react';
-import { ConnectBlock as ConnectBlockType } from '../../lib/types';
+import { FC } from "react";
+import { ConnectBlock as ConnectBlockType } from "../../lib/types";
 
-import { HelpCircle, Chat } from './Icons';
+import { HelpCircle, Chat } from "./Icons";
 
-import cn from 'classnames';
-import NewsletterForm from './NewsletterForm';
+import cn from "classnames";
+import NewsletterForm from "./NewsletterForm";
 
 type Props = {
   connectBlock?: ConnectBlockType;
@@ -60,7 +60,7 @@ const IconButton: FC<{
   href: string;
   ariaLabel?: string;
   label: string;
-  color: 'orange-vibrant' | 'brown-vibrant';
+  color: "orange-vibrant" | "brown-vibrant";
 }> = ({ href, label, color }) => {
   return (
     <div className="mt-12 flex">
@@ -68,12 +68,18 @@ const IconButton: FC<{
         className="group flex items-center justify-center rounded-large bg-light-surface-1 p-3 hover:bg-light-surface-3-hovered dark:bg-dark-surface-1 dark:hover:bg-dark-surface-3-hovered"
         href={href}
       >
-        {color === 'orange-vibrant' && <HelpCircle className="mr-2 h-6 w-6" color={color} />}
-        {color === 'brown-vibrant' && <Chat className="mr-2 h-6 w-6" color={color} />}
+        {color === "orange-vibrant" && (
+          <HelpCircle className="mr-2 h-6 w-6" color={color} />
+        )}
+        {color === "brown-vibrant" && (
+          <Chat className="mr-2 h-6 w-6" color={color} />
+        )}
         <span
-          className={cn('button-label-1 transition', {
-            'text-light-orange-vibrant dark:text-dark-orange-vibrant': color === 'orange-vibrant',
-            'text-light-brown-vibrant dark:text-dark-brown-vibrant': color === 'brown-vibrant',
+          className={cn("button-label-1 transition", {
+            "text-light-orange-vibrant dark:text-dark-orange-vibrant":
+              color === "orange-vibrant",
+            "text-light-brown-vibrant dark:text-dark-brown-vibrant":
+              color === "brown-vibrant",
           })}
         >
           {label}

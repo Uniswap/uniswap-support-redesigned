@@ -1,1 +1,1 @@
-export { renderFooter } from './renderFooter';
+export { renderFooter } from "./renderFooter";

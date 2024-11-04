@@ -1,4 +1,4 @@
-import { ColoredCardsIcon } from '../svgs/Icons';
+import { ColoredCardsIcon } from "../svgs/Icons";
 
 export type Tag = {
   title: string;
@@ -9,35 +9,35 @@ export type GlobalSettings = {
   navigationTopics: Tag[] | null;
   topNavigationApp: {
     id: string;
-    key: string | ''; // Label of the link
-    value: string | ''; // URL of the link
+    key: string | ""; // Label of the link
+    value: string | ""; // URL of the link
   } | null;
   footerLinksTopics:
     | {
         id: string;
-        key: string | ''; // Label of the link
-        value: string | ''; // URL of the link
+        key: string | ""; // Label of the link
+        value: string | ""; // URL of the link
       }[]
     | null;
   footerLinksEcosystem:
     | {
         id: string;
-        key: string | ''; // Label of the link
-        value: string | ''; // URL of the link
+        key: string | ""; // Label of the link
+        value: string | ""; // URL of the link
       }[]
     | null;
   footerLinksCompany:
     | {
         id: string;
-        key: string | ''; // Label of the link
-        value: string | ''; // URL of the link
+        key: string | ""; // Label of the link
+        value: string | ""; // URL of the link
       }[]
     | null;
   footerLinksHelp:
     | {
         id: string;
-        key: string | ''; // Label of the link
-        value: string | ''; // URL of the link
+        key: string | ""; // Label of the link
+        value: string | ""; // URL of the link
       }[]
     | null;
   footerGithubLink: string | null;
@@ -47,14 +47,14 @@ export type GlobalSettings = {
   connectBlockSupportTitle: string;
   connectBlockSupportButton: {
     id: string;
-    key: string | ''; // Label of the link
-    value: string | ''; // URL of the link
+    key: string | ""; // Label of the link
+    value: string | ""; // URL of the link
   };
   connectBlockSocialTitle: string;
   connectBlockSocialButton: {
     id: string;
-    key: string | ''; // Label of the link
-    value: string | ''; // URL of the link
+    key: string | ""; // Label of the link
+    value: string | ""; // URL of the link
   };
   connectBlockNewsletterTitle: string;
 };
@@ -161,7 +161,7 @@ export interface Navigation {
 export type Link = {
   name: string;
   url: string;
-  target?: '_blank' | '_self';
+  target?: "_blank" | "_self";
 };
 
 export type FooterPageData = {
@@ -183,7 +183,7 @@ export type ConnectBlock = {
   newsletterTitle: string;
 };
 
-export type ColoredCardsColor = 'pink' | 'green' | 'blue' | 'orange';
+export type ColoredCardsColor = "pink" | "green" | "blue" | "orange";
 
 export type HomepageData = {
   heros: {
