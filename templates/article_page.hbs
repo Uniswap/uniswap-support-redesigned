@@ -4,7 +4,7 @@
   <div class="page-wrapper default-grid">
     <div class="col-span-4 sm:col-span-6">
 
-      <div id="new-article-page"></div>
+      <div id="new-article-breadcrumbs"></div>
 
       <div class="w-full max-w-[43.375rem]">
         <h1 title="{{article.title}}" class="article-title heading-2 sm:heading-1 text-light-neutral-1 dark:text-dark-neutral-1">
@@ -48,9 +48,9 @@
 </div>
 
 <script type="module">
-  import { renderArticlePage } from "article-page";
+  import { renderArticleBreadcrumbs } from "article-page";
 
-  const container = document.getElementById("new-article-page");
+  const container = document.getElementById("new-article-breadcrumbs");
 
   const settings = {{json settings}};
 
