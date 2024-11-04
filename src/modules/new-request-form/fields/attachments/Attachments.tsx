@@ -181,10 +181,14 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
   };
 
   return (
-    <GardenField>
-      <Label>{label}</Label>
+    <div className="custom-form-field-layout">
+      <Label className="custom-title">{label}</Label>
       {error && <Message validation="error">{error}</Message>}
-      <FileUpload {...getRootProps()} isDragging={isDragActive}>
+      <FileUpload
+        {...getRootProps()}
+        isDragging={isDragActive}
+        className="!border-0 !bg-light-surface-3 dark:!bg-light-surface-3"
+      >
         {isDragActive ? (
           <span>
             {t(
@@ -193,10 +197,10 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
             )}
           </span>
         ) : (
-          <span>
+          <span className="label-2 !text-light-neutral-1 dark:!text-dark-neutral-1">
             {t(
               "new-request-form.attachments.choose-file-label",
-              "Choose a file or drag and drop here"
+              "Add file or drop files here"
             )}
           </span>
         )}
@@ -222,6 +226,6 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
             />
           )
       )}
-    </GardenField>
+    </div>
   );
 }

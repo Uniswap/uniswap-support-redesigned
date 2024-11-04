@@ -1,5 +1,5 @@
 import type { AnswerBot, Field, RequestForm } from "./data-types";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Input } from "./fields/Input";
 import { TextArea } from "./fields/textarea/TextArea";
 import { DropDown } from "./fields/DropDown";
@@ -164,12 +164,6 @@ export function NewRequestForm({
           </Anchor>
         </StyledParagraph>
       )}
-      <StyledParagraph aria-hidden="true">
-        {t(
-          "new-request-form.required-fields-info",
-          "Fields marked with an asterisk (*) are required."
-        )}
-      </StyledParagraph>
       <Form
         ref={formRefCallback}
         action={action}
@@ -231,6 +225,7 @@ export function NewRequestForm({
                   onChange={(value) => handleChange(field, value)}
                 />
               );
+            // Issue description
             case "description":
               return (
                 <>
@@ -304,6 +299,7 @@ export function NewRequestForm({
               );
             case "multiselect":
               return <MultiSelect field={field} />;
+            // Issue type
             case "tagger":
               return (
                 <Tagger

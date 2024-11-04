@@ -27,10 +27,10 @@ export function Input({ field, onChange }: InputProps): JSX.Element {
 
   return (
     <GardenField>
-      <Label>
+      <div>
         {label}
         {required && <Span aria-hidden="true">*</Span>}
-      </Label>
+      </div>
       {description && (
         <Hint dangerouslySetInnerHTML={{ __html: description }} />
       )}

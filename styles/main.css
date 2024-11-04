@@ -1,8 +1,8 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import '../assets/types.css';
+@import "../assets/types.css";
 
 .site-max-width {
   max-width: 1440px;
@@ -241,4 +241,28 @@
 html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;
+}
+
+.ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-toolbar {
+  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 !border-0;
+}
+.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+  @apply !border-0;
+}
+
+:not(.ck.ck-content p) .ck.ck-content p {
+  @apply !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-hint {
+  @apply !body-3 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-title {
+  @apply !heading-3 dark:!text-dark-neutral-1 !text-light-neutral-1;
+}
+
+.custom-form-field-layout {
+  @apply flex flex-col space-y-3;
 }
