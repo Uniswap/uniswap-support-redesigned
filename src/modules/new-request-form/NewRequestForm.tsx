@@ -1,5 +1,5 @@
 import type { AnswerBot, Field, RequestForm } from "./data-types";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { Input } from "./fields/Input";
 import { TextArea } from "./fields/textarea/TextArea";
 import { DropDown } from "./fields/DropDown";
@@ -18,12 +18,12 @@ import { DatePicker } from "./fields/DatePicker";
 import { CcField } from "./fields/cc-field/CcField";
 import { CreditCard } from "./fields/CreditCard";
 import { Tagger } from "./fields/Tagger";
-import { SuggestedArticles } from "./suggested-articles/SuggestedArticles";
 import { AnswerBotModal } from "./answer-bot-modal/AnswerBotModal";
 import { useTranslation } from "react-i18next";
-import { Paragraph } from "@zendeskgarden/react-typography";
+import { Paragraph, Span } from "@zendeskgarden/react-typography";
 import { LookupField } from "./fields/LookupField";
 import type { Organization } from "./data-types/Organization";
+import { Label } from "@zendeskgarden/react-forms";
 
 export interface NewRequestFormProps {
   requestForm: RequestForm;
@@ -195,17 +195,17 @@ export function NewRequestForm({
           switch (field.type) {
             case "subject":
               return (
-                <>
+                <div className="custom-form-field-layout">
+                  <Label className="custom-title">
+                    Subject
+                    <Span aria-hidden="true">*</Span>
+                  </Label>
                   <Input
                     key={field.name}
                     field={field}
                     onChange={(value) => handleChange(field, value)}
                   />
-                  <SuggestedArticles
-                    query={field.value as string | undefined}
-                    locale={locale}
-                  />
-                </>
+                </div>
               );
             case "text":
             case "integer":
@@ -298,8 +298,11 @@ export function NewRequestForm({
                 />
               );
             case "multiselect":
+              if (field.label.includes("RA:")) {
+                return <MultiSelect field={field} />;
+              }
               return <MultiSelect field={field} />;
-            // Issue type
+            // Field for Issue type
             case "tagger":
               return (
                 <Tagger
@@ -330,10 +333,10 @@ export function NewRequestForm({
         {inline_attachments_fields.map(({ type, name, value }, index) => (
           <input key={index} type={type} name={name} value={value} />
         ))}
-        <Footer>
+        <Footer className="!mt-0">
           {(ticket_form_field.options.length === 0 ||
             ticket_form_field.value) && (
-            <Button isPrimary type="submit">
+            <Button isPrimary type="submit" className="custom-submit-button">
               {t("new-request-form.submit", "Submit")}
             </Button>
           )}

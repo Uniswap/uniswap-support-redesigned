@@ -77,6 +77,7 @@ export function Tagger({ field, onChange }: TaggerProps): JSX.Element {
           (selection as ISelectedOption | null)?.label ?? <EmptyValueOption />
         }
         isExpanded={isExpanded}
+        className="custom-combobox"
       >
         {currentGroup.type === "SubGroup" && (
           <Option {...currentGroup.backOption} />

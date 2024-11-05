@@ -37,13 +37,16 @@ export function Input({ field, onChange }: InputProps): JSX.Element {
       <GardenInput
         name={name}
         type={inputType}
-        defaultValue={value as string}
+        defaultValue={
+          value && value !== "" ? (value as string) : `Enter ${label}`
+        }
         validation={error ? "error" : undefined}
         required={required}
         onChange={(e) => {
           onChange && onChange(e.target.value);
         }}
         autoComplete={autocomplete}
+        className="custom-input"
         {...stepProp}
       />
       {error && <Message validation="error">{error}</Message>}

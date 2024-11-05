@@ -11,7 +11,7 @@ import {
   Title,
   useToast,
 } from "@zendeskgarden/react-notifications";
-import { useCallback } from "react";
+import { FC, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { useTranslation } from "react-i18next";
 import type { AttachmentField } from "../../data-types";
@@ -181,14 +181,15 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
   };
 
   return (
-    <div className="custom-form-field-layout">
+    <GardenField className="custom-form-field-layout">
       <Label className="custom-title">{label}</Label>
       {error && <Message validation="error">{error}</Message>}
       <FileUpload
         {...getRootProps()}
         isDragging={isDragActive}
-        className="!border-0 !bg-light-surface-3 dark:!bg-light-surface-3"
+        className="!border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 flex flex-row space-x-4"
       >
+        <File />
         {isDragActive ? (
           <span>
             {t(
@@ -197,7 +198,7 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
             )}
           </span>
         ) : (
-          <span className="label-2 !text-light-neutral-1 dark:!text-dark-neutral-1">
+          <span className="button-label-2 !text-light-neutral-1 dark:!text-dark-neutral-1">
             {t(
               "new-request-form.attachments.choose-file-label",
               "Add file or drop files here"
@@ -226,6 +227,24 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
             />
           )
       )}
-    </div>
+    </GardenField>
   );
 }
+
+const File: FC = () => {
+  return (
+    <svg
+      className="mx-0.5 min-w-4 min-h-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+    >
+      <path
+        d="M15.25 6V3.75L19.75 8.25H17.5C15.92 8.25 15.25 7.58 15.25 6ZM17.5 9.75C15.08 9.75 13.75 8.42 13.75 6V3H8.5C6.5 3 5.5 4 5.5 6V18C5.5 20 6.5 21 8.5 21H17.5C19.5 21 20.5 20 20.5 18V9.75H17.5Z"
+        className="fill-light-neutral-1 dark:fill-dark-neutral-1"
+      />
+    </svg>
+  );
+};

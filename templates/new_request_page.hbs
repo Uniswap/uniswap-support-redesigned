@@ -1,5 +1,7 @@
 <div class="container-divider"></div>
-<div class="container">
+<div class="container bg-light-surface-1 dark:!bg-dark-surface-1">
+  {{!-- TODO: add breadcrumbs after merging article PR --}}
+  {{!-- <div id="new-article-breadcrumbs"></div> --}}
   <h1 class="heading-1 text-light-neutral-1 dark:text-dark-neutral-1 mb-12">
     {{t 'submit_a_request'}}
   </h1>
@@ -8,7 +10,21 @@
     <div id="new-request-form"></div>
   </div>
 </div>
+{{!-- <script type="module">
+  import { renderArticleBreadcrumbs } from "article-page";
 
+  const container = document.getElementById("new-article-breadcrumbs");
+
+  const settings = {{json settings}};
+
+
+  const articlePageData = {
+    article: {{json article}}
+  }
+
+  // Make sure arguments are correctly typed. 
+  renderArticleBreadcrumbs(settings, articlePageData, container);
+</script> --}}
 <script type="module">
   import { renderNewRequestForm } from "new-request-form";
 

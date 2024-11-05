@@ -45,7 +45,7 @@ export function TextArea({
   });
 
   return (
-    <div className="custom-form-field-layout">
+    <GardenField className="custom-form-field-layout">
       <Label className="custom-title">
         {label}
         {required && <Span aria-hidden="true">*</Span>}
@@ -70,6 +70,6 @@ export function TextArea({
           dangerouslySetInnerHTML={{ __html: description }}
         />
       )}
-    </div>
+    </GardenField>
   );
 }
