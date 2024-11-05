@@ -1,0 +1,1 @@
+export { renderSectionBreadcrumbs } from './renderSectionPage';

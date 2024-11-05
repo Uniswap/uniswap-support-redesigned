@@ -1,63 +1,62 @@
-<div class="container-divider"></div>
-<div class="container">
-  <div class="sub-nav">
-    {{breadcrumbs}}
-    <div class="search-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-      </svg>
-      {{search scoped=settings.scoped_kb_search submit=false}}
-    </div>
-  </div>
 
-  <div class="category-container">
-    <div class="category-content">
-      <header class="page-header">
-        <h1>{{category.name}}</h1>
-        {{#if category.description}}
-          <p class="page-header-description">{{category.description}}</p>
-        {{/if}}
-      </header>
-
-      <div id="main-content" class="section-tree">
-        {{#each sections}}
-          <section class="section">
-            <h2 class="section-tree-title">
-              <a href="{{url}}">{{name}}</a>
-            </h2>
-            {{#if articles}}
-              <ul class="article-list">
-                {{#each articles}}
-                  <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
-                    {{#if promoted}}
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="icon-star" title="{{t 'promoted'}}">
-                        <path fill="currentColor" d="M2.88 11.73c-.19 0-.39-.06-.55-.18a.938.938 0 01-.37-1.01l.8-3L.35 5.57a.938.938 0 01-.3-1.03c.12-.37.45-.63.85-.65L4 3.73 5.12.83c.14-.37.49-.61.88-.61s.74.24.88.6L8 3.73l3.11.17a.946.946 0 01.55 1.68L9.24 7.53l.8 3a.95.95 0 01-1.43 1.04L6 9.88l-2.61 1.69c-.16.1-.34.16-.51.16z"/>
-                      </svg>
-                    {{/if}}
-                    <a href="{{url}}" class="article-list-link">{{title}}</a>
-                    {{#if internal}}
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
-                        <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
-                        <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
-                      </svg>
-                    {{/if}}
-                  </li>
-                {{/each}}
-              </ul>
-              {{#if more_articles}}
-                <a href="{{url}}" class="see-all-articles">
-                  {{t 'show_all_articles' count=article_count}}
+<div class="CategoryPage flex flex-row bg-light-surface-1 dark:bg-dark-surface-1">
+  <div class="min-w-[15rem] max-w-[15rem] hidden md:block border-2 mt-nav-h">sidenav placeholder</div>
+  <div class="page-wrapper">
+    <div class="category-container">
+      <div id="new-category-breadcrumbs"></div>
+      <div class="default-grid">
+        <h1 class="col-span-full text-light-neutral-1 dark:text-dark-neutral-1 heading-1">{{category.name}}</h1>
+        <div id="main-content" class="col-span-full">
+          {{#each sections}}
+              <h2 class="col-span-full mt-11">
+                <a href="{{url}}" class="group">
+                  <span class="transition text-light-neutral-1 dark:text-dark-neutral-1 heading-2 group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">{{name}}</span>
                 </a>
+              </h2>
+              {{#if articles}}
+                <ul class="col-span-full default-grid mt-5">
+                  {{#each articles}}
+                    <li class="article-list-item {{#if internal}}hidden{{/if}}">
+                      <a href="{{url}}" class="article-list-link group transition h-full flex flex-col bg-light-surface-2 dark:bg-dark-surface-2 hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 px-gap-large py-gap-medium rounded-medium w-full">
+                        <h3 class="subheading-2 transition text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-accent-1 group-hover:dark:text-dark-accent-1">{{title}}</h3>
+                        <p class="body-3 text-light-neutral-2 dark:text-dark-neutral-2">{{snippet}}</p>
+                      </a>
+                    </li>
+                  {{/each}}
+                </ul>
+                {{#if more_articles}}
+                  <div class="mt-4">
+                    <a href="{{url}}" class="group">
+                      <span class="button-label-2 transition text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">
+                      {{t 'show_all_articles' count=article_count}}
+                      </span>
+                    </a>
+                  </div>
+                {{/if}}
               {{/if}}
-            {{/if}}
-          </section>
-        {{else}}
-          <i class="category-empty">
-            <a href="{{category.url}}">{{t 'empty'}}</a>
-          </i>
-        {{/each}}
+            </section>
+          {{else}}
+            <i class="category-empty">
+              <a href="{{category.url}}">{{t 'empty'}}</a>
+            </i>
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<script type="module">
+  import { renderCategoryBreadcrumbs } from "category-page";
+
+  const container = document.getElementById("new-category-breadcrumbs");
+
+  const settings = {{json settings}};
+
+  const categoryPageData = {
+    category: {{json category}}
+  }
+
+  // Make sure arguments are correctly typed. 
+  renderCategoryBreadcrumbs(settings, categoryPageData, container);
+</script>
