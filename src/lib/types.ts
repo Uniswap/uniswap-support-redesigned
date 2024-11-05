@@ -218,3 +218,11 @@ export type HomepageData = {
 export type ArticlePageData = {
   article: Article;
 };
+
+export type CategoryPageData = {
+  category: Category;
+};
+
+export type SectionPageData = {
+  section: Section;
+};

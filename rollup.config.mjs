@@ -39,6 +39,8 @@ export default defineConfig([
       footer: 'src/modules/footer/index.ts',
       homepage: 'src/modules/homepage/index.ts',
       'article-page': 'src/modules/article-page/index.ts',
+      'category-page': 'src/modules/category-page/index.ts',
+      'section-page': 'src/modules/section-page/index.ts',
     },
     output: {
       dir: 'assets',

@@ -170,7 +170,7 @@ const ArticleLinkCard: FC<{ title: string; description: string; url: string }> =
       className="col-span-4 group flex flex-row transition rounded-medium py-padding-small px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 hover:bg-light-accent-2 hover:dark:bg-dark-accent-2"
       target="_self"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full">
         <h4 className="transition subheading-2 text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-pink-vibrant dark:group-hover:text-dark-pink-vibrant">
           {title}
         </h4>

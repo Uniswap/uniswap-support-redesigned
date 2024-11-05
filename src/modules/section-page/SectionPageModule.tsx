@@ -1,23 +1,30 @@
 import { FC } from 'react';
-import { ArticlePageData } from '../../lib/types';
+import { SectionPageData } from '../../lib/types';
 import cn from 'classnames';
 
 type Props = {
-  articlePageData: ArticlePageData;
+  sectionPageData: SectionPageData;
 };
 
 // We are not using reusable component since we are having issue navigation and footer not rendering when we use reusable component accross page.
-// If you change breadcrumbs, you should also update the breadcrumbs in the CategoryPageModule.tsx file to have consistant design.
-export const ArticleBreadcrumbs: FC<Props> = ({ articlePageData }) => {
+// If you change breadcrumbs, you should also update the breadcrumbs in the ArticlePageModule.tsx and SectionPageModule.tsxfile to have consistant design.
+export const SectionBreadcrumbs: FC<Props> = ({ sectionPageData }) => {
+  const article = sectionPageData.section.articles[0];
+
+  if (!article) {
+    return null;
+  }
+  const pathSteps = article.path_steps;
+
   return (
     <>
-      <div className="ArticleBreadcrumbs mb-8 flex flex-row items-center overflow-scroll col-span-4 sm:col-span-8">
+      <div className="SectionBreadcrumbs mb-8 flex flex-row items-center overflow-scroll col-span-4 sm:col-span-8">
         <a href="/" target="_self" className="group flex">
           <span className="body-3 text-nowrap transition text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">
             Home
           </span>
         </a>
-        {articlePageData.article.path_steps.map((step) => {
+        {pathSteps.map((step) => {
           return (
             <>
               <Chevron />
@@ -29,12 +36,6 @@ export const ArticleBreadcrumbs: FC<Props> = ({ articlePageData }) => {
             </>
           );
         })}
-        <Chevron />
-        <a href={articlePageData.article.url} target="_self" className="group flex">
-          <span className="body-3 text-nowrap transition text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">
-            {articlePageData.article.title}
-          </span>
-        </a>
       </div>
     </>
   );

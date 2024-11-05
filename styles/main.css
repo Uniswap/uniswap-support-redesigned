@@ -198,6 +198,46 @@
   }
 }
 
+.CategoryPage,
+.SectionPage {
+  .article-list-item {
+    @apply col-span-4;
+
+    a {
+      @apply relative body-2;
+
+      &:before {
+        @apply top-gap-medium right-gap-large dark:hidden transition opacity-0;
+        display: block;
+        position: absolute;
+        content: '';
+        background-image: url('../assets/right-arrow-light.svg');
+        background-size: 1.5rem 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+
+      &:hover:before {
+        @apply opacity-100;
+      }
+
+      &:after {
+        @apply top-gap-medium right-gap-large hidden dark:block transition opacity-0;
+        position: absolute;
+        content: '';
+        background-image: url('../assets/right-arrow-dark.svg');
+        background-size: 1.5rem 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
+
+  .see-all-articles-button {
+    @apply mt-4;
+  }
+}
+
 html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;

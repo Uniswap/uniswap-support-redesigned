@@ -1,0 +1,1 @@
+export { renderCategoryBreadcrumbs } from './renderCategoryPage';
