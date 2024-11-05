@@ -226,3 +226,23 @@ export type CategoryPageData = {
 export type SectionPageData = {
   section: Section;
 };
+
+export type SideNavData = {
+  categories: {
+    id: number;
+    url: string;
+    name: string;
+    position: number;
+    sections: {
+      name: string;
+      id: number;
+      position: number;
+      url: string;
+      articles: {
+        name: string;
+        id: number;
+        url: string;
+      }[];
+    }[];
+  }[];
+};

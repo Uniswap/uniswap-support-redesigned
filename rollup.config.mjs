@@ -41,6 +41,7 @@ export default defineConfig([
       'article-page': 'src/modules/article-page/index.ts',
       'category-page': 'src/modules/category-page/index.ts',
       'section-page': 'src/modules/section-page/index.ts',
+      'side-nav': 'src/modules/side-nav/index.ts',
     },
     output: {
       dir: 'assets',

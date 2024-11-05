@@ -934,12 +934,12 @@ video {
   height: 2rem;
 }
 
-.h-padding-large {
-  height: 1.5rem;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-padding-large {
+  height: 1.5rem;
 }
 
 .min-h-4 {
