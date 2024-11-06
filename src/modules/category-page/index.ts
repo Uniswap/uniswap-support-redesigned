@@ -1,1 +1,1 @@
-export { renderCategoryBreadcrumbs } from './renderCategoryPage';
+export { renderCategoryBreadcrumbs } from "./renderCategoryPage";

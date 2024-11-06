@@ -34,14 +34,14 @@ export default defineConfig([
   {
     context: "this",
     input: {
-      'new-request-form': 'src/modules/new-request-form/index.tsx',
-      'flash-notifications': 'src/modules/flash-notifications/index.ts',
-      navigation: 'src/modules/navigation/index.ts',
-      footer: 'src/modules/footer/index.ts',
-      homepage: 'src/modules/homepage/index.ts',
-      'article-page': 'src/modules/article-page/index.ts',
-      'category-page': 'src/modules/category-page/index.ts',
-      'section-page': 'src/modules/section-page/index.ts',
+      "new-request-form": "src/modules/new-request-form/index.tsx",
+      "flash-notifications": "src/modules/flash-notifications/index.ts",
+      navigation: "src/modules/navigation/index.ts",
+      footer: "src/modules/footer/index.ts",
+      homepage: "src/modules/homepage/index.ts",
+      "article-page": "src/modules/article-page/index.ts",
+      "category-page": "src/modules/category-page/index.ts",
+      "section-page": "src/modules/section-page/index.ts",
     },
     output: {
       dir: "assets",

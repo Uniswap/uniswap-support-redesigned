@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import { CategoryPageData } from '../../lib/types';
-import cn from 'classnames';
+import { FC } from "react";
+import { CategoryPageData } from "../../lib/types";
+import cn from "classnames";
 
 type Props = {
   categoryPageData: CategoryPageData;
@@ -10,7 +10,9 @@ type Props = {
 // If you change breadcrumbs, you should also update the breadcrumbs in the ArticlePageModule.tsx file to have consistant design.
 export const CategoryBreadcrumbs: FC<Props> = ({ categoryPageData }) => {
   const category = categoryPageData.category;
-  const pathSteps = [{ name: category.name, url: category.url, target: '_self' }];
+  const pathSteps = [
+    { name: category.name, url: category.url, target: "_self" },
+  ];
 
   return (
     <>
@@ -38,8 +40,8 @@ export const CategoryBreadcrumbs: FC<Props> = ({ categoryPageData }) => {
 };
 
 const Chevron: FC<{
-  color?: 'neutral-1';
-}> = ({ color = 'neutral-1' }) => {
+  color?: "neutral-1";
+}> = ({ color = "neutral-1" }) => {
   return (
     <svg
       className="mx-0.5 min-w-4 min-h-4"
@@ -54,7 +56,8 @@ const Chevron: FC<{
         clip-rule="evenodd"
         d="M5.52827 3.52827C5.26792 3.78862 5.26792 4.21073 5.52827 4.47108L9.05687 7.99967L5.52827 11.5283C5.26792 11.7886 5.26792 12.2107 5.52827 12.4711C5.78862 12.7314 6.21073 12.7314 6.47108 12.4711L10.4711 8.47108C10.7314 8.21073 10.7314 7.78862 10.4711 7.52827L6.47108 3.52827C6.21073 3.26792 5.78862 3.26792 5.52827 3.52827Z"
         className={cn({
-          'fill-light-neutral-1 dark:fill-dark-neutral-1': color === 'neutral-1',
+          "fill-light-neutral-1 dark:fill-dark-neutral-1":
+            color === "neutral-1",
         })}
       />
     </svg>

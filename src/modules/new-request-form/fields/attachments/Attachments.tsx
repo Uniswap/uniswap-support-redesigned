@@ -187,7 +187,7 @@ export function Attachments({ field }: AttachmentProps): JSX.Element {
       <FileUpload
         {...getRootProps()}
         isDragging={isDragActive}
-        className="!border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 flex flex-row space-x-4"
+        className="!border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 flex flex-row space-x-4 !px-4"
       >
         <File />
         {isDragActive ? (

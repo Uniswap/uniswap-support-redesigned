@@ -800,17 +800,16 @@ video {
   margin-top: 0.5rem;
 }
 
-<<<<<<< HEAD
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
-=======
-.mt-3 {
-  margin-top: 0.75rem;
->>>>>>> 3dea721 (finishing with dropdown styling)
 }
 
 .mt-\[1\.875rem\] {
@@ -952,17 +951,16 @@ video {
   height: 2rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-padding-large {
   height: 1.5rem;
 }
 
-<<<<<<< HEAD
-.h-full {
-  height: 100%;
-=======
 .\!min-h-\[7\.5rem\] {
   min-height: 7.5rem !important;
->>>>>>> 3dea721 (finishing with dropdown styling)
 }
 
 .min-h-4 {
@@ -1543,6 +1541,11 @@ video {
   padding: 0.5rem;
 }
 
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .\!py-0 {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -2044,15 +2047,6 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.\!heading-3 {
-  font-family: var(--font-basel-grotesk) !important;
-  font-size: 1.5rem !important;
-  font-weight: 485 !important;
-  line-height: 2rem !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-}
-
 .heading-3 {
   font-family: var(--font-basel-grotesk);
   font-size: 1.5rem;
@@ -2187,17 +2181,16 @@ video {
   }
 }
 
-<<<<<<< HEAD
 .divider {
   margin-top: 0.375rem;
   margin-bottom: 0.375rem;
   width: 100%;
   border-top-width: 1px;
-  border-color: rgba(34,34,34,0.05);
+  border-color: rgba(34, 34, 34, 0.05);
 }
 
 .divider:where(.dark, .dark *) {
-  border-color: rgba(255,255,255,0.12);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .ArticlePage {
@@ -2306,10 +2299,10 @@ video {
       transition-duration: 150ms !important;
     }
     a:hover {
-      text-decoration-color: #7D7D7D;
+      text-decoration-color: #7d7d7d;
     }
     a:hover:where(.dark, .dark *) {
-      text-decoration-color: #9B9B9B;
+      text-decoration-color: #9b9b9b;
     }
     a {
       font: inherit;
@@ -2453,9 +2446,15 @@ video {
     .article-votes,
     .article-votes-controls {
       button {
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
@@ -2592,8 +2591,8 @@ video {
         &:before {
           display: block;
           position: absolute;
-          content: '';
-          background-image: url('../assets/book-open-light.svg');
+          content: "";
+          background-image: url("../assets/book-open-light.svg");
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -2613,8 +2612,8 @@ video {
         }
         &:after {
           position: absolute;
-          content: '';
-          background-image: url('../assets/book-open-dark.svg');
+          content: "";
+          background-image: url("../assets/book-open-dark.svg");
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -2673,9 +2672,15 @@ video {
             opacity: 0;
           }
           &:before {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, backdrop-filter, -webkit-backdrop-filter;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 150ms;
           }
@@ -2685,8 +2690,8 @@ video {
           &:before {
             display: block;
             position: absolute;
-            content: '';
-            background-image: url('../assets/right-arrow-light.svg');
+            content: "";
+            background-image: url("../assets/right-arrow-light.svg");
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -2707,9 +2712,15 @@ video {
             opacity: 0;
           }
           &:after {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color,
+              text-decoration-color, fill, stroke, opacity, box-shadow,
+              transform, filter, backdrop-filter, -webkit-backdrop-filter;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 150ms;
           }
@@ -2718,8 +2729,8 @@ video {
           }
           &:after {
             position: absolute;
-            content: '';
-            background-image: url('../assets/right-arrow-dark.svg');
+            content: "";
+            background-image: url("../assets/right-arrow-dark.svg");
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -2737,9 +2748,15 @@ video {
       color: rgb(125 125 125 / var(--tw-text-opacity));
     }
     a {
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, backdrop-filter;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, backdrop-filter, -webkit-backdrop-filter;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
     }
@@ -2794,9 +2811,15 @@ video {
         opacity: 0;
       }
       &:before {
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
@@ -2806,8 +2829,8 @@ video {
       &:before {
         display: block;
         position: absolute;
-        content: '';
-        background-image: url('../assets/right-arrow-light.svg');
+        content: "";
+        background-image: url("../assets/right-arrow-light.svg");
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -2828,9 +2851,15 @@ video {
         opacity: 0;
       }
       &:after {
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
@@ -2839,8 +2868,8 @@ video {
       }
       &:after {
         position: absolute;
-        content: '';
-        background-image: url('../assets/right-arrow-dark.svg');
+        content: "";
+        background-image: url("../assets/right-arrow-dark.svg");
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -2855,7 +2884,8 @@ video {
 html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;
-=======
+}
+
 .ck.ck-editor__main > .ck-editor__editable,
 .ck.ck-toolbar {
   border-width: 0px !important;
@@ -2936,7 +2966,6 @@ html:has(.ArticlePage) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
->>>>>>> db4cba5 (add style to the form)
 }
 
 .custom-input {
@@ -3146,7 +3175,7 @@ html:has(.ArticlePage) {
 }
 
 .custom-submit-button {
-  width: 16.75rem !important;
+  width: 100% !important;
   border-radius: 0.75rem !important;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(245 13 180 / var(--tw-bg-opacity)) !important;
@@ -3164,9 +3193,20 @@ html:has(.ArticlePage) {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
+@media (min-width: 1280px) {
+  .custom-submit-button {
+    width: 16.75rem !important;
+  }
+}
+
 .custom-submit-button:where(.dark, .dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(252 116 254 / var(--tw-bg-opacity)) !important;
+}
+
+.ck.ck-editor__editable_inline {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .placeholder\:text-light-pink-vibrant::-moz-placeholder {
@@ -3457,6 +3497,10 @@ html:has(.ArticlePage) {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .md\:block {

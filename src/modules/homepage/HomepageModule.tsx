@@ -37,14 +37,17 @@ const Homepage: FC<Props> = ({ homepageData }) => {
       {hero && (
         <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2">
           <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1">
-            <span className="heading-0-mobile sm:heading-0 text-center">{hero.headerLine1}</span>
+            <span className="heading-0-mobile sm:heading-0 text-center">
+              {hero.headerLine1}
+            </span>
             <span className="serif-heading-0-mobile sm:serif-heading-0 italic text-center">
               {hero.headerLine2}
             </span>
           </h2>
         </div>
       )}
-      {homepageData.coloredCardsBlock && homepageData.coloredCardsBlock.cards.length > 0 ? (
+      {homepageData.coloredCardsBlock &&
+      homepageData.coloredCardsBlock.cards.length > 0 ? (
         <div className="ColoredCardBlock default-grid py-padding-x-large">
           {homepageData.coloredCardsBlock.cards.map((card) => {
             const textColorName = getColorName(card.color);
@@ -192,7 +195,9 @@ const ArticleLinkCard: FC<{
         <h4 className="transition subheading-2 text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-pink-vibrant dark:group-hover:text-dark-pink-vibrant">
           {title}
         </h4>
-        <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">{description}</p>
+        <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">
+          {description}
+        </p>
       </div>
       <div className="transition opacity-0 group-hover:opacity-100">
         <ArrowRight className="my-1 w-5 h-5" />
