@@ -2976,6 +2976,8 @@ html:has(.ArticlePage) {
   padding-bottom: 0.75rem !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
   font-size: 1rem !important;
   font-weight: 485 !important;
@@ -2984,28 +2986,30 @@ html:has(.ArticlePage) {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-.custom-input::-moz-placeholder {
+.custom-input:focus-visible {
   --tw-text-opacity: 1 !important;
-  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
 }
 
-.custom-input::placeholder {
+.custom-input:active {
   --tw-text-opacity: 1 !important;
-  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
 }
 
 .custom-input:where(.dark, .dark *) {
   background-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-.custom-input:where(.dark, .dark *)::-moz-placeholder {
   --tw-text-opacity: 1 !important;
   color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
 }
 
-.custom-input:where(.dark, .dark *)::placeholder {
+.custom-input:where(.dark, .dark *):focus-visible {
   --tw-text-opacity: 1 !important;
-  color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.custom-input:where(.dark, .dark *):active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .custom-combobox > div:first-child {
@@ -3039,6 +3043,12 @@ html:has(.ArticlePage) {
   border-top-right-radius: 0px !important;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 1rem !important;
+  font-weight: 485 !important;
+  line-height: 1/5rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .custom-combobox > div:nth-child(2):where(.dark, .dark *) {

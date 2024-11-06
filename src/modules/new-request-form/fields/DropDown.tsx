@@ -46,6 +46,7 @@ export function DropDown({ field, onChange }: DropDownProps): JSX.Element {
             onChange(selectionValue as string);
           }
         }}
+        className="custom-combobox"
       >
         {!required && (
           <Option value="" label="-">
