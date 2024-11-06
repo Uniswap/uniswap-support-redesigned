@@ -242,3 +242,19 @@ html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;
 }
+
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 250ms grid-template-rows ease;
+}
+
+.accordion-body-active {
+  grid-template-rows: 1fr;
+}
+
+#new-side-nav {
+  > div {
+    height: 100%;
+  }
+}

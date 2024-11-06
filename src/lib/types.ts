@@ -242,7 +242,14 @@ export type SideNavData = {
         name: string;
         id: number;
         url: string;
+        position: number;
       }[];
     }[];
   }[];
+} | null;
+
+export type NavState = {
+  category?: number;
+  section?: number;
+  article?: number;
 };

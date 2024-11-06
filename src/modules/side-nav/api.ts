@@ -4,24 +4,29 @@ const makeArrayToHaveUniqueValues = (array: { id: number }[]) => {
   return array.filter((value, index, self) => self.findIndex((v) => v.id === value.id) === index);
 };
 
+const removeHostFromUrl = (url: string): string => {
+  const urlObj = new URL(url);
+  return urlObj.pathname + urlObj.search + urlObj.hash;
+};
+
 type SideNavApiResponse = {
   articles: {
     section_id: number;
     id: number;
-    url: string;
+    html_url: string;
     name: string;
     position: number;
   }[];
   categories: {
     id: number;
     position: number;
-    url: string;
+    html_url: string;
     name: string;
   }[];
   sections: {
     category_id: number;
     id: number;
-    url: string;
+    html_url: string;
     name: string;
     position: number;
   }[];
@@ -45,7 +50,7 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
           .map((article) => ({
             id: article.id,
             name: article.name,
-            url: article.url,
+            url: removeHostFromUrl(article.html_url),
             position: article.position,
           }));
 
@@ -53,7 +58,7 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
           id: section.id,
           name: section.name,
           position: section.position,
-          url: section.url,
+          url: removeHostFromUrl(section.html_url),
           articles: articles.sort((a, b) => a.position - b.position),
         };
       });
@@ -62,7 +67,7 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
       id: category.id,
       name: category.name,
       position: category.position,
-      url: category.url,
+      url: removeHostFromUrl(category.html_url),
       sections: sections.sort((a, b) => a.position - b.position),
     };
   });
@@ -115,7 +120,7 @@ export const sideNav = {
         categories: allPagesCategoryResponseData,
       };
       const sanitizedResponse = sanitizeResponse(allPagesResponseData);
-      console.log(sanitizedResponse);
+
       return sanitizedResponse;
     } catch (error) {
       console.error(error);
