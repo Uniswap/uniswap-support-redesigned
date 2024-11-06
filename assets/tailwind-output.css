@@ -608,6 +608,10 @@ video {
   pointer-events: none;
 }
 
+.\!pointer-events-auto {
+  pointer-events: auto !important;
+}
+
 .visible {
   visibility: visible;
 }
@@ -696,6 +700,10 @@ video {
   z-index: 850;
 }
 
+.z-search {
+  z-index: 810;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -706,6 +714,10 @@ video {
 
 .col-span-full {
   grid-column: 1 / -1;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .\!my-auto {
@@ -760,6 +772,10 @@ video {
 
 .\!mt-0 {
   margin-top: 0px !important;
+}
+
+.\!mt-4 {
+  margin-top: 1rem !important;
 }
 
 .\!mt-6 {
@@ -1029,6 +1045,10 @@ video {
   width: 2rem;
 }
 
+.w-\[25rem\] {
+  width: 25rem;
+}
+
 .w-\[3\.75rem\] {
   width: 3.75rem;
 }
@@ -1083,6 +1103,10 @@ video {
 
 .shrink {
   flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -1187,6 +1211,12 @@ video {
   gap: 1rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1269,6 +1299,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[1\.25rem\] {
+  border-radius: 1.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1333,6 +1367,10 @@ video {
 
 .border-light-surface-3 {
   border-color: rgba(34,34,34,0.05);
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .\!bg-light-accent-2 {
@@ -3216,6 +3254,32 @@ html:has(.ArticlePage) {
   padding-right: 0.75rem !important;
 }
 
+.search.search-full {
+  width: 100%;
+  flex-grow: 1;
+  input {
+    width: 100%;
+  }
+  input {
+    background-color: transparent !important;
+  }
+  input {
+    font-family: var(--font-basel-grotesk) !important;
+    font-size: 0.875rem !important;
+    font-weight: 485 !important;
+    line-height: 1/25rem !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+  }
+  input:focus-visible {
+    border-style: none !important;
+  }
+  input:focus-visible {
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
+  }
+}
+
 .placeholder\:text-light-pink-vibrant::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(245 13 180 / var(--tw-text-opacity));
@@ -3240,6 +3304,19 @@ html:has(.ArticlePage) {
 
 .first\:mt-6:first-child {
   margin-top: 1.5rem;
+}
+
+.focus-within\:\!border-light-surface-3:focus-within {
+  border-color: rgba(34,34,34,0.05) !important;
+}
+
+.focus-within\:\!bg-transparent:focus-within {
+  background-color: transparent !important;
+}
+
+.focus-within\:\!text-light-neutral-1:focus-within {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:\!bg-light-accent-2-hovered:hover {
@@ -3758,6 +3835,15 @@ html:has(.ArticlePage) {
 .dark\:placeholder\:text-dark-pink-vibrant:where(.dark, .dark *)::placeholder {
   --tw-text-opacity: 1;
   color: rgb(252 116 254 / var(--tw-text-opacity));
+}
+
+.focus-within\:dark\:\!border-dark-surface-3:where(.dark, .dark *):focus-within {
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+.focus-within\:dark\:\!text-dark-neutral-1:where(.dark, .dark *):focus-within {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .dark\:hover\:bg-dark-accent-1-hovered:hover:where(.dark, .dark *) {

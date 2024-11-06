@@ -45,6 +45,7 @@ const config: Config = {
       zIndex: {
         modal: "900",
         scrim: "850",
+        search: "810",
         nav: "800",
       },
       spacing: {

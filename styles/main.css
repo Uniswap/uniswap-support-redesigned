@@ -333,3 +333,10 @@ html:has(.ArticlePage) {
 .ck.ck-editor__editable_inline {
   @apply !px-3;
 }
+
+.search.search-full {
+  @apply w-full grow;
+  input {
+    @apply !body-3 !bg-transparent w-full focus-visible:!border-none focus-visible:!outline-none;
+  }
+}
