@@ -760,6 +760,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[1\.94rem\] {
+  margin-top: 1.94rem;
+  margin-bottom: 1.94rem;
+}
+
 .my-margin-mobile {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -864,6 +869,10 @@ video {
 
 .mt-\[1\.875rem\] {
   margin-top: 1.875rem;
+}
+
+.mt-\[1\.94rem\] {
+  margin-top: 1.94rem;
 }
 
 .mt-margin-mobile {
@@ -1007,6 +1016,10 @@ video {
 
 .h-padding-large {
   height: 1.5rem;
+}
+
+.h-px {
+  height: 1px;
 }
 
 .h-screen {
@@ -1259,6 +1272,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.3125rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.3125rem * var(--tw-space-y-reverse));
+}
+
+.space-y-\[0\.62rem\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.62rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.62rem * var(--tw-space-y-reverse));
 }
 
 .self-start {
@@ -3843,6 +3862,11 @@ html:has(.ArticlePage) {
 .dark\:text-dark-status-success-1:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(33 201 94 / var(--tw-text-opacity));
+}
+
+.dark\:text-light-neutral-1:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity));
 }
 
 .dark\:placeholder\:text-dark-pink-vibrant:where(.dark, .dark *)::-moz-placeholder {
