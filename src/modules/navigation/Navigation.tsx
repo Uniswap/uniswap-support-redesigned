@@ -56,7 +56,7 @@ const Navigation: FC = () => {
         )}
       >
         <div className={cn("absolute w-full h-full top-0 left-0 !bg-light-surface-1 dark:!bg-dark-surface-1 px-4 py-[1.15625rem] flex flex-row justify-between items-center", {
-          "hidden": mobileSearchBarIsOpen
+          "hidden": !mobileSearchBarIsOpen
         })}>
           <div className="flex flex-row items-center grow">
             <Search className="h-padding-large w-padding-large" />
