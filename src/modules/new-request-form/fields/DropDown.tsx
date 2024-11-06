@@ -30,14 +30,7 @@ export function DropDown({ field, onChange }: DropDownProps): JSX.Element {
   }, [wrapperRef, required]);
 
   return (
-    <GardenField>
-      <Label>
-        {label}
-        {required && <Span aria-hidden="true">*</Span>}
-      </Label>
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
+    <GardenField className="custom-form-field-layout">
       <Combobox
         ref={wrapperRef}
         inputProps={{ name, required }}
@@ -53,6 +46,7 @@ export function DropDown({ field, onChange }: DropDownProps): JSX.Element {
             onChange(selectionValue as string);
           }
         }}
+        className="custom-combobox"
       >
         {!required && (
           <Option value="" label="-">
@@ -68,6 +62,9 @@ export function DropDown({ field, onChange }: DropDownProps): JSX.Element {
         ))}
       </Combobox>
       {error && <Message validation="error">{error}</Message>}
+      {description && (
+        <Hint dangerouslySetInnerHTML={{ __html: description }} />
+      )}
     </GardenField>
   );
 }

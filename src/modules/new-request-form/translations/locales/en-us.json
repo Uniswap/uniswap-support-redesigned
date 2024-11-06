@@ -8,7 +8,7 @@
   "new-request-form.answer-bot-modal.solve-request": "Yes, close my request",
   "new-request-form.answer-bot-modal.title": "While you wait, do any of these articles answer your question?",
   "new-request-form.answer-bot-modal.view-article": "View article",
-  "new-request-form.attachments.choose-file-label": "Choose a file or drag and drop here",
+  "new-request-form.attachments.choose-file-label": "Add file or drop files here",
   "new-request-form.attachments.drop-files-label": "Drop files here",
   "new-request-form.attachments.remove-file": "Remove file",
   "new-request-form.attachments.stop-upload": "Stop upload",

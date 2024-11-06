@@ -20,12 +20,6 @@ interface TextAreaProps {
   onChange: (value: string) => void;
 }
 
-const StyledField = styled(GardenField)`
-  .ck.ck-editor {
-    margin-top: ${(props) => props.theme.space.xs};
-  }
-`;
-
 const StyledMessage = styled(Message)`
   .ck.ck-editor + & {
     margin-top: ${(props) => props.theme.space.xs};
@@ -51,18 +45,18 @@ export function TextArea({
   });
 
   return (
-    <StyledField>
-      <Label>
+    <GardenField className="custom-form-field-layout">
+      <Label className="custom-title">
         {label}
         {required && <Span aria-hidden="true">*</Span>}
       </Label>
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
+      {/* using ck.ck-reset classname for styling */}
       <Textarea
         ref={ref}
         name={name}
-        defaultValue={value as string}
+        defaultValue={
+          value && value !== "" ? (value as string) : "Describe your issue."
+        }
         validation={error ? "error" : undefined}
         required={required}
         onChange={(e) => onChange(e.target.value)}
@@ -70,6 +64,12 @@ export function TextArea({
         isResizable
       />
       {error && <StyledMessage validation="error">{error}</StyledMessage>}
-    </StyledField>
+      {description && (
+        <Hint
+          className="custom-hint"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
+    </GardenField>
   );
 }

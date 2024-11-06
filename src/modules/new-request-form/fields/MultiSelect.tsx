@@ -50,7 +50,7 @@ export function MultiSelect({ field }: MultiSelectProps): JSX.Element {
   };
 
   return (
-    <GardenField>
+    <GardenField className="custom-form-field-layout">
       {selectedValues.map((selectedValue) => (
         <input
           type="hidden"
@@ -59,13 +59,10 @@ export function MultiSelect({ field }: MultiSelectProps): JSX.Element {
           value={selectedValue}
         />
       ))}
-      <Label>
+      <Label className="custom-title">
         {label}
         {required && <Span aria-hidden="true">*</Span>}
       </Label>
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
       <Combobox
         ref={wrapperRef}
         isMultiselectable
@@ -75,6 +72,7 @@ export function MultiSelect({ field }: MultiSelectProps): JSX.Element {
         onChange={handleChange}
         selectionValue={selectedValues}
         maxHeight="auto"
+        className="custom-combobox"
       >
         {currentGroup.type === "SubGroup" && (
           <Option {...currentGroup.backOption} />
@@ -94,6 +92,9 @@ export function MultiSelect({ field }: MultiSelectProps): JSX.Element {
         )}
       </Combobox>
       {error && <Message validation="error">{error}</Message>}
+      {description && (
+        <Hint dangerouslySetInnerHTML={{ __html: description }} />
+      )}
     </GardenField>
   );
 }

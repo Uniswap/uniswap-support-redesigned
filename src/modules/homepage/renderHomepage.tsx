@@ -1,8 +1,8 @@
-import { render } from 'react-dom';
-import { HomepageData } from '../../lib/types';
-import { Settings } from '../shared';
-import { createTheme, ThemeProviders } from '../shared';
-import Homepage from './HomepageModule';
+import { render } from "react-dom";
+import { HomepageData } from "../../lib/types";
+import { Settings } from "../shared";
+import { createTheme, ThemeProviders } from "../shared";
+import Homepage from "./HomepageModule";
 
 export async function renderHomepage(
   settings: Settings,
