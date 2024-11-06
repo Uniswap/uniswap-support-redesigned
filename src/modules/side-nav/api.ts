@@ -1,4 +1,5 @@
 import { SideNavData } from '../../lib/types';
+import { SideNavDataManager } from '../../utils/localStorage';
 
 const makeArrayToHaveUniqueValues = (array: { id: number }[]) => {
   return array.filter((value, index, self) => self.findIndex((v) => v.id === value.id) === index);
@@ -77,6 +78,15 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
 
 export const sideNav = {
   get: async (): Promise<SideNavData> => {
+    const storedSideNavData = SideNavDataManager.get();
+    const expriresAt = storedSideNavData?.expriresAt;
+
+    if (expriresAt && expriresAt > Date.now() && storedSideNavData.data) {
+      return storedSideNavData.data;
+    } else {
+      SideNavDataManager.clear();
+    }
+
     const url = `${window.location.origin}/api/v2/help_center/en-us/articles.json?include=categories,sections&per_page=100`;
 
     try {
@@ -120,6 +130,14 @@ export const sideNav = {
         categories: allPagesCategoryResponseData,
       };
       const sanitizedResponse = sanitizeResponse(allPagesResponseData);
+
+      // we cache the response for 24 hours
+      const millisecondsIn24Hours = 24 * 60 * 60 * 1000;
+
+      SideNavDataManager.set({
+        expriresAt: Date.now() + millisecondsIn24Hours,
+        data: sanitizedResponse,
+      });
 
       return sanitizedResponse;
     } catch (error) {
