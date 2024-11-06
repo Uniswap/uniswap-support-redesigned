@@ -7,7 +7,7 @@ export function EmptyValueOption(): ReactElement {
 
   return (
     <>
-      <Span aria-hidden="true">-</Span>
+      <Span aria-hidden="true">Select an option</Span>
       <Span hidden>
         {t("new-request-form.dropdown.empty-option", "Select an option")}
       </Span>

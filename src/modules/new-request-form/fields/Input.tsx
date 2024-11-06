@@ -26,27 +26,30 @@ export function Input({ field, onChange }: InputProps): JSX.Element {
     type === "anonymous_requester_email" ? "email" : undefined;
 
   return (
-    <GardenField>
-      <Label>
+    <GardenField className="custom-form-field-layout">
+      <Label className="custom-title">
         {label}
         {required && <Span aria-hidden="true">*</Span>}
       </Label>
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
       <GardenInput
         name={name}
         type={inputType}
-        defaultValue={value as string}
+        defaultValue={
+          value && value !== "" ? (value as string) : `Enter ${label}`
+        }
         validation={error ? "error" : undefined}
         required={required}
         onChange={(e) => {
           onChange && onChange(e.target.value);
         }}
         autoComplete={autocomplete}
+        className="custom-input"
         {...stepProp}
       />
       {error && <Message validation="error">{error}</Message>}
+      {description && (
+        <Hint dangerouslySetInnerHTML={{ __html: description }} />
+      )}
     </GardenField>
   );
 }

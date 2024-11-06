@@ -60,14 +60,11 @@ export function Tagger({ field, onChange }: TaggerProps): JSX.Element {
   };
 
   return (
-    <GardenField>
-      <Label>
+    <GardenField className="custom-form-field-layout">
+      <Label className="custom-title">
         {label}
         {required && <Span aria-hidden="true">*</Span>}
       </Label>
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
       <Combobox
         ref={wrapperRef}
         inputProps={{ required, name }}
@@ -80,6 +77,7 @@ export function Tagger({ field, onChange }: TaggerProps): JSX.Element {
           (selection as ISelectedOption | null)?.label ?? <EmptyValueOption />
         }
         isExpanded={isExpanded}
+        className="custom-combobox"
       >
         {currentGroup.type === "SubGroup" && (
           <Option {...currentGroup.backOption} />
@@ -105,6 +103,12 @@ export function Tagger({ field, onChange }: TaggerProps): JSX.Element {
         )}
       </Combobox>
       {error && <Message validation="error">{error}</Message>}
+      {description && (
+        <Hint
+          className="custom-hint"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
     </GardenField>
   );
 }

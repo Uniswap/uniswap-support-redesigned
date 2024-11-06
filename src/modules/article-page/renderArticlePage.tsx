@@ -1,8 +1,8 @@
-import { render } from 'react-dom';
-import { ArticlePageData } from '../../lib/types';
-import { Settings } from '../shared';
-import { createTheme, ThemeProviders } from '../shared';
-import { ArticleBreadcrumbs } from './ArticlePageModule';
+import { render } from "react-dom";
+import { ArticlePageData } from "../../lib/types";
+import { Settings } from "../shared";
+import { createTheme, ThemeProviders } from "../shared";
+import { ArticleBreadcrumbs } from "./ArticlePageModule";
 
 export async function renderArticleBreadcrumbs(
   settings: Settings,

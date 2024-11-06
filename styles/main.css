@@ -1,8 +1,8 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import '../assets/types.css';
+@import "../assets/types.css";
 
 .site-max-width {
   max-width: 1440px;
@@ -136,8 +136,8 @@
           @apply top-padding-medium left-padding-medium dark:hidden;
           display: block;
           position: absolute;
-          content: '';
-          background-image: url('../assets/book-open-light.svg');
+          content: "";
+          background-image: url("../assets/book-open-light.svg");
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -147,8 +147,8 @@
         &:after {
           @apply top-padding-medium left-padding-medium hidden dark:block;
           position: absolute;
-          content: '';
-          background-image: url('../assets/book-open-dark.svg');
+          content: "";
+          background-image: url("../assets/book-open-dark.svg");
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -162,8 +162,8 @@
             @apply top-padding-medium right-padding-medium dark:hidden transition opacity-0;
             display: block;
             position: absolute;
-            content: '';
-            background-image: url('../assets/right-arrow-light.svg');
+            content: "";
+            background-image: url("../assets/right-arrow-light.svg");
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -176,8 +176,8 @@
           &:after {
             @apply top-padding-medium right-padding-medium hidden dark:block transition opacity-0;
             position: absolute;
-            content: '';
-            background-image: url('../assets/right-arrow-dark.svg');
+            content: "";
+            background-image: url("../assets/right-arrow-dark.svg");
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -210,8 +210,8 @@
         @apply top-gap-medium right-gap-large dark:hidden transition opacity-0;
         display: block;
         position: absolute;
-        content: '';
-        background-image: url('../assets/right-arrow-light.svg');
+        content: "";
+        background-image: url("../assets/right-arrow-light.svg");
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -224,8 +224,8 @@
       &:after {
         @apply top-gap-medium right-gap-large hidden dark:block transition opacity-0;
         position: absolute;
-        content: '';
-        background-image: url('../assets/right-arrow-dark.svg');
+        content: "";
+        background-image: url("../assets/right-arrow-dark.svg");
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -241,4 +241,79 @@
 html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;
+}
+
+.ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-toolbar {
+  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 !border-0;
+}
+
+.ck.ck-editor__main > .ck-editor__editable {
+  @apply !rounded-xl;
+}
+
+.ck.ck-toolbar {
+  @apply !hidden;
+}
+
+.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+  @apply !border-0;
+}
+
+:not(.ck.ck-content p) .ck.ck-content p {
+  @apply !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-hint {
+  @apply !body-3 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-title {
+  @apply !heading-3 dark:!text-dark-neutral-1 !text-light-neutral-1;
+}
+
+.custom-form-field-layout {
+  @apply flex flex-col space-y-3;
+}
+
+.custom-input {
+  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 !border-0 !rounded-xl !py-3 !px-4 !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2 active:!text-light-neutral-1 active:dark:!text-dark-neutral-1 focus-visible:!text-light-neutral-1 focus-visible:dark:!text-dark-neutral-1;
+}
+
+.custom-combobox > div:first-child {
+  @apply !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 !px-4 !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2 !max-h-none !h-auto;
+}
+
+.custom-combobox > div:nth-child(2) {
+  @apply !bg-light-surface-1 dark:!bg-dark-surface-1 !rounded-t-none !body-2;
+  ul {
+    @apply !shadow-none !body-2 !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !p-0 !rounded-xl;
+    li {
+      @apply hover:!bg-light-surface-3-hovered hover:dark:!bg-dark-surface-3-hovered hover:!border-0 hover:!shadow-none !flex !flex-row !space-x-3 !justify-center;
+    }
+    li {
+      svg {
+        @apply !fill-none dark:!text-dark-neutral-1 !text-light-neutral-1 !mt-2;
+      }
+      div {
+        @apply !my-2 dark:!text-dark-neutral-1 !text-light-neutral-1 !body-2 hover:!border-0 hover:!border-transparent;
+      }
+    }
+  }
+}
+
+.custom-combobox > div > div > div > div {
+  @apply !my-0;
+}
+
+.custom-combobox > div span {
+  @apply !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-submit-button {
+  @apply !bg-light-accent-1 dark:!bg-dark-accent-1 !rounded-xl !py-4 !px-4 md:!w-[16.75rem] !button-label-2 !text-white !w-full;
+}
+
+.ck.ck-editor__editable_inline {
+  @apply !px-3;
 }
