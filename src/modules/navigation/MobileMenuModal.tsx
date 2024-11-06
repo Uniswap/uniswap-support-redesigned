@@ -76,7 +76,7 @@ const MobileMenuModal: FC<Props> = ({ isOpen, close }) => {
               onClick={handleClose}
               className="ml-padding-small-dense"
               label="Submit Request"
-              href="https://support.uniswap.org/hc/en-us/requests/new"
+              href="/hc/en-us/requests/new"
               size="large"
               theme={theme}
               color="accent-2"

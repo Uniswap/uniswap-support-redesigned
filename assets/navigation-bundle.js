@@ -1,5 +1,5 @@
 import { aa as api, r as reactExports, j as jsxRuntimeExports, ab as Ye, ac as cn, ad as yt, ae as je, a6 as reactDomExports, a7 as ThemeProviders, a8 as createTheme } from 'shared';
-import { T as ThemeIconMap, S as Sun, M as Moon, C as Close, P as PrimaryButton, L as LinkBase, a as MiniUnicon, B as ButtonBase, b as Menu } from 'index';
+import { T as ThemeIconMap, S as Sun, M as Moon, C as Close, P as PrimaryButton, a as Search, B as ButtonBase, L as LinkBase, b as MiniUnicon, c as Menu } from 'index';
 
 class StorageManager {
     key;
@@ -88,12 +88,14 @@ const MobileMenuModal = ({ isOpen, close }) => {
                 }), children: [jsxRuntimeExports.jsxs("div", { className: "pt-margin-mobile", children: [jsxRuntimeExports.jsxs("div", { className: "relative", children: [jsxRuntimeExports.jsx("div", { className: "flex flex-row-reverse mb-margin-mobile", children: jsxRuntimeExports.jsx("button", { onClick: handleClose, className: "group", children: jsxRuntimeExports.jsx(Close, { className: "h-3.5 w-3.5" }) }) }), jsxRuntimeExports.jsx("nav", { id: "new-mobile-nav" })] }), jsxRuntimeExports.jsxs("div", { className: "flex flex-row items-center justify-between", children: [jsxRuntimeExports.jsx("h3", { className: cn('body-1', {
                                             'text-light-neutral-1': theme === 'light',
                                             'text-dark-neutral-1': theme === 'dark',
-                                        }), children: "Theme" }), jsxRuntimeExports.jsx(ThemeSwitch, {})] })] }), jsxRuntimeExports.jsx("div", { className: "py-margin-mobile", children: jsxRuntimeExports.jsx(PrimaryButton, { onClick: handleClose, className: "ml-padding-small-dense", label: "Submit Request", href: "https://support.uniswap.org/hc/en-us/requests/new", size: "large", theme: theme, color: "accent-2", fullWidth: true }) })] }) }) }));
+                                        }), children: "Theme" }), jsxRuntimeExports.jsx(ThemeSwitch, {})] })] }), jsxRuntimeExports.jsx("div", { className: "py-margin-mobile", children: jsxRuntimeExports.jsx(PrimaryButton, { onClick: handleClose, className: "ml-padding-small-dense", label: "Submit Request", href: "/hc/en-us/requests/new", size: "large", theme: theme, color: "accent-2", fullWidth: true }) })] }) }) }));
 };
 
 const Navigation = () => {
     const [scrollIsOnTop, setScrollIsOnTop] = reactExports.useState(false);
     const [menuIsOpen, setMenuIsOpen] = reactExports.useState(false);
+    const [mobileSearchBarIsOpen, setMobileSearchBarIsOpen] = reactExports.useState(false);
+    const searchBarRef = reactExports.useRef(null);
     reactExports.useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
@@ -110,11 +112,27 @@ const Navigation = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [setScrollIsOnTop]);
-    return (jsxRuntimeExports.jsxs(UIProvider, { children: [jsxRuntimeExports.jsx("nav", { className: cn('Navigation fixed top-0 left-0 right-0 z-nav flex w-screen justify-center bg-light-surface-1 dark:border-dark-surface-3 dark:bg-dark-surface-1', {
+    reactExports.useEffect(() => {
+        const timeout = setTimeout(() => {
+            const searchBarPlaceholder = document.getElementById("search-bar-placeholder-nav-mobile");
+            if (searchBarPlaceholder && searchBarRef.current) {
+                searchBarRef.current.appendChild(searchBarPlaceholder);
+                searchBarPlaceholder.style.opacity = "1";
+            }
+        }, 100);
+        return () => clearTimeout(timeout);
+    }, []);
+    return (jsxRuntimeExports.jsxs(UIProvider, { children: [jsxRuntimeExports.jsxs("nav", { className: cn('Navigation fixed top-0 left-0 right-0 z-nav flex w-screen justify-center bg-light-surface-1 dark:border-dark-surface-3 dark:bg-dark-surface-1', {
                     'border-b': !scrollIsOnTop,
-                }), children: jsxRuntimeExports.jsxs("div", { className: "flex w-full flex-row items-center justify-between border-light-surface-3 px-4 py-[1.15625rem] md:px-[0.9375rem] md:py-3 md:h-[4.5rem]", children: [jsxRuntimeExports.jsx("div", { className: "flex flex-row items-center", children: jsxRuntimeExports.jsxs(LinkBase, { href: "/", className: "flex flex-row items-center", children: [jsxRuntimeExports.jsx(MiniUnicon, { className: "mb-[0.1875rem] h-8 w-8" }), jsxRuntimeExports.jsx("p", { className: "body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1", children: "Uniswap Support" })] }) }), jsxRuntimeExports.jsx("div", { className: "md:hidden", children: jsxRuntimeExports.jsx(ButtonBase, { id: "mobile-menu-button", onClick: () => {
-                                    setMenuIsOpen((prev) => !prev);
-                                }, children: jsxRuntimeExports.jsx(Menu, { className: "h-padding-large w-padding-large" }) }) }), jsxRuntimeExports.jsxs("div", { className: "hidden md:flex", children: [jsxRuntimeExports.jsx(ThemeSwitch, {}), jsxRuntimeExports.jsx(PrimaryButton, { className: "ml-padding-small-dense !my-auto !py-0 !h-8", label: "Submit Request", href: "https://support.uniswap.org/hc/en-us/requests/new", color: "accent-2" })] })] }) }), jsxRuntimeExports.jsx("div", { className: cn('fixed inset-0 z-scrim bg-scrim transition duration-500', {
+                }), children: [jsxRuntimeExports.jsxs("div", { className: cn("absolute w-full h-full top-0 left-0 !bg-light-surface-1 dark:!bg-dark-surface-1 px-4 py-[1.15625rem] flex flex-row justify-between items-center", {
+                            "hidden": mobileSearchBarIsOpen
+                        }), children: [jsxRuntimeExports.jsxs("div", { className: "flex flex-row items-center grow", children: [jsxRuntimeExports.jsx(Search, { className: "h-padding-large w-padding-large" }), jsxRuntimeExports.jsx("div", { ref: searchBarRef, className: "grow" })] }), jsxRuntimeExports.jsx(ButtonBase, { onClick: () => {
+                                    setMobileSearchBarIsOpen((prev) => !prev);
+                                }, className: "body-2 text-light-neutral-2 dark:text-dark-neutral-2 shrink-0", children: "Cancel" })] }), jsxRuntimeExports.jsxs("div", { className: "flex w-full flex-row items-center justify-between border-light-surface-3 px-4 py-[1.15625rem] md:px-[0.9375rem] md:py-3 md:h-[4.5rem]", children: [jsxRuntimeExports.jsx("div", { className: "flex flex-row items-center", children: jsxRuntimeExports.jsxs(LinkBase, { href: "/", className: "flex flex-row items-center", children: [jsxRuntimeExports.jsx(MiniUnicon, { className: "mb-[0.1875rem] h-8 w-8" }), jsxRuntimeExports.jsx("p", { className: "body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1", children: "Uniswap Support" })] }) }), jsxRuntimeExports.jsxs("div", { className: "md:hidden", children: [jsxRuntimeExports.jsx(ButtonBase, { id: "mobile-menu-button", onClick: () => {
+                                            setMobileSearchBarIsOpen((prev) => !prev);
+                                        }, className: "mr-3", children: jsxRuntimeExports.jsx(Search, { className: "h-padding-large w-padding-large" }) }), jsxRuntimeExports.jsx(ButtonBase, { onClick: () => {
+                                            setMenuIsOpen((prev) => !prev);
+                                        }, children: jsxRuntimeExports.jsx(Menu, { className: "h-padding-large w-padding-large" }) })] }), jsxRuntimeExports.jsxs("div", { className: "hidden md:flex", children: [jsxRuntimeExports.jsx(ThemeSwitch, {}), jsxRuntimeExports.jsx(PrimaryButton, { className: "ml-padding-small-dense !my-auto !py-0 !h-8", label: "Submit Request", href: "https://support.uniswap.org/hc/en-us/requests/new", color: "accent-2" })] })] })] }), jsxRuntimeExports.jsx("div", { className: cn('fixed inset-0 z-scrim bg-scrim transition duration-500', {
                     'pointer-events-none opacity-0': !menuIsOpen,
                     'opacity-1': menuIsOpen,
                 }) }), jsxRuntimeExports.jsx(MobileMenuModal, { isOpen: menuIsOpen, close: () => {

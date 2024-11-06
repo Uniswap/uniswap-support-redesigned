@@ -444,6 +444,21 @@ export const Moon: FC<{
   );
 };
 
+export const Search: FC<{
+  className?: string;
+  color?: "neutral-2";
+}> = ({ className, color = "neutral-2" }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" fill="none" className={className}>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 2.16699C5.02461 2.16699 1.66675 5.52486 1.66675 9.66699C1.66675 13.8091 5.02461 17.167 9.16675 17.167C10.9388 17.167 12.5673 16.5524 13.8508 15.5248L17.1126 18.7913C17.4378 19.117 17.9654 19.1174 18.2911 18.7922C18.6168 18.467 18.6172 17.9394 18.292 17.6137L15.0288 14.3458C16.0539 13.0631 16.6667 11.4366 16.6667 9.66699C16.6667 5.52486 13.3089 2.16699 9.16675 2.16699ZM9.16675 3.83366C5.94509 3.83366 3.33341 6.44533 3.33341 9.66699C3.33341 12.8887 5.94509 15.5003 9.16675 15.5003C12.3884 15.5003 15.0001 12.8887 15.0001 9.66699C15.0001 6.44533 12.3884 3.83366 9.16675 3.83366Z"         className={cn({
+        "fill-light-neutral-2 dark:fill-dark-neutral-2":
+          color === "neutral-2",
+      })}
+      />
+    </svg>
+  );
+};
+
 export type ThemeIcon = "sun" | "moon";
 
 export const ThemeIconMap: FC<{

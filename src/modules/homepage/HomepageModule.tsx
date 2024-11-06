@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import cn from "classnames";
 
 import {
@@ -32,6 +32,20 @@ const Homepage: FC<Props> = ({ homepageData }) => {
   const heros = homepageData.heros || [];
   const hero = heros[Math.floor(Math.random() * heros.length)];
 
+  const searchBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const searchBarPlaceholder = document.getElementById("search-bar-placeholder-mobile");
+      if (searchBarPlaceholder && searchBarRef.current) {
+        searchBarRef.current.appendChild(searchBarPlaceholder);
+        searchBarPlaceholder.style.opacity = "1";
+      }
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, []); 
+
   return (
     <div className="page-wrapper">
       {hero && (
@@ -44,6 +58,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
               {hero.headerLine2}
             </span>
           </h2>
+          <div ref={searchBarRef}></div>
         </div>
       )}
       {homepageData.coloredCardsBlock &&
