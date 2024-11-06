@@ -70,7 +70,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
       <div
         aria-hidden={navStateIsEmpty}
         className={cn(
-          'p-padding-large pb-margin-web transition absolute inset-0 section-side-nav w-full',
+          'p-padding-large pb-margin-web transition absolute inset-0 section-side-nav w-full overflow-scroll',
           {
             'opacity-0 pointer-events-none': navStateIsEmpty,
           }
