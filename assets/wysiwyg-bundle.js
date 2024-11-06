@@ -6182,14 +6182,12 @@ main$2.exports;
           }) {
             const o = e.document;
             function s(i) {
-              _o
-                .get(o)
-                .set(t, {
-                  text: i,
-                  isDirectHost: n,
-                  keepOnFocus: r,
-                  hostElement: n ? t : null,
-                }),
+              _o.get(o).set(t, {
+                text: i,
+                isDirectHost: n,
+                keepOnFocus: r,
+                hostElement: n ? t : null,
+              }),
                 e.change((e) => Io(o, e));
             }
             _o.has(o) ||
@@ -28710,12 +28708,10 @@ main$2.exports;
                 i
                   .for("upcast")
                   .elementToElement({ model: "softBreak", view: "br" }),
-                i
-                  .for("downcast")
-                  .elementToElement({
-                    model: "softBreak",
-                    view: (e, { writer: t }) => t.createEmptyElement("br"),
-                  }),
+                i.for("downcast").elementToElement({
+                  model: "softBreak",
+                  view: (e, { writer: t }) => t.createEmptyElement("br"),
+                }),
                 n.addObserver(Vw),
                 e.commands.add("shiftEnter", new Nw(e)),
                 this.listenTo(
@@ -33170,12 +33166,10 @@ main$2.exports;
             _setupDropMarker() {
               const e = this.editor;
               e.ui.view.body.add(this._dropTargetLineView),
-                e.conversion
-                  .for("editingDowncast")
-                  .markerToHighlight({
-                    model: "drop-target",
-                    view: { classes: ["ck-clipboard-drop-target-range"] },
-                  }),
+                e.conversion.for("editingDowncast").markerToHighlight({
+                  model: "drop-target",
+                  view: { classes: ["ck-clipboard-drop-target-range"] },
+                }),
                 e.conversion.for("editingDowncast").markerToElement({
                   model: "drop-target",
                   view: (t, { writer: i }) => {
@@ -33423,18 +33417,16 @@ main$2.exports;
                 r = this.editor.editing.view;
               n &&
                 n.closest(".ck-editor__editable") &&
-                r
-                  .getObserver(dy)
-                  .onDomEvent({
-                    ...e,
-                    type: e.type,
-                    dataTransfer: e.dataTransfer,
-                    target: n,
-                    clientX: t,
-                    clientY: i,
-                    preventDefault: () => e.preventDefault(),
-                    stopPropagation: () => e.stopPropagation(),
-                  });
+                r.getObserver(dy).onDomEvent({
+                  ...e,
+                  type: e.type,
+                  dataTransfer: e.dataTransfer,
+                  target: n,
+                  clientX: t,
+                  clientY: i,
+                  preventDefault: () => e.preventDefault(),
+                  stopPropagation: () => e.stopPropagation(),
+                });
             }
             _handleBlockDragEnd() {
               this._isBlockDragging = !1;
@@ -34267,18 +34259,16 @@ main$2.exports;
                   model: "paragraph",
                   view: "p",
                 }),
-                e.conversion
-                  .for("upcast")
-                  .elementToElement({
-                    model: (e, { writer: t }) =>
-                      Gb.paragraphLikeElements.has(e.name)
-                        ? e.isEmpty
-                          ? null
-                          : t.createElement("paragraph")
-                        : null,
-                    view: /.+/,
-                    converterPriority: "low",
-                  });
+                e.conversion.for("upcast").elementToElement({
+                  model: (e, { writer: t }) =>
+                    Gb.paragraphLikeElements.has(e.name)
+                      ? e.isEmpty
+                        ? null
+                        : t.createElement("paragraph")
+                      : null,
+                  view: /.+/,
+                  converterPriority: "low",
+                });
             }
           }
           Gb.paragraphLikeElements = new Set([
@@ -34396,13 +34386,11 @@ main$2.exports;
                 });
             }
             _addDefaultH1Conversion(e) {
-              e.conversion
-                .for("upcast")
-                .elementToElement({
-                  model: "heading1",
-                  view: "h1",
-                  converterPriority: f.low + 1,
-                });
+              e.conversion.for("upcast").elementToElement({
+                model: "heading1",
+                view: "h1",
+                converterPriority: f.low + 1,
+              });
             }
           }
           var ik = r(2433),
@@ -35377,19 +35365,15 @@ main$2.exports;
                 t = e.t,
                 i = e.conversion,
                 n = e.plugins.get("ImageUtils");
-              i
-                .for("dataDowncast")
-                .elementToStructure({
+              i.for("dataDowncast").elementToStructure({
+                model: "imageBlock",
+                view: (e, { writer: t }) => ok(t),
+              }),
+                i.for("editingDowncast").elementToStructure({
                   model: "imageBlock",
-                  view: (e, { writer: t }) => ok(t),
+                  view: (e, { writer: i }) =>
+                    n.toImageWidget(ok(i), i, t("image widget")),
                 }),
-                i
-                  .for("editingDowncast")
-                  .elementToStructure({
-                    model: "imageBlock",
-                    view: (e, { writer: i }) =>
-                      n.toImageWidget(ok(i), i, t("image widget")),
-                  }),
                 i
                   .for("downcast")
                   .add(Ak(n, "imageBlock", "src"))
@@ -35681,12 +35665,10 @@ main$2.exports;
                 t = e.t,
                 i = e.conversion,
                 n = e.plugins.get("ImageUtils");
-              i
-                .for("dataDowncast")
-                .elementToElement({
-                  model: "imageInline",
-                  view: (e, { writer: t }) => t.createEmptyElement("img"),
-                }),
+              i.for("dataDowncast").elementToElement({
+                model: "imageInline",
+                view: (e, { writer: t }) => t.createEmptyElement("img"),
+              }),
                 i.for("editingDowncast").elementToStructure({
                   model: "imageInline",
                   view: (e, { writer: i }) =>
@@ -35707,18 +35689,16 @@ main$2.exports;
                   .add(Ak(n, "imageInline", "src"))
                   .add(Ak(n, "imageInline", "alt"))
                   .add(xk(n, "imageInline")),
-                i
-                  .for("upcast")
-                  .elementToElement({
-                    view: sk(e, "imageInline"),
-                    model: (e, { writer: t }) =>
-                      t.createElement(
-                        "imageInline",
-                        e.hasAttribute("src")
-                          ? { src: e.getAttribute("src") }
-                          : void 0
-                      ),
-                  });
+                i.for("upcast").elementToElement({
+                  view: sk(e, "imageInline"),
+                  model: (e, { writer: t }) =>
+                    t.createElement(
+                      "imageInline",
+                      e.hasAttribute("src")
+                        ? { src: e.getAttribute("src") }
+                        : void 0
+                    ),
+                });
             }
             _setupClipboardIntegration() {
               const e = this.editor,
@@ -35874,21 +35854,17 @@ main$2.exports;
                 i = e.plugins.get("ImageUtils"),
                 n = e.plugins.get("ImageCaptionUtils"),
                 r = e.t;
-              e.conversion
-                .for("upcast")
-                .elementToElement({
-                  view: (e) => n.matchImageCaptionViewElement(e),
+              e.conversion.for("upcast").elementToElement({
+                view: (e) => n.matchImageCaptionViewElement(e),
+                model: "caption",
+              }),
+                e.conversion.for("dataDowncast").elementToElement({
                   model: "caption",
+                  view: (e, { writer: t }) =>
+                    i.isBlockImage(e.parent)
+                      ? t.createContainerElement("figcaption")
+                      : null,
                 }),
-                e.conversion
-                  .for("dataDowncast")
-                  .elementToElement({
-                    model: "caption",
-                    view: (e, { writer: t }) =>
-                      i.isBlockImage(e.parent)
-                        ? t.createContainerElement("figcaption")
-                        : null,
-                  }),
                 e.conversion.for("editingDowncast").elementToElement({
                   model: "caption",
                   view: (e, { writer: n }) => {
@@ -36595,12 +36571,10 @@ main$2.exports;
                 a = new w_(e);
               e.commands.add("uploadImage", a),
                 e.commands.add("imageUpload", a),
-                i
-                  .for("upcast")
-                  .attributeToAttribute({
-                    view: { name: "img", key: "uploadId" },
-                    model: "uploadId",
-                  }),
+                i.for("upcast").attributeToAttribute({
+                  view: { name: "img", key: "uploadId" },
+                  model: "uploadId",
+                }),
                 this.listenTo(
                   e.editing.view.document,
                   "clipboardInput",
@@ -36889,12 +36863,10 @@ main$2.exports;
                       n.removeClass("image_resized", r));
                 })
               ),
-                t.conversion
-                  .for("dataDowncast")
-                  .attributeToAttribute({
-                    model: { name: e, key: "resizedHeight" },
-                    view: (e) => ({ key: "style", value: { height: e } }),
-                  }),
+                t.conversion.for("dataDowncast").attributeToAttribute({
+                  model: { name: e, key: "resizedHeight" },
+                  view: (e) => ({ key: "style", value: { height: e } }),
+                }),
                 t.conversion.for("editingDowncast").add((t) =>
                   t.on(`attribute:resizedHeight:${e}`, (t, n, r) => {
                     if (!r.consumable.consume(n.item, t.name)) return;
@@ -36906,30 +36878,26 @@ main$2.exports;
                       : o.removeStyle("height", a);
                   })
                 ),
-                t.conversion
-                  .for("upcast")
-                  .attributeToAttribute({
-                    view: {
-                      name: "imageBlock" === e ? "figure" : "img",
-                      styles: { width: /.+/ },
-                    },
-                    model: {
-                      key: "resizedWidth",
-                      value: (e) => (ck(e) ? null : e.getStyle("width")),
-                    },
-                  }),
-                t.conversion
-                  .for("upcast")
-                  .attributeToAttribute({
-                    view: {
-                      name: "imageBlock" === e ? "figure" : "img",
-                      styles: { height: /.+/ },
-                    },
-                    model: {
-                      key: "resizedHeight",
-                      value: (e) => (ck(e) ? null : e.getStyle("height")),
-                    },
-                  });
+                t.conversion.for("upcast").attributeToAttribute({
+                  view: {
+                    name: "imageBlock" === e ? "figure" : "img",
+                    styles: { width: /.+/ },
+                  },
+                  model: {
+                    key: "resizedWidth",
+                    value: (e) => (ck(e) ? null : e.getStyle("width")),
+                  },
+                }),
+                t.conversion.for("upcast").attributeToAttribute({
+                  view: {
+                    name: "imageBlock" === e ? "figure" : "img",
+                    styles: { height: /.+/ },
+                  },
+                  model: {
+                    key: "resizedHeight",
+                    value: (e) => (ck(e) ? null : e.getStyle("height")),
+                  },
+                });
             }
           }
           const __ = {
@@ -37984,21 +37952,17 @@ main$2.exports;
                 e.conversion
                   .for("dataDowncast")
                   .attributeToElement({ model: "linkHref", view: kv }),
-                e.conversion
-                  .for("editingDowncast")
-                  .attributeToElement({
-                    model: "linkHref",
-                    view: (e, i) => kv(_v(e, t), i),
-                  }),
-                e.conversion
-                  .for("upcast")
-                  .elementToAttribute({
-                    view: { name: "a", attributes: { href: !0 } },
-                    model: {
-                      key: "linkHref",
-                      value: (e) => e.getAttribute("href"),
-                    },
-                  }),
+                e.conversion.for("editingDowncast").attributeToElement({
+                  model: "linkHref",
+                  view: (e, i) => kv(_v(e, t), i),
+                }),
+                e.conversion.for("upcast").elementToAttribute({
+                  view: { name: "a", attributes: { href: !0 } },
+                  model: {
+                    key: "linkHref",
+                    value: (e) => e.getAttribute("href"),
+                  },
+                }),
                 e.commands.add("link", new Cv(e)),
                 e.commands.add("unlink", new Sv(e));
               const i = (function (e, t) {
@@ -38070,12 +38034,10 @@ main$2.exports;
                       }
                     },
                   }),
-                  t.conversion
-                    .for("upcast")
-                    .elementToAttribute({
-                      view: { name: "a", ...n._createPattern() },
-                      model: { key: n.id },
-                    });
+                  t.conversion.for("upcast").elementToAttribute({
+                    view: { name: "a", ...n._createPattern() },
+                    model: { key: n.id },
+                  });
               });
             }
             _enableLinkOpen() {
@@ -38397,24 +38359,20 @@ main$2.exports;
                 (this._balloon = e.plugins.get(om)),
                 this._createToolbarLinkButton(),
                 this._enableBalloonActivators(),
-                e.conversion
-                  .for("editingDowncast")
-                  .markerToHighlight({
-                    model: Hv,
-                    view: { classes: ["ck-fake-link-selection"] },
-                  }),
-                e.conversion
-                  .for("editingDowncast")
-                  .markerToElement({
-                    model: Hv,
-                    view: {
-                      name: "span",
-                      classes: [
-                        "ck-fake-link-selection",
-                        "ck-fake-link-selection_collapsed",
-                      ],
-                    },
-                  }),
+                e.conversion.for("editingDowncast").markerToHighlight({
+                  model: Hv,
+                  view: { classes: ["ck-fake-link-selection"] },
+                }),
+                e.conversion.for("editingDowncast").markerToElement({
+                  model: Hv,
+                  view: {
+                    name: "span",
+                    classes: [
+                      "ck-fake-link-selection",
+                      "ck-fake-link-selection_collapsed",
+                    ],
+                  },
+                }),
                 e.accessibility.addKeystrokeInfos({
                   keystrokes: [
                     { label: t("Create link"), keystroke: bv },
@@ -41090,16 +41048,14 @@ main$2.exports;
                 t = e.model,
                 i = t.document;
               t.schema.extend("$text", { allowAttributes: "mention" }),
-                e.conversion
-                  .for("upcast")
-                  .elementToAttribute({
-                    view: {
-                      name: "span",
-                      key: "data-mention",
-                      classes: "mention",
-                    },
-                    model: { key: "mention", value: (e) => OA(e) },
-                  }),
+                e.conversion.for("upcast").elementToAttribute({
+                  view: {
+                    name: "span",
+                    key: "data-mention",
+                    classes: "mention",
+                  },
+                  model: { key: "mention", value: (e) => OA(e) },
+                }),
                 e.conversion
                   .for("downcast")
                   .attributeToElement({ model: "mention", view: BA }),
@@ -41816,27 +41772,23 @@ main$2.exports;
           function hE(e) {
             (dE = e),
               (e.data.processor = new sE(e)),
-              e.conversion
-                .for("upcast")
-                .elementToAttribute({
-                  view: {
-                    name: "span",
-                    key: "data-mention",
-                    classes: "mention",
-                    attributes: { "data-user-id": !0 },
-                  },
-                  model: {
-                    key: "mention",
-                    value: (t) =>
-                      e.plugins
-                        .get("Mention")
-                        .toMentionAttribute(t, {
-                          userId: t.getAttribute("data-user-id"),
-                          userName: t.getAttribute("data-mention"),
-                        }),
-                  },
-                  converterPriority: "high",
-                }),
+              e.conversion.for("upcast").elementToAttribute({
+                view: {
+                  name: "span",
+                  key: "data-mention",
+                  classes: "mention",
+                  attributes: { "data-user-id": !0 },
+                },
+                model: {
+                  key: "mention",
+                  value: (t) =>
+                    e.plugins.get("Mention").toMentionAttribute(t, {
+                      userId: t.getAttribute("data-user-id"),
+                      userName: t.getAttribute("data-mention"),
+                    }),
+                },
+                converterPriority: "high",
+              }),
               e.conversion.for("downcast").attributeToElement({
                 model: "mention",
                 view: (e, { writer: t }) => {

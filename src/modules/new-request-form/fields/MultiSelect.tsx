@@ -73,7 +73,6 @@ export function MultiSelect({ field }: MultiSelectProps): JSX.Element {
         selectionValue={selectedValues}
         maxHeight="auto"
         className="custom-combobox"
-        isExpanded={true}
       >
         {currentGroup.type === "SubGroup" && (
           <Option {...currentGroup.backOption} />
