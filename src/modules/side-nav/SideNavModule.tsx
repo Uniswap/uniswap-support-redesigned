@@ -101,14 +101,19 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                 )}
               />
               <div key={`section-nav-${category.id}`}>
-                <h3
-                  className={cn('subheading-2 my-3', {
-                    'text-light-accent-1 dark:text-dark-accent-1': categoryisActive,
-                    'text-light-neutral-2 dark:text-dark-neutral-2': !categoryisActive,
-                  })}
-                >
-                  {category.name}
-                </h3>
+                <a href={category.url}>
+                  <h3
+                    className={cn(
+                      'transitoin subheading-2 my-3 hover:text-light-accent-1 hover:dark:text-dark-accent-1',
+                      {
+                        'text-light-accent-1 dark:text-dark-accent-1': categoryisActive,
+                        'text-light-neutral-2 dark:text-dark-neutral-2': !categoryisActive,
+                      }
+                    )}
+                  >
+                    {category.name}
+                  </h3>
+                </a>
                 <ul
                   className={cn('pb-6', {
                     hidden: !categoryisActive,
