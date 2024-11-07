@@ -1,8 +1,8 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@import "../assets/types.css";
+@import '../assets/types.css';
 
 .site-max-width {
   max-width: 1440px;
@@ -136,8 +136,8 @@
           @apply top-padding-medium left-padding-medium dark:hidden;
           display: block;
           position: absolute;
-          content: "";
-          background-image: url("../assets/book-open-light.svg");
+          content: '';
+          background-image: url('../assets/book-open-light.svg');
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -147,8 +147,8 @@
         &:after {
           @apply top-padding-medium left-padding-medium hidden dark:block;
           position: absolute;
-          content: "";
-          background-image: url("../assets/book-open-dark.svg");
+          content: '';
+          background-image: url('../assets/book-open-dark.svg');
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -162,8 +162,8 @@
             @apply top-padding-medium right-padding-medium dark:hidden transition opacity-0;
             display: block;
             position: absolute;
-            content: "";
-            background-image: url("../assets/right-arrow-light.svg");
+            content: '';
+            background-image: url('../assets/right-arrow-light.svg');
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -176,8 +176,8 @@
           &:after {
             @apply top-padding-medium right-padding-medium hidden dark:block transition opacity-0;
             position: absolute;
-            content: "";
-            background-image: url("../assets/right-arrow-dark.svg");
+            content: '';
+            background-image: url('../assets/right-arrow-dark.svg');
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -210,8 +210,8 @@
         @apply top-gap-medium right-gap-large dark:hidden transition opacity-0;
         display: block;
         position: absolute;
-        content: "";
-        background-image: url("../assets/right-arrow-light.svg");
+        content: '';
+        background-image: url('../assets/right-arrow-light.svg');
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -224,8 +224,8 @@
       &:after {
         @apply top-gap-medium right-gap-large hidden dark:block transition opacity-0;
         position: absolute;
-        content: "";
-        background-image: url("../assets/right-arrow-dark.svg");
+        content: '';
+        background-image: url('../assets/right-arrow-dark.svg');
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
@@ -241,6 +241,22 @@
 html:has(.ArticlePage) {
   scroll-behavior: smooth;
   scroll-padding-top: 90px !important;
+}
+
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 250ms grid-template-rows ease;
+}
+
+.accordion-body-active {
+  grid-template-rows: 1fr;
+}
+
+#new-side-nav {
+  > div {
+    height: 100%;
+  }
 }
 
 .ck.ck-editor__main > .ck-editor__editable,

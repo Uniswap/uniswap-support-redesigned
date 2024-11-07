@@ -1,5 +1,5 @@
 <div class="Homepage flex flex-row bg-light-surface-1 dark:bg-dark-surface-1">
-  <div class="min-w-[15rem] max-w-[15rem] hidden md:block border-2 mt-nav-h">sidenav placeholder</div>
+  <div id="new-side-nav" class="min-w-[15rem] max-w-[15rem] hidden md:block relative mt-nav-h"></div>
   <div id="new-homepage"></div>
 </div>
 
@@ -9,7 +9,6 @@
   const container = document.getElementById("new-homepage");
 
   const settings = {{json settings}};
-
   // Handles data for the homepage. If you would like to update any data within homepage, adjust it here.
   const homepageData = {
     heros: [{
@@ -109,4 +108,17 @@
 
   // Make sure arguments are correctly typed. 
   renderHomepage(settings, homepageData, container);
+</script>
+
+<script type="module">
+  import { renderSideNav, sideNav } from "side-nav";
+
+  const container = document.getElementById("new-side-nav");
+
+  const settings = {{json settings}};
+
+  const sideNavData = await sideNav.get();
+
+  // Make sure arguments are correctly typed. 
+  renderSideNav(settings, sideNavData, {}, container);
 </script>
