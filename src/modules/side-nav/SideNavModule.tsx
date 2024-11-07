@@ -104,7 +104,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                 <a href={category.url}>
                   <h3
                     className={cn(
-                      'transitoin subheading-2 my-3 hover:text-light-accent-1 hover:dark:text-dark-accent-1',
+                      'transition subheading-2 my-3 hover:text-light-accent-1 hover:dark:text-dark-accent-1',
                       {
                         'text-light-accent-1 dark:text-dark-accent-1': categoryisActive,
                         'text-light-neutral-2 dark:text-dark-neutral-2': !categoryisActive,

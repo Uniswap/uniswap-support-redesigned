@@ -62,17 +62,17 @@ var l=Symbol.for("react.element"),n=Symbol.for("react.portal"),p=Symbol.for("rea
 	return react_production_min;
 }
 
-var hasRequiredReact;
-
-function requireReact () {
-	if (hasRequiredReact) return react.exports;
-	hasRequiredReact = 1;
-
-	{
-	  react.exports = requireReact_production_min();
-	}
-	return react.exports;
+{
+  react.exports = requireReact_production_min();
 }
+
+var reactExports = react.exports;
+var U$6 = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
+
+var t$5 = /*#__PURE__*/_mergeNamespaces({
+	__proto__: null,
+	default: U$6
+}, [reactExports]);
 
 /**
  * @license React
@@ -89,7 +89,7 @@ var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min () {
 	if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
 	hasRequiredReactJsxRuntime_production_min = 1;
-var f=requireReact(),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=reactExports,k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 	function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return {$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}reactJsxRuntime_production_min.Fragment=l;reactJsxRuntime_production_min.jsx=q;reactJsxRuntime_production_min.jsxs=q;
 	return reactJsxRuntime_production_min;
 }
@@ -165,7 +165,7 @@ var hasRequiredReactDom_production_min;
 function requireReactDom_production_min () {
 	if (hasRequiredReactDom_production_min) return reactDom_production_min;
 	hasRequiredReactDom_production_min = 1;
-var aa=requireReact(),ca=requireScheduler();function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return "Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b);}
+var aa=reactExports,ca=requireScheduler();function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return "Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b);}
 	function ha(a,b){ea[a]=b;for(a=0;a<b.length;a++)da.add(b[a]);}
 	var ia=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ja=Object.prototype.hasOwnProperty,ka=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,la=
 	{},ma={};function oa(a){if(ja.call(ma,a))return !0;if(ja.call(la,a))return !1;if(ka.test(a))return ma[a]=!0;la[a]=!0;return !1}function pa(a,b,c,d){if(null!==c&&0===c.type)return !1;switch(typeof b){case "function":case "symbol":return !0;case "boolean":if(d)return !1;if(null!==c)return !c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return "data-"!==a&&"aria-"!==a;default:return !1}}
@@ -2909,14 +2909,6 @@ async function loadTranslations(locale, dynamicImport) {
         console.error(`Cannot load translations for ${locale}`);
     }
 }
-
-var reactExports = requireReact();
-var U$6 = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
-
-var t$5 = /*#__PURE__*/_mergeNamespaces({
-	__proto__: null,
-	default: U$6
-}, [reactExports]);
 
 function warn() {
   if (console && console.warn) {
@@ -19858,20 +19850,29 @@ var getIntrinsic = function GetIntrinsic(name, allowMissing) {
 
 var callBind$3 = {exports: {}};
 
-var GetIntrinsic$3 = getIntrinsic;
+var esDefineProperty;
+var hasRequiredEsDefineProperty;
 
-/** @type {import('.')} */
-var $defineProperty$2 = GetIntrinsic$3('%Object.defineProperty%', true) || false;
-if ($defineProperty$2) {
-	try {
-		$defineProperty$2({}, 'a', { value: 1 });
-	} catch (e) {
-		// IE 8 has a broken defineProperty
-		$defineProperty$2 = false;
+function requireEsDefineProperty () {
+	if (hasRequiredEsDefineProperty) return esDefineProperty;
+	hasRequiredEsDefineProperty = 1;
+
+	var GetIntrinsic = getIntrinsic;
+
+	/** @type {import('.')} */
+	var $defineProperty = GetIntrinsic('%Object.defineProperty%', true) || false;
+	if ($defineProperty) {
+		try {
+			$defineProperty({}, 'a', { value: 1 });
+		} catch (e) {
+			// IE 8 has a broken defineProperty
+			$defineProperty = false;
+		}
 	}
-}
 
-var esDefineProperty = $defineProperty$2;
+	esDefineProperty = $defineProperty;
+	return esDefineProperty;
+}
 
 var GetIntrinsic$2 = getIntrinsic;
 
@@ -19888,7 +19889,7 @@ if ($gOPD$1) {
 
 var gopd$1 = $gOPD$1;
 
-var $defineProperty$1 = esDefineProperty;
+var $defineProperty$1 = requireEsDefineProperty();
 
 var $SyntaxError = syntax;
 var $TypeError$3 = type;
@@ -19943,7 +19944,7 @@ var defineDataProperty$1 = function defineDataProperty(
 	}
 };
 
-var $defineProperty = esDefineProperty;
+var $defineProperty = requireEsDefineProperty();
 
 var hasPropertyDescriptors = function hasPropertyDescriptors() {
 	return !!$defineProperty;
@@ -20018,7 +20019,7 @@ callBind$3.exports;
 	var $call = GetIntrinsic('%Function.prototype.call%');
 	var $reflectApply = GetIntrinsic('%Reflect.apply%', true) || bind.call($call, $apply);
 
-	var $defineProperty = esDefineProperty;
+	var $defineProperty = requireEsDefineProperty();
 	var $max = GetIntrinsic('%Math.max%');
 
 	module.exports = function callBind(originalFunction) {
@@ -23198,7 +23199,7 @@ implementation.exports;
 
 	exports.__esModule = true;
 
-	var _react = requireReact();
+	var _react = reactExports;
 
 	_interopRequireDefault(_react);
 
@@ -23397,7 +23398,7 @@ lib.exports;
 
 	exports.__esModule = true;
 
-	var _react = requireReact();
+	var _react = reactExports;
 
 	var _react2 = _interopRequireDefault(_react);
 
