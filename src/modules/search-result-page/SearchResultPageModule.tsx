@@ -125,20 +125,20 @@ export const SearchResultPageModule: FC<Props> = ({ searchPageData }) => {
               ]}
             />
             <h1 className="search-results-subheading heading-2 text-light-neutral-1 dark:text-dark-neutral-1 mt-[1.92rem]">
-              {results ? (
+              {results && results.length > 0 ? (
                 <>
                   {results.length} results for "{query}"
                 </>
               ) : (
                 <div className="no-results">
                   <div className="headline heading-2 text-light-neutral-1 dark:text-dark-neutral-1">
-                    No result for {query}
+                    No result for "{query}"
                   </div>
                 </div>
               )}
             </h1>
             <div ref={searchBarRef} />
-            {results ? (
+            {results && results.length > 0 ? (
               <ul className="search-results-list">
                 {results.map((result) => (
                   <li key={result.url}>
