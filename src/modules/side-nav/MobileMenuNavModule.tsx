@@ -24,7 +24,6 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
     return null;
   }
 
-  console.log(selectedCategory);
   return (
     <>
       <div
