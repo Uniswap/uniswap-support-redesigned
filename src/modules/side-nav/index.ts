@@ -1,2 +1,2 @@
-export { renderSideNav } from './renderSideNav';
+export { renderSideNav, renderMobileMenuNav } from './renderSideNav';
 export { sideNav } from './api';
