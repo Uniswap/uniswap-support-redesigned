@@ -1,6 +1,6 @@
-<div class="container flex flex-row bg-light-surface-1 dark:!bg-dark-surface-1">
-  <div class="min-w-[15rem] max-w-[15rem] hidden md:block border-2 mt-nav-h">sidenav placeholder</div>
-  <div class="page-wrapper">
+<div class="container w-full !max-w-none flex flex-row bg-light-surface-1 dark:!bg-dark-surface-1">
+  <div id="new-side-nav" class="min-w-[15rem] max-w-[15rem] hidden md:block relative mt-nav-h"></div>
+  <div class="page-wrapper max-w-[65rem]">
     <div class="mb-3 md:mb-6 flex flex-row items-center overflow-scroll col-span-4 sm:col-span-8">
       <a href="/" target="_self" class="group flex">
         <span class="body-3 text-nowrap transition text-light-neutral-2 dark:text-dark-neutral-2 group-hover:text-light-neutral-1 group-hover:dark:text-dark-neutral-1">
@@ -68,4 +68,17 @@
   };
 
   renderNewRequestForm(settings, props, container);
+</script>
+
+<script type="module">
+  import { renderSideNav, sideNav } from "side-nav";
+
+  const container = document.getElementById("new-side-nav");
+
+  const settings = {{json settings}};
+
+  const sideNavData = await sideNav.get();
+
+  // Make sure arguments are correctly typed. 
+  renderSideNav(settings, sideNavData, {}, container);
 </script>
