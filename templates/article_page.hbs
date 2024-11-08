@@ -99,7 +99,7 @@
 
 
 <script type="module">
-  import { renderSideNav, sideNav } from "side-nav";
+  import { renderSideNav, renderMobileMenuNav, sideNav } from "side-nav";
 
   const container = document.getElementById("new-side-nav");
 
@@ -127,4 +127,21 @@
 
   // Make sure arguments are correctly typed. 
   renderSideNav(settings, sideNavData, {...navState, article: article.id}, container);
+
+  // Add mobile nav
+  const addMobileNav = (sideNavData) => {
+
+    const container = document.getElementById("new-mobile-nav");
+
+    const settings = {{json settings}};
+
+    // Make sure arguments are correctly typed. 
+    renderMobileMenuNav(settings, sideNavData, {...navState, article: article.id}, container);
+  }
+
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+    mobileMenuButton.addEventListener("click", (e) => {
+    // add setTimeout to ensure the mobile nav is added after mobile menu appears on DOM first
+    setTimeout(() => addMobileNav(sideNavData), 100);
+  });
 </script>
