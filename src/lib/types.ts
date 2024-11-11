@@ -255,3 +255,45 @@ export type NavState = {
   section?: number;
   article?: number;
 };
+
+export type SearchPageData = {
+  query: string;
+  results: SearchResult[];
+  typeFilters: TypeFilter[];
+};
+
+export type SearchResult = {
+  url: string;
+  title: string;
+  text: string;
+  vote_sum: number;
+  created_at: string;
+  edited_at: string | null;
+  comment_count: number;
+  meta: string;
+  type: string;
+  path_steps: {
+    url: string;
+    name: string;
+    target: string;
+  }[];
+  author: {
+    name: string;
+    url: string;
+    agent: boolean;
+    avatar_url: string;
+    signed_in: boolean;
+    id: number;
+    role: string;
+  };
+  is_external: boolean;
+};
+
+type TypeFilter = {
+  identifier: string;
+  url: string;
+  name: string;
+  selected: boolean;
+  label: string;
+  count: number;
+};

@@ -1,0 +1,1 @@
+export { renderSearchResults } from './renderSearchResults';

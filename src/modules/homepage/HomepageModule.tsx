@@ -1,5 +1,7 @@
-import { FC } from "react";
-import cn from "classnames";
+import { FC, useEffect, useRef, useState } from 'react';
+import cn from 'classnames';
+import { HeaderBackgroundLeft } from './HeaderBackgroundLeft';
+import { HeaderBackgroundRight } from './HeaderBackgroundRight';
 
 import {
   ColoredCardsIconMap,
@@ -8,9 +10,9 @@ import {
   ArrowRight,
   BookOpen,
   Layers,
-} from "./Icons";
-import { HomepageData, ColoredCardsColor } from "../../lib/types";
-import ConnectBlock from "./ConnectBlock";
+} from './Icons';
+import { HomepageData, ColoredCardsColor } from '../../lib/types';
+import ConnectBlock from './ConnectBlock';
 
 type Props = {
   homepageData: HomepageData;
@@ -18,36 +20,83 @@ type Props = {
 
 const Homepage: FC<Props> = ({ homepageData }) => {
   const getColorName = (color: ColoredCardsColor): ColoredCardsIconColor => {
-    if (color === "blue") {
-      return "blue-vibrant";
+    if (color === 'blue') {
+      return 'blue-vibrant';
     }
-    if (color === "green") {
-      return "green-base";
+    if (color === 'green') {
+      return 'green-base';
     }
-    if (color === "orange") {
-      return "orange-vibrant";
+    if (color === 'orange') {
+      return 'orange-vibrant';
     }
-    return "pink-vibrant";
+    return 'pink-vibrant';
   };
   const heros = homepageData.heros || [];
   const hero = heros[Math.floor(Math.random() * heros.length)];
 
+  const searchBarRef = useRef<HTMLDivElement>(null);
+
+  const [heroTextReveal, setHeroTextReveal] = useState(false);
+
+  useEffect(() => {
+    const searchBarTimeout = setTimeout(() => {
+      const searchBarPlaceholder = document.getElementById('search-bar-placeholder-mobile');
+      if (searchBarPlaceholder && searchBarRef.current) {
+        searchBarRef.current.appendChild(searchBarPlaceholder);
+        searchBarPlaceholder.style.opacity = '1';
+      }
+    }, 100);
+
+    return () => clearTimeout(searchBarTimeout);
+  }, []);
+
+  useEffect(() => {
+    const heroTextRevealTimeout = setTimeout(() => {
+      setHeroTextReveal(true);
+    }, 400);
+
+    return () => clearTimeout(heroTextRevealTimeout);
+  }, []);
+
   return (
     <div className="page-wrapper">
       {hero && (
-        <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2">
-          <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1">
-            <span className="heading-0-mobile sm:heading-0 text-center">
+        <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 relative overflow-hidden">
+          <div className="size-full absolute top-0 left-0 pointer-events-none flex flex-row items-center justify-center sm-md:justify-between m-auto overflow-hidden">
+            <HeaderBackgroundLeft className="h-full object-contain absolute top-0 sm:left-0 sm:right-0 sm-md:right-auto bottom-0 m-auto" />
+            <HeaderBackgroundRight className="h-full object-contain absolute top-0 right-0 bottom-0 sm-md:block hidden" />
+          </div>
+          <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1 z-50 relative">
+            <span
+              className={cn(
+                'heading-0-mobile sm:heading-0 text-center transition-opacity duration-500',
+                {
+                  'opacity-0': !heroTextReveal,
+                  'opacity-100': heroTextReveal,
+                }
+              )}
+            >
               {hero.headerLine1}
             </span>
-            <span className="serif-heading-0-mobile sm:serif-heading-0 italic text-center">
+            <span
+              className={cn(
+                'serif-heading-0-mobile sm:serif-heading-0 italic text-center transition-opacity duration-500 delay-700',
+                {
+                  'opacity-0': !heroTextReveal,
+                  'opacity-100': heroTextReveal,
+                }
+              )}
+            >
               {hero.headerLine2}
             </span>
           </h2>
+          <div
+            ref={searchBarRef}
+            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2"
+          ></div>
         </div>
       )}
-      {homepageData.coloredCardsBlock &&
-      homepageData.coloredCardsBlock.cards.length > 0 ? (
+      {homepageData.coloredCardsBlock && homepageData.coloredCardsBlock.cards.length > 0 ? (
         <div className="ColoredCardBlock default-grid py-padding-x-large">
           {homepageData.coloredCardsBlock.cards.map((card) => {
             const textColorName = getColorName(card.color);
@@ -57,35 +106,27 @@ const Homepage: FC<Props> = ({ homepageData }) => {
                 key={card.title}
                 href={card.url}
                 className={cn(
-                  "ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2",
+                  'ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2',
                   {
-                    "bg-light-pink-light dark:bg-dark-pink-light":
-                      card.color === "pink",
-                    "bg-light-green-light dark:bg-dark-green-light":
-                      card.color === "green",
-                    "bg-light-blue-light dark:bg-dark-blue-light":
-                      card.color === "blue",
-                    "bg-light-orange-light dark:bg-dark-orange-light":
-                      card.color === "orange",
+                    'bg-light-pink-light dark:bg-dark-pink-light': card.color === 'pink',
+                    'bg-light-green-light dark:bg-dark-green-light': card.color === 'green',
+                    'bg-light-blue-light dark:bg-dark-blue-light': card.color === 'blue',
+                    'bg-light-orange-light dark:bg-dark-orange-light': card.color === 'orange',
                   }
                 )}
               >
-                <ColoredCardsIconMap
-                  icon={card.icon}
-                  className="w-6 h-6"
-                  color={textColorName}
-                />
+                <ColoredCardsIconMap icon={card.icon} className="w-6 h-6" color={textColorName} />
                 <div className="mt-[1.875rem]">
                   <h4
-                    className={cn("subheading-1", {
-                      "text-light-orange-vibrant dark:text-dark-orange-vibrant":
-                        textColorName === "orange-vibrant",
-                      "text-light-blue-vibrant dark:text-dark-blue-vibrant":
-                        textColorName === "blue-vibrant",
-                      "text-light-green-base dark:text-dark-green-base":
-                        textColorName === "green-base",
-                      "text-light-pink-vibrant dark:text-dark-pink-vibrant":
-                        textColorName === "pink-vibrant",
+                    className={cn('subheading-1', {
+                      'text-light-orange-vibrant dark:text-dark-orange-vibrant':
+                        textColorName === 'orange-vibrant',
+                      'text-light-blue-vibrant dark:text-dark-blue-vibrant':
+                        textColorName === 'blue-vibrant',
+                      'text-light-green-base dark:text-dark-green-base':
+                        textColorName === 'green-base',
+                      'text-light-pink-vibrant dark:text-dark-pink-vibrant':
+                        textColorName === 'pink-vibrant',
                     })}
                   >
                     {card.title}
@@ -104,9 +145,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         <div className="FAQBlock py-padding-x-large">
           <div className="flex flex-row items-center">
             <GraduationCap className="w-6 h-6 mr-2" color="neutral-1" />
-            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">
-              FAQ
-            </h3>
+            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">FAQ</h3>
           </div>
           <div className="default-grid gap-4 mt-padding-x-large">
             {homepageData.faqBlock.articles.map((article) => (
@@ -121,14 +160,11 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         </div>
       ) : null}
       <Divider />
-      {homepageData.guidesBlock &&
-      homepageData.guidesBlock.promotedArticles.length > 0 ? (
+      {homepageData.guidesBlock && homepageData.guidesBlock.promotedArticles.length > 0 ? (
         <div className="FAQBlock py-padding-x-large">
           <div className="flex flex-row items-center">
             <BookOpen className="w-6 h-6 mr-2" color="neutral-1" />
-            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">
-              Guides
-            </h3>
+            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Guides</h3>
           </div>
           <div className="default-grid gap-4 mt-padding-x-large">
             {homepageData.guidesBlock.promotedArticles.map((article) => {
@@ -145,14 +181,11 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         </div>
       ) : null}
       <Divider />
-      {homepageData.topicsBlock &&
-      homepageData.topicsBlock.categories.length > 0 ? (
+      {homepageData.topicsBlock && homepageData.topicsBlock.categories.length > 0 ? (
         <div className="FAQBlock py-padding-x-large">
           <div className="flex flex-row items-center">
             <Layers className="w-6 h-6 mr-2" color="neutral-1" />
-            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">
-              Topics
-            </h3>
+            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Topics</h3>
           </div>
           <div className="mt-padding-x-large w-full flex flex-row flex-wrap">
             {homepageData.topicsBlock.categories.map((category) => {
@@ -171,9 +204,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         </div>
       ) : null}
       <Divider />
-      {homepageData.connectBlock ? (
-        <ConnectBlock connectBlock={homepageData.connectBlock} />
-      ) : null}
+      {homepageData.connectBlock ? <ConnectBlock connectBlock={homepageData.connectBlock} /> : null}
     </div>
   );
 };
@@ -195,9 +226,7 @@ const ArticleLinkCard: FC<{
         <h4 className="transition subheading-2 text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-pink-vibrant dark:group-hover:text-dark-pink-vibrant">
           {title}
         </h4>
-        <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">
-          {description}
-        </p>
+        <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">{description}</p>
       </div>
       <div className="transition opacity-0 group-hover:opacity-100">
         <ArrowRight className="my-1 w-5 h-5" />

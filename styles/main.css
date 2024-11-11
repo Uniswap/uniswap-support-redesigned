@@ -333,3 +333,58 @@ html:has(.ArticlePage) {
 .ck.ck-editor__editable_inline {
   @apply !px-3;
 }
+
+.search {
+  @apply w-full grow;
+  input {
+    @apply !body-3 !bg-transparent w-full focus-visible:!border-none focus-visible:!outline-none dark:text-dark-neutral-2 text-light-neutral-2;
+  }
+}
+
+.filters-in-section {
+  @apply flex flex-col space-y-6;
+  .sidenav-item {
+    @apply !body-3 dark:text-dark-neutral-1 text-light-neutral-1 hover:text-light-accent-1 dark:hover:text-dark-accent-1;
+  }
+}
+
+.search-result-description {
+  em {
+    @apply bg-search-highlight !p-px !not-italic;
+  }
+}
+
+zd-autocomplete {
+  @apply !body-3 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-light-neutral-1 dark:!text-dark-neutral-1;
+}
+
+zd-autocomplete-header {
+  @apply !body-2 !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-light-surface-3 dark:!bg-dark-surface-3;
+}
+
+zd-autocomplete-multibrand {
+  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 hover:!bg-light-surface-3-hovered dark:hover:!bg-dark-surface-3-hovered;
+}
+
+zd-autocomplete-title-multibrand,
+zd-autocomplete-breadcrumbs-multibrand {
+  @apply !body-3 !text-light-neutral-1 dark:!text-dark-neutral-1;
+
+  em {
+    @apply !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-dark-accent-1;
+  }
+}
+
+zd-autocomplete-breadcrumbs-multibrand {
+  @apply !body-4 !text-light-neutral-2 dark:!text-dark-neutral-2;
+}
+
+.form-field svg {
+  @apply !hidden;
+}
+
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  content: URL();
+  cursor: pointer;
+}

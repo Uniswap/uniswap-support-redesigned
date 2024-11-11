@@ -1,9 +1,9 @@
-<div class="container flex flex-row bg-light-surface-1 dark:!bg-dark-surface-1">
-  <div class="min-w-[15rem] max-w-[15rem] hidden md:block border-2 mt-nav-h">sidenav placeholder</div>
-  <div class="page-wrapper">
+<div class="container w-full !max-w-none flex flex-row bg-light-surface-1 dark:!bg-dark-surface-1">
+  <div id="new-side-nav" class="min-w-[15rem] max-w-[15rem] hidden md:block relative mt-nav-h"></div>
+  <div class="page-wrapper max-w-[65rem]">
     <div class="mb-3 md:mb-6 flex flex-row items-center overflow-scroll col-span-4 sm:col-span-8">
       <a href="/" target="_self" class="group flex">
-        <span class="body-3 text-nowrap transition text-light-neutral-1 dark:text-dark-neutral-1 group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">
+        <span class="body-3 text-nowrap transition text-light-neutral-2 dark:text-dark-neutral-2 group-hover:text-light-neutral-1 group-hover:dark:text-dark-neutral-1">
           Home
         </span>
       </a>
@@ -19,11 +19,11 @@
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M5.52827 3.52827C5.26792 3.78862 5.26792 4.21073 5.52827 4.47108L9.05687 7.99967L5.52827 11.5283C5.26792 11.7886 5.26792 12.2107 5.52827 12.4711C5.78862 12.7314 6.21073 12.7314 6.47108 12.4711L10.4711 8.47108C10.7314 8.21073 10.7314 7.78862 10.4711 7.52827L6.47108 3.52827C6.21073 3.26792 5.78862 3.26792 5.52827 3.52827Z"
-          class="fill-light-neutral-1 dark:fill-dark-neutral-1"
+          class="fill-light-neutral-2 dark:fill-dark-neutral-2"
         />
       </svg>
       <a href="#" class="group flex">
-        <span class="body-3 text-nowrap text-light-neutral-1 dark:text-dark-neutral-1 transition group-hover:text-light-neutral-2 group-hover:dark:text-dark-neutral-2">
+        <span class="body-3 text-nowrap text-light-neutral-2 dark:text-dark-neutral-2 transition group-hover:text-light-neutral-1 group-hover:dark:text-dark-neutral-1">
           Submit a Request
         </span>
       </a>
@@ -37,21 +37,6 @@
     </div>
   </div>
 </div>
-{{!-- <script type="module">
-  import { renderArticleBreadcrumbs } from "article-page";
-
-  const container = document.getElementById("new-article-breadcrumbs");
-
-  const settings = {{json settings}};
-
-
-  const articlePageData = {
-    article: {{json article}}
-  }
-
-  // Make sure arguments are correctly typed. 
-  renderArticleBreadcrumbs(settings, articlePageData, container);
-</script> --}}
 <script type="module">
   import { renderNewRequestForm } from "new-request-form";
 
@@ -83,4 +68,17 @@
   };
 
   renderNewRequestForm(settings, props, container);
+</script>
+
+<script type="module">
+  import { renderSideNav, sideNav } from "side-nav";
+
+  const container = document.getElementById("new-side-nav");
+
+  const settings = {{json settings}};
+
+  const sideNavData = await sideNav.get();
+
+  // Make sure arguments are correctly typed. 
+  renderSideNav(settings, sideNavData, {}, container);
 </script>
