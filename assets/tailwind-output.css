@@ -3500,7 +3500,7 @@ html:has(.ArticlePage) {
 .search-result-description {
   em {
     --tw-bg-opacity: 1;
-    background-color: rgb(252 116 254 / var(--tw-bg-opacity));
+    background-color: rgb(253 175 240 / var(--tw-bg-opacity));
   }
   em {
     padding: 1px !important;
