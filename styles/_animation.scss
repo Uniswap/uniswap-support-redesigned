@@ -1,26 +1,22 @@
- // Define the floating keyframe animation
- @keyframes float {
+@keyframes float {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px); // Adjust this for subtlety
+    transform: translateY(-5px); 
   }
 }
 
-// Set up base styles for avatar-wrapper groups
 .avatar-wrapper > g {
   animation-name: float;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-// Use SCSS loops and functions to apply random delays and durations
-// Customize as needed (e.g., for up to 10 groups or more if required)
 $group-count: 10;
 @for $i from 1 through $group-count {
   .avatar-wrapper g:nth-of-type(#{$i}) {
-    animation-duration: #{3 + random(3)}s; // Duration between 3s and 5s
-    animation-delay: #{random(2)}s;        // Delay between 0s and 2s
+    animation-duration: #{3 + random(3)}s; 
+    animation-delay: #{random(2)}s;   
   }
 }
