@@ -87,7 +87,6 @@ const Navigation: FC = () => {
           </div>
           <div className="md:hidden">
             <ButtonBase
-              id="mobile-menu-button"
               onClick={() => {
                 setMobileSearchBarIsOpen((prev) => !prev);
               }}
@@ -96,6 +95,7 @@ const Navigation: FC = () => {
               <Search className="h-padding-large w-padding-large" />
             </ButtonBase>
             <ButtonBase
+              id="mobile-menu-button"
               onClick={() => {
                 setMenuIsOpen((prev) => !prev);
               }}
@@ -114,12 +114,6 @@ const Navigation: FC = () => {
           </div>
         </div>
       </nav>
-      <div
-        className={cn('fixed inset-0 z-scrim bg-scrim transition duration-500', {
-          'pointer-events-none opacity-0': !menuIsOpen,
-          'opacity-1': menuIsOpen,
-        })}
-      />
       <MobileMenuModal
         isOpen={menuIsOpen}
         close={() => {
