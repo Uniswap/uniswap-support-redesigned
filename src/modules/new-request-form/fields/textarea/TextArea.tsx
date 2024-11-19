@@ -1,14 +1,8 @@
-import {
-  Field as GardenField,
-  Hint,
-  Textarea,
-  Label,
-  Message,
-} from "@zendeskgarden/react-forms";
-import { Span } from "@zendeskgarden/react-typography";
-import type { Field } from "../../data-types";
-import { useWysiwyg } from "./useWysiwyg";
-import styled from "styled-components";
+import { Field as GardenField, Hint, Textarea, Label, Message } from '@zendeskgarden/react-forms';
+import { Span } from '@zendeskgarden/react-typography';
+import type { Field } from '../../data-types';
+import { useWysiwyg } from './useWysiwyg';
+import styled from 'styled-components';
 
 interface TextAreaProps {
   field: Field;
@@ -54,10 +48,9 @@ export function TextArea({
       <Textarea
         ref={ref}
         name={name}
-        defaultValue={
-          value && value !== "" ? (value as string) : "Describe your issue."
-        }
-        validation={error ? "error" : undefined}
+        defaultValue={value && value !== '' ? (value as string) : ''}
+        placeholder="Describe your issue."
+        validation={error ? 'error' : undefined}
         required={required}
         onChange={(e) => onChange(e.target.value)}
         rows={6}
@@ -65,10 +58,7 @@ export function TextArea({
       />
       {error && <StyledMessage validation="error">{error}</StyledMessage>}
       {description && (
-        <Hint
-          className="custom-hint"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <Hint className="custom-hint" dangerouslySetInnerHTML={{ __html: description }} />
       )}
     </GardenField>
   );
