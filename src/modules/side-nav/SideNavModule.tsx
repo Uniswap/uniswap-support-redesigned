@@ -82,7 +82,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
             onClick={() => setActiveNavState({})}
           >
             <ChevronLeft />
-            <span className="ml-2 transition text-light-neutral-2 dark:text-dark-neutral-2 group-hover:text-light-neutral-1 group-hover:dark:text-dark-neutral-1">
+            <span className="ml-2 transition text-light-neutral-2 dark:text-dark-neutral-2 group-hover:text-light-neutral-1 group-hover:dark:text-dark-neutral-1 body-3">
               All Topics
             </span>
           </button>
@@ -130,7 +130,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                         >
                           <span
                             className={cn(
-                              'transition body-3 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1',
+                              'transition body-3 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1 text-left',
                               {
                                 'text-light-accent-1 dark:text-dark-accent-1': sectionIsActive,
                                 'text-light-neutral-2 dark:text-dark-neutral-2': !sectionIsActive,
