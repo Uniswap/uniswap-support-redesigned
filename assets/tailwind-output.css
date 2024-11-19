@@ -3129,9 +3129,9 @@ html:has(.ArticlePage) {
   --tw-text-opacity: 1 !important;
   color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 485 !important;
-  line-height: 1/5rem !important;
+  line-height: 1/25rem !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -3139,6 +3139,24 @@ html:has(.ArticlePage) {
 :not(.ck.ck-content p) .ck.ck-content p:where(.dark, .dark *) {
   --tw-text-opacity: 1 !important;
   color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+}
+
+:not(.ck.ck-content p) .ck.ck-content.ck-focused p,
+:not(.ck.ck-content p) .ck.ck-content.ck-blurred p {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+:not(.ck.ck-content p) .ck.ck-content.ck-focused p:where(.dark, .dark *),
+:not(.ck.ck-content p) .ck.ck-content.ck-blurred p:where(.dark, .dark *) {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .custom-hint {
@@ -3193,11 +3211,33 @@ html:has(.ArticlePage) {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.custom-input::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
   color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 485 !important;
-  line-height: 1/5rem !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.custom-input::placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -3214,6 +3254,16 @@ html:has(.ArticlePage) {
 
 .custom-input:where(.dark, .dark *) {
   background-color: rgba(255, 255, 255, 0.12) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.custom-input:where(.dark, .dark *)::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+}
+
+.custom-input:where(.dark, .dark *)::placeholder {
   --tw-text-opacity: 1 !important;
   color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
 }
@@ -3239,17 +3289,49 @@ html:has(.ArticlePage) {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.custom-combobox > div:first-child::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
   color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 485 !important;
-  line-height: 1/5rem !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.custom-combobox > div:first-child::placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
 
 .custom-combobox > div:first-child:where(.dark, .dark *) {
   background-color: rgba(255, 255, 255, 0.12) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox > div:first-child:where(.dark, .dark *)::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox > div:first-child:where(.dark, .dark *)::placeholder {
   --tw-text-opacity: 1 !important;
   color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
 }
@@ -3260,9 +3342,9 @@ html:has(.ArticlePage) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 485 !important;
-  line-height: 1/5rem !important;
+  line-height: 1/25rem !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -3293,9 +3375,9 @@ html:has(.ArticlePage) {
   }
   ul {
     font-family: var(--font-basel-grotesk) !important;
-    font-size: 1rem !important;
+    font-size: 0.875rem !important;
     font-weight: 485 !important;
-    line-height: 1/5rem !important;
+    line-height: 1/25rem !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
   }
@@ -3357,9 +3439,9 @@ html:has(.ArticlePage) {
       }
       div {
         font-family: var(--font-basel-grotesk) !important;
-        font-size: 1rem !important;
+        font-size: 0.875rem !important;
         font-weight: 485 !important;
-        line-height: 1/5rem !important;
+        line-height: 1/25rem !important;
         -webkit-font-smoothing: antialiased !important;
         -moz-osx-font-smoothing: grayscale !important;
       }
@@ -3382,18 +3464,54 @@ html:has(.ArticlePage) {
   margin-bottom: 0px !important;
 }
 
-.custom-combobox > div span {
+.custom-combobox div:not(:has(svg)) > span {
   --tw-text-opacity: 1 !important;
   color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
   font-family: var(--font-basel-grotesk) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 485 !important;
-  line-height: 1/5rem !important;
+  line-height: 1/25rem !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-.custom-combobox > div span:where(.dark, .dark *) {
+.custom-combobox div:not(:has(svg)) > span:where(.dark, .dark *) {
+  --tw-text-opacity: 1 !important;
+  color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox div:has(svg) > span {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 34 34 / var(--tw-text-opacity)) !important;
+  font-family: var(--font-basel-grotesk) !important;
+  font-size: 0.875rem !important;
+  font-weight: 485 !important;
+  line-height: 1/25rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.custom-combobox div:has(svg) > span::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox div:has(svg) > span::placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(125 125 125 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox div:has(svg) > span:where(.dark, .dark *) {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox div:has(svg) > span:where(.dark, .dark *)::-moz-placeholder {
+  --tw-text-opacity: 1 !important;
+  color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
+}
+
+.custom-combobox div:has(svg) > span:where(.dark, .dark *)::placeholder {
   --tw-text-opacity: 1 !important;
   color: rgb(155 155 155 / var(--tw-text-opacity)) !important;
 }

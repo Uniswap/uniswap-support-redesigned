@@ -277,7 +277,12 @@ html:has(.ArticlePage) {
 }
 
 :not(.ck.ck-content p) .ck.ck-content p {
-  @apply !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2;
+  @apply !body-3 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+:not(.ck.ck-content p) .ck.ck-content.ck-focused p,
+:not(.ck.ck-content p) .ck.ck-content.ck-blurred p {
+  @apply !body-3 !text-light-neutral-1 dark:!text-dark-neutral-1;
 }
 
 .custom-hint {
@@ -293,17 +298,17 @@ html:has(.ArticlePage) {
 }
 
 .custom-input {
-  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 !border-0 !rounded-xl !py-3 !px-4 !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2 active:!text-light-neutral-1 active:dark:!text-dark-neutral-1 focus-visible:!text-light-neutral-1 focus-visible:dark:!text-dark-neutral-1;
+  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 !border-0 !rounded-xl !py-3 !px-4 !body-3 dark:!text-dark-neutral-1 !text-light-neutral-1 placeholder:dark:!text-dark-neutral-2 placeholder:!text-light-neutral-2 placeholder:!body-3 active:!text-light-neutral-1 active:dark:!text-dark-neutral-1 focus-visible:!text-light-neutral-1 focus-visible:dark:!text-dark-neutral-1;
 }
 
 .custom-combobox > div:first-child {
-  @apply !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 !px-4 !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2 !max-h-none !h-auto;
+  @apply !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 !px-4 !body-3 placeholder:!body-3 dark:!text-dark-neutral-1 !text-light-neutral-1 placeholder:dark:!text-dark-neutral-2 placeholder:!text-light-neutral-2 !max-h-none !h-auto;
 }
 
 .custom-combobox > div:nth-child(2) {
-  @apply !bg-light-surface-1 dark:!bg-dark-surface-1 !rounded-t-none !body-2;
+  @apply !bg-light-surface-1 dark:!bg-dark-surface-1 !rounded-t-none !body-3;
   ul {
-    @apply !shadow-none !body-2 !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !p-0 !rounded-xl;
+    @apply !shadow-none !body-3 !border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !p-0 !rounded-xl;
     li {
       @apply hover:!bg-light-surface-3-hovered hover:dark:!bg-dark-surface-3-hovered hover:!border-0 hover:!shadow-none !flex !flex-row !space-x-3 !justify-center;
     }
@@ -312,7 +317,7 @@ html:has(.ArticlePage) {
         @apply !fill-none dark:!text-dark-neutral-1 !text-light-neutral-1 !mt-2;
       }
       div {
-        @apply !my-2 dark:!text-dark-neutral-1 !text-light-neutral-1 !body-2 hover:!border-0 hover:!border-transparent;
+        @apply !my-2 dark:!text-dark-neutral-1 !text-light-neutral-1 !body-3 hover:!border-0 hover:!border-transparent;
       }
     }
   }
@@ -322,8 +327,12 @@ html:has(.ArticlePage) {
   @apply !my-0;
 }
 
-.custom-combobox > div span {
-  @apply !body-2 dark:!text-dark-neutral-2 !text-light-neutral-2;
+.custom-combobox div:not(:has(svg)) > span {
+  @apply !body-3 dark:!text-dark-neutral-2 !text-light-neutral-2;
+}
+
+.custom-combobox div:has(svg) > span {
+  @apply !body-3 placeholder:dark:!text-dark-neutral-2 placeholder:!text-light-neutral-2 dark:!text-dark-neutral-1 !text-light-neutral-1;
 }
 
 .custom-submit-button {
