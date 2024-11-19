@@ -1,29 +1,30 @@
-import type { AnswerBot, Field, RequestForm } from "./data-types";
-import { useCallback, useState } from "react";
-import { Input } from "./fields/Input";
-import { TextArea } from "./fields/textarea/TextArea";
-import { DropDown } from "./fields/DropDown";
-import { Checkbox } from "./fields/Checkbox";
-import { MultiSelect } from "./fields/MultiSelect";
-import { TicketFormField } from "./ticket-form-field/TicketFormField";
-import { ParentTicketField } from "./parent-ticket-field/ParentTicketField";
-import { Anchor, Button } from "@zendeskgarden/react-buttons";
-import styled from "styled-components";
-import { Alert } from "@zendeskgarden/react-notifications";
-import { useFormSubmit } from "./useFormSubmit";
-import { usePrefilledTicketFields } from "./usePrefilledTicketFields";
-import { Attachments } from "./fields/attachments/Attachments";
-import { getVisibleFields } from "./getVisibleFields";
-import { DatePicker } from "./fields/DatePicker";
-import { CcField } from "./fields/cc-field/CcField";
-import { CreditCard } from "./fields/CreditCard";
-import { Tagger } from "./fields/Tagger";
-import { AnswerBotModal } from "./answer-bot-modal/AnswerBotModal";
-import { useTranslation } from "react-i18next";
-import { Paragraph, Span } from "@zendeskgarden/react-typography";
-import { LookupField } from "./fields/LookupField";
-import type { Organization } from "./data-types/Organization";
-import { Label } from "@zendeskgarden/react-forms";
+import type { AnswerBot, Field, RequestForm } from './data-types';
+import { useCallback, useState } from 'react';
+import { Input } from './fields/Input';
+import { TextArea } from './fields/textarea/TextArea';
+import { DropDown } from './fields/DropDown';
+import { Checkbox } from './fields/Checkbox';
+import { MultiSelect } from './fields/MultiSelect';
+import { RelatedArticles } from './related-articles/RelatedArticles';
+import { TicketFormField } from './ticket-form-field/TicketFormField';
+import { ParentTicketField } from './parent-ticket-field/ParentTicketField';
+import { Anchor, Button } from '@zendeskgarden/react-buttons';
+import styled from 'styled-components';
+import { Alert } from '@zendeskgarden/react-notifications';
+import { useFormSubmit } from './useFormSubmit';
+import { usePrefilledTicketFields } from './usePrefilledTicketFields';
+import { Attachments } from './fields/attachments/Attachments';
+import { getVisibleFields } from './getVisibleFields';
+import { DatePicker } from './fields/DatePicker';
+import { CcField } from './fields/cc-field/CcField';
+import { CreditCard } from './fields/CreditCard';
+import { Tagger } from './fields/Tagger';
+import { AnswerBotModal } from './answer-bot-modal/AnswerBotModal';
+import { useTranslation } from 'react-i18next';
+import { Paragraph, Span } from '@zendeskgarden/react-typography';
+import { LookupField } from './fields/LookupField';
+import type { Organization } from './data-types/Organization';
+import { Label } from '@zendeskgarden/react-forms';
 
 export interface NewRequestFormProps {
   requestForm: RequestForm;
@@ -108,27 +109,26 @@ export function NewRequestForm({
     organizationField: organization_field,
     dueDateField: due_date_field,
   });
+  console.log('requestForm', requestForm);
+  const [selectedTopic, setSelectedTopic] = useState('');
   const [ticketFields, setTicketFields] = useState(prefilledTicketFields);
-  const [organizationField, setOrganizationField] = useState(
-    prefilledOrganizationField
-  );
+  const [organizationField, setOrganizationField] = useState(prefilledOrganizationField);
   const [dueDateField, setDueDateField] = useState(prefilledDueDateField);
   const visibleFields = getVisibleFields(ticketFields, end_user_conditions);
   const { formRefCallback, handleSubmit } = useFormSubmit(ticketFields);
   const { t } = useTranslation();
   const defaultOrganizationId =
-    organizations.length > 0 && organizations[0]?.id
-      ? organizations[0]?.id?.toString()
-      : null;
+    organizations.length > 0 && organizations[0]?.id ? organizations[0]?.id?.toString() : null;
   const handleChange = useCallback(
-    (field: Field, value: Field["value"]) => {
+    (field: Field, value: Field['value']) => {
       setTicketFields(
         ticketFields.map((ticketField) =>
-          ticketField.name === field.name
-            ? { ...ticketField, value }
-            : ticketField
+          ticketField.name === field.name ? { ...ticketField, value } : ticketField
         )
       );
+      if (field.name === 'tagger') {
+        setSelectedTopic(value as string);
+      }
     },
     [ticketFields]
   );
@@ -154,13 +154,9 @@ export function NewRequestForm({
       {parentId && (
         <StyledParagraph>
           <Anchor href={parentIdPath}>
-            {t(
-              "new-request-form.parent-request-link",
-              "Follow-up to request {{parentId}}",
-              {
-                parentId: `\u202D#${parentId}\u202C`,
-              }
-            )}
+            {t('new-request-form.parent-request-link', 'Follow-up to request {{parentId}}', {
+              parentId: `\u202D#${parentId}\u202C`,
+            })}
           </Anchor>
         </StyledParagraph>
       )}
@@ -175,10 +171,7 @@ export function NewRequestForm({
         {errors && <Alert type="error">{errors}</Alert>}
         {parent_id_field && <ParentTicketField field={parent_id_field} />}
         {ticket_form_field.options.length > 0 && (
-          <TicketFormField
-            field={ticket_form_field}
-            newRequestPath={newRequestPath}
-          />
+          <TicketFormField field={ticket_form_field} newRequestPath={newRequestPath} />
         )}
         {emailField && <Input key={emailField.name} field={emailField} />}
         {ccField && <CcField field={ccField} />}
@@ -193,7 +186,7 @@ export function NewRequestForm({
         )}
         {visibleFields.map((field) => {
           switch (field.type) {
-            case "subject":
+            case 'subject':
               return (
                 <div className="custom-form-field-layout">
                   <Label className="custom-title">
@@ -207,10 +200,10 @@ export function NewRequestForm({
                   />
                 </div>
               );
-            case "text":
-            case "integer":
-            case "decimal":
-            case "regexp":
+            case 'text':
+            case 'integer':
+            case 'decimal':
+            case 'regexp':
               return (
                 <Input
                   key={field.name}
@@ -218,15 +211,10 @@ export function NewRequestForm({
                   onChange={(value) => handleChange(field, value)}
                 />
               );
-            case "partialcreditcard":
-              return (
-                <CreditCard
-                  field={field}
-                  onChange={(value) => handleChange(field, value)}
-                />
-              );
+            case 'partialcreditcard':
+              return <CreditCard field={field} onChange={(value) => handleChange(field, value)} />;
             // Issue description
-            case "description":
+            case 'description':
               return (
                 <>
                   <TextArea
@@ -242,11 +230,11 @@ export function NewRequestForm({
                   <input
                     type="hidden"
                     name={description_mimetype_field.name}
-                    value={wysiwyg ? "text/html" : "text/plain"}
+                    value={wysiwyg ? 'text/html' : 'text/plain'}
                   />
                 </>
               );
-            case "textarea":
+            case 'textarea':
               return (
                 <TextArea
                   key={field.name}
@@ -259,9 +247,9 @@ export function NewRequestForm({
                   onChange={(value) => handleChange(field, value)}
                 />
               );
-            case "priority":
-            case "basic_priority":
-            case "tickettype":
+            case 'priority':
+            case 'basic_priority':
+            case 'tickettype':
               return (
                 <>
                   <DropDown
@@ -269,7 +257,7 @@ export function NewRequestForm({
                     field={field}
                     onChange={(value) => handleChange(field, value)}
                   />
-                  {field.value === "task" && (
+                  {field.value === 'task' && (
                     <DatePicker
                       field={dueDateField}
                       locale={baseLocale}
@@ -281,14 +269,11 @@ export function NewRequestForm({
                   )}
                 </>
               );
-            case "checkbox":
+            case 'checkbox':
               return (
-                <Checkbox
-                  field={field}
-                  onChange={(value: boolean) => handleChange(field, value)}
-                />
+                <Checkbox field={field} onChange={(value: boolean) => handleChange(field, value)} />
               );
-            case "date":
+            case 'date':
               return (
                 <DatePicker
                   field={field}
@@ -297,13 +282,21 @@ export function NewRequestForm({
                   onChange={(value) => handleChange(field, value)}
                 />
               );
-            case "multiselect":
-              if (field.label.includes("RA:")) {
-                return <MultiSelect field={field} />;
+            case 'multiselect':
+              if (field.label.includes('RA:')) {
+                const selectedTopicField = visibleFields.find((field) => field.type === 'tagger');
+                if (
+                  selectedTopicField &&
+                  selectedTopicField.value &&
+                  field.label.includes(selectedTopicField.value as string)
+                ) {
+                  return <RelatedArticles field={field} />;
+                }
+                return <></>;
               }
               return <MultiSelect field={field} />;
             // Field for Issue type
-            case "tagger":
+            case 'tagger':
               return (
                 <Tagger
                   key={field.name}
@@ -311,7 +304,7 @@ export function NewRequestForm({
                   onChange={(value) => handleChange(field, value)}
                 />
               );
-            case "lookup":
+            case 'lookup':
               return (
                 <LookupField
                   key={field.name}
@@ -334,10 +327,9 @@ export function NewRequestForm({
           <input key={index} type={type} name={name} value={value} />
         ))}
         <Footer className="!mt-0">
-          {(ticket_form_field.options.length === 0 ||
-            ticket_form_field.value) && (
+          {(ticket_form_field.options.length === 0 || ticket_form_field.value) && (
             <Button isPrimary type="submit" className="custom-submit-button">
-              {t("new-request-form.submit", "Submit")}
+              {t('new-request-form.submit', 'Submit')}
             </Button>
           )}
         </Footer>

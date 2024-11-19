@@ -2,13 +2,13 @@ import {
   u as e,
   r as s,
   j as o,
-  N as n,
-  T as t,
-  C as a,
-  a9 as r,
-  a6 as i,
-  a7 as c,
-  a8 as l,
+  N as a,
+  T as n,
+  C as t,
+  aa as r,
+  a7 as i,
+  a8 as c,
+  a9 as l,
 } from 'shared';
 function d({ notifications: r, closeLabel: i }) {
   const { addToast: c } = e();
@@ -17,12 +17,12 @@ function d({ notifications: r, closeLabel: i }) {
       for (const e of r) {
         const { type: s, title: r, message: l } = e;
         c(({ close: e }) =>
-          o.jsxs(n, {
+          o.jsxs(a, {
             type: s,
             children: [
-              r && o.jsx(t, { children: r }),
+              r && o.jsx(n, { children: r }),
               l,
-              o.jsx(a, { 'aria-label': i, onClick: e }),
+              o.jsx(t, { 'aria-label': i, onClick: e }),
             ],
           })
         );
@@ -32,16 +32,16 @@ function d({ notifications: r, closeLabel: i }) {
   );
 }
 function f(e, s) {
-  const n = window.sessionStorage.getItem(r);
-  if (null !== n) {
+  const a = window.sessionStorage.getItem(r);
+  if (null !== a) {
     window.sessionStorage.removeItem(r);
     try {
-      const t = JSON.parse(n),
-        a = document.createElement('div');
-      document.body.appendChild(a),
+      const n = JSON.parse(a),
+        t = document.createElement('div');
+      document.body.appendChild(t),
         i.render(
-          o.jsx(c, { theme: l(e), children: o.jsx(d, { notifications: t, closeLabel: s }) }),
-          a
+          o.jsx(c, { theme: l(e), children: o.jsx(d, { notifications: n, closeLabel: s }) }),
+          t
         );
     } catch (e) {
       console.error('Cannot render flash notifications', e);

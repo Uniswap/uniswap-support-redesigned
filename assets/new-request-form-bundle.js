@@ -6,8 +6,8 @@ import {
   I as r,
   M as a,
   H as o,
-  r as i,
-  u as l,
+  r as l,
+  u as i,
   a as u,
   N as c,
   T as d,
@@ -22,35 +22,35 @@ import {
   i as w,
   k as v,
   l as q,
-  p as y,
-  m as k,
-  n as _,
-  o as C,
-  P as S,
-  A as I,
-  q as T,
-  t as F,
+  $ as y,
+  A as k,
+  p as C,
+  m as _,
+  n as S,
+  o as I,
+  P as T,
+  q as F,
+  t as R,
   v as P,
-  D as R,
+  D as N,
   w as L,
-  K as N,
-  x as $,
-  y as E,
-  z as D,
-  B as M,
-  E as V,
-  G as A,
-  J as z,
-  Q as G,
-  R as H,
+  K as $,
+  x as E,
+  y as V,
+  z as M,
+  B as D,
+  E as A,
+  G as z,
+  J as G,
+  Q as H,
+  R as B,
   U as X,
-  V as B,
-  W as O,
-  X as U,
-  Y as W,
+  V as O,
+  W as U,
+  X as W,
+  Y as Z,
   Z as K,
   _ as Y,
-  $ as Z,
   a0 as J,
   a1 as Q,
   a2 as ee,
@@ -60,9 +60,10 @@ import {
   a6 as re,
   a7 as ae,
   a8 as oe,
+  a9 as le,
 } from 'shared';
-function ie({ field: i, onChange: l }) {
-  const { label: u, error: c, value: d, name: m, required: f, description: h, type: p } = i,
+function ie({ field: l, onChange: i }) {
+  const { label: u, error: c, value: d, name: m, required: f, description: h, type: p } = l,
     j = {},
     b = 'integer' === p || 'decimal' === p ? 'number' : 'text';
   'integer' === p && (j.step = '1'), 'decimal' === p && (j.step = 'any');
@@ -81,7 +82,7 @@ function ie({ field: i, onChange: l }) {
         validation: c ? 'error' : void 0,
         required: f,
         onChange: (e) => {
-          l && l(e.target.value);
+          i && i(e.target.value);
         },
         autoComplete: g,
         className: 'custom-input',
@@ -92,12 +93,12 @@ function ie({ field: i, onChange: l }) {
     ],
   });
 }
-const le = f(a)`
+const ue = f(a)`
   .ck.ck-editor + & {
     margin-top: ${(e) => e.theme.space.xs};
   }
 `;
-function ue({
+function ce({
   field: r,
   hasWysiwyg: a,
   baseLocale: f,
@@ -107,19 +108,19 @@ function ue({
   onChange: g,
 }) {
   const { label: x, error: w, value: v, name: q, required: y, description: k } = r,
-    _ = (function ({ hasWysiwyg: n, baseLocale: t, hasAtMentions: s, userRole: r, brandId: a }) {
-      const o = i.useRef(!1),
-        { addToast: f } = l(),
+    C = (function ({ hasWysiwyg: n, baseLocale: t, hasAtMentions: s, userRole: r, brandId: a }) {
+      const o = l.useRef(!1),
+        { addToast: f } = i(),
         { t: h } = u();
-      return i.useCallback(
-        async (i) => {
-          if (n && i && !o.current) {
+      return l.useCallback(
+        async (l) => {
+          if (n && l && !o.current) {
             o.current = !0;
             const { createEditor: n } = await import('wysiwyg').then(function (e) {
               return e.m;
             });
             (
-              await n(i, {
+              await n(l, {
                 editorType: 'supportRequests',
                 hasAtMentions: s,
                 userRole: r,
@@ -159,7 +160,7 @@ function ue({
         children: [x, y && e.jsx(s, { 'aria-hidden': 'true', children: '*' })],
       }),
       e.jsx(h, {
-        ref: _,
+        ref: C,
         name: q,
         defaultValue: v && '' !== v ? v : 'Describe your issue.',
         validation: w ? 'error' : void 0,
@@ -168,12 +169,12 @@ function ue({
         rows: 6,
         isResizable: !0,
       }),
-      w && e.jsx(le, { validation: 'error', children: w }),
+      w && e.jsx(ue, { validation: 'error', children: w }),
       k && e.jsx(o, { className: 'custom-hint', dangerouslySetInnerHTML: { __html: k } }),
     ],
   });
 }
-function ce() {
+function de() {
   const { t: n } = u();
   return e.jsxs(e.Fragment, {
     children: [
@@ -185,12 +186,12 @@ function ce() {
     ],
   });
 }
-function de({ field: n, onChange: t }) {
-  const { label: s, options: r, error: a, value: o, name: l, required: u, description: c } = n,
+function me({ field: n, onChange: t }) {
+  const { label: s, options: r, error: a, value: o, name: i, required: u, description: c } = n,
     d = null == o ? '' : o.toString(),
-    m = i.useRef(null);
+    m = l.useRef(null);
   return (
-    i.useEffect(() => {
+    l.useEffect(() => {
       if (m.current && u) {
         const e = m.current.querySelector('[role=combobox]');
         e?.setAttribute('aria-required', 'true');
@@ -201,18 +202,18 @@ function de({ field: n, onChange: t }) {
       children: [
         e.jsxs(j, {
           ref: m,
-          inputProps: { name: l, required: u },
+          inputProps: { name: i, required: u },
           isEditable: !1,
           validation: a ? 'error' : void 0,
           inputValue: d,
           selectionValue: d,
-          renderValue: ({ selection: n }) => n?.label || e.jsx(ce, {}),
+          renderValue: ({ selection: n }) => n?.label || e.jsx(de, {}),
           onChange: ({ selectionValue: e }) => {
             void 0 !== e && t(e);
           },
           className: 'custom-combobox',
           children: [
-            !u && e.jsx(b, { value: '', label: '-', children: e.jsx(ce, {}) }),
+            !u && e.jsx(b, { value: '', label: '-', children: e.jsx(de, {}) }),
             r.map((n) => e.jsx(b, { value: n.value.toString(), label: n.name }, n.value)),
           ],
         }),
@@ -222,9 +223,9 @@ function de({ field: n, onChange: t }) {
     })
   );
 }
-function me({ field: r, onChange: l }) {
+function fe({ field: r, onChange: i }) {
   const { label: u, error: c, value: d, name: m, required: f, description: h } = r,
-    [p, j] = i.useState(d);
+    [p, j] = l.useState(d);
   return e.jsxs(n, {
     children: [
       e.jsx('input', { type: 'hidden', name: m, value: 'off' }),
@@ -235,7 +236,7 @@ function me({ field: r, onChange: l }) {
         value: p ? 'on' : 'off',
         onChange: (e) => {
           const { checked: n } = e.target;
-          j(n), l(n);
+          j(n), i(n);
         },
         children: [
           e.jsxs(t, { children: [u, f && e.jsx(s, { 'aria-hidden': 'true', children: '*' })] }),
@@ -246,15 +247,15 @@ function me({ field: r, onChange: l }) {
     ],
   });
 }
-const fe = '[]';
-function he(e) {
+const he = '[]';
+function pe(e) {
   return `[${e.join('::')}]`;
 }
-function pe(e) {
+function je(e) {
   return e.startsWith('[') && e.endsWith(']');
 }
-function je(e) {
-  const n = he(e.slice(0, -1));
+function be(e) {
+  const n = pe(e.slice(0, -1));
   return {
     type: 'SubGroup',
     name: e[e.length - 1],
@@ -262,11 +263,11 @@ function je(e) {
     options: [],
   };
 }
-function be({ options: e, hasEmptyOption: n }) {
-  const t = i.useMemo(
+function ge({ options: e, hasEmptyOption: n }) {
+  const t = l.useMemo(
       () =>
         (function (e, n) {
-          const t = { [fe]: { type: 'RootGroup', options: n ? [{ label: '-', value: '' }] : [] } };
+          const t = { [he]: { type: 'RootGroup', options: n ? [{ label: '-', value: '' }] : [] } };
           return (
             e.forEach((e) => {
               const { name: n, value: s } = e;
@@ -275,26 +276,26 @@ function be({ options: e, hasEmptyOption: n }) {
                     const n = e.split('::');
                     return [n.slice(0, -1), n.slice(-1)[0]];
                   })(n),
-                  a = he(e);
-                t[a] || (t[a] = je(e)),
+                  a = pe(e);
+                t[a] || (t[a] = be(e)),
                   t[a]?.options.push({ value: s, label: n.split('::').join(' > '), menuLabel: r });
                 for (let n = 0; n < e.length; n++) {
                   const s = e.slice(0, n),
                     r = e.slice(0, n + 1),
-                    a = he(s),
-                    o = he(r);
-                  t[a] || (t[a] = je(s)),
+                    a = pe(s),
+                    o = pe(r);
+                  t[a] || (t[a] = be(s)),
                     void 0 === t[a]?.options.find((e) => e.value === o) &&
                       t[a]?.options.push({ type: 'next', label: r[r.length - 1], value: o });
                 }
-              } else t[fe].options.push({ value: s, label: n });
+              } else t[he].options.push({ value: s, label: n });
             }),
             t
           );
         })(e, n),
       [e, n]
     ),
-    [s, r] = i.useState(
+    [s, r] = l.useState(
       (function (e) {
         const n = { type: 'RootGroup', options: [] };
         return (
@@ -305,28 +306,28 @@ function be({ options: e, hasEmptyOption: n }) {
         );
       })(t)
     );
-  i.useEffect(() => {
-    r(t[fe]);
+  l.useEffect(() => {
+    r(t[he]);
   }, [t]);
   return {
     currentGroup: s,
-    isGroupIdentifier: pe,
+    isGroupIdentifier: je,
     setCurrentGroupByIdentifier: (e) => {
       const n = t[e];
       n && r(n);
     },
   };
 }
-function ge({ field: n }) {
-  const { label: t, options: r, error: a, value: o, name: l, required: u, description: c } = n,
+function xe({ field: n }) {
+  const { label: t, options: r, error: a, value: o, name: i, required: u, description: c } = n,
     {
       currentGroup: d,
       isGroupIdentifier: m,
       setCurrentGroupByIdentifier: f,
-    } = be({ options: r, hasEmptyOption: !1 }),
-    [h, w] = i.useState(o || []),
-    y = i.useRef(null);
-  i.useEffect(() => {
+    } = ge({ options: r, hasEmptyOption: !1 }),
+    [h, w] = l.useState(o || []),
+    y = l.useRef(null);
+  l.useEffect(() => {
     if (y.current && u) {
       const e = y.current.querySelector('[role=combobox]');
       e?.setAttribute('aria-required', 'true');
@@ -335,7 +336,7 @@ function ge({ field: n }) {
   return e.jsxs(p, {
     className: 'custom-form-field-layout',
     children: [
-      h.map((n) => e.jsx('input', { type: 'hidden', name: `${l}[]`, value: n }, n)),
+      h.map((n) => e.jsx('input', { type: 'hidden', name: `${i}[]`, value: n }, n)),
       e.jsxs(v, {
         className: 'custom-title',
         children: [t, u && e.jsx(s, { 'aria-hidden': 'true', children: '*' })],
@@ -372,12 +373,90 @@ function ge({ field: n }) {
     ],
   });
 }
-const xe = 'return-focus-to-ticket-form-field';
-function we({ field: n, newRequestPath: t }) {
-  const s = i.createRef();
+const we = y`
+  from {
+    grid-template-rows: 0fr;
+  }
+  to {
+    grid-template-rows: 1fr;
+  }
+`,
+  ve = f.div`
+  display: grid;
+  animation: ${we} 200ms forwards;
+`,
+  qe = f.div`
+  overflow: hidden;
+`,
+  ye = f.li`
+  margin: ${(e) => e.theme.space.sm} 0;
+`;
+function ke({ field: n }) {
+  const { options: r, required: a, description: l } = n;
+  return r.length > 0
+    ? e.jsx(ve, {
+        'data-test-id': 'suggested-articles',
+        className: '!mt-6',
+        children: e.jsxs(qe, {
+          children: [
+            e.jsxs(t, {
+              className: 'custom-title',
+              children: [
+                e.jsx('span', { children: 'Related Articles' }),
+                a && e.jsx(s, { 'aria-hidden': 'true', children: '*' }),
+              ],
+            }),
+            l && e.jsx(o, { className: 'custom-hint', dangerouslySetInnerHTML: { __html: l } }),
+            e.jsx('div', {
+              className:
+                'sm:grid grid-cols-3 gap-4 mt-3 flex flex-row flex-nowrap overflow-x-scroll sm:overflow-x-hidden',
+              children: r.map((n, t) =>
+                t <= 2
+                  ? e.jsx(
+                      ye,
+                      {
+                        className:
+                          'col-span-1 !min-h-[7.5rem] list-none !rounded-[1.25rem] w-3/4 shrink-0 sm:w-full',
+                        children: e.jsx(k, {
+                          href: n.value,
+                          className: 'hover:!no-underline',
+                          target: '_blank',
+                          children: e.jsxs('div', {
+                            className:
+                              'col-span-1 !bg-light-accent-2 dark:!bg-dark-accent-2 hover:!bg-light-accent-2-hovered hover:dark:!bg-dark-accent-2-hovered !body-2 !text-light-accent-1 hover:!text-light-accent-1-hovered hover:dark:!text-dark-accent-1-hovered dark:!text-dark-accent-1 !min-h-[7.5rem] list-none !p-4 !rounded-[1.25rem] flex flex-col justify-between hover:!no-underline',
+                            children: [e.jsx(Ce, {}), e.jsx('p', { children: n.name })],
+                          }),
+                        }),
+                      },
+                      n.value
+                    )
+                  : null
+              ),
+            }),
+          ],
+        }),
+      })
+    : null;
+}
+const Ce = () =>
+    e.jsx('svg', {
+      className: 'mx-0.5 min-w-4 min-h-4',
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: '25',
+      height: '24',
+      viewBox: '0 0 25 24',
+      fill: 'none',
+      children: e.jsx('path', {
+        d: 'M21.334 5.31967V18.3297C21.334 18.6597 21.0141 18.8898 20.6841 18.7998C18.3001 18.1208 15.907 18.1177 13.521 19.3077C13.32 19.4077 13.083 19.2717 13.083 19.0467V5.85276C13.083 5.78576 13.1041 5.71877 13.1431 5.66477C13.7661 4.80977 14.73 4.21471 15.853 4.07871C17.665 3.85871 19.4071 4.07879 21.0481 4.86179C21.2231 4.94479 21.334 5.12667 21.334 5.31967ZM8.81396 4.07968C7.00196 3.85968 5.2599 4.07976 3.6189 4.86276C3.4449 4.94576 3.33398 5.12777 3.33398 5.32077V18.3308C3.33398 18.6608 3.65389 18.8908 3.98389 18.8008C6.36789 18.1218 8.76097 18.1187 11.147 19.3087C11.348 19.4087 11.585 19.2727 11.585 19.0477V5.85373C11.585 5.78673 11.5639 5.71974 11.5249 5.66574C10.9009 4.81074 9.93796 4.21568 8.81396 4.07968Z',
+        className: 'fill-light-accent-1 dark:fill-dark-accent-1',
+      }),
+    }),
+  _e = 'return-focus-to-ticket-form-field';
+function Se({ field: n, newRequestPath: t }) {
+  const s = l.createRef();
   return (
-    i.useEffect(() => {
-      sessionStorage.getItem(xe) && (sessionStorage.removeItem(xe), s.current?.firstChild?.focus());
+    l.useEffect(() => {
+      sessionStorage.getItem(_e) && (sessionStorage.removeItem(_e), s.current?.firstChild?.focus());
     }, []),
     e.jsxs(e.Fragment, {
       children: [
@@ -392,7 +471,7 @@ function we({ field: n, newRequestPath: t }) {
                   if (e && 'number' == typeof e) {
                     const n = new URL(window.location.href);
                     n.searchParams.set('ticket_form_id', e),
-                      sessionStorage.setItem(xe, 'true'),
+                      sessionStorage.setItem(_e, 'true'),
                       window.location.assign(`${t}${n.search}`);
                   }
                 },
@@ -416,15 +495,15 @@ function we({ field: n, newRequestPath: t }) {
     })
   );
 }
-function ve({ field: n }) {
+function Ie({ field: n }) {
   const { value: t, name: s } = n;
   return e.jsx('input', { type: 'hidden', name: s, value: t });
 }
-function qe(e) {
-  const n = i.useRef(!1),
-    t = i.useRef(!1);
+function Te(e) {
+  const n = l.useRef(!1),
+    t = l.useRef(!1);
   return {
-    formRefCallback: i.useCallback(
+    formRefCallback: l.useCallback(
       (s) => {
         s &&
           !n.current &&
@@ -458,8 +537,8 @@ function qe(e) {
     },
   };
 }
-const ye = ['true', 'false'],
-  ke = [
+const Fe = ['true', 'false'],
+  Re = [
     'pre',
     'strong',
     'b',
@@ -475,7 +554,7 @@ const ye = ['true', 'false'],
     'em',
     'br',
   ];
-function _e(e, n) {
+function Pe(e, n) {
   if (!Number.isNaN(Number(e))) {
     const t = `request[custom_fields][${e}]`;
     return n.ticketFields.find((e) => e.name === t);
@@ -493,8 +572,8 @@ function _e(e, n) {
       return n.ticketFields.find((n) => n.name === `request[${e}]`);
   }
 }
-function Ce({ ticketFields: e, ccField: n, dueDateField: t, emailField: s, organizationField: r }) {
-  return i.useMemo(
+function Ne({ ticketFields: e, ccField: n, dueDateField: t, emailField: s, organizationField: r }) {
+  return l.useMemo(
     () =>
       (function (e) {
         const { href: n } = location,
@@ -504,9 +583,9 @@ function Ce({ ticketFields: e, ccField: n, dueDateField: t, emailField: s, organ
         if (t.get('parent_id')) return e;
         for (const [e, n] of t) {
           if (!e.startsWith('tf_')) continue;
-          const t = _e(e.substring(3), s);
+          const t = Pe(e.substring(3), s);
           if (!t) continue;
-          const r = y.sanitize(n, { ALLOWED_TAGS: ke });
+          const r = C.sanitize(n, { ALLOWED_TAGS: Re });
           switch (t.type) {
             case 'partialcreditcard':
               continue;
@@ -514,7 +593,7 @@ function Ce({ ticketFields: e, ccField: n, dueDateField: t, emailField: s, organ
               t.value = r.split(',').filter((e) => t.options.some((n) => n.value === e));
               break;
             case 'checkbox':
-              ye.includes(r) && (t.value = 'true' === r ? 'on' : 'false' === r ? 'off' : '');
+              Fe.includes(r) && (t.value = 'true' === r ? 'on' : 'false' === r ? 'off' : '');
               break;
             default:
               t.value = r;
@@ -525,10 +604,10 @@ function Ce({ ticketFields: e, ccField: n, dueDateField: t, emailField: s, organ
     [e, n, t, s, r]
   );
 }
-const Se = f.div`
+const Le = f.div`
   flex: 1;
 `;
-function Ie({ file: n, onRemove: t }) {
+function $e({ file: n, onRemove: t }) {
   const { t: s } = u(),
     r = (e) => {
       ('Enter' !== e.code && 'Space' !== e.code && 'Delete' !== e.code && 'Backspace' !== e.code) ||
@@ -536,9 +615,9 @@ function Ie({ file: n, onRemove: t }) {
     },
     a = 'pending' === n.status ? n.file_name : n.value.file_name,
     o = s('new-request-form.attachments.stop-upload', 'Stop upload'),
-    i = s('new-request-form.attachments.remove-file', 'Remove file');
-  return e.jsx(k.Item, {
-    children: e.jsx(_, {
+    l = s('new-request-form.attachments.remove-file', 'Remove file');
+  return e.jsx(_.Item, {
+    children: e.jsx(S, {
       type: 'generic',
       title: a,
       onKeyDown: (e) => {
@@ -548,10 +627,10 @@ function Ie({ file: n, onRemove: t }) {
         'pending' === n.status
           ? e.jsxs(e.Fragment, {
               children: [
-                e.jsx(Se, { children: a }),
-                e.jsx(C, {
+                e.jsx(Le, { children: a }),
+                e.jsx(I, {
                   content: o,
-                  children: e.jsx(_.Close, {
+                  children: e.jsx(S.Close, {
                     'aria-label': o,
                     onClick: () => {
                       t();
@@ -559,7 +638,7 @@ function Ie({ file: n, onRemove: t }) {
                     onKeyDown: r,
                   }),
                 }),
-                e.jsx(S, {
+                e.jsx(T, {
                   value: n.progress,
                   'aria-label': s(
                     'new-request-form.attachments.uploading',
@@ -571,38 +650,38 @@ function Ie({ file: n, onRemove: t }) {
             })
           : e.jsxs(e.Fragment, {
               children: [
-                e.jsx(Se, {
-                  children: e.jsx(I, {
+                e.jsx(Le, {
+                  children: e.jsx(k, {
                     isExternal: !0,
                     href: n.value.url,
                     target: '_blank',
                     children: a,
                   }),
                 }),
-                e.jsx(C, {
-                  content: i,
-                  children: e.jsx(_.Delete, {
-                    'aria-label': i,
+                e.jsx(I, {
+                  content: l,
+                  children: e.jsx(S.Delete, {
+                    'aria-label': l,
                     onClick: () => {
                       t();
                     },
                     onKeyDown: r,
                   }),
                 }),
-                e.jsx(S, { value: 100, 'aria-hidden': 'true' }),
+                e.jsx(T, { value: 100, 'aria-hidden': 'true' }),
               ],
             }),
     }),
   });
 }
-async function Te() {
+async function Ee() {
   const e = await fetch('/api/v2/users/me.json'),
     {
       user: { authenticity_token: n },
     } = await e.json();
   return n;
 }
-function Fe({ field: s }) {
+function Ve({ field: s }) {
   const { label: o, error: f, name: h, attachments: p } = s,
     {
       files: j,
@@ -612,24 +691,24 @@ function Fe({ field: s }) {
       removePendingFile: w,
       removeUploadedFile: v,
     } = (function (e) {
-      const [n, t] = i.useState(e);
+      const [n, t] = l.useState(e);
       return {
         files: n,
-        addPendingFile: i.useCallback((e, n, s) => {
+        addPendingFile: l.useCallback((e, n, s) => {
           t((t) => [...t, { status: 'pending', id: e, file_name: n, progress: 0, xhr: s }]);
         }, []),
-        setPendingFileProgress: i.useCallback((e, n) => {
+        setPendingFileProgress: l.useCallback((e, n) => {
           t((t) =>
             t.map((t) => ('pending' === t.status && t.id === e ? { ...t, progress: n } : t))
           );
         }, []),
-        removePendingFile: i.useCallback((e) => {
+        removePendingFile: l.useCallback((e) => {
           t((n) => n.filter((n) => 'pending' !== n.status || n.id !== e));
         }, []),
-        removeUploadedFile: i.useCallback((e) => {
+        removeUploadedFile: l.useCallback((e) => {
           t((n) => n.filter((n) => 'uploaded' !== n.status || n.value.id !== e));
         }, []),
-        setUploaded: i.useCallback((e, n) => {
+        setUploaded: l.useCallback((e, n) => {
           t((t) =>
             t.map((t) =>
               'pending' === t.status && t.id === e ? { status: 'uploaded', value: n } : t
@@ -638,9 +717,9 @@ function Fe({ field: s }) {
         }, []),
       };
     })(p.map((e) => ({ status: 'uploaded', value: e })) ?? []),
-    { addToast: q } = l(),
+    { addToast: q } = i(),
     { t: y } = u(),
-    k = i.useCallback(
+    k = l.useCallback(
       (n) => {
         q(({ close: t }) =>
           e.jsxs(c, {
@@ -661,16 +740,16 @@ function Fe({ field: s }) {
       },
       [q, y]
     ),
-    _ = i.useCallback(
+    C = l.useCallback(
       async (e) => {
-        const n = await Te();
+        const n = await Ee();
         for (const t of e) {
           const e = new XMLHttpRequest(),
             s = new URL(`${window.location.origin}/api/v2/uploads.json`);
           if ((s.searchParams.append('filename', t.name), e.open('POST', s), t.type))
             e.setRequestHeader('Content-Type', t.type);
           else {
-            const n = T.getType(t.name);
+            const n = F.getType(t.name);
             e.setRequestHeader('Content-Type', n || 'application/octet-stream');
           }
           e.setRequestHeader('X-CSRF-Token', n), (e.responseType = 'json');
@@ -699,19 +778,19 @@ function Fe({ field: s }) {
       },
       [b, w, g, x, k]
     ),
-    { getRootProps: C, getInputProps: S, isDragActive: I } = F({ onDrop: _ });
+    { getRootProps: _, getInputProps: S, isDragActive: I } = R({ onDrop: C });
   return e.jsxs(n, {
     className: 'custom-form-field-layout',
     children: [
       e.jsx(t, { className: 'custom-title', children: o }),
       f && e.jsx(a, { validation: 'error', children: f }),
       e.jsxs(P, {
-        ...C(),
+        ..._(),
         isDragging: I,
         className:
           '!border-0 !bg-light-surface-3 dark:!bg-dark-surface-3 !rounded-xl !py-3 flex flex-row space-x-4 !px-4',
         children: [
-          e.jsx(Pe, {}),
+          e.jsx(Me, {}),
           I
             ? e.jsx('span', {
                 children: y('new-request-form.attachments.drop-files-label', 'Drop files here'),
@@ -728,14 +807,14 @@ function Fe({ field: s }) {
       }),
       j.map((n) =>
         e.jsx(
-          Ie,
+          $e,
           {
             file: n,
             onRemove: () => {
               (async (e) => {
                 if ('pending' === e.status) e.xhr.abort(), w(e.id);
                 else {
-                  const n = await Te(),
+                  const n = await Ee(),
                     t = e.value.id;
                   v(e.value.id),
                     await fetch(`/api/v2/uploads/${t}.json`, {
@@ -757,7 +836,7 @@ function Fe({ field: s }) {
     ],
   });
 }
-const Pe = () =>
+const Me = () =>
   e.jsx('svg', {
     className: 'mx-0.5 min-w-4 min-h-4',
     xmlns: 'http://www.w3.org/2000/svg',
@@ -770,24 +849,24 @@ const Pe = () =>
       className: 'fill-light-neutral-1 dark:fill-dark-neutral-1',
     }),
   });
-function Re(e, n) {
+function De(e, n) {
   return n.filter((n) => n.child_fields.some((n) => n.id === e));
 }
-function Le(e, n, t) {
+function Ae(e, n, t) {
   return e.filter((e) => {
     const s = t.find((n) => n.id === e.parent_field_id);
     if (!s) return !1;
-    const r = Re(s.id, n);
-    return s.value === e.value && (0 === r.length || Le(r, n, t).length > 0);
+    const r = De(s.id, n);
+    return s.value === e.value && (0 === r.length || Ae(r, n, t).length > 0);
   });
 }
-function Ne(e, n) {
+function ze(e, n) {
   return 0 === n.length
     ? e
     : e.reduce((t, s) => {
-        const r = Re(s.id, n);
+        const r = De(s.id, n);
         if (0 === r.length) return [...t, s];
-        const a = Le(r, n, e);
+        const a = Ae(r, n, e);
         return a.length > 0
           ? [
               ...t,
@@ -799,9 +878,9 @@ function Ne(e, n) {
           : t;
       }, []);
 }
-function $e({ field: l, locale: u, valueFormat: c, onChange: d }) {
-  const { label: m, error: f, value: h, name: p, required: j, description: b } = l,
-    [g, x] = i.useState(h ? new Date(h) : void 0),
+function Ge({ field: i, locale: u, valueFormat: c, onChange: d }) {
+  const { label: m, error: f, value: h, name: p, required: j, description: b } = i,
+    [g, x] = l.useState(h ? new Date(h) : void 0),
     w = (e) => {
       if (void 0 === e) return '';
       const n = e.toISOString();
@@ -811,7 +890,7 @@ function $e({ field: l, locale: u, valueFormat: c, onChange: d }) {
     children: [
       e.jsxs(t, { children: [m, j && e.jsx(s, { 'aria-hidden': 'true', children: '*' })] }),
       b && e.jsx(o, { dangerouslySetInnerHTML: { __html: b } }),
-      e.jsx(R, {
+      e.jsx(N, {
         value: g,
         onChange: (e) => {
           const n = new Date(Date.UTC(e.getFullYear(), e.getMonth(), e.getDate(), 12, 0, 0));
@@ -834,9 +913,9 @@ function $e({ field: l, locale: u, valueFormat: c, onChange: d }) {
     ],
   });
 }
-const Ee =
+const He =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-  De = f(E)`
+  Be = f(V)`
   padding: ${(e) => `${e.theme.space.xxs} ${e.theme.space.sm}`};
 
   // Removes white spaces for inline elements
@@ -847,18 +926,18 @@ const Ee =
   --line-height: ${(e) => 8 * e.theme.space.base + e.theme.space.base}px;
   line-height: var(--line-height);
 `,
-  Me = f.span`
+  Xe = f.span`
   display: inline-block;
   margin-right: ${(e) => e.theme.space.sm};
 `,
-  Ve = f(D)`
-  ${(e) => $({ theme: e.theme, shadowWidth: 'sm', selector: '&:focus' })}
+  Oe = f(M)`
+  ${(e) => E({ theme: e.theme, shadowWidth: 'sm', selector: '&:focus' })}
 `,
-  Ae = f.div`
+  Ue = f.div`
   display: inline-block;
   position: relative;
 `,
-  ze = f(E)`
+  We = f(V)`
   display: inline-block;
   min-width: 200px;
   opacity: 0;
@@ -866,28 +945,28 @@ const Ee =
   height: var(--line-height);
   line-height: var(--line-height);
 `,
-  Ge = f(r)`
+  Ze = f(r)`
   position: absolute;
   top: 0;
   left: 0;
   height: var(--line-height);
   line-height: var(--line-height);
 `;
-function He({ field: r }) {
-  const { label: l, value: c, name: d, error: m, description: f } = r,
+function Ke({ field: r }) {
+  const { label: i, value: c, name: d, error: m, description: f } = r,
     { t: h } = u(),
     p = c ? c.split(',').map((e) => e.trim()) : [],
-    [j, b] = i.useState(p),
-    [g, x] = i.useState(''),
-    w = i.useRef(null),
-    v = i.useRef(null),
+    [j, b] = l.useState(p),
+    [g, x] = l.useState(''),
+    w = l.useRef(null),
+    v = l.useRef(null),
     {
       getContainerProps: q,
       getGridProps: y,
       getGridRowProps: k,
-      getGridCellProps: _,
-      getTagCloseProps: S,
-      getInputProps: I,
+      getGridCellProps: C,
+      getTagCloseProps: _,
+      getInputProps: S,
       getAnnouncementProps: T,
       announcement: F,
     } = (function ({
@@ -899,9 +978,9 @@ function He({ field: r }) {
       gridRowRef: a,
       i18n: o,
     }) {
-      const [l, u] = i.useState(0),
-        [c, d] = i.useState(''),
-        m = i.useCallback(
+      const [i, u] = l.useState(0),
+        [c, d] = l.useState(''),
+        m = l.useCallback(
           (e, n) => {
             u(n);
           },
@@ -910,7 +989,7 @@ function He({ field: r }) {
         { getGridProps: f, getGridCellProps: h } = L({
           matrix: [e],
           rowIndex: 0,
-          colIndex: l,
+          colIndex: i,
           onChange: m,
         }),
         p = (n) => e.includes(n),
@@ -936,7 +1015,7 @@ function He({ field: r }) {
         w = (e) => {
           const n = e.target.value;
           !n ||
-            (e.key !== N.SPACE && e.key !== N.ENTER && e.key !== N.TAB && e.key !== N.COMMA) ||
+            (e.key !== $.SPACE && e.key !== $.ENTER && e.key !== $.TAB && e.key !== $.COMMA) ||
             (e.preventDefault(), p(n) || j(n), s(''));
         },
         v = (e) => {
@@ -957,7 +1036,7 @@ function He({ field: r }) {
         k = (e) => (n) => {
           'Backspace' === n.code && (n.preventDefault(), b(e));
         },
-        _ = (e) => () => {
+        C = (e) => () => {
           b(e);
         };
       return {
@@ -965,7 +1044,7 @@ function He({ field: r }) {
         getGridProps: f,
         getGridRowProps: () => ({ role: 'row' }),
         getGridCellProps: (e) => h({ rowIndex: 0, colIndex: e, onKeyDown: k(e) }),
-        getTagCloseProps: (e) => ({ onClick: _(e) }),
+        getTagCloseProps: (e) => ({ onClick: C(e) }),
         getInputProps: () => ({ value: t, onChange: v, onKeyDown: w, onPaste: q, onBlur: y }),
         announcement: c,
         getAnnouncementProps: () => ({ 'aria-live': 'polite', 'aria-relevant': 'text' }),
@@ -986,8 +1065,8 @@ function He({ field: r }) {
           h('new-request-form.cc-field.emails-added', '{{emails}} have been added', { emails: e }),
       },
     }),
-    P = (n, t, s) =>
-      e.jsxs(Ve, {
+    R = (n, t, s) =>
+      e.jsxs(Oe, {
         size: 'large',
         'aria-label': h(
           'new-request-form.cc-field.email-label',
@@ -996,16 +1075,16 @@ function He({ field: r }) {
         ),
         hue: t ? void 0 : 'red',
         children: [
-          !t && e.jsx(D.Avatar, { children: e.jsx(M, {}) }),
+          !t && e.jsx(M.Avatar, { children: e.jsx(D, {}) }),
           e.jsx('span', { children: s }),
-          e.jsx(D.Close, { ...S(n) }),
+          e.jsx(M.Close, { ..._(n) }),
         ],
       });
   return e.jsxs(n, {
     children: [
-      e.jsx(t, { children: l }),
+      e.jsx(t, { children: i }),
       f && e.jsx(o, { children: f }),
-      e.jsxs(De, {
+      e.jsxs(Be, {
         ...q(),
         children: [
           j.length > 0 &&
@@ -1017,27 +1096,27 @@ function He({ field: r }) {
                 ref: v,
                 ...k(),
                 children: j.map((n, t) => {
-                  const s = Ee.test(n);
+                  const s = He.test(n);
                   return s
-                    ? e.jsx(Me, { ..._(t), children: P(t, s, n) }, t)
+                    ? e.jsx(Xe, { ...C(t), children: R(t, s, n) }, t)
                     : e.jsx(
-                        C,
+                        I,
                         {
                           content: h(
                             'new-request-form.cc-field.invalid-email',
                             'Invalid email address'
                           ),
-                          children: e.jsx(Me, { ..._(t), children: P(t, s, n) }),
+                          children: e.jsx(Xe, { ...C(t), children: R(t, s, n) }),
                         },
                         t
                       );
                 }),
               }),
             }),
-          e.jsxs(Ae, {
+          e.jsxs(Ue, {
             children: [
-              e.jsx(ze, { isBare: !0, 'aria-hidden': 'true', tabIndex: -1, children: g }),
-              e.jsx(Ge, { ref: w, isBare: !0, ...I() }),
+              e.jsx(We, { isBare: !0, 'aria-hidden': 'true', tabIndex: -1, children: g }),
+              e.jsx(Ze, { ref: w, isBare: !0, ...S() }),
             ],
           }),
         ],
@@ -1048,12 +1127,12 @@ function He({ field: r }) {
     ],
   });
 }
-const Xe = f(s)`
+const Ye = f(s)`
   margin-left: ${(e) => e.theme.space.xxs};
   font-weight: ${(e) => e.theme.fontWeights.medium};
 `;
-function Be({ field: r, onChange: i }) {
-  const { t: l } = u(),
+function Je({ field: r, onChange: l }) {
+  const { t: i } = u(),
     { label: c, error: d, value: m, name: f, required: h, description: p } = r,
     j = (function (e) {
       return e ? e.replaceAll('X', '') : '';
@@ -1064,16 +1143,16 @@ function Be({ field: r, onChange: i }) {
         children: [
           c,
           h && e.jsx(s, { 'aria-hidden': 'true', children: '*' }),
-          e.jsx(Xe, { children: l('new-request-form.credit-card-digits-hint', '(Last 4 digits)') }),
+          e.jsx(Ye, { children: i('new-request-form.credit-card-digits-hint', '(Last 4 digits)') }),
         ],
       }),
       p && e.jsx(o, { dangerouslySetInnerHTML: { __html: p } }),
-      e.jsx(V, {
-        start: e.jsx(A, {}),
+      e.jsx(A, {
+        start: e.jsx(z, {}),
         name: f,
         type: 'text',
         value: j,
-        onChange: (e) => i(e.target.value),
+        onChange: (e) => l(e.target.value),
         validation: d ? 'error' : void 0,
         required: h,
         maxLength: 4,
@@ -1083,22 +1162,23 @@ function Be({ field: r, onChange: i }) {
     ],
   });
 }
-function Oe({ field: n, onChange: t }) {
-  const { label: r, options: a, error: o, value: l, name: u, required: c, description: d } = n,
-    {
+function Qe({ field: n, onChange: t }) {
+  const { label: r, options: a, error: o, value: i, name: u, required: c, description: d } = n;
+  console.log('value', i);
+  const {
       currentGroup: m,
       isGroupIdentifier: f,
       setCurrentGroupByIdentifier: h,
-    } = be({ options: a, hasEmptyOption: !0 }),
-    w = l ?? '',
-    [y, k] = i.useState(!1),
-    _ = i.useRef(null);
-  i.useEffect(() => {
-    if (_.current && c) {
-      const e = _.current.querySelector('[role=combobox]');
+    } = ge({ options: a, hasEmptyOption: !0 }),
+    w = i ?? '',
+    [y, k] = l.useState(!1),
+    C = l.useRef(null);
+  l.useEffect(() => {
+    if (C.current && c) {
+      const e = C.current.querySelector('[role=combobox]');
       e?.setAttribute('aria-required', 'true');
     }
-  }, [_, c]);
+  }, [C, c]);
   return e.jsxs(p, {
     className: 'custom-form-field-layout',
     children: [
@@ -1107,7 +1187,7 @@ function Oe({ field: n, onChange: t }) {
         children: [r, c && e.jsx(s, { 'aria-hidden': 'true', children: '*' })],
       }),
       e.jsxs(j, {
-        ref: _,
+        ref: C,
         inputProps: { required: c, name: u },
         isEditable: !1,
         validation: o ? 'error' : void 0,
@@ -1119,7 +1199,7 @@ function Oe({ field: n, onChange: t }) {
         },
         selectionValue: w,
         inputValue: w,
-        renderValue: ({ selection: n }) => n?.label ?? e.jsx(ce, {}),
+        renderValue: ({ selection: n }) => n?.label ?? e.jsx(de, {}),
         isExpanded: y,
         className: 'custom-combobox',
         children: [
@@ -1133,7 +1213,7 @@ function Oe({ field: n, onChange: t }) {
               })
             : m.options.map((n) =>
                 '' === n.value
-                  ? e.jsx(b, { ...n, children: e.jsx(ce, {}) }, n.value)
+                  ? e.jsx(b, { ...n, children: e.jsx(de, {}) }, n.value)
                   : e.jsx(b, { ...n }, n.value)
               ),
         ],
@@ -1143,39 +1223,39 @@ function Oe({ field: n, onChange: t }) {
     ],
   });
 }
-const Ue = f.h3`
+const en = f.h3`
   font-size: ${(e) => e.theme.fontSizes.md};
   font-weight: ${(e) => e.theme.fontWeights.bold};
 `,
-  We = f(G)`
-  color: ${(e) => z('successHue', 700, e.theme)};
+  nn = f(H)`
+  color: ${(e) => G('successHue', 700, e.theme)};
 `,
-  Ke = f(H)`
+  tn = f(B)`
   position: absolute;
   top: ${(e) => 5.5 * e.theme.space.base}px;
   inset-inline-start: ${(e) => 4 * e.theme.space.base + 'px'};
 `,
-  Ye = f(I)`
+  sn = f(k)`
   display: inline-block;
   margin-top: ${(e) => e.theme.space.sm};
 `;
-function Ze({
+function rn({
   authToken: n,
   interactionAccessToken: t,
   articles: s,
   requestId: r,
   hasRequestManagement: a,
   isSignedIn: o,
-  helpCenterPath: l,
+  helpCenterPath: i,
   requestsPath: c,
   requestPath: d,
 }) {
-  const [m, f] = i.useState(0),
+  const [m, f] = l.useState(0),
     h = X(),
     { t: p } = u(),
     j = () => String(s[m]?.article_id),
     b = () => {
-      Q({
+      ee({
         type: 'success',
         message: p(
           'new-request-form.answer-bot-modal.request-submitted',
@@ -1184,33 +1264,33 @@ function Ze({
       }),
         window.location.assign(
           (() => {
-            if (o) return a ? d : l;
+            if (o) return a ? d : i;
             {
               const e = new URLSearchParams();
-              return e.set('return_to', c), `${l}?${e.toString()}`;
+              return e.set('return_to', c), `${i}?${e.toString()}`;
             }
           })()
         );
     };
-  return e.jsxs(B, {
+  return e.jsxs(O, {
     appendToNode: h,
     onClose: () => {
       b();
     },
     children: [
-      e.jsxs(We, {
+      e.jsxs(nn, {
         tag: 'h2',
         children: [
-          e.jsx(Ke, {}),
+          e.jsx(tn, {}),
           p(
             'new-request-form.answer-bot-modal.request-submitted',
             'Your request was successfully submitted'
           ),
         ],
       }),
-      e.jsxs(O, {
+      e.jsxs(U, {
         children: [
-          e.jsx(Ue, {
+          e.jsx(en, {
             children: p(
               'new-request-form.answer-bot-modal.title',
               'While you wait, do any of these articles answer your question?'
@@ -1223,7 +1303,7 @@ function Ze({
               { requestId: `‭#${r}‬` }
             ),
           }),
-          e.jsx(U, {
+          e.jsx(W, {
             level: 4,
             expandedSections: [m],
             onChange: (e) => {
@@ -1231,14 +1311,14 @@ function Ze({
             },
             children: s.map(({ article_id: t, html_url: s, snippet: r, title: a }) =>
               e.jsxs(
-                U.Section,
+                W.Section,
                 {
                   children: [
-                    e.jsx(U.Header, { children: e.jsx(U.Label, { children: a }) }),
-                    e.jsxs(U.Panel, {
+                    e.jsx(W.Header, { children: e.jsx(W.Label, { children: a }) }),
+                    e.jsxs(W.Panel, {
                       children: [
-                        e.jsx(W, { dangerouslySetInnerHTML: { __html: r } }),
-                        e.jsx(Ye, {
+                        e.jsx(Z, { dangerouslySetInnerHTML: { __html: r } }),
+                        e.jsx(sn, {
                           isExternal: !0,
                           href: `${s}?auth_token=${n}`,
                           target: '_blank',
@@ -1260,7 +1340,7 @@ function Ze({
       e.jsxs(K, {
         children: [
           e.jsx(Y, {
-            children: e.jsx(Z, {
+            children: e.jsx(J, {
               onClick: () => {
                 (async () => {
                   await fetch('/api/v2/answer_bot/rejection', {
@@ -1279,7 +1359,7 @@ function Ze({
             }),
           }),
           e.jsx(Y, {
-            children: e.jsx(Z, {
+            children: e.jsx(J, {
               isPrimary: !0,
               onClick: () => {
                 (async () => {
@@ -1290,21 +1370,21 @@ function Ze({
                       headers: { 'Content-Type': 'application/json' },
                     })
                   ).ok
-                    ? Q({
+                    ? ee({
                         type: 'success',
                         message: p(
                           'new-request-form.answer-bot-modal.request-closed',
                           'Nice. Your request has been closed.'
                         ),
                       })
-                    : Q({
+                    : ee({
                         type: 'error',
                         message: p(
                           'new-request-form.answer-bot-modal.solve-error',
                           'There was an error closing your request'
                         ),
                       }),
-                    (window.location.href = l);
+                    (window.location.href = i);
                 })();
               },
               children: p(
@@ -1315,15 +1395,15 @@ function Ze({
           }),
         ],
       }),
-      e.jsx(J, { 'aria-label': p('new-request-form.close-label', 'Close') }),
+      e.jsx(Q, { 'aria-label': p('new-request-form.close-label', 'Close') }),
     ],
   });
 }
-const Je = { value: '', name: '-' };
-function Qe({ field: n, userId: t, organizationId: r, onChange: a }) {
+const an = { value: '', name: '-' };
+function on({ field: n, userId: t, organizationId: r, onChange: a }) {
   const {
       id: o,
-      label: l,
+      label: i,
       error: c,
       value: d,
       name: m,
@@ -1331,36 +1411,36 @@ function Qe({ field: n, userId: t, organizationId: r, onChange: a }) {
       description: h,
       relationship_target_type: w,
     } = n,
-    [q, y] = i.useState([]),
-    [k, _] = i.useState(null),
-    [C, S] = i.useState(d),
-    [I, T] = i.useState(!1),
+    [q, y] = l.useState([]),
+    [k, C] = l.useState(null),
+    [_, S] = l.useState(d),
+    [I, T] = l.useState(!1),
     { t: F } = u(),
-    P = w.replace('zen:custom_object:', '');
-  const R = {
+    R = w.replace('zen:custom_object:', '');
+  const P = {
       name: F('new-request-form.lookup-field.loading-options', 'Loading items...'),
       id: 'loading',
     },
-    L = {
+    N = {
       name: F('new-request-form.lookup-field.no-matches-found', 'No matches found'),
       id: 'no-results',
     },
-    N = i.useCallback(
+    L = l.useCallback(
       async (e) => {
         try {
-          const n = await fetch(`/api/v2/custom_objects/${P}/records/${e}`);
+          const n = await fetch(`/api/v2/custom_objects/${R}/records/${e}`);
           if (n.ok) {
             const { custom_object_record: e } = await n.json(),
               t = { name: e.name, value: e.id };
-            _(t), S(e.name);
+            C(t), S(e.name);
           }
         } catch (e) {
           console.error(e);
         }
       },
-      [P]
+      [R]
     ),
-    $ = i.useCallback(
+    $ = l.useCallback(
       async (e) => {
         const n = new URLSearchParams();
         n.set('name', e.toLocaleLowerCase()),
@@ -1370,7 +1450,7 @@ function Qe({ field: n, userId: t, organizationId: r, onChange: a }) {
           null !== r && n.set('organization_id', r),
           T(!0);
         try {
-          const e = await fetch(`/api/v2/custom_objects/${P}/records/autocomplete?${n.toString()}`),
+          const e = await fetch(`/api/v2/custom_objects/${R}/records/autocomplete?${n.toString()}`),
             t = await e.json();
           if (e.ok) {
             let e = t.custom_object_records.map(({ name: e, id: n }) => ({ name: e, value: n }));
@@ -1382,51 +1462,51 @@ function Qe({ field: n, userId: t, organizationId: r, onChange: a }) {
           T(!1);
         }
       },
-      [P, o, r, k, t]
+      [R, o, r, k, t]
     ),
-    E = i.useMemo(() => ee($, 300), [$]);
-  i.useEffect(() => () => E.cancel(), [E]);
-  const D = i.useCallback(
+    E = l.useMemo(() => ne($, 300), [$]);
+  l.useEffect(() => () => E.cancel(), [E]);
+  const V = l.useCallback(
     ({ inputValue: e, selectionValue: n }) => {
       if (void 0 !== n)
-        if ('' == n) _(Je), S(Je.name), y([]), a(Je.value);
+        if ('' == n) C(an), S(an.name), y([]), a(an.value);
         else {
           const e = q.find((e) => e.value === n);
-          e && (S(e.name), _(e), y([e]), a(e.value));
+          e && (S(e.name), C(e), y([e]), a(e.value));
         }
       void 0 !== e && (S(e), E(e));
     },
     [E, a, q]
   );
-  i.useEffect(() => {
-    d && N(d);
+  l.useEffect(() => {
+    d && L(d);
   }, []);
   return e.jsxs(p, {
     children: [
-      e.jsxs(v, { children: [l, f && e.jsx(s, { 'aria-hidden': 'true', children: '*' })] }),
+      e.jsxs(v, { children: [i, f && e.jsx(s, { 'aria-hidden': 'true', children: '*' })] }),
       h && e.jsx(x, { dangerouslySetInnerHTML: { __html: h } }),
       e.jsxs(j, {
         inputProps: { required: f },
         'data-test-id': 'lookup-field-combobox',
         validation: c ? 'error' : void 0,
-        inputValue: C,
+        inputValue: _,
         selectionValue: k?.value,
         isAutocomplete: !0,
         placeholder: F('new-request-form.lookup-field.placeholder', 'Search {{label}}', {
-          label: l.toLowerCase(),
+          label: i.toLowerCase(),
         }),
         onFocus: () => {
           S(''), $('*');
         },
-        onChange: D,
-        renderValue: () => (k ? k?.name : Je.name),
+        onChange: V,
+        renderValue: () => (k ? k?.name : an.name),
         children: [
-          k?.name !== Je.name && e.jsx(b, { value: '', label: '-', children: e.jsx(ce, {}) }),
-          I && e.jsx(b, { isDisabled: !0, value: R.name }, R.id),
+          k?.name !== an.name && e.jsx(b, { value: '', label: '-', children: e.jsx(de, {}) }),
+          I && e.jsx(b, { isDisabled: !0, value: P.name }, P.id),
           !I &&
-            C?.length > 0 &&
+            _?.length > 0 &&
             0 === q.length &&
-            e.jsx(b, { isDisabled: !0, value: L.name }, L.id),
+            e.jsx(b, { isDisabled: !0, value: N.name }, N.id),
           !I &&
             0 !== q.length &&
             q.map((n) =>
@@ -1443,23 +1523,23 @@ function Qe({ field: n, userId: t, organizationId: r, onChange: a }) {
     ],
   });
 }
-const en = f(W)`
+const ln = f(Z)`
   margin: ${(e) => e.theme.space.md} 0;
 `,
-  nn = f.form`
+  un = f.form`
   display: flex;
   flex-direction: column;
   gap: ${(e) => e.theme.space.md};
 `,
-  tn = f.div`
+  cn = f.div`
   margin-top: ${(e) => e.theme.space.md};
 `;
-function sn({
+function dn({
   requestForm: n,
   wysiwyg: r,
   newRequestPath: a,
   parentId: o,
-  parentIdPath: l,
+  parentIdPath: i,
   locale: c,
   baseLocale: d,
   hasAtMentions: m,
@@ -1476,77 +1556,79 @@ function sn({
       accept_charset: v,
       errors: q,
       parent_id_field: y,
-      ticket_form_field: k,
+      ticket_form_field: C,
       email_field: _,
-      cc_field: C,
-      organization_field: S,
+      cc_field: S,
+      organization_field: I,
       due_date_field: T,
       end_user_conditions: F,
-      attachments_field: P,
-      inline_attachments_fields: R,
-      description_mimetype_field: L,
+      attachments_field: R,
+      inline_attachments_fields: P,
+      description_mimetype_field: N,
     } = n,
-    { answerBot: N } = b,
+    { answerBot: L } = b,
     {
       ticketFields: $,
       emailField: E,
-      ccField: D,
+      ccField: V,
       organizationField: M,
-      dueDateField: V,
-    } = Ce({ ticketFields: g, emailField: _, ccField: C, organizationField: S, dueDateField: T }),
-    [A, z] = i.useState($),
-    [G, H] = i.useState(M),
-    [X, B] = i.useState(V),
-    O = Ne(A, F),
-    { formRefCallback: U, handleSubmit: W } = qe(A),
-    { t: K } = u(),
-    Y = j.length > 0 && j[0]?.id ? j[0]?.id?.toString() : null,
-    J = i.useCallback(
+      dueDateField: D,
+    } = Ne({ ticketFields: g, emailField: _, ccField: S, organizationField: I, dueDateField: T });
+  console.log('requestForm', n);
+  const [A, z] = l.useState(''),
+    [G, H] = l.useState($),
+    [B, X] = l.useState(M),
+    [O, U] = l.useState(D),
+    W = ze(G, F),
+    { formRefCallback: Z, handleSubmit: K } = Te(G),
+    { t: Y } = u(),
+    Q = j.length > 0 && j[0]?.id ? j[0]?.id?.toString() : null,
+    ee = l.useCallback(
       (e, n) => {
-        z(A.map((t) => (t.name === e.name ? { ...t, value: n } : t)));
+        H(G.map((t) => (t.name === e.name ? { ...t, value: n } : t))), 'tagger' === e.name && z(n);
       },
-      [A]
+      [G]
     );
   return e.jsxs(e.Fragment, {
     children: [
       o &&
-        e.jsx(en, {
-          children: e.jsx(I, {
-            href: l,
-            children: K(
+        e.jsx(ln, {
+          children: e.jsx(k, {
+            href: i,
+            children: Y(
               'new-request-form.parent-request-link',
               'Follow-up to request {{parentId}}',
               { parentId: `‭#${o}‬` }
             ),
           }),
         }),
-      e.jsxs(nn, {
-        ref: U,
+      e.jsxs(un, {
+        ref: Z,
         action: x,
         method: w,
         acceptCharset: v,
         noValidate: !0,
-        onSubmit: W,
+        onSubmit: K,
         children: [
-          q && e.jsx(ne, { type: 'error', children: q }),
-          y && e.jsx(ve, { field: y }),
-          k.options.length > 0 && e.jsx(we, { field: k, newRequestPath: a }),
+          q && e.jsx(te, { type: 'error', children: q }),
+          y && e.jsx(Ie, { field: y }),
+          C.options.length > 0 && e.jsx(Se, { field: C, newRequestPath: a }),
           E && e.jsx(ie, { field: E }, E.name),
-          D && e.jsx(He, { field: D }),
-          G &&
+          V && e.jsx(Ke, { field: V }),
+          B &&
             e.jsx(
-              de,
+              me,
               {
-                field: G,
+                field: B,
                 onChange: (e) => {
                   !(function (e) {
-                    null !== G && H({ ...G, value: e });
+                    null !== B && X({ ...B, value: e });
                   })(e);
                 },
               },
-              G.name
+              B.name
             ),
-          O.map((n) => {
+          W.map((n) => {
             switch (n.type) {
               case 'subject':
                 return e.jsxs('div', {
@@ -1556,21 +1638,21 @@ function sn({
                       className: 'custom-title',
                       children: ['Subject', e.jsx(s, { 'aria-hidden': 'true', children: '*' })],
                     }),
-                    e.jsx(ie, { field: n, onChange: (e) => J(n, e) }, n.name),
+                    e.jsx(ie, { field: n, onChange: (e) => ee(n, e) }, n.name),
                   ],
                 });
               case 'text':
               case 'integer':
               case 'decimal':
               case 'regexp':
-                return e.jsx(ie, { field: n, onChange: (e) => J(n, e) }, n.name);
+                return e.jsx(ie, { field: n, onChange: (e) => ee(n, e) }, n.name);
               case 'partialcreditcard':
-                return e.jsx(Be, { field: n, onChange: (e) => J(n, e) });
+                return e.jsx(Je, { field: n, onChange: (e) => ee(n, e) });
               case 'description':
                 return e.jsxs(e.Fragment, {
                   children: [
                     e.jsx(
-                      ue,
+                      ce,
                       {
                         field: n,
                         hasWysiwyg: r,
@@ -1578,20 +1660,20 @@ function sn({
                         hasAtMentions: m,
                         userRole: f,
                         brandId: p,
-                        onChange: (e) => J(n, e),
+                        onChange: (e) => ee(n, e),
                       },
                       n.name
                     ),
                     e.jsx('input', {
                       type: 'hidden',
-                      name: L.name,
+                      name: N.name,
                       value: r ? 'text/html' : 'text/plain',
                     }),
                   ],
                 });
               case 'textarea':
                 return e.jsx(
-                  ue,
+                  ce,
                   {
                     field: n,
                     hasWysiwyg: !1,
@@ -1599,7 +1681,7 @@ function sn({
                     hasAtMentions: m,
                     userRole: f,
                     brandId: p,
-                    onChange: (e) => J(n, e),
+                    onChange: (e) => ee(n, e),
                   },
                   n.name
                 );
@@ -1608,41 +1690,47 @@ function sn({
               case 'tickettype':
                 return e.jsxs(e.Fragment, {
                   children: [
-                    e.jsx(de, { field: n, onChange: (e) => J(n, e) }, n.name),
+                    e.jsx(me, { field: n, onChange: (e) => ee(n, e) }, n.name),
                     'task' === n.value &&
-                      e.jsx($e, {
-                        field: X,
+                      e.jsx(Ge, {
+                        field: O,
                         locale: d,
                         valueFormat: 'dateTime',
                         onChange: (e) => {
                           !(function (e) {
-                            null !== X && B({ ...X, value: e });
+                            null !== O && U({ ...O, value: e });
                           })(e);
                         },
                       }),
                   ],
                 });
               case 'checkbox':
-                return e.jsx(me, { field: n, onChange: (e) => J(n, e) });
+                return e.jsx(fe, { field: n, onChange: (e) => ee(n, e) });
               case 'date':
-                return e.jsx($e, {
+                return e.jsx(Ge, {
                   field: n,
                   locale: d,
                   valueFormat: 'date',
-                  onChange: (e) => J(n, e),
+                  onChange: (e) => ee(n, e),
                 });
               case 'multiselect':
-                return n.label.includes('RA:'), e.jsx(ge, { field: n });
+                if (n.label.includes('RA:')) {
+                  const t = W.find((e) => 'tagger' === e.type);
+                  return t && t.value && n.label.includes(t.value)
+                    ? e.jsx(ke, { field: n })
+                    : e.jsx(e.Fragment, {});
+                }
+                return e.jsx(xe, { field: n });
               case 'tagger':
-                return e.jsx(Oe, { field: n, onChange: (e) => J(n, e) }, n.name);
+                return e.jsx(Qe, { field: n, onChange: (e) => ee(n, e) }, n.name);
               case 'lookup':
                 return e.jsx(
-                  Qe,
+                  on,
                   {
                     field: n,
                     userId: h,
-                    organizationId: null !== G ? G.value : Y,
-                    onChange: (e) => J(n, e),
+                    organizationId: null !== B ? B.value : Q,
+                    onChange: (e) => ee(n, e),
                   },
                   n.name
                 );
@@ -1650,41 +1738,41 @@ function sn({
                 return e.jsx(e.Fragment, {});
             }
           }),
-          P && e.jsx(Fe, { field: P }),
-          R.map(({ type: n, name: t, value: s }, r) =>
+          R && e.jsx(Ve, { field: R }),
+          P.map(({ type: n, name: t, value: s }, r) =>
             e.jsx('input', { type: n, name: t, value: s }, r)
           ),
-          e.jsx(tn, {
+          e.jsx(cn, {
             className: '!mt-0',
             children:
-              (0 === k.options.length || k.value) &&
-              e.jsx(Z, {
+              (0 === C.options.length || C.value) &&
+              e.jsx(J, {
                 isPrimary: !0,
                 type: 'submit',
                 className: 'custom-submit-button',
-                children: K('new-request-form.submit', 'Submit'),
+                children: Y('new-request-form.submit', 'Submit'),
               }),
           }),
         ],
       }),
-      N.auth_token &&
-        N.interaction_access_token &&
-        N.articles.length > 0 &&
-        N.request_id &&
-        e.jsx(Ze, {
-          authToken: N.auth_token,
-          interactionAccessToken: N.interaction_access_token,
-          articles: N.articles,
-          requestId: N.request_id,
+      L.auth_token &&
+        L.interaction_access_token &&
+        L.articles.length > 0 &&
+        L.request_id &&
+        e.jsx(rn, {
+          authToken: L.auth_token,
+          interactionAccessToken: L.interaction_access_token,
+          articles: L.articles,
+          requestId: L.request_id,
           ...b,
         }),
     ],
   });
 }
-async function rn(n, t, s) {
+async function mn(n, t, s) {
   const { baseLocale: r } = t;
-  te(r),
-    await se(r, () =>
+  se(r),
+    await re(r, () =>
       (function (e) {
         switch (e) {
           case './translations/locales/af.json':
@@ -2044,6 +2132,6 @@ async function rn(n, t, s) {
         }
       })(`./translations/locales/${r}.json`)
     ),
-    re.render(e.jsx(ae, { theme: oe(n), children: e.jsx(sn, { ...t }) }), s);
+    ae.render(e.jsx(oe, { theme: le(n), children: e.jsx(dn, { ...t }) }), s);
 }
-export { rn as renderNewRequestForm };
+export { mn as renderNewRequestForm };
