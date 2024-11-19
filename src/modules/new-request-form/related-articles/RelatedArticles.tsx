@@ -1,9 +1,9 @@
-import { Anchor } from "@zendeskgarden/react-buttons";
-import { FC } from "react";
-import styled, { keyframes } from "styled-components";
-import type { Field } from "../data-types";
-import { Hint, Label } from "@zendeskgarden/react-forms";
-import { Span } from "@zendeskgarden/react-typography";
+import { Anchor } from '@zendeskgarden/react-buttons';
+import { FC } from 'react';
+import styled, { keyframes } from 'styled-components';
+import type { Field } from '../data-types';
+import { Hint, Label } from '@zendeskgarden/react-forms';
+import { Span } from '@zendeskgarden/react-typography';
 
 interface MultiSelectProps {
   field: Field;
@@ -31,33 +31,28 @@ const ListItem = styled.li`
   margin: ${(props) => props.theme.space.sm} 0;
 `;
 
-export function SuggestedArticles({
-  field,
-}: MultiSelectProps): JSX.Element | null {
-  const { label, options, required, description } = field;
+export function RelatedArticles({ field }: MultiSelectProps): JSX.Element | null {
+  const { options, required, description } = field;
 
   return options.length > 0 ? (
     <Container data-test-id="suggested-articles" className="!mt-6">
       <InnerContainer>
         <Label className="custom-title">
-          {label}
+          <span>Related Articles</span>
           {required && <Span aria-hidden="true">*</Span>}
         </Label>
         {description && (
-          <Hint
-            className="custom-hint"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
+          <Hint className="custom-hint" dangerouslySetInnerHTML={{ __html: description }} />
         )}
-        <div className="grid grid-cols-3 gap-4 mt-3">
+        <div className="sm:grid grid-cols-3 gap-4 mt-3 flex flex-row flex-nowrap overflow-x-scroll sm:overflow-x-hidden">
           {options.map((option, index) => {
             if (index <= 2) {
               return (
                 <ListItem
                   key={option.value}
-                  className="col-span-1 !min-h-[7.5rem] list-none !rounded-[1.25rem]"
+                  className="col-span-1 !min-h-[7.5rem] list-none !rounded-[1.25rem] w-3/4 shrink-0 sm:w-full"
                 >
-                  <Anchor href={option.value} className="hover:!no-underline">
+                  <Anchor href={option.value} className="hover:!no-underline" target="_blank">
                     <div className="col-span-1 !bg-light-accent-2 dark:!bg-dark-accent-2 hover:!bg-light-accent-2-hovered hover:dark:!bg-dark-accent-2-hovered !body-2 !text-light-accent-1 hover:!text-light-accent-1-hovered hover:dark:!text-dark-accent-1-hovered dark:!text-dark-accent-1 !min-h-[7.5rem] list-none !p-4 !rounded-[1.25rem] flex flex-col justify-between hover:!no-underline">
                       <Book />
                       <p>{option.name}</p>
