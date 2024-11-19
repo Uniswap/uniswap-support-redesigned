@@ -8,7 +8,13 @@ type Props = {
 };
 
 export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
-  const [selectedCategory, setSelectedCategory] = useState<NavCategory | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<NavCategory | null>(
+    (sideNavData &&
+      sideNavData.categories.find((category) =>
+        category.sections.find((section) => section.id === navState.section)
+      )) ||
+      null
+  );
   const [activeSection, setActiveSection] = useState<{ [key: number]: boolean }>({
     [navState.section || '']: true,
   });
@@ -90,8 +96,6 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
           <ul className="accordion-body">
             {selectedCategory &&
               selectedCategory.sections.map((section) => {
-                const sectionIsActive = navState.section === section.id;
-
                 return (
                   <li key={section.id} className="mt-4 first:mt-5">
                     <button
@@ -100,11 +104,7 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
                     >
                       <span
                         className={cn(
-                          'transition body-2 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1',
-                          {
-                            'text-light-accent-1 dark:text-dark-accent-1': sectionIsActive,
-                            'text-light-neutral-1 dark:text-dark-neutral-1': !sectionIsActive,
-                          }
+                          'transition body-2 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1'
                         )}
                       >
                         {section.name}
