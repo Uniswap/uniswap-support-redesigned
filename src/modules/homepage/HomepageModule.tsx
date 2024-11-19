@@ -92,7 +92,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
           </h2>
           <div
             ref={searchBarRef}
-            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2"
+            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2 rounded-[1.25rem]"
           ></div>
         </div>
       )}
@@ -187,14 +187,14 @@ const Homepage: FC<Props> = ({ homepageData }) => {
             <Layers className="w-6 h-6 mr-2" color="neutral-1" />
             <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Topics</h3>
           </div>
-          <div className="mt-padding-x-large w-full flex flex-row flex-wrap">
+          <div className="mt-padding-x-large w-full grid grid-cols-2 gap-x-4 sm:flex sm:flex-row sm:flex-wrap">
             {homepageData.topicsBlock.categories.map((category) => {
               return (
                 <a
                   key={category.name}
                   href={category.url}
                   target="_self"
-                  className="transition hover:text-light-pink-vibrant dark:hover:text-dark-pink-vibrant hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 mr-4 mb-3 block rounded-medium py-margin-mobile-dense px-margin-extension text-light-neutral-1 dark:text-dark-neutral-1 bg-light-surface-2 dark:bg-dark-surface-2"
+                  className="transition hover:text-light-pink-vibrant dark:hover:text-dark-pink-vibrant hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 mb-3 block rounded-medium py-margin-mobile-dense px-margin-extension text-light-neutral-1 dark:text-dark-neutral-1 bg-light-surface-2 dark:bg-dark-surface-2"
                 >
                   {category.name}
                 </a>
