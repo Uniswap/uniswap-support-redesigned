@@ -21,7 +21,6 @@ interface TaggerProps {
 
 export function Tagger({ field, onChange }: TaggerProps): JSX.Element {
   const { label, options, error, value, name, required, description } = field;
-  console.log('value', value);
   const { currentGroup, isGroupIdentifier, setCurrentGroupByIdentifier } = useNestedOptions({
     options,
     hasEmptyOption: true,

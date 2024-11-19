@@ -109,7 +109,6 @@ export function NewRequestForm({
     organizationField: organization_field,
     dueDateField: due_date_field,
   });
-  console.log('requestForm', requestForm);
   const [selectedTopic, setSelectedTopic] = useState('');
   const [ticketFields, setTicketFields] = useState(prefilledTicketFields);
   const [organizationField, setOrganizationField] = useState(prefilledOrganizationField);
