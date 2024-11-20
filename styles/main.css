@@ -104,7 +104,7 @@
     .article-votes-question,
     .article-vote,
     .article-vote-divider {
-      @apply caption-1 text-light-neutral-1 dark:text-dark-neutral-1;
+      @apply button-label-4 text-light-neutral-1 dark:text-dark-neutral-1;
     }
 
     .article-vote-divider {
@@ -116,7 +116,7 @@
     }
 
     .article-updated-text {
-      @apply caption-1 text-light-neutral-2 dark:text-dark-neutral-2;
+      @apply button-label-4 text-light-neutral-2 dark:text-dark-neutral-2;
     }
   }
   .related-articles {
@@ -353,6 +353,10 @@ html:has(.ArticlePage) {
   }
 }
 
+.search-bar-container:has(input[aria-expanded='true']) {
+  @apply focus-within:!rounded-b-none focus-within:!rounded-t-xl;
+}
+
 .filters-in-section {
   @apply flex flex-col space-y-6;
   .sidenav-item {
@@ -362,20 +366,20 @@ html:has(.ArticlePage) {
 
 .search-result-description {
   em {
-    @apply bg-search-highlight !p-px !not-italic;
+    @apply bg-search-highlight dark:bg-light-pink-vibrant !p-px !not-italic;
   }
 }
 
 zd-autocomplete {
-  @apply !body-3 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-light-neutral-1 dark:!text-dark-neutral-1;
+  @apply !body-3 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-light-neutral-1 dark:!text-dark-neutral-1 md:!w-[25rem] !w-screen !-ml-[3.25rem] md:!-ml-12 !rounded-b-xl !shadow-none !border !border-light-surface-3 dark:!border-dark-surface-3;
 }
 
 zd-autocomplete-header {
-  @apply !body-2 !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-light-surface-3 dark:!bg-dark-surface-3;
+  @apply !body-3 !text-light-neutral-2 dark:!text-dark-neutral-2 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-left !border-b !border-b-light-surface-3 dark:!border-b-dark-surface-3;
 }
 
 zd-autocomplete-multibrand {
-  @apply !bg-light-surface-3 dark:!bg-dark-surface-3 hover:!bg-light-surface-3-hovered dark:hover:!bg-dark-surface-3-hovered;
+  @apply !bg-light-surface-1 dark:!bg-dark-surface-1 hover:!bg-light-surface-1-hovered dark:hover:!bg-dark-surface-1-hovered !border-b !border-b-light-surface-3 dark:!border-b-dark-surface-3;
 }
 
 zd-autocomplete-title-multibrand,
@@ -383,7 +387,7 @@ zd-autocomplete-breadcrumbs-multibrand {
   @apply !body-3 !text-light-neutral-1 dark:!text-dark-neutral-1;
 
   em {
-    @apply !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-dark-accent-1;
+    @apply !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-search-highlight dark:!bg-dark-pink-vibrant;
   }
 }
 

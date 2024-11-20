@@ -164,6 +164,7 @@ const config: Config = {
         'dark-blue': '#10143D',
         'light-green': '#EEFBF1',
         'dark-green': '#0F2C1A',
+        'search-highlight': '#FDAFF0',
       },
     },
   },

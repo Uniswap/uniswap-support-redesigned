@@ -1,6 +1,6 @@
 @layer utilities {
   .serif-heading-0 {
-    @apply font-riegraf;
+    font-family: var(--font-riegraf);
     font-size: 4rem;
     font-style: normal;
     font-weight: 300;
@@ -11,7 +11,7 @@
   }
 
   .serif-heading-0-mobile {
-    @apply font-riegraf;
+    font-family: var(--font-riegraf);
     font-size: 3rem;
     font-style: normal;
     font-weight: 300;
@@ -21,7 +21,7 @@
   }
 
   .heading-0 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 4rem;
     font-weight: 500;
     line-height: 3.84rem;
@@ -31,7 +31,7 @@
   }
 
   .heading-0-mobile {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 3rem;
     font-weight: 500;
     line-height: 2.88rem;
@@ -41,7 +41,7 @@
   }
 
   .serif-heading-1 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 3.25rem;
     font-style: normal;
     font-weight: 300;
@@ -52,7 +52,7 @@
   }
 
   .serif-heading-1-mobile {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 2.4375rem;
     font-style: normal;
     font-weight: 300;
@@ -63,7 +63,7 @@
   }
 
   .heading-1 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 3.25rem;
     font-weight: 500;
     line-height: 3.12rem;
@@ -73,7 +73,7 @@
   }
 
   .heading-1-mobile {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 2.4375rem;
     font-style: normal;
     font-weight: 500;
@@ -84,7 +84,7 @@
   }
 
   .heading-2 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 2.25rem;
     font-weight: 500;
     line-height: 2.52rem;
@@ -94,7 +94,7 @@
   }
 
   .heading-2-mobile {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.6875rem;
     font-style: normal;
     font-weight: 500;
@@ -105,7 +105,7 @@
   }
 
   .heading-3 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
@@ -116,7 +116,7 @@
   }
 
   .heading-4 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -127,7 +127,7 @@
   }
 
   .serif-subheading-1 {
-    @apply font-riegraf;
+    font-family: var(--font-riegraf);
     font-size: 1.125rem;
     font-style: italic;
     font-weight: 400;
@@ -137,7 +137,7 @@
   }
 
   .subheading-1 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
@@ -147,7 +147,7 @@
   }
 
   .subheading-2 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -157,7 +157,7 @@
   }
 
   .serif-subheading-3 {
-    @apply font-riegraf;
+    font-family: var(--font-riegraf);
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -167,7 +167,7 @@
   }
 
   .body-1 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
@@ -177,7 +177,7 @@
   }
 
   .body-2 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -187,7 +187,7 @@
   }
 
   .body-3 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
@@ -197,7 +197,7 @@
   }
 
   .body-4 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
@@ -207,7 +207,7 @@
   }
 
   .serif-body-5 {
-    @apply font-riegraf;
+    font-family: var(--font-riegraf);
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -217,7 +217,7 @@
   }
 
   .mono-body-5 {
-    @apply font-fragment-mono;
+    font-family: var(--font-fragment-mono);
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -228,7 +228,7 @@
   }
 
   .button-label-1 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 535;
@@ -238,7 +238,7 @@
   }
 
   .button-label-2 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 1rem;
     font-style: normal;
     font-weight: 535;
@@ -248,7 +248,7 @@
   }
 
   .button-label-3 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 535;
@@ -258,7 +258,7 @@
   }
 
   .button-label-4 {
-    @apply font-basel-grotesk;
+    font-family: var(--font-basel-grotesk);
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 535;

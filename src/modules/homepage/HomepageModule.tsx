@@ -80,7 +80,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
             </span>
             <span
               className={cn(
-                'serif-heading-0-mobile sm:serif-heading-0 italic text-center transition-opacity duration-500 delay-700',
+                'serif-heading-0-mobile sm:serif-heading-0 !italic text-center transition-opacity duration-500 delay-700',
                 {
                   'opacity-0': !heroTextReveal,
                   'opacity-100': heroTextReveal,
@@ -108,10 +108,10 @@ const Homepage: FC<Props> = ({ homepageData }) => {
                 className={cn(
                   'ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2',
                   {
-                    'bg-light-pink-light dark:bg-dark-pink-light': card.color === 'pink',
-                    'bg-light-green-light dark:bg-dark-green-light': card.color === 'green',
-                    'bg-light-blue-light dark:bg-dark-blue-light': card.color === 'blue',
-                    'bg-light-orange-light dark:bg-dark-orange-light': card.color === 'orange',
+                    'bg-light-pink-fade dark:bg-dark-pink-fade': card.color === 'pink',
+                    'bg-light-green dark:bg-dark-green': card.color === 'green',
+                    'bg-light-blue dark:bg-dark-blue': card.color === 'blue',
+                    'bg-light-orange-fade dark:bg-dark-orange-fade': card.color === 'orange',
                   }
                 )}
               >
@@ -121,10 +121,8 @@ const Homepage: FC<Props> = ({ homepageData }) => {
                     className={cn('subheading-1', {
                       'text-light-orange-vibrant dark:text-dark-orange-vibrant':
                         textColorName === 'orange-vibrant',
-                      'text-light-blue-vibrant dark:text-dark-blue-vibrant':
-                        textColorName === 'blue-vibrant',
-                      'text-light-green-base dark:text-dark-green-base':
-                        textColorName === 'green-base',
+                      'text-blue-base dark:text-blue-base': textColorName === 'blue-vibrant',
+                      'text-green-base dark:text-green-base': textColorName === 'green-base',
                       'text-light-pink-vibrant dark:text-dark-pink-vibrant':
                         textColorName === 'pink-vibrant',
                     })}
