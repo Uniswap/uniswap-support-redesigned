@@ -166,7 +166,7 @@
             display: block;
             position: absolute;
             content: '';
-            background-image: url('../assets/right-arrow-light.svg');
+            background-image: var(--right-arrow-path);
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -180,7 +180,7 @@
             @apply top-padding-medium right-padding-medium hidden dark:block transition opacity-0;
             position: absolute;
             content: '';
-            background-image: url('../assets/right-arrow-dark.svg');
+            background-image: var(--right-arrow-path-dark);
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
