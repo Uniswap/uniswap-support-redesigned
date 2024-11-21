@@ -80,7 +80,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
             </span>
             <span
               className={cn(
-                'serif-heading-0-mobile sm:serif-heading-0 italic text-center transition-opacity duration-500 delay-700',
+                'serif-heading-0-mobile sm:serif-heading-0 !italic text-center transition-opacity duration-500 delay-700',
                 {
                   'opacity-0': !heroTextReveal,
                   'opacity-100': heroTextReveal,
@@ -92,7 +92,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
           </h2>
           <div
             ref={searchBarRef}
-            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2"
+            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2 rounded-[1.25rem]"
           ></div>
         </div>
       )}
@@ -108,10 +108,10 @@ const Homepage: FC<Props> = ({ homepageData }) => {
                 className={cn(
                   'ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2',
                   {
-                    'bg-light-pink-light dark:bg-dark-pink-light': card.color === 'pink',
-                    'bg-light-green-light dark:bg-dark-green-light': card.color === 'green',
-                    'bg-light-blue-light dark:bg-dark-blue-light': card.color === 'blue',
-                    'bg-light-orange-light dark:bg-dark-orange-light': card.color === 'orange',
+                    'bg-light-pink-fade dark:bg-dark-pink-fade': card.color === 'pink',
+                    'bg-light-green dark:bg-dark-green': card.color === 'green',
+                    'bg-light-blue dark:bg-dark-blue': card.color === 'blue',
+                    'bg-light-orange-fade dark:bg-dark-orange-fade': card.color === 'orange',
                   }
                 )}
               >
@@ -121,10 +121,8 @@ const Homepage: FC<Props> = ({ homepageData }) => {
                     className={cn('subheading-1', {
                       'text-light-orange-vibrant dark:text-dark-orange-vibrant':
                         textColorName === 'orange-vibrant',
-                      'text-light-blue-vibrant dark:text-dark-blue-vibrant':
-                        textColorName === 'blue-vibrant',
-                      'text-light-green-base dark:text-dark-green-base':
-                        textColorName === 'green-base',
+                      'text-blue-base dark:text-blue-base': textColorName === 'blue-vibrant',
+                      'text-green-base dark:text-green-base': textColorName === 'green-base',
                       'text-light-pink-vibrant dark:text-dark-pink-vibrant':
                         textColorName === 'pink-vibrant',
                     })}
@@ -187,14 +185,14 @@ const Homepage: FC<Props> = ({ homepageData }) => {
             <Layers className="w-6 h-6 mr-2" color="neutral-1" />
             <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Topics</h3>
           </div>
-          <div className="mt-padding-x-large w-full flex flex-row flex-wrap">
+          <div className="mt-padding-x-large w-full grid grid-cols-2 gap-x-4 sm:flex sm:flex-row sm:flex-wrap">
             {homepageData.topicsBlock.categories.map((category) => {
               return (
                 <a
                   key={category.name}
                   href={category.url}
                   target="_self"
-                  className="transition hover:text-light-pink-vibrant dark:hover:text-dark-pink-vibrant hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 mr-4 mb-3 block rounded-medium py-margin-mobile-dense px-margin-extension text-light-neutral-1 dark:text-dark-neutral-1 bg-light-surface-2 dark:bg-dark-surface-2"
+                  className="transition hover:text-light-pink-vibrant dark:hover:text-dark-pink-vibrant hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 mb-3 block rounded-medium py-margin-mobile-dense px-margin-extension text-light-neutral-1 dark:text-dark-neutral-1 bg-light-surface-2 dark:bg-dark-surface-2"
                 >
                   {category.name}
                 </a>

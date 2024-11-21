@@ -1,9 +1,9 @@
-import { FC } from "react";
-import { FooterPageData } from "../../lib/types";
+import { FC } from 'react';
+import { FooterPageData } from '../../lib/types';
 
-import { MiniUnicon } from "../../svgs/Logos";
-import { Github, X, Discord } from "../../svgs/Icons";
-import { LinkBase, TextButton } from "../../base/Button";
+import { MiniUnicon } from '../../svgs/Logos';
+import { Github, X, Discord } from '../../svgs/Icons';
+import { LinkBase, TextButton } from '../../base/Button';
 
 type Props = {
   footerPageData: FooterPageData;
@@ -24,12 +24,9 @@ const Footer: FC<Props> = ({ footerPageData }) => {
         </div>
         <div className="col-span-4 sm:col-span-8 sm:flex sm:grid-cols-8 md:col-span-4">
           <nav className="grid w-full grid-cols-2 gap-gap-large sm:grid-cols-4">
-            {footerPageData?.footerLinksSupport &&
-            footerPageData.footerLinksSupport.length > 0 ? (
+            {footerPageData?.footerLinksSupport && footerPageData.footerLinksSupport.length > 0 ? (
               <div className="space-y-[0.3125rem]">
-                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">
-                  Support
-                </h3>
+                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">Support</h3>
                 <ul>
                   {footerPageData?.footerLinksSupport.map((link) => (
                     <li key={link.name}>
@@ -46,9 +43,7 @@ const Footer: FC<Props> = ({ footerPageData }) => {
             {footerPageData?.footerLinksEcosystem &&
             footerPageData.footerLinksEcosystem.length > 0 ? (
               <div className="col-span-1 space-y-[0.3125rem]">
-                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">
-                  Ecosystem
-                </h3>
+                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">Ecosystem</h3>
                 <ul>
                   {footerPageData.footerLinksEcosystem.map((link) => (
                     <li key={link.name}>
@@ -62,12 +57,9 @@ const Footer: FC<Props> = ({ footerPageData }) => {
                 </ul>
               </div>
             ) : null}
-            {footerPageData?.footerLinksCompany &&
-            footerPageData?.footerLinksCompany.length > 0 ? (
+            {footerPageData?.footerLinksCompany && footerPageData?.footerLinksCompany.length > 0 ? (
               <div className="space-y-[0.3125rem]">
-                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">
-                  Company
-                </h3>
+                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">Company</h3>
                 <ul>
                   {footerPageData.footerLinksCompany.map((link) => (
                     <li key={link.name}>
@@ -81,12 +73,9 @@ const Footer: FC<Props> = ({ footerPageData }) => {
                 </ul>
               </div>
             ) : null}
-            {footerPageData?.footerLinksHelp &&
-            footerPageData.footerLinksHelp.length > 0 ? (
+            {footerPageData?.footerLinksHelp && footerPageData.footerLinksHelp.length > 0 ? (
               <div className="space-y-[0.3125rem]">
-                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">
-                  Need Help?
-                </h3>
+                <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">Need Help?</h3>
                 <ul>
                   {footerPageData?.footerLinksHelp.map((link) => (
                     <li key={link.name}>
@@ -107,7 +96,7 @@ const Footer: FC<Props> = ({ footerPageData }) => {
         <p className="body-3 my-padding-large text-light-neutral-2 dark:text-dark-neutral-2 sm:my-0">
           @{new Date().getFullYear()} Uniswap Labs
         </p>
-        <div className="flex flex-row space-x-gap-large border-b border-light-surface-3 px-2 py-margin-web dark:border-dark-surface-3 sm:border-0 sm:px-0 sm:py-0">
+        <div className="flex flex-row space-x-gap-large border-b border-light-surface-3 py-margin-web dark:border-dark-surface-3 sm:border-0 sm:px-0 sm:py-0">
           {footerPageData?.footerGithubLink ? (
             <LinkBase
               className="group"

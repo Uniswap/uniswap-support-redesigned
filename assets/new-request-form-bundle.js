@@ -83,7 +83,8 @@ function Input({ field, onChange }) {
       jsxRuntimeExports.jsx(Input$1, {
         name: name,
         type: inputType,
-        defaultValue: value && value !== '' ? value : `Enter ${label}`,
+        defaultValue: value && value !== '' ? value : '',
+        placeholder: `Enter ${label}`,
         validation: error ? 'error' : undefined,
         required: required,
         onChange: (e) => {
@@ -171,7 +172,8 @@ function TextArea({ field, hasWysiwyg, baseLocale, hasAtMentions, userRole, bran
       jsxRuntimeExports.jsx(Textarea, {
         ref: ref,
         name: name,
-        defaultValue: value && value !== '' ? value : 'Describe your issue.',
+        defaultValue: value && value !== '' ? value : '',
+        placeholder: 'Describe your issue.',
         validation: error ? 'error' : undefined,
         required: required,
         onChange: (e) => onChange(e.target.value),
@@ -1595,7 +1597,6 @@ function CreditCard({ field, onChange }) {
 
 function Tagger({ field, onChange }) {
   const { label, options, error, value, name, required, description } = field;
-  console.log('value', value);
   const { currentGroup, isGroupIdentifier, setCurrentGroupByIdentifier } = useNestedOptions({
     options,
     hasEmptyOption: true,
@@ -2129,7 +2130,6 @@ function NewRequestForm({
     organizationField: organization_field,
     dueDateField: due_date_field,
   });
-  console.log('requestForm', requestForm);
   const [selectedTopic, setSelectedTopic] = reactExports.useState('');
   const [ticketFields, setTicketFields] = reactExports.useState(prefilledTicketFields);
   const [organizationField, setOrganizationField] = reactExports.useState(

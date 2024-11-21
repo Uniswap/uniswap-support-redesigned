@@ -4,9 +4,9 @@ import {
   Input as GardenInput,
   Label,
   Message,
-} from "@zendeskgarden/react-forms";
-import { Span } from "@zendeskgarden/react-typography";
-import type { Field } from "../data-types";
+} from '@zendeskgarden/react-forms';
+import { Span } from '@zendeskgarden/react-typography';
+import type { Field } from '../data-types';
 
 interface InputProps {
   field: Field;
@@ -16,14 +16,12 @@ interface InputProps {
 export function Input({ field, onChange }: InputProps): JSX.Element {
   const { label, error, value, name, required, description, type } = field;
   const stepProp: { step?: string } = {};
-  const inputType =
-    type === "integer" || type === "decimal" ? "number" : "text";
+  const inputType = type === 'integer' || type === 'decimal' ? 'number' : 'text';
 
-  if (type === "integer") stepProp.step = "1";
-  if (type === "decimal") stepProp.step = "any";
+  if (type === 'integer') stepProp.step = '1';
+  if (type === 'decimal') stepProp.step = 'any';
 
-  const autocomplete =
-    type === "anonymous_requester_email" ? "email" : undefined;
+  const autocomplete = type === 'anonymous_requester_email' ? 'email' : undefined;
 
   return (
     <GardenField className="custom-form-field-layout">
@@ -34,10 +32,9 @@ export function Input({ field, onChange }: InputProps): JSX.Element {
       <GardenInput
         name={name}
         type={inputType}
-        defaultValue={
-          value && value !== "" ? (value as string) : `Enter ${label}`
-        }
-        validation={error ? "error" : undefined}
+        defaultValue={value && value !== '' ? (value as string) : ''}
+        placeholder={`Enter ${label}`}
+        validation={error ? 'error' : undefined}
         required={required}
         onChange={(e) => {
           onChange && onChange(e.target.value);
@@ -47,9 +44,7 @@ export function Input({ field, onChange }: InputProps): JSX.Element {
         {...stepProp}
       />
       {error && <Message validation="error">{error}</Message>}
-      {description && (
-        <Hint dangerouslySetInnerHTML={{ __html: description }} />
-      )}
+      {description && <Hint dangerouslySetInnerHTML={{ __html: description }} />}
     </GardenField>
   );
 }
