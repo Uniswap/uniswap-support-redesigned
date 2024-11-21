@@ -34,7 +34,7 @@ const config: Config = {
       md: `${SCREEN_SIZE.DESKTOP.min}px`,
       /* Max */
       lg: `${SCREEN_SIZE.XL_DESKTOP.min}px`,
-      'sm-md': '1000px',
+      'sm-md': '900px',
     },
     extend: {
       borderRadius: {

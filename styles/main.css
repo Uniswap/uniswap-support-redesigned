@@ -140,7 +140,7 @@
           display: block;
           position: absolute;
           content: '';
-          background-image: url('../assets/book-open-light.svg');
+          background-image: url('../book-open-light.svg');
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -151,7 +151,7 @@
           @apply top-padding-medium left-padding-medium hidden dark:block;
           position: absolute;
           content: '';
-          background-image: url('../assets/book-open-dark.svg');
+          background-image: url('../book-open-dark.svg');
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;

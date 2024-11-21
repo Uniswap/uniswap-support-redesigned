@@ -13,6 +13,7 @@ import {
 } from './Icons';
 import { HomepageData, ColoredCardsColor } from '../../lib/types';
 import ConnectBlock from './ConnectBlock';
+import { HeaderBackgroundMobile } from './HeaderBackgroundMobile';
 
 type Props = {
   homepageData: HomepageData;
@@ -61,10 +62,11 @@ const Homepage: FC<Props> = ({ homepageData }) => {
   return (
     <div className="page-wrapper">
       {hero && (
-        <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 relative overflow-hidden">
-          <div className="size-full absolute top-0 left-0 pointer-events-none flex flex-row items-center justify-center sm-md:justify-between m-auto overflow-hidden">
-            <HeaderBackgroundLeft className="h-full object-contain absolute top-0 sm:left-0 sm:right-0 sm-md:right-auto bottom-0 m-auto" />
-            <HeaderBackgroundRight className="h-full object-contain absolute top-0 right-0 bottom-0 sm-md:block hidden" />
+        <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 relative overflow-hidden aspect-square sm:aspect-auto h-auto flex flex-col items-center justify-center space-y-8">
+          <div className="size-full absolute top-0 left-0 pointer-events-none flex flex-row items-center justify-center sm:justify-between m-auto overflow-hidden">
+            <HeaderBackgroundLeft className="h-full object-contain absolute top-0 sm:left-0 sm:right-0 sm-md:right-auto bottom-0 m-auto sm:block hidden" />
+            <HeaderBackgroundRight className="h-full object-contain absolute top-0 right-0 bottom-0 sm:block hidden" />
+            <HeaderBackgroundMobile className="w-full object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:hidden block" />
           </div>
           <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1 z-50 relative">
             <span
@@ -92,7 +94,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
           </h2>
           <div
             ref={searchBarRef}
-            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2 rounded-[1.25rem]"
+            className="relative z-nav bg-light-surface-2 dark:bg-dark-surface-2 rounded-[1.25rem] w-full"
           ></div>
         </div>
       )}
