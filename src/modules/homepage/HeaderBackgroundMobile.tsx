@@ -7,11 +7,7 @@ export const HeaderBackgroundMobile: FC<{
   return (
     <svg viewBox="0 0 327 320" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <g className="avatar-wrapper" clipPath="url(#clip0_5543_17009)">
-        <path
-          d="M0 20C0 8.95431 8.9543 0 20 0H307C318.046 0 327 8.95431 327 20V300C327 311.046 318.046 320 307 320H20C8.9543 320 0 311.046 0 300V20Z"
-          fill="#1B1B1B"
-        />
-        <rect width="327" height="320" fill="url(#pattern0_5543_17009)" />
+        <rect opacity="0.1" width="327" height="320" fill="url(#pattern0_5543_17009)" />
         <g>
           <g clipPath="url(#clip1_5543_17009)">
             <rect x="271" y="253" width="24" height="24" rx="12" fill="#EDEDED" />

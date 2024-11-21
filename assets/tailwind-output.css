@@ -2861,7 +2861,7 @@ video {
           display: block;
           position: absolute;
           content: '';
-          background-image: url('../book-open-light.svg');
+          background-image: var(--book-asset-path);
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
@@ -2882,7 +2882,7 @@ video {
         &:after {
           position: absolute;
           content: '';
-          background-image: url('../book-open-dark.svg');
+          background-image: var(--book-asset-path-dark);
           background-size: 1.5rem 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
