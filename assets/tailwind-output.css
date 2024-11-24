@@ -567,6 +567,16 @@ video {
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  .\!container {
+    max-width: 600px !important;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+
 @media (min-width: 768px) {
   .\!container {
     max-width: 768px !important;
@@ -1012,6 +1022,10 @@ video {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.aspect-\[327\/320\] {
+  aspect-ratio: 327/320;
 }
 
 .size-0 {
@@ -2957,7 +2971,7 @@ video {
             display: block;
             position: absolute;
             content: '';
-            background-image: url('../assets/right-arrow-light.svg');
+            background-image: var(--right-arrow-path);
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -2994,7 +3008,7 @@ video {
           &:after {
             position: absolute;
             content: '';
-            background-image: url('../assets/right-arrow-dark.svg');
+            background-image: var(--right-arrow-path-dark);
             background-size: 1.5rem 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -4054,13 +4068,52 @@ iframe#launcher {
     scaleY(var(--tw-scale-y));
 }
 
-@media (min-width: 768px) {
-  .sm\:left-0 {
-    left: 0px;
+@media (min-width: 600px) {
+  .xs\:-left-24 {
+    left: -6rem;
   }
 
-  .sm\:right-0 {
-    right: 0px;
+  .xs\:-right-24 {
+    right: -6rem;
+  }
+
+  .xs\:-left-32 {
+    left: -8rem;
+  }
+
+  .xs\:-right-32 {
+    right: -8rem;
+  }
+
+  .xs\:block {
+    display: block;
+  }
+
+  .xs\:hidden {
+    display: none;
+  }
+
+  .xs\:aspect-auto {
+    aspect-ratio: auto;
+  }
+
+  .xs\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xs\:py-\[3\.75rem\] {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:-left-24 {
+    left: -6rem;
+  }
+
+  .sm\:-right-24 {
+    right: -6rem;
   }
 
   .sm\:col-span-2 {
@@ -4245,6 +4298,14 @@ iframe#launcher {
 }
 
 @media (min-width: 1280px) {
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }

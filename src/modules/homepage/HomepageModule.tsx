@@ -62,11 +62,11 @@ const Homepage: FC<Props> = ({ homepageData }) => {
   return (
     <div className="page-wrapper">
       {hero && (
-        <div className="Hero rounded-large py-[4.84375rem] sm:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 relative overflow-hidden aspect-square sm:aspect-auto h-auto flex flex-col items-center justify-center space-y-8">
-          <div className="size-full absolute top-0 left-0 pointer-events-none flex flex-row items-center justify-center sm:justify-between m-auto overflow-hidden">
-            <HeaderBackgroundLeft className="h-full object-contain absolute top-0 sm:left-0 sm:right-0 sm-md:right-auto bottom-0 m-auto sm:block hidden" />
-            <HeaderBackgroundRight className="h-full object-contain absolute top-0 right-0 bottom-0 sm:block hidden" />
-            <HeaderBackgroundMobile className="w-full object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:hidden block" />
+        <div className="Hero rounded-large py-[4.84375rem] xs:py-[3.75rem] px-padding-medium bg-light-surface-2 dark:bg-dark-surface-2 relative overflow-hidden aspect-[327/320] xs:aspect-auto h-auto flex flex-col items-center justify-center space-y-8">
+          <div className="size-full absolute top-0 left-0 pointer-events-none flex flex-row items-center justify-center xs:justify-between m-auto overflow-hidden">
+            <HeaderBackgroundLeft className="h-full object-contain absolute top-0 xs:-left-32 sm:-left-24 md:left-0 sm-md:right-auto bottom-0 m-auto xs:block hidden" />
+            <HeaderBackgroundRight className="h-full object-contain absolute top-0 xs:-right-32 sm:-right-24 md:right-0 bottom-0 xs:block hidden" />
+            <HeaderBackgroundMobile className="w-full object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:hidden block" />
           </div>
           <h2 className="flex flex-col items-center text-light-neutral-1 dark:text-dark-neutral-1 z-50 relative">
             <span

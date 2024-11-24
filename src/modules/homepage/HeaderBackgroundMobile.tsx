@@ -13,7 +13,15 @@ export const HeaderBackgroundMobile: FC<{
             <rect x="271" y="253" width="24" height="24" rx="12" fill="#EDEDED" />
             <rect x="271" y="253" width="24" height="24" fill="url(#pattern1_5543_17009)" />
           </g>
-          <rect x="270.5" y="252.5" width="25" height="25" rx="12.5" stroke="#F50DB4" />
+          <rect
+            x="270.5"
+            y="252.5"
+            width="25"
+            height="25"
+            rx="12.5"
+            stroke="#F50DB4"
+            stroke-width="2"
+          />
         </g>
         <g>
           <g clipPath="url(#clip2_5543_17009)">
@@ -51,7 +59,15 @@ export const HeaderBackgroundMobile: FC<{
             <rect x="10" y="152" width="24" height="24" rx="12" fill="url(#pattern5_5543_17009)" />
             <rect x="10" y="152" width="24" height="24" fill="url(#pattern6_5543_17009)" />
           </g>
-          <rect x="9.5" y="151.5" width="25" height="25" rx="12.5" stroke="#F50DB4" />
+          <rect
+            x="9.5"
+            y="151.5"
+            width="25"
+            height="25"
+            rx="12.5"
+            stroke="#F50DB4"
+            stroke-width="2"
+          />
         </g>
         <g>
           <g clipPath="url(#clip5_5543_17009)">
@@ -77,7 +93,7 @@ export const HeaderBackgroundMobile: FC<{
             rx="18.375"
             transform="matrix(-1 0 0 1 107.75 25)"
             stroke="#F50DB4"
-            stroke-width="0.75"
+            stroke-width="2"
           />
         </g>
         <g>
@@ -107,7 +123,15 @@ export const HeaderBackgroundMobile: FC<{
             <rect x="265" y="4" width="24" height="24" rx="12" fill="#EDEDED" />
             <rect x="265" y="4" width="24" height="24" fill="url(#pattern10_5543_17009)" />
           </g>
-          <rect x="264.5" y="3.5" width="25" height="25" rx="12.5" stroke="#F50DB4" />
+          <rect
+            x="264.5"
+            y="3.5"
+            width="25"
+            height="25"
+            rx="12.5"
+            stroke="#F50DB4"
+            stroke-width="2"
+          />
         </g>
         <g>
           <g clipPath="url(#clip9_5543_17009)">
@@ -121,7 +145,15 @@ export const HeaderBackgroundMobile: FC<{
             <rect x="290" y="153" width="24" height="24" rx="12" fill="#EDEDED" />
             <rect x="290" y="153" width="24" height="24" fill="url(#pattern12_5543_17009)" />
           </g>
-          <rect x="289.5" y="152.5" width="25" height="25" rx="12.5" stroke="#F50DB4" />
+          <rect
+            x="289.5"
+            y="152.5"
+            width="25"
+            height="25"
+            rx="12.5"
+            stroke="#F50DB4"
+            stroke-width="2"
+          />
         </g>
         <g>
           <g clipPath="url(#clip11_5543_17009)">
