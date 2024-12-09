@@ -49,8 +49,12 @@
     }
 
     a {
-      @apply break-all underline decoration-2 underline-offset-4 !transition-all hover:decoration-light-neutral-2 dark:hover:decoration-dark-neutral-2;
+      @apply break-words !underline !decoration-2 !underline-offset-4 !transition-all hover:!decoration-light-neutral-2 dark:hover:!decoration-dark-neutral-2;
       font: inherit;
+    }
+
+    a > span {
+      @apply !border-none;
     }
 
     img {
