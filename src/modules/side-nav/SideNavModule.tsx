@@ -52,10 +52,10 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
               <ul>
                 {category.sections.map((section) => {
                   return (
-                    <li key={section.id} className="mt-1">
+                    <li key={section.id} className="mt-2">
                       <a
                         href={section.url}
-                        className="transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1"
+                        className="transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]"
                       >
                         {section.name}
                       </a>

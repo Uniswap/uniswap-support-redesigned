@@ -1999,6 +1999,18 @@ video {
     var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.\!leading-\[1rem\] {
+  line-height: 1rem !important;
+}
+
+.\!leading-\[\.5rem\] {
+  line-height: 0.5rem !important;
+}
+
+.\!leading-\[1\.4\] {
+  line-height: 1.4 !important;
+}
+
 .\!text-light-accent-1 {
   --tw-text-opacity: 1 !important;
   color: rgb(245 13 180 / var(--tw-text-opacity)) !important;
