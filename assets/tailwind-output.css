@@ -1020,10 +1020,6 @@ video {
   display: none;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .aspect-\[327\/320\] {
   aspect-ratio: 327/320;
 }
@@ -4069,14 +4065,6 @@ iframe#launcher {
 }
 
 @media (min-width: 600px) {
-  .xs\:-left-24 {
-    left: -6rem;
-  }
-
-  .xs\:-right-24 {
-    right: -6rem;
-  }
-
   .xs\:-left-32 {
     left: -8rem;
   }
@@ -4161,14 +4149,6 @@ iframe#launcher {
     display: grid;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:aspect-auto {
-    aspect-ratio: auto;
-  }
-
   .sm\:min-h-\[15\.625rem\] {
     min-height: 15.625rem;
   }
@@ -4236,11 +4216,6 @@ iframe#launcher {
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .sm\:py-\[3\.75rem\] {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
   }
 
   .sm\:pb-margin-web {
