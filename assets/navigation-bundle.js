@@ -279,7 +279,7 @@ const Navigation = () => {
                     jsxRuntimeExports.jsx('p', {
                       className:
                         'body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1',
-                      children: 'Uniswap Support',
+                      children: 'Support',
                     }),
                   ],
                 }),

@@ -81,7 +81,7 @@ const Navigation: FC = () => {
             <LinkBase href="/hc/en-us" className="flex flex-row items-center">
               <MiniUnicon className="mb-[0.1875rem] h-8 w-8" />
               <p className="body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1">
-                Uniswap Support
+                Support
               </p>
             </LinkBase>
           </div>
