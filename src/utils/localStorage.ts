@@ -1,4 +1,4 @@
-import { SideNavData } from '../lib/types';
+import { Article, SideNavData } from '../lib/types';
 
 export class LocalStorageManager<T> {
   key: string;
@@ -29,3 +29,8 @@ export const SideNavDataManager = new LocalStorageManager<{
   expriresAt: number;
   data: SideNavData;
 }>('SIDE_NAV_DATA');
+
+export const FAQDataManager = new LocalStorageManager<{
+  expiresAt: number;
+  data: Article[];
+}>('FAQ_DATA');

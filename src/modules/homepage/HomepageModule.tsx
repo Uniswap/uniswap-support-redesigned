@@ -2,6 +2,7 @@ import { FC, useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import { HeaderBackgroundLeft } from './HeaderBackgroundLeft';
 import { HeaderBackgroundRight } from './HeaderBackgroundRight';
+import { fetchFAQArticles } from './api';
 
 import {
   ColoredCardsIconMap,
@@ -11,7 +12,7 @@ import {
   BookOpen,
   Layers,
 } from './Icons';
-import { HomepageData, ColoredCardsColor } from '../../lib/types';
+import { HomepageData, ColoredCardsColor, Article } from '../../lib/types';
 import ConnectBlock from './ConnectBlock';
 import { HeaderBackgroundMobile } from './HeaderBackgroundMobile';
 
@@ -38,6 +39,20 @@ const Homepage: FC<Props> = ({ homepageData }) => {
   const searchBarRef = useRef<HTMLDivElement>(null);
 
   const [heroTextReveal, setHeroTextReveal] = useState(false);
+  const [faqArticles, setFaqArticles] = useState<Article[] | null>(null);
+
+  useEffect(() => {
+    const loadFAQArticles = async () => {
+      try {
+        const data = await fetchFAQArticles();
+        setFaqArticles(data);
+      } catch (e) {
+        console.error('Failed to load FAQ articles.');
+      }
+    };
+
+    loadFAQArticles();
+  }, []);
 
   useEffect(() => {
     const searchBarTimeout = setTimeout(() => {
@@ -145,18 +160,18 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         </div>
       ) : null}
       <Divider />
-      {homepageData.faqBlock && homepageData.faqBlock.articles.length > 0 ? (
+      {faqArticles && faqArticles.length > 0 ? (
         <div className="FAQBlock py-padding-x-large">
           <div className="flex flex-row items-center">
             <GraduationCap className="w-6 h-6 mr-2" color="neutral-1" />
             <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">FAQ</h3>
           </div>
           <div className="default-grid gap-4 mt-padding-x-large">
-            {homepageData.faqBlock.articles.map((article) => (
+            {faqArticles.map((article) => (
               <ArticleLinkCard
                 key={article.title}
                 title={article.title}
-                description={article.description}
+                description={article.snippet}
                 url={article.url}
               />
             ))}

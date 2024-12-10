@@ -1201,12 +1201,12 @@ video {
   max-width: 25rem;
 }
 
-.max-w-\[56\.75rem\] {
-  max-width: 56.75rem;
-}
-
 .max-w-\[43\.375rem\] {
   max-width: 43.375rem;
+}
+
+.max-w-\[56\.75rem\] {
+  max-width: 56.75rem;
 }
 
 .flex-shrink {
@@ -3835,7 +3835,7 @@ zd-autocomplete {
 
 @media (min-width: 1280px) {
   zd-autocomplete {
-    margin-left: -3.03125rem !important;
+    margin-left: -3.032rem !important;
     width: 25rem !important;
   }
 }
