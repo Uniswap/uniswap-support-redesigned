@@ -259,7 +259,8 @@ const Navigation = () => {
                 onClick: () => {
                   setMobileSearchBarIsOpen((prev) => !prev);
                 },
-                className: 'body-2 text-light-neutral-2 dark:text-dark-neutral-2 shrink-0',
+                className:
+                  'body-2 text-light-neutral-2 dark:text-dark-neutral-2 shrink-0 absolute right-4',
                 children: 'Cancel',
               }),
             ],
@@ -278,7 +279,7 @@ const Navigation = () => {
                     jsxRuntimeExports.jsx('p', {
                       className:
                         'body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1',
-                      children: 'Uniswap Support',
+                      children: 'Support',
                     }),
                   ],
                 }),

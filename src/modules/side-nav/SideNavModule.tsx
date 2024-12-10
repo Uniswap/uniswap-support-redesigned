@@ -9,15 +9,27 @@ type Props = {
 
 export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
   const [activeNavState, setActiveNavState] = useState<NavState>(navState);
+  const [sideNavLoadedFirstTime, setSideNavLoadedFirstTime] = useState(true);
+  // initialActiveSection is used to set the initial state of the section when the side nav is loaded for the first time. Even if the section is active, it should be closed.
+  const [initialActiveSection] = useState<{ [key: number]: boolean }>({
+    [navState.section || '']: false,
+  });
   const [activeSection, setActiveSection] = useState<{ [key: number]: boolean }>({
     [navState.section || '']: true,
   });
 
   const handleSectiontoggle = (sectionId: number) => {
-    setActiveSection((prev) => ({
-      ...prev,
-      [sectionId]: !prev[sectionId],
-    }));
+    sideNavLoadedFirstTime
+      ? navState.section !== sectionId &&
+        setActiveSection((prev) => ({
+          ...prev,
+          [sectionId]: !prev[sectionId],
+        }))
+      : setActiveSection((prev) => ({
+          ...prev,
+          [sectionId]: !prev[sectionId],
+        }));
+    setSideNavLoadedFirstTime(false);
   };
 
   if (!sideNavData) {
@@ -52,10 +64,10 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
               <ul>
                 {category.sections.map((section) => {
                   return (
-                    <li key={section.id} className="mt-1">
+                    <li key={section.id} className="mt-2">
                       <a
                         href={section.url}
-                        className="transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1"
+                        className="transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]"
                       >
                         {section.name}
                       </a>
@@ -125,7 +137,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                     return (
                       <li key={section.id} className="mt-4 first:mt-6">
                         <button
-                          className="w-full group flex flex-row items-center justify-between"
+                          className="w-full group flex flex-row space-x-0.5 items-center justify-between"
                           onClick={() => handleSectiontoggle(section.id)}
                         >
                           <span
@@ -139,11 +151,15 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                           >
                             {section.name}
                           </span>
-                          <ChevronDown />
+                          <div className="shrink-0">
+                            <ChevronDown />
+                          </div>
                         </button>
                         <ul
                           className={cn('accordion-body overflow-hidden', {
-                            'accordion-body-active': activeSection[section.id],
+                            'accordion-body-active':
+                              (sideNavLoadedFirstTime && initialActiveSection[section.id]) ||
+                              (!sideNavLoadedFirstTime && activeSection[section.id]),
                           })}
                         >
                           <div className="overflow-hidden">
@@ -155,7 +171,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                                   <a
                                     href={article.url}
                                     className={cn(
-                                      'transition body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1',
+                                      'transition body-3 block !leading-[1.4] hover:text-light-accent-1 dark:hover:text-dark-accent-1',
                                       {
                                         'text-light-accent-1 dark:text-dark-accent-1':
                                           isActiveArticle,
@@ -212,8 +228,7 @@ const ChevronDown: FC<{
         clip-rule="evenodd"
         d="M3.52876 5.52827C3.78911 5.26792 4.21122 5.26792 4.47157 5.52827L8.00016 9.05687L11.5288 5.52827C11.7891 5.26792 12.2112 5.26792 12.4716 5.52827C12.7319 5.78862 12.7319 6.21073 12.4716 6.47108L8.47157 10.4711C8.21122 10.7314 7.78911 10.7314 7.52876 10.4711L3.52876 6.47108C3.26841 6.21073 3.26841 5.78862 3.52876 5.52827Z"
         className={cn({
-          'transition fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover:fill-light-accent-1 group-hover:dark:fill-dark-accent-1':
-            color === 'neutral-2',
+          'transition fill-light-neutral-2 dark:fill-dark-neutral-2': color === 'neutral-2',
         })}
       />
     </svg>

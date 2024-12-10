@@ -71,7 +71,7 @@ const Navigation: FC = () => {
             onClick={() => {
               setMobileSearchBarIsOpen((prev) => !prev);
             }}
-            className="body-2 text-light-neutral-2 dark:text-dark-neutral-2 shrink-0"
+            className="body-2 text-light-neutral-2 dark:text-dark-neutral-2 shrink-0 absolute right-4"
           >
             Cancel
           </ButtonBase>
@@ -81,7 +81,7 @@ const Navigation: FC = () => {
             <LinkBase href="/hc/en-us" className="flex flex-row items-center">
               <MiniUnicon className="mb-[0.1875rem] h-8 w-8" />
               <p className="body-3 md:button-label-2 ml-2 text-light-accent-1 dark:text-dark-accent-1">
-                Uniswap Support
+                Support
               </p>
             </LinkBase>
           </div>
