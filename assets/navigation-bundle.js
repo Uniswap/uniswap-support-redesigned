@@ -8,7 +8,7 @@ class StorageManager {
     }
     set(value) {
         const valueToSet = JSON.stringify(value);
-        api.set(this.key, valueToSet, { expires: 365, domain: "zendesk.com" });
+        api.set(this.key, valueToSet, { expires: 365, domain: 'uniswap.org' });
     }
     get() {
         const value = api.get(this.key);
@@ -18,10 +18,10 @@ class StorageManager {
         return undefined;
     }
     remove() {
-        api.remove(this.key, { domain: "zendesk.com" });
+        api.remove(this.key, { domain: 'uniswap.org' });
     }
 }
-const THEME_STORAGE_NAME = "uniswap-ui-theme";
+const THEME_STORAGE_NAME = 'uniswap-ui-theme';
 const ThemeManager = new StorageManager(THEME_STORAGE_NAME);
 
 const UIContext = reactExports.createContext(undefined);
