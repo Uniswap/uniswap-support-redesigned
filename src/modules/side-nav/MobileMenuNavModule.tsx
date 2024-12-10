@@ -96,6 +96,7 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
           <ul className="accordion-body">
             {selectedCategory &&
               selectedCategory.sections.map((section) => {
+                console.log(section, navState.category, selectedCategory.id);
                 return (
                   <li key={section.id} className="mt-4 first:mt-5">
                     <button
@@ -104,7 +105,13 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
                     >
                       <span
                         className={cn(
-                          'transition body-2 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1'
+                          'transition body-2 group-hover:text-light-accent-1 dark:group-hover:text-dark-accent-1',
+                          {
+                            'text-light-accent-1 dark:text-dark-accent-1':
+                              navState.section === section.id,
+                            'text-light-neutral-1 dark:text-dark-neutral-1':
+                              navState.section !== section.id,
+                          }
                         )}
                       >
                         {section.name}
@@ -197,8 +204,7 @@ const ChevronDown: FC<{
         clip-rule="evenodd"
         d="M3.52876 5.52827C3.78911 5.26792 4.21122 5.26792 4.47157 5.52827L8.00016 9.05687L11.5288 5.52827C11.7891 5.26792 12.2112 5.26792 12.4716 5.52827C12.7319 5.78862 12.7319 6.21073 12.4716 6.47108L8.47157 10.4711C8.21122 10.7314 7.78911 10.7314 7.52876 10.4711L3.52876 6.47108C3.26841 6.21073 3.26841 5.78862 3.52876 5.52827Z"
         className={cn({
-          'transition fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover:fill-light-accent-1 group-hover:dark:fill-dark-accent-1':
-            color === 'neutral-2',
+          'transition fill-light-neutral-2 dark:fill-dark-neutral-2': color === 'neutral-2',
         })}
       />
     </svg>

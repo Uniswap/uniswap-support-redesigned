@@ -25,23 +25,23 @@
     @apply text-light-neutral-1 dark:text-dark-neutral-1;
 
     h2 {
-      @apply heading-2 mt-margin-mobile first:mt-0 mb-5;
+      @apply heading-2 mt-margin-mobile first:mt-0 mb-5 text-left;
     }
 
     h3 {
-      @apply heading-3 mt-margin-mobile first:mt-0 mb-5;
+      @apply heading-3 mt-margin-mobile first:mt-0 mb-5 text-left;
     }
 
     h4 {
-      @apply heading-4 mt-margin-mobile first:mt-0 mb-5;
+      @apply heading-4 mt-margin-mobile first:mt-0 mb-5 text-left;
     }
 
     h5 {
-      @apply subheading-1 mt-margin-mobile first:mt-0 mb-5;
+      @apply subheading-1 mt-margin-mobile first:mt-0 mb-5 text-left;
     }
 
     h6 {
-      @apply subheading-2 mt-margin-mobile first:mt-0 mb-5;
+      @apply subheading-2 mt-margin-mobile first:mt-0 mb-5 text-left;
     }
 
     p {

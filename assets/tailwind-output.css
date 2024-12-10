@@ -1201,12 +1201,12 @@ video {
   max-width: 25rem;
 }
 
-.max-w-\[43\.375rem\] {
-  max-width: 43.375rem;
-}
-
 .max-w-\[56\.75rem\] {
   max-width: 56.75rem;
+}
+
+.max-w-\[43\.375rem\] {
+  max-width: 43.375rem;
 }
 
 .flex-shrink {
@@ -2504,6 +2504,9 @@ video {
       margin-bottom: 1.25rem;
     }
     h2 {
+      text-align: left;
+    }
+    h2 {
       font-family: var(--font-basel-grotesk);
       font-size: 2.25rem;
       font-weight: 500;
@@ -2520,6 +2523,9 @@ video {
     }
     h3 {
       margin-bottom: 1.25rem;
+    }
+    h3 {
+      text-align: left;
     }
     h3 {
       font-family: var(--font-basel-grotesk);
@@ -2541,6 +2547,9 @@ video {
       margin-bottom: 1.25rem;
     }
     h4 {
+      text-align: left;
+    }
+    h4 {
       font-family: var(--font-basel-grotesk);
       font-size: 1.25rem;
       font-style: normal;
@@ -2560,6 +2569,9 @@ video {
       margin-bottom: 1.25rem;
     }
     h5 {
+      text-align: left;
+    }
+    h5 {
       font-family: var(--font-basel-grotesk);
       font-size: 1.125rem;
       font-style: normal;
@@ -2576,6 +2588,9 @@ video {
     }
     h6 {
       margin-bottom: 1.25rem;
+    }
+    h6 {
+      text-align: left;
     }
     h6 {
       font-family: var(--font-basel-grotesk);
