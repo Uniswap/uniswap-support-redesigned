@@ -96,7 +96,6 @@ export const MobileMenuNav: FC<Props> = ({ sideNavData, navState }) => {
           <ul className="accordion-body">
             {selectedCategory &&
               selectedCategory.sections.map((section) => {
-                console.log(section, navState.category, selectedCategory.id);
                 return (
                   <li key={section.id} className="mt-4 first:mt-5">
                     <button
