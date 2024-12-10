@@ -1,7 +1,17 @@
 import { Article } from '../../lib/types';
+import { FAQDataManager } from '../../utils/localStorage';
 
 export const fetchFAQArticles = async (): Promise<Article[] | null> => {
   const API_URL = 'https://support.uniswap.org/api/v2/help_center/articles/search?label_names=faq';
+
+  const cachedFAQData = FAQDataManager.get();
+
+  if (cachedFAQData && cachedFAQData.expiresAt > Date.now()) {
+    console.log('Returning cached FAQ articles');
+    return cachedFAQData.data;
+  }
+
+  FAQDataManager.clear();
 
   try {
     const response = await fetch(API_URL);
@@ -23,6 +33,13 @@ export const fetchFAQArticles = async (): Promise<Article[] | null> => {
       url: item.html_url,
       snippet: item.snippet,
     }));
+
+    // Store fetched data with a 24-hour expiration
+    const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+    FAQDataManager.set({
+      expiresAt: Date.now() + oneDayInMilliseconds,
+      data: articles,
+    });
 
     return articles;
   } catch (error) {
