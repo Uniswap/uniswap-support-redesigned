@@ -379,7 +379,7 @@ html:has(.ArticlePage) {
 }
 
 zd-autocomplete {
-  @apply !body-3 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-light-neutral-1 dark:!text-dark-neutral-1 md:!w-[25rem] !-ml-[3.25rem] md:!-ml-[3.03125rem] !rounded-b-xl !shadow-none !border !border-light-surface-3 dark:!border-dark-surface-3;
+  @apply !body-3 !bg-light-surface-1 dark:!bg-dark-surface-1 !text-light-neutral-1 dark:!text-dark-neutral-1 md:!w-[25rem] !-ml-[3.25rem] md:!-ml-[3.032rem] !rounded-b-xl !shadow-none !border !border-light-surface-3 dark:!border-dark-surface-3;
 }
 
 zd-autocomplete-header {
