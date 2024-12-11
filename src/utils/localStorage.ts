@@ -26,7 +26,7 @@ export class LocalStorageManager<T> {
 }
 
 export const SideNavDataManager = new LocalStorageManager<{
-  expriresAt: number;
+  expiresAt: number;
   data: SideNavData;
 }>('SIDE_NAV_DATA');
 
