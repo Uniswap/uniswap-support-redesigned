@@ -46,7 +46,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
         className={cn(
           'p-padding-large pb-margin-web absolute inset-0 transition category-side-nav w-full overflow-scroll',
           {
-            'opacity-0 pointer-events-none': !navStateIsEmpty,
+            'opacity-0 pointer-events-none hidden': !navStateIsEmpty,
           }
         )}
       >
@@ -56,7 +56,12 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
               <h3>
                 <a
                   href={category.url}
-                  className="transition text-light-neutral-1 dark:text-dark-neutral-1 subheading-2 hover:text-light-accent-1 dark:hover:text-dark-accent-1"
+                  className={cn(
+                    'transition text-light-neutral-1 dark:text-dark-neutral-1 subheading-2 hover:text-light-accent-1 dark:hover:text-dark-accent-1',
+                    {
+                      '!hidden': !navStateIsEmpty,
+                    }
+                  )}
                 >
                   {category.name}
                 </a>
@@ -67,7 +72,12 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                     <li key={section.id} className="mt-2">
                       <a
                         href={section.url}
-                        className="transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]"
+                        className={cn(
+                          'transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]',
+                          {
+                            '!hidden': !navStateIsEmpty,
+                          }
+                        )}
                       >
                         {section.name}
                       </a>
@@ -84,13 +94,15 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
         className={cn(
           'p-padding-large pb-margin-web transition absolute inset-0 section-side-nav w-full overflow-scroll',
           {
-            'opacity-0 pointer-events-none': navStateIsEmpty,
+            'opacity-0 pointer-events-none hidden': navStateIsEmpty,
           }
         )}
       >
         <div className="pb-3">
           <button
-            className="group flex flex-row items-center"
+            className={cn('group flex flex-row items-center', {
+              '!hidden': navStateIsEmpty,
+            })}
             onClick={() => setActiveNavState({})}
           >
             <ChevronLeft />
@@ -113,7 +125,12 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                 )}
               />
               <div key={`section-nav-${category.id}`}>
-                <a href={category.url}>
+                <a
+                  href={category.url}
+                  className={cn({
+                    '!hidden': navStateIsEmpty,
+                  })}
+                >
                   <h3
                     className={cn(
                       'transition subheading-2 my-3 hover:text-light-accent-1 hover:dark:text-dark-accent-1',
@@ -133,11 +150,15 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                 >
                   {category.sections.map((section) => {
                     const sectionIsActive = activeNavState.section === section.id;
-
                     return (
                       <li key={section.id} className="mt-4 first:mt-6">
                         <button
-                          className="w-full group flex flex-row space-x-0.5 items-center justify-between"
+                          className={cn(
+                            'w-full group flex flex-row space-x-0.5 items-center justify-between',
+                            {
+                              '!hidden': navStateIsEmpty,
+                            }
+                          )}
                           onClick={() => handleSectiontoggle(section.id)}
                         >
                           <span
@@ -165,7 +186,6 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                           <div className="overflow-hidden">
                             {section.articles.map((article) => {
                               const isActiveArticle = activeNavState.article === article.id;
-
                               return (
                                 <li key={article.id} className="mt-2 first:mt-4">
                                   <a
@@ -177,6 +197,7 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
                                           isActiveArticle,
                                         'text-light-neutral-2 dark:text-dark-neutral-2':
                                           !isActiveArticle,
+                                        '!hidden': navStateIsEmpty,
                                       }
                                     )}
                                   >

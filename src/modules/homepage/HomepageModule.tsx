@@ -138,18 +138,18 @@ const Homepage: FC<Props> = ({ homepageData }) => {
               >
                 <ColoredCardsIconMap icon={card.icon} className="w-6 h-6" color={textColorName} />
                 <div className="mt-[1.875rem]">
-                  <h4
+                  <h3
                     className={cn('subheading-1', {
                       'text-light-orange-vibrant dark:text-dark-orange-vibrant':
                         textColorName === 'orange-vibrant',
                       'text-blue-base dark:text-blue-base': textColorName === 'blue-vibrant',
-                      'text-green-base dark:text-green-base': textColorName === 'green-base',
+                      'text-green-base dark:text-green-vibrant': textColorName === 'green-base',
                       'text-light-pink-vibrant dark:text-dark-pink-vibrant':
                         textColorName === 'pink-vibrant',
                     })}
                   >
                     {card.title}
-                  </h4>
+                  </h3>
                   <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">
                     {card.description}
                   </p>

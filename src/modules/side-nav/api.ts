@@ -30,6 +30,7 @@ type SideNavApiResponse = {
     html_url: string;
     name: string;
     position: number;
+    parent_section_id: number | null;
   }[];
 };
 
@@ -44,7 +45,7 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
 
   const categories = response.categories.map((category) => {
     const sections = response.sections
-      .filter((section) => section.category_id === category.id)
+      .filter((section) => section.category_id === category.id && !section.parent_section_id)
       .map((section) => {
         const articles = response.articles
           .filter((article) => article.section_id === section.id)
@@ -79,13 +80,13 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
 export const sideNav = {
   get: async (): Promise<SideNavData> => {
     const storedSideNavData = SideNavDataManager.get();
-    const expriresAt = storedSideNavData?.expriresAt;
-
-    if (expriresAt && expriresAt > Date.now() && storedSideNavData.data) {
+    const expiresAt = storedSideNavData?.expiresAt;
+    if (expiresAt && expiresAt > Date.now() && storedSideNavData.data) {
       return storedSideNavData.data;
     } else {
       SideNavDataManager.clear();
     }
+    SideNavDataManager.clear();
 
     const url = `${window.location.origin}/api/v2/help_center/en-us/articles.json?include=categories,sections&per_page=100`;
 
@@ -96,7 +97,6 @@ export const sideNav = {
       }
 
       const responseData = await response.json();
-
       if (responseData.page_count <= 1) {
         return sanitizeResponse(responseData);
       }
@@ -136,7 +136,7 @@ export const sideNav = {
 
       SideNavDataManager.set({
         // Set it like this for now since the client wants to QA the side nav with different items
-        expriresAt: Date.now() + 5000,
+        expiresAt: Date.now() + 5000,
         // TODO: uncomment the line below before launch
         // expriresAt: Date.now() + millisecondsIn24Hours,
         data: sanitizedResponse,

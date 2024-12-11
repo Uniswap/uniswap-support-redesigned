@@ -1032,6 +1032,10 @@ video {
   display: none;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .aspect-\[327\/320\] {
   aspect-ratio: 327/320;
 }
@@ -2091,6 +2095,11 @@ video {
 .text-green-base {
   --tw-text-opacity: 1;
   color: rgb(12 137 17 / var(--tw-text-opacity));
+}
+
+.text-green-vibrant {
+  --tw-text-opacity: 1;
+  color: rgb(33 201 94 / var(--tw-text-opacity));
 }
 
 .text-light-accent-1 {
@@ -4639,9 +4648,9 @@ iframe#launcher {
   color: rgb(33 201 94 / var(--tw-text-opacity));
 }
 
-.dark\:text-green-base:where(.dark, .dark *) {
+.dark\:text-green-vibrant:where(.dark, .dark *) {
   --tw-text-opacity: 1;
-  color: rgb(12 137 17 / var(--tw-text-opacity));
+  color: rgb(33 201 94 / var(--tw-text-opacity));
 }
 
 .dark\:text-light-neutral-1:where(.dark, .dark *) {
