@@ -135,10 +135,7 @@ export const sideNav = {
       const millisecondsIn24Hours = 24 * 60 * 60 * 1000;
 
       SideNavDataManager.set({
-        // Set it like this for now since the client wants to QA the side nav with different items
-        expiresAt: Date.now() + 5000,
-        // TODO: uncomment the line below before launch
-        // expriresAt: Date.now() + millisecondsIn24Hours,
+        expiresAt: Date.now() + millisecondsIn24Hours,
         data: sanitizedResponse,
       });
 
