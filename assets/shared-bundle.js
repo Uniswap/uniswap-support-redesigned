@@ -4378,7 +4378,7 @@ function useId$1(providedId) {
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-function composeEventHandlers$2() {
+function composeEventHandlers$1() {
   for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
     fns[_key] = arguments[_key];
   }
@@ -4393,7 +4393,7 @@ function composeEventHandlers$2() {
   };
 }
 
-function getControlledValue$1() {
+function getControlledValue() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
   }
@@ -4745,7 +4745,7 @@ const ThemeProvider = _ref => {
   } = _ref;
   const scopeRef = reactExports.useRef(null);
   const relativeDocument = useDocument(theme);
-  const controlledScopeRef = focusVisibleRef === null ? U$6.createRef() : getControlledValue$1(focusVisibleRef, scopeRef);
+  const controlledScopeRef = focusVisibleRef === null ? U$6.createRef() : getControlledValue(focusVisibleRef, scopeRef);
   useFocusVisible({
     scope: controlledScopeRef,
     relativeDocument
@@ -11022,19 +11022,19 @@ const Label$3 = U$6.forwardRef((props, ref) => {
       } = fieldContext;
       combinedProps = {
         ...combinedProps,
-        onMouseUp: composeEventHandlers$2(props.onMouseUp, () => {
+        onMouseUp: composeEventHandlers$1(props.onMouseUp, () => {
           setIsLabelActive(false);
         }),
-        onMouseDown: composeEventHandlers$2(props.onMouseDown, () => {
+        onMouseDown: composeEventHandlers$1(props.onMouseDown, () => {
           setIsLabelActive(true);
         }),
-        onMouseEnter: composeEventHandlers$2(props.onMouseEnter, () => {
+        onMouseEnter: composeEventHandlers$1(props.onMouseEnter, () => {
           setIsLabelHovered(true);
         }),
-        onMouseLeave: composeEventHandlers$2(props.onMouseLeave, () => {
+        onMouseLeave: composeEventHandlers$1(props.onMouseLeave, () => {
           setIsLabelHovered(false);
         }),
-        onClick: composeEventHandlers$2(props.onClick, () => {
+        onClick: composeEventHandlers$1(props.onClick, () => {
           multiThumbRangeRef.current && multiThumbRangeRef.current.focus();
         })
       };
@@ -11068,7 +11068,7 @@ const Label$3 = U$6.forwardRef((props, ref) => {
     };
     combinedProps = {
       ...combinedProps,
-      onClick: composeEventHandlers$2(combinedProps.onClick, onLabelSelect)
+      onClick: composeEventHandlers$1(combinedProps.onClick, onLabelSelect)
     };
     return U$6.createElement(StyledCheckLabel$1, Object.assign({
       ref: ref
@@ -11232,7 +11232,7 @@ const Input = U$6.forwardRef((_ref, ref) => {
   } = _ref;
   const fieldContext = useFieldContext$2();
   const inputGroupContext = useInputGroupContext();
-  const onSelectHandler = props.readOnly ? composeEventHandlers$2(onSelect, event => {
+  const onSelectHandler = props.readOnly ? composeEventHandlers$1(onSelect, event => {
     event.currentTarget.select();
   }) : onSelect;
   let combinedProps = {
@@ -11339,7 +11339,7 @@ const Textarea = U$6.forwardRef((_ref, ref) => {
     computedStyle.height = state.height;
     computedStyle.overflow = state.overflow ? 'hidden' : undefined;
   }
-  const onSelectHandler = props.readOnly ? composeEventHandlers$2(onSelect, event => {
+  const onSelectHandler = props.readOnly ? composeEventHandlers$1(onSelect, event => {
     event.currentTarget.select();
   }) : onSelect;
   let combinedProps = {
@@ -11422,10 +11422,10 @@ const FauxInputComponent = reactExports.forwardRef((_ref, ref) => {
     ...props
   } = _ref;
   const [isFocused, setIsFocused] = reactExports.useState(false);
-  const onFocusHandler = composeEventHandlers$2(onFocus, () => {
+  const onFocusHandler = composeEventHandlers$1(onFocus, () => {
     setIsFocused(true);
   });
-  const onBlurHandler = composeEventHandlers$2(onBlur, () => {
+  const onBlurHandler = composeEventHandlers$1(onBlur, () => {
     setIsFocused(false);
   });
   return U$6.createElement(StyledTextFauxInput, Object.assign({
@@ -11968,7 +11968,7 @@ const useFileContext = () => {
 
 const CloseComponent$2 = U$6.forwardRef((props, ref) => {
   const fileContext = useFileContext();
-  const onMouseDown = composeEventHandlers$2(props.onMouseDown, event => event.preventDefault()
+  const onMouseDown = composeEventHandlers$1(props.onMouseDown, event => event.preventDefault()
   );
   const ariaLabel = useText(CloseComponent$2, props, 'aria-label', 'Close');
   return U$6.createElement(StyledFileClose, Object.assign({
@@ -12042,7 +12042,7 @@ var SvgTrashStroke = function SvgTrashStroke(props) {
 
 const DeleteComponent = U$6.forwardRef((props, ref) => {
   const fileContext = useFileContext();
-  const onMouseDown = composeEventHandlers$2(props.onMouseDown, event => event.preventDefault()
+  const onMouseDown = composeEventHandlers$1(props.onMouseDown, event => event.preventDefault()
   );
   const ariaLabel = useText(DeleteComponent, props, 'aria-label', 'Delete');
   return U$6.createElement(StyledFileDelete, Object.assign({
@@ -12617,22 +12617,22 @@ const MediaInput = U$6.forwardRef((_ref, ref) => {
     onMouseOut,
     ...otherWrapperProps
   } = wrapperProps;
-  const onFauxInputClickHandler = composeEventHandlers$2(onClick, () => {
+  const onFauxInputClickHandler = composeEventHandlers$1(onClick, () => {
     inputRef.current && inputRef.current.focus();
   });
-  const onFauxInputFocusHandler = composeEventHandlers$2(onFocus, () => {
+  const onFauxInputFocusHandler = composeEventHandlers$1(onFocus, () => {
     setIsFocused(true);
   });
-  const onFauxInputBlurHandler = composeEventHandlers$2(onBlur, () => {
+  const onFauxInputBlurHandler = composeEventHandlers$1(onBlur, () => {
     setIsFocused(false);
   });
-  const onFauxInputMouseOverHandler = composeEventHandlers$2(onMouseOver, () => {
+  const onFauxInputMouseOverHandler = composeEventHandlers$1(onMouseOver, () => {
     setIsHovered(true);
   });
-  const onFauxInputMouseOutHandler = composeEventHandlers$2(onMouseOut, () => {
+  const onFauxInputMouseOutHandler = composeEventHandlers$1(onMouseOut, () => {
     setIsHovered(false);
   });
-  const onSelectHandler = readOnly ? composeEventHandlers$2(onSelect, event => {
+  const onSelectHandler = readOnly ? composeEventHandlers$1(onSelect, event => {
     event.currentTarget.select();
   }) : onSelect;
   let combinedProps = {
@@ -14916,8 +14916,8 @@ const useCombobox = _ref => {
       };
       return {
         ...triggerProps,
-        onBlur: composeEventHandlers$2(onBlur, handleBlur),
-        onClick: composeEventHandlers$2(onClick, handleClick),
+        onBlur: composeEventHandlers$1(onBlur, handleBlur),
+        onClick: composeEventHandlers$1(onClick, handleClick),
         'aria-controls': isAutocomplete ? triggerProps['aria-controls'] : undefined,
         'aria-expanded': undefined,
         'aria-disabled': disabled || undefined,
@@ -14977,8 +14977,8 @@ const useCombobox = _ref => {
         'aria-disabled': disabled || undefined,
         disabled: undefined,
         role: 'combobox',
-        onBlur: composeEventHandlers$2(onBlur, handleBlur),
-        onKeyDown: composeEventHandlers$2(onKeyDown, onDownshiftKeyDown, handleKeyDown),
+        onBlur: composeEventHandlers$1(onBlur, handleBlur),
+        onKeyDown: composeEventHandlers$1(onKeyDown, onDownshiftKeyDown, handleKeyDown),
         tabIndex: disabled ? -1 : 0
       };
     }
@@ -15000,7 +15000,7 @@ const useCombobox = _ref => {
     const handleClick = () => !isEditable && triggerRef.current?.focus();
     return {
       ...labelProps,
-      onClick: composeEventHandlers$2(onClick, handleClick),
+      onClick: composeEventHandlers$1(onClick, handleClick),
       htmlFor: isEditable ? htmlFor : undefined
     };
   }, [getFieldLabelProps, isEditable, triggerRef]);
@@ -15051,8 +15051,8 @@ const useCombobox = _ref => {
         disabled,
         role,
         'aria-autocomplete': isAutocomplete ? 'list' : undefined,
-        onChange: composeEventHandlers$2(_onChange, handleChange),
-        onClick: composeEventHandlers$2(onClick, handleClick),
+        onChange: composeEventHandlers$1(_onChange, handleChange),
+        onClick: composeEventHandlers$1(onClick, handleClick),
         ...getFieldInputProps({
           id: idRef.current.input,
           'aria-labelledby': idRef.current.label,
@@ -15081,7 +15081,7 @@ const useCombobox = _ref => {
       disabled,
       readOnly: true,
       tabIndex: -1,
-      onFocus: composeEventHandlers$2(onFocus, handleFocus),
+      onFocus: composeEventHandlers$1(onFocus, handleFocus),
       ...other
     };
   }, [getDownshiftInputProps, getFieldInputProps, handleDownshiftStateChange, hasHint, hasMessage, inputValue, inputRef, triggerRef, disabled, isAutocomplete, isEditable]);
@@ -15116,8 +15116,8 @@ const useCombobox = _ref => {
     return {
       'data-garden-container-id': 'containers.combobox.tag',
       'data-garden-container-version': '1.1.4',
-      onClick: composeEventHandlers$2(onClick, handleClick),
-      onKeyDown: composeEventHandlers$2(onKeyDown, handleKeyDown),
+      onClick: composeEventHandlers$1(onClick, handleClick),
+      onKeyDown: composeEventHandlers$1(onKeyDown, handleKeyDown),
       ...other
     };
   }, [triggerRef, setDownshiftSelection, getDownshiftInputProps, isEditable, inputRef]);
@@ -15181,7 +15181,7 @@ const useCombobox = _ref => {
         'aria-selected': ariaSelected,
         id: option ? idRef.current.getOptionId(disabledValues.indexOf(option.value), option.disabled, option.hidden) : undefined,
         ...optionProps,
-        onMouseDown: composeEventHandlers$2(onMouseDown, handleMouseDown)
+        onMouseDown: composeEventHandlers$1(onMouseDown, handleMouseDown)
       };
     }
     return getDownshiftOptionProps({
@@ -16003,40 +16003,6 @@ const Hint$1 = U$6.forwardRef((props, ref) => {
   }, combinedProps));
 });
 Hint$1.displayName = 'Hint';
-
-/**
- * Copyright Zendesk, Inc.
- *
- * Use of this source code is governed under the Apache License, Version 2.0
- * found at http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-function composeEventHandlers$1() {
-  for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
-    fns[_key] = arguments[_key];
-  }
-  return function (event) {
-    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-      args[_key2 - 1] = arguments[_key2];
-    }
-    return fns.some(fn => {
-      fn && fn(event, ...args);
-      return event && event.defaultPrevented;
-    });
-  };
-}
-
-function getControlledValue() {
-  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
-    values[_key] = arguments[_key];
-  }
-  for (const value of values) {
-    if (value !== undefined) {
-      return value;
-    }
-  }
-  return undefined;
-}
 
 /**
 * Copyright Zendesk, Inc.
@@ -19077,11 +19043,11 @@ const useTooltip = function (_temp) {
     } = _temp2 === void 0 ? {} : _temp2;
     return {
       tabIndex,
-      onMouseEnter: composeEventHandlers$2(onMouseEnter, () => openTooltip()),
-      onMouseLeave: composeEventHandlers$2(onMouseLeave, () => closeTooltip()),
-      onFocus: composeEventHandlers$2(onFocus, () => openTooltip()),
-      onBlur: composeEventHandlers$2(onBlur, () => closeTooltip(0)),
-      onKeyDown: composeEventHandlers$2(onKeyDown, event => {
+      onMouseEnter: composeEventHandlers$1(onMouseEnter, () => openTooltip()),
+      onMouseLeave: composeEventHandlers$1(onMouseLeave, () => closeTooltip()),
+      onFocus: composeEventHandlers$1(onFocus, () => openTooltip()),
+      onBlur: composeEventHandlers$1(onBlur, () => closeTooltip(0)),
+      onKeyDown: composeEventHandlers$1(onKeyDown, event => {
         if (event.key === KEYS.ESCAPE && visibility) {
           closeTooltip(0);
         }
@@ -19101,8 +19067,8 @@ const useTooltip = function (_temp) {
     } = _temp3 === void 0 ? {} : _temp3;
     return {
       role,
-      onMouseEnter: composeEventHandlers$2(onMouseEnter, () => openTooltip()),
-      onMouseLeave: composeEventHandlers$2(onMouseLeave, () => closeTooltip()),
+      onMouseEnter: composeEventHandlers$1(onMouseEnter, () => openTooltip()),
+      onMouseLeave: composeEventHandlers$1(onMouseLeave, () => closeTooltip()),
       'aria-hidden': !visibility,
       id: _id,
       ...other
@@ -28834,7 +28800,7 @@ const Tooltip = _ref => {
     delayMilliseconds: delayMS,
     isVisible: isInitialVisible
   });
-  const controlledIsVisible = getControlledValue$1(externalIsVisible, isVisible);
+  const controlledIsVisible = getControlledValue(externalIsVisible, isVisible);
   reactExports.useEffect(() => {
     if (controlledIsVisible && scheduleUpdateRef.current) {
       scheduleUpdateRef.current();
@@ -28885,10 +28851,10 @@ const Tooltip = _ref => {
       hasArrow,
       placement: currentPlacement,
       size: computedSize,
-      onFocus: composeEventHandlers$2(onFocus, () => {
+      onFocus: composeEventHandlers$1(onFocus, () => {
         openTooltip();
       }),
-      onBlur: composeEventHandlers$2(onBlur, () => {
+      onBlur: composeEventHandlers$1(onBlur, () => {
         closeTooltip(0);
       }),
       'aria-hidden': !controlledIsVisible,
@@ -34372,33 +34338,33 @@ const Datepicker = reactExports.forwardRef((props, calendarRef) => {
         ref(refValue);
         inputRef.current = refValue;
       },
-      onMouseDown: composeEventHandlers$2(childElement.props.onMouseDown, () => {
+      onMouseDown: composeEventHandlers$1(childElement.props.onMouseDown, () => {
         isInputMouseDownRef.current = true;
       }),
-      onMouseUp: composeEventHandlers$2(childElement.props.onMouseUp, () => {
+      onMouseUp: composeEventHandlers$1(childElement.props.onMouseUp, () => {
         setTimeout(() => {
           isInputMouseDownRef.current = false;
         }, 0);
       }),
-      onClick: composeEventHandlers$2(childElement.props.onClick, () => {
+      onClick: composeEventHandlers$1(childElement.props.onClick, () => {
         if (isInputMouseDownRef.current && !state.isOpen) {
           dispatch({
             type: 'OPEN'
           });
         }
       }),
-      onBlur: composeEventHandlers$2(childElement.props.onBlur, () => {
+      onBlur: composeEventHandlers$1(childElement.props.onBlur, () => {
         dispatch({
           type: 'CLOSE'
         });
       }),
-      onChange: composeEventHandlers$2(childElement.props.onChange, e => {
+      onChange: composeEventHandlers$1(childElement.props.onChange, e => {
         dispatch({
           type: 'MANUALLY_UPDATE_INPUT',
           value: e.target.value
         });
       }),
-      onKeyDown: composeEventHandlers$2(childElement.props.onKeyDown, e => {
+      onKeyDown: composeEventHandlers$1(childElement.props.onKeyDown, e => {
         switch (e.key) {
           case KEYS.ESCAPE:
           case KEYS.ENTER:
@@ -34903,8 +34869,8 @@ function useGrid(_ref) {
       id: getId(prefix, _rowIndex, _colIndex),
       role: role === null ? undefined : role,
       tabIndex: rowIndex === _rowIndex && colIndex === _colIndex ? 0 : -1,
-      onFocus: composeEventHandlers$2(onFocus, handleFocus),
-      onKeyDown: composeEventHandlers$2(onKeyDown, handleKeyDown),
+      onFocus: composeEventHandlers$1(onFocus, handleFocus),
+      onKeyDown: composeEventHandlers$1(onKeyDown, handleKeyDown),
       ...other
     };
   }, [matrix, rowIndex, colIndex, doc, prefix, isControlled, onChange, rtl, wrap]);
@@ -35579,7 +35545,7 @@ const useFocusJail = function (_temp) {
       ...other
     } = _temp2 === void 0 ? {} : _temp2;
     return {
-      onKeyDown: composeEventHandlers$2(onKeyDown, event => {
+      onKeyDown: composeEventHandlers$1(onKeyDown, event => {
         if (event.key !== KEYS.TAB) {
           return;
         }
@@ -35666,7 +35632,7 @@ const useModal = _ref => {
       isModalMousedDownRef.current = false;
     };
     return {
-      onMouseUp: composeEventHandlers$2(onMouseUp, handleMouseUp),
+      onMouseUp: composeEventHandlers$1(onMouseUp, handleMouseUp),
       'data-garden-container-id': containerId,
       'data-garden-container-version': '1.0.19',
       ...other
@@ -35685,10 +35651,10 @@ const useModal = _ref => {
       'aria-modal': true,
       'aria-labelledby': titleId,
       'aria-describedby': contentId,
-      onMouseDown: composeEventHandlers$2(onMouseDown, () => {
+      onMouseDown: composeEventHandlers$1(onMouseDown, () => {
         isModalMousedDownRef.current = true;
       }),
-      onKeyDown: composeEventHandlers$2(onKeyDown, event => {
+      onKeyDown: composeEventHandlers$1(onKeyDown, event => {
         if (event.key === KEYS.ESCAPE) {
           closeModal(event);
         }
@@ -35722,7 +35688,7 @@ const useModal = _ref => {
       ...other
     } = _ref2;
     return {
-      onClick: composeEventHandlers$2(onClick, event => {
+      onClick: composeEventHandlers$1(onClick, event => {
         closeModal(event);
       }),
       ...other
@@ -36427,7 +36393,7 @@ function useAccordion(_ref) {
   const isControlled = expandedSections !== null && expandedSections !== undefined;
   const [expandedState, setExpandedState] = reactExports.useState(defaultExpandedSections || sections.slice(0, 1));
   const [disabledState, setDisabledState] = reactExports.useState(collapsible ? [] : expandedState);
-  const internalExpandedState = getControlledValue$1(expandedSections, expandedState);
+  const internalExpandedState = getControlledValue(expandedSections, expandedState);
   const toggle = reactExports.useCallback(value => {
     const expanded = [];
     const disabled = [];
@@ -36479,8 +36445,8 @@ function useAccordion(_ref) {
       'aria-controls': `${PANEL_ID}:${value}`,
       'aria-disabled': disabledState.includes(value) || undefined,
       'aria-expanded': internalExpandedState.includes(value),
-      onClick: composeEventHandlers$2(props.onClick, () => toggle(value)),
-      onKeyDown: composeEventHandlers$2(props.onKeyDown, event => {
+      onClick: composeEventHandlers$1(props.onClick, () => toggle(value)),
+      onKeyDown: composeEventHandlers$1(props.onKeyDown, event => {
         if (event.key === KEYS.SPACE || event.key === KEYS.ENTER) {
           toggle(value);
           event.preventDefault();
@@ -36865,19 +36831,19 @@ const HeaderComponent = reactExports.forwardRef((props, ref) => {
     ref,
     'aria-level': ariaLevel,
     role: role === undefined || role === null ? role : 'heading',
-    onClick: composeEventHandlers$2(onClick, onTriggerClick),
-    onFocus: composeEventHandlers$2(onFocus, onHeaderFocus),
-    onBlur: composeEventHandlers$2(onBlur, () => setIsFocused(false)),
-    onMouseOver: composeEventHandlers$2(onMouseOver, () => setIsHovered(true)),
-    onMouseOut: composeEventHandlers$2(onMouseOut, () => setIsHovered(false)),
+    onClick: composeEventHandlers$1(onClick, onTriggerClick),
+    onFocus: composeEventHandlers$1(onFocus, onHeaderFocus),
+    onBlur: composeEventHandlers$1(onBlur, () => setIsFocused(false)),
+    onMouseOver: composeEventHandlers$1(onMouseOver, () => setIsHovered(true)),
+    onMouseOut: composeEventHandlers$1(onMouseOut, () => setIsHovered(false)),
     ...other
   })), children, U$6.createElement(StyledRotateIcon, {
     isCompact: isCompact,
     isHovered: isHovered,
     isRotated: isExpanded,
     isCollapsible: isCollapsible,
-    onMouseOver: composeEventHandlers$2(onMouseOver, () => setIsHovered(true)),
-    onMouseOut: composeEventHandlers$2(onMouseOut, () => setIsHovered(false))
+    onMouseOver: composeEventHandlers$1(onMouseOver, () => setIsHovered(true)),
+    onMouseOut: composeEventHandlers$1(onMouseOut, () => setIsHovered(false))
   }, U$6.createElement(SvgChevronDownStroke, null))));
 });
 HeaderComponent.displayName = 'Accordion.Header';
