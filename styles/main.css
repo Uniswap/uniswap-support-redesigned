@@ -4,6 +4,9 @@
 
 @import '../assets/types.css';
 
+body {
+  @apply min-h-screen bg-light-surface-1 dark:bg-dark-surface-1;
+}
 .site-max-width {
   max-width: 1440px;
 }
