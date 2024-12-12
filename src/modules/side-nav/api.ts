@@ -30,7 +30,6 @@ type SideNavApiResponse = {
     html_url: string;
     name: string;
     position: number;
-    parent_section_id: number | null;
   }[];
 };
 
@@ -45,7 +44,7 @@ const sanitizeResponse = (response: SideNavApiResponse): SideNavData => {
 
   const categories = response.categories.map((category) => {
     const sections = response.sections
-      .filter((section) => section.category_id === category.id && !section.parent_section_id)
+      .filter((section) => section.category_id === category.id)
       .map((section) => {
         const articles = response.articles
           .filter((article) => article.section_id === section.id)

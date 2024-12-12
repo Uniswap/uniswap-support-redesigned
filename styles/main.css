@@ -4,6 +4,9 @@
 
 @import '../assets/types.css';
 
+body {
+  @apply min-h-screen bg-light-surface-1 dark:bg-dark-surface-1;
+}
 .site-max-width {
   max-width: 1440px;
 }
@@ -222,7 +225,7 @@
         display: block;
         position: absolute;
         content: '';
-        background-image: url('../assets/right-arrow-light.svg');
+        background-image: var(--right-arrow-path-dark);
         background-size: 1.5rem 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
