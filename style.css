@@ -197,27 +197,27 @@ template {
 }
 
 .avatar-wrapper g:nth-of-type(1) {
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.avatar-wrapper g:nth-of-type(2) {
   animation-duration: 4s;
   animation-delay: 2s;
 }
 
-.avatar-wrapper g:nth-of-type(2) {
-  animation-duration: 5s;
+.avatar-wrapper g:nth-of-type(3) {
+  animation-duration: 6s;
   animation-delay: 1s;
 }
 
-.avatar-wrapper g:nth-of-type(3) {
-  animation-duration: 5s;
-  animation-delay: 2s;
-}
-
 .avatar-wrapper g:nth-of-type(4) {
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-delay: 2s;
 }
 
 .avatar-wrapper g:nth-of-type(5) {
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-delay: 1s;
 }
 
@@ -232,16 +232,16 @@ template {
 }
 
 .avatar-wrapper g:nth-of-type(8) {
-  animation-duration: 4s;
-  animation-delay: 1s;
-}
-
-.avatar-wrapper g:nth-of-type(9) {
   animation-duration: 5s;
   animation-delay: 1s;
 }
 
+.avatar-wrapper g:nth-of-type(9) {
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
 .avatar-wrapper g:nth-of-type(10) {
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-delay: 1s;
 }

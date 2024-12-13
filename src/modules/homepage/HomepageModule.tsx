@@ -114,92 +114,101 @@ const Homepage: FC<Props> = ({ homepageData }) => {
         </div>
       )}
       {homepageData.coloredCardsBlock && homepageData.coloredCardsBlock.cards.length > 0 ? (
-        <div className="ColoredCardBlock default-grid py-padding-x-large">
-          {homepageData.coloredCardsBlock.cards.map((card) => {
-            const textColorName = getColorName(card.color);
+        <>
+          <div className="ColoredCardBlock default-grid py-padding-x-large">
+            {homepageData.coloredCardsBlock.cards.map((card) => {
+              const textColorName = getColorName(card.color);
 
-            return (
-              <a
-                key={card.title}
-                href={card.url}
-                className={cn(
-                  'ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2',
-                  {
-                    'bg-light-pink-fade dark:bg-dark-pink-fade hover:bg-light-accent-2-hovered dark:hover:bg-dark-accent-2-hovered':
-                      card.color === 'pink',
-                    'bg-light-green dark:bg-dark-green hover:bg-light-green-base-hovered dark:hover:bg-dark-green-base-hovered':
-                      card.color === 'green',
-                    'bg-light-blue dark:bg-dark-blue hover:bg-light-blue-base-hovered dark:hover:bg-dark-blue-base-hovered':
-                      card.color === 'blue',
-                    'bg-light-orange-fade dark:bg-dark-orange-fade hover:bg-light-orange-base-hovered dark:hover:bg-dark-orange-base-hovered':
-                      card.color === 'orange',
-                  }
-                )}
-              >
-                <ColoredCardsIconMap icon={card.icon} className="w-6 h-6" color={textColorName} />
-                <div className="mt-[1.875rem]">
-                  <h3
-                    className={cn('subheading-1', {
-                      'text-light-orange-vibrant dark:text-dark-orange-vibrant':
-                        textColorName === 'orange-vibrant',
-                      'text-blue-base dark:text-blue-base': textColorName === 'blue-vibrant',
-                      'text-green-base dark:text-green-vibrant': textColorName === 'green-base',
-                      'text-light-pink-vibrant dark:text-dark-pink-vibrant':
-                        textColorName === 'pink-vibrant',
-                    })}
-                  >
-                    {card.title}
-                  </h3>
-                  <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">
-                    {card.description}
-                  </p>
-                </div>
-              </a>
-            );
-          })}
-        </div>
-      ) : null}
-      <Divider />
-      {faqArticles && faqArticles.length > 0 ? (
-        <div className="FAQBlock py-padding-x-large">
-          <div className="flex flex-row items-center">
-            <GraduationCap className="w-6 h-6 mr-2" color="neutral-1" />
-            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">FAQ</h3>
-          </div>
-          <div className="default-grid gap-4 mt-padding-x-large">
-            {faqArticles.map((article) => (
-              <ArticleLinkCard
-                key={article.title}
-                title={article.title}
-                description={article.snippet}
-                url={article.url}
-              />
-            ))}
-          </div>
-        </div>
-      ) : null}
-      <Divider />
-      {homepageData.guidesBlock && homepageData.guidesBlock.promotedArticles.length > 0 ? (
-        <div className="FAQBlock py-padding-x-large">
-          <div className="flex flex-row items-center">
-            <BookOpen className="w-6 h-6 mr-2" color="neutral-1" />
-            <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Guides</h3>
-          </div>
-          <div className="default-grid gap-4 mt-padding-x-large">
-            {homepageData.guidesBlock.promotedArticles.map((article) => {
               return (
+                <a
+                  key={card.title}
+                  href={card.url}
+                  className={cn(
+                    'ColoredCard rounded-large p-padding-medium col-span-4 md:col-span-2',
+                    {
+                      'bg-light-pink-fade dark:bg-dark-pink-fade hover:bg-light-accent-2-hovered dark:hover:bg-dark-accent-2-hovered':
+                        card.color === 'pink',
+                      'bg-light-green dark:bg-dark-green hover:bg-light-green-base-hovered dark:hover:bg-dark-green-base-hovered':
+                        card.color === 'green',
+                      'bg-light-blue dark:bg-dark-blue hover:bg-light-blue-base-hovered dark:hover:bg-dark-blue-base-hovered':
+                        card.color === 'blue',
+                      'bg-light-orange-fade dark:bg-dark-orange-fade hover:bg-light-orange-base-hovered dark:hover:bg-dark-orange-base-hovered':
+                        card.color === 'orange',
+                    }
+                  )}
+                >
+                  <ColoredCardsIconMap icon={card.icon} className="w-6 h-6" color={textColorName} />
+                  <div className="mt-[1.875rem]">
+                    <h3
+                      className={cn('subheading-1', {
+                        'text-light-orange-vibrant dark:text-dark-orange-vibrant':
+                          textColorName === 'orange-vibrant',
+                        'text-blue-base dark:text-blue-base': textColorName === 'blue-vibrant',
+                        'text-green-base dark:text-green-vibrant': textColorName === 'green-base',
+                        'text-light-pink-vibrant dark:text-dark-pink-vibrant':
+                          textColorName === 'pink-vibrant',
+                      })}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="body-3 text-light-neutral-2 dark:text-dark-neutral-2">
+                      {card.description}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+          <Divider />
+        </>
+      ) : null}
+
+      {faqArticles && faqArticles.length > 0 ? (
+        <>
+          <div className="FAQBlock py-padding-x-large">
+            <div className="flex flex-row items-center">
+              <GraduationCap className="w-6 h-6 mr-2" color="neutral-1" />
+              <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">FAQ</h3>
+            </div>
+            <div className="default-grid gap-4 mt-padding-x-large">
+              {faqArticles.map((article) => (
                 <ArticleLinkCard
-                  key={article.id}
+                  key={article.title}
                   title={article.title}
                   description={article.snippet}
                   url={article.url}
                 />
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
+          <Divider />
+        </>
       ) : null}
-      <Divider />
+
+      {homepageData.guidesBlock && homepageData.guidesBlock.promotedArticles.length > 0 ? (
+        <>
+          <div className="FAQBlock py-padding-x-large">
+            <div className="flex flex-row items-center">
+              <BookOpen className="w-6 h-6 mr-2" color="neutral-1" />
+              <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Guides</h3>
+            </div>
+            <div className="default-grid gap-4 mt-padding-x-large">
+              {homepageData.guidesBlock.promotedArticles.map((article) => {
+                return (
+                  <ArticleLinkCard
+                    key={article.id}
+                    title={article.title}
+                    description={article.snippet}
+                    url={article.url}
+                  />
+                );
+              })}
+            </div>
+          </div>
+          <Divider />
+        </>
+      ) : null}
+
       {homepageData.topicsBlock && homepageData.topicsBlock.categories.length > 0 ? (
         <div className="FAQBlock py-padding-x-large md:mb-16">
           <div className="flex flex-row items-center">
