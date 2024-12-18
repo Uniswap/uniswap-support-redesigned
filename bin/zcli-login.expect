@@ -13,6 +13,6 @@ expect "Subdomain:"
 send "$subdomain\r"
 expect "Email:"
 send "$email\r"
-expect "API token:"
+expect "API Token:"
 send "$token\r"
 expect eof
