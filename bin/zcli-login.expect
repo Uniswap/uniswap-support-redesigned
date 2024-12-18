@@ -13,7 +13,7 @@ spawn zcli login -i
 
 # Handle Subdomain prompt
 expect {
-    "Subdomain:" {
+    -re "Subdomain:" {
         send "$subdomain\r"
     }
     timeout {
@@ -24,7 +24,7 @@ expect {
 
 # Handle Email prompt
 expect {
-    "Email:" {
+    -re "Email:" {
         send "$email\r"
     }
     timeout {
@@ -35,7 +35,7 @@ expect {
 
 # Handle API Token prompt
 expect {
-    "API Token:" {
+    -re "API Token:" {
         send "$token\r"
     }
     timeout {
@@ -44,9 +44,9 @@ expect {
     }
 }
 
-# Wait for successful login message
+# Wait for "Successfully logged in." confirmation
 expect {
-    "Successfully logged in." {
+    -re "Successfully logged in\\." {
         puts "ZCLI login completed successfully."
     }
     timeout {
