@@ -21,6 +21,9 @@ jobs:
       # Step 3: Install dependencies
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
+        
+      - name: Test ZCLI Configuration 1
+        run: zcli themes:list
 
       # Step 4: Configure zcli with environment variables
       - name: Configure ZCLI
@@ -31,6 +34,9 @@ jobs:
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
           ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
           ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
+          
+      - name: Test ZCLI Configuration 2
+        run: zcli themes:list
 
       # Step 5: Upload and Publish Theme
       - name: Deploy Theme
