@@ -1,8 +1,8 @@
-import { render } from "react-dom";
-import { FooterPageData } from "../../lib/types";
-import { Settings } from "../shared";
-import { createTheme, ThemeProviders } from "../shared";
-import Footer from "./FooterModule";
+import { render } from 'react-dom';
+import { FooterPageData } from '../../lib/types';
+import { Settings } from '../shared';
+import { createTheme, ThemeProviders } from '../shared';
+import Footer from './FooterModule';
 
 export async function renderFooter(
   settings: Settings,
