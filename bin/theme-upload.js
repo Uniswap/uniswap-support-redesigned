@@ -1,18 +1,18 @@
 /* eslint-env node */
-const brandId = process.env.BRAND_ID;
-const { execSync } = require("child_process");
+const { execSync } = require('child_process');
 
 function zcli(command) {
   const data = execSync(`yarn --silent zcli ${command} --json`);
   return JSON.parse(data.toString());
 }
 
-const { themeId } = zcli(`themes:import --brandId=${brandId}`);
+const { themeId } = zcli(`themes:import`);
 
 zcli(`themes:publish --themeId=${themeId}`);
 
-const { themes } = zcli(`themes:list --brandId=${brandId}`);
+const { themes } = zcli(`themes:list`);
 
-for (const { live, id } of themes) {
-  if (!live) zcli(`themes:delete --themeId=${id}`);
+for (const { live, id, name } of themes) {
+  if (!live && name === "[Don't edit code] Copenhagen Sanctuary Production")
+    zcli(`themes:delete --themeId=${id}`);
 }
