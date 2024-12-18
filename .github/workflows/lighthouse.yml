@@ -25,6 +25,7 @@ jobs:
       # Step 4: Configure zcli with environment variables
       - name: Configure ZCLI
         run: |
+          mkdir -p ~/.zcli
           echo "default:\n  email: ${ZENDESK_EMAIL}\n  token: ${ZENDESK_API_TOKEN}\n  subdomain: ${ZENDESK_SUBDOMAIN}" > ~/.zcli/config.yml
         env:
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
