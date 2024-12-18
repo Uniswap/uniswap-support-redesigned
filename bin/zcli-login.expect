@@ -44,5 +44,16 @@ expect {
     }
 }
 
+# Wait for successful login message
+expect {
+    "Successfully logged in." {
+        puts "ZCLI login completed successfully."
+    }
+    timeout {
+        puts "Error: Timeout while waiting for 'Successfully logged in.' confirmation"
+        exit 1
+    }
+}
+
 # Wait for the process to complete
 expect eof
