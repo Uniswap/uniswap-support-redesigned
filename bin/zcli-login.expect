@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+
+set timeout -1
+
+# Define environment variables
+set subdomain [lindex $argv 0]
+set email [lindex $argv 1]
+set token [lindex $argv 2]
+
+# Run zcli login
+spawn zcli login -i
+expect "Subdomain:"
+send "$subdomain\r"
+expect "Email:"
+send "$email\r"
+expect "API token:"
+send "$token\r"
+expect eof
