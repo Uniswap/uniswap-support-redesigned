@@ -22,8 +22,18 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
         
-      - name: Test ZCLI Configuration 1
-        run: zcli themes:list
+      - name: Install ZCLI
+        run: npm install -g @zendesk/zcli
+
+      - name: Verify ZCLI Installation
+        run: zcli --version
+        
+      - name: ZCLI login
+        run: zcli login -i
+        env:
+          ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
+          ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
+          ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
 
       # Step 4: Configure zcli with environment variables
       - name: Configure ZCLI
