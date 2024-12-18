@@ -32,10 +32,6 @@ jobs:
           ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
           ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
 
-      # Step 5: Build the project
-      - name: Build
-        run: yarn build
-
-      # Step 6: Upload and Publish Theme
+      # Step 5: Upload and Publish Theme
       - name: Deploy Theme
         run: node ./bin/theme-upload.js
