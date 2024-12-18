@@ -1,19 +1,15 @@
 #!/usr/bin/expect -f
 
-# Set an unlimited timeout
 set timeout -1
 
-# Capture arguments
 set subdomain [lindex $argv 0]
 set email [lindex $argv 1]
 set token [lindex $argv 2]
 
-# Spawn the zcli login command
 spawn zcli login -i
 
-# Handle Subdomain prompt
 expect {
-    -re "Subdomain:" {
+    "Subdomain:" {
         send "$subdomain\r"
     }
     timeout {
@@ -22,9 +18,8 @@ expect {
     }
 }
 
-# Handle Email prompt
 expect {
-    -re "Email:" {
+    "Email:" {
         send "$email\r"
     }
     timeout {
@@ -33,9 +28,8 @@ expect {
     }
 }
 
-# Handle API Token prompt
 expect {
-    -re "API Token:" {
+    "API Token:" {
         send "$token\r"
     }
     timeout {
@@ -44,10 +38,13 @@ expect {
     }
 }
 
-# Wait for "Successfully logged in." confirmation
 expect {
-    -re "Successfully logged in\\." {
+    "Successfully logged in." {
         puts "ZCLI login completed successfully."
+    }
+    "Failed to log in to your account:" {
+        puts "Error: Failed to log in. Check credentials or subdomain."
+        exit 1
     }
     timeout {
         puts "Error: Timeout while waiting for 'Successfully logged in.' confirmation"
@@ -55,5 +52,4 @@ expect {
     }
 }
 
-# Wait for the process to complete
 expect eof
