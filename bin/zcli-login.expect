@@ -1,18 +1,48 @@
 #!/usr/bin/expect -f
 
+# Set an unlimited timeout
 set timeout -1
 
-# Define environment variables
+# Capture arguments
 set subdomain [lindex $argv 0]
 set email [lindex $argv 1]
 set token [lindex $argv 2]
 
-# Run zcli login
+# Spawn the zcli login command
 spawn zcli login -i
-expect "Subdomain:"
-send "$subdomain\r"
-expect "Email:"
-send "$email\r"
-expect "API Token:"
-send "$token\r"
+
+# Handle Subdomain prompt
+expect {
+    "Subdomain:" {
+        send "$subdomain\r"
+    }
+    timeout {
+        puts "Error: Timeout while waiting for 'Subdomain:' prompt"
+        exit 1
+    }
+}
+
+# Handle Email prompt
+expect {
+    "Email:" {
+        send "$email\r"
+    }
+    timeout {
+        puts "Error: Timeout while waiting for 'Email:' prompt"
+        exit 1
+    }
+}
+
+# Handle API Token prompt
+expect {
+    "API Token:" {
+        send "$token\r"
+    }
+    timeout {
+        puts "Error: Timeout while waiting for 'API Token:' prompt"
+        exit 1
+    }
+}
+
+# Wait for the process to complete
 expect eof
