@@ -22,30 +22,22 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
         
-      - name: Install ZCLI
-        run: npm install -g @zendesk/zcli
-
-      - name: Verify ZCLI Installation
-        run: zcli --version
-        
-      - name: ZCLI login
-        run: zcli login -i
-        env:
-          ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
-          ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
-          ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
-
-      # Step 4: Configure zcli with environment variables
-      - name: Configure ZCLI
+      - name: Install ZCLI and Expect
         run: |
-          mkdir -p ~/.zcli
-          echo "default:\n  email: ${ZENDESK_EMAIL}\n  token: ${ZENDESK_API_TOKEN}\n  subdomain: ${ZENDESK_SUBDOMAIN}" > ~/.zcli/config.yml
+          npm install -g @zendesk/zcli
+          sudo apt-get update && sudo apt-get install -y expect
+
+      # Step 4: Automate ZCLI Login
+      - name: ZCLI Login
+        run: |
+          chmod +x ./bin/zcli-login.expect
+          ./bin/zcli-login.expect $ZENDESK_SUBDOMAIN $ZENDESK_EMAIL $ZENDESK_API_TOKEN
         env:
+          ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
           ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
-          ZENDESK_SUBDOMAIN: ${{ secrets.ZENDESK_SUBDOMAIN }}
           
-      - name: Test ZCLI Configuration 2
+      - name: Test ZCLI Configuration
         run: zcli themes:list
 
       # Step 5: Upload and Publish Theme
