@@ -50,42 +50,52 @@ export const SideNav: FC<Props> = ({ sideNavData, navState }) => {
           }
         )}
       >
-        {sideNavData.categories.map((category) => {
+        {sideNavData.categories.map((category, i) => {
           return (
-            <div key={category.id} className="mt-4 first:mt-0">
-              <h3>
-                <a
-                  href={category.url}
-                  className={cn(
-                    'transition text-light-neutral-1 dark:text-dark-neutral-1 subheading-2 hover:text-light-accent-1 dark:hover:text-dark-accent-1',
-                    {
-                      '!hidden': !navStateIsEmpty,
-                    }
-                  )}
-                >
-                  {category.name}
-                </a>
-              </h3>
-              <ul>
-                {category.sections.map((section) => {
-                  return (
-                    <li key={section.id} className="mt-2">
-                      <a
-                        href={section.url}
-                        className={cn(
-                          'transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]',
-                          {
-                            '!hidden': !navStateIsEmpty,
-                          }
-                        )}
-                      >
-                        {section.name}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+            <>
+              <div
+                className={cn(
+                  'border-t border-light-neutral-2 dark:border-dark-neutral-2 opacity-10',
+                  {
+                    hidden: i === 0,
+                  }
+                )}
+              />
+              <div key={category.id} className="my-3 first:mt-0">
+                <h3>
+                  <a
+                    href={category.url}
+                    className={cn(
+                      'transition text-light-neutral-2 dark:text-dark-neutral-2 subheading-2 hover:text-light-accent-1 dark:hover:text-dark-accent-1',
+                      {
+                        '!hidden': !navStateIsEmpty,
+                      }
+                    )}
+                  >
+                    {category.name}
+                  </a>
+                </h3>
+                <ul className={cn({ hidden: navStateIsEmpty })}>
+                  {category.sections.map((section) => {
+                    return (
+                      <li key={section.id} className="mt-2">
+                        <a
+                          href={section.url}
+                          className={cn(
+                            'transition text-light-neutral-2 dark:text-dark-neutral-2 body-3 hover:text-light-accent-1 dark:hover:text-dark-accent-1  block !leading-[1.4]',
+                            {
+                              '!hidden': !navStateIsEmpty,
+                            }
+                          )}
+                        >
+                          {section.name}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </>
           );
         })}
       </div>
