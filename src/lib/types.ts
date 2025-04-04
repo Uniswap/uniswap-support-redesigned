@@ -260,6 +260,7 @@ export type SearchPageData = {
   query: string;
   results: SearchResult[];
   typeFilters: TypeFilter[];
+  contentTagFilters: TypeFilter[];
 };
 
 export type SearchResult = {
