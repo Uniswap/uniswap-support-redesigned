@@ -1,6 +1,7 @@
 import { FC, useRef, useEffect } from 'react';
 import { SearchPageData } from '../../lib/types';
 import { format } from 'date-fns';
+import cn from 'classnames';
 
 type Props = {
   searchPageData: SearchPageData;
@@ -84,7 +85,7 @@ const TypeFilterList: FC<{
 );
 
 export const SearchResultPageModule: FC<Props> = ({ searchPageData }) => {
-  const { query, results, typeFilters } = searchPageData;
+  const { query, results, typeFilters, contentTagFilters } = searchPageData;
   const searchBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -99,21 +100,39 @@ export const SearchResultPageModule: FC<Props> = ({ searchPageData }) => {
     return () => clearTimeout(timeout);
   }, []);
 
-  if (!query) return null;
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const searchBarPlaceholder = document.getElementById('search-bar-search-result');
+
+      if (!query) {
+        searchBarPlaceholder?.remove();
+      }
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [query]);
 
   return (
     <div>
       <div className="search-results flex flex-row text-light-neutral-1 dark:text-light-neutral-1 !bg-light-surface-1 dark:!bg-dark-surface-1">
         <div className="min-w-[15rem] max-w-[15rem] mt-nav-h hidden md:block !bg-light-surface-1 dark:!bg-dark-surface-1">
           <aside className="search-results-sidebar mt-[1.5rem] px-[1.63rem]">
-            {typeFilters && (
-              <section className="filters-in-section">
-                <h3 className="collapsible-sidebar-title sidenav-title heading-2 text-light-neutral-1 dark:text-dark-neutral-1">
-                  Type
-                </h3>
-                <TypeFilterList typeFilters={typeFilters} />
-              </section>
-            )}
+            {query
+              ? typeFilters && (
+                  <section className="filters-in-section">
+                    <h3 className="collapsible-sidebar-title sidenav-title heading-2 text-light-neutral-1 dark:text-dark-neutral-1">
+                      Type
+                    </h3>
+                    <TypeFilterList typeFilters={typeFilters} />
+                  </section>
+                )
+              : contentTagFilters && (
+                  <section className="filters-in-section">
+                    <h3 className="collapsible-sidebar-title sidenav-title heading-2 text-light-neutral-1 dark:text-dark-neutral-1">
+                      Tagged content
+                    </h3>
+                  </section>
+                )}
           </aside>
         </div>
         <div className="page-wrapper">
@@ -121,25 +140,30 @@ export const SearchResultPageModule: FC<Props> = ({ searchPageData }) => {
             <Breadcrumbs
               pathSteps={[
                 { url: '/', name: 'Home', target: '_self' },
-                { url: '#', name: 'Search results', target: '_self' },
+                {
+                  url: '#',
+                  name: `${query ? 'Search results' : 'Tagged content'}`,
+                  target: '_self',
+                },
               ]}
             />
             <h1 className="search-results-subheading heading-2 text-light-neutral-1 dark:text-dark-neutral-1 mt-[1.92rem]">
               {results && results.length > 0 ? (
                 <>
-                  {results.length} results for "{query}"
+                  {results.length} {results.length === 1 ? 'result' : 'results'} for "
+                  {query || contentTagFilters?.[0]?.name}"
                 </>
               ) : (
                 <div className="no-results">
                   <div className="headline heading-2 text-light-neutral-1 dark:text-dark-neutral-1">
-                    No result for "{query}"
+                    No result for "{query || contentTagFilters?.[0]?.name}"
                   </div>
                 </div>
               )}
             </h1>
-            <div ref={searchBarRef} />
+            {query && <div ref={searchBarRef} />}
             {results && results.length > 0 ? (
-              <ul className="search-results-list">
+              <ul className={cn('search-results-list', { 'mt-[1.92rem]': !query })}>
                 {results.map((result) => (
                   <li key={result.url}>
                     <article className="flex flex-col space-y-[0.62rem]">
@@ -161,7 +185,11 @@ export const SearchResultPageModule: FC<Props> = ({ searchPageData }) => {
                 ))}
               </ul>
             ) : (
-              <div className="no-results">
+              <div
+                className={cn('no-results', {
+                  'mt-[1.92rem]': !query && (!results || results.length === 0),
+                })}
+              >
                 <div className="action-prompt">
                   <a
                     className="transition hover:text-light-pink-vibrant dark:hover:text-dark-pink-vibrant hover:bg-light-accent-2 hover:dark:bg-dark-accent-2 mr-4 mb-3 block rounded-medium py-margin-mobile-dense px-margin-extension text-light-neutral-1 dark:text-dark-neutral-1 bg-light-surface-2 dark:bg-dark-surface-2 w-fit"
