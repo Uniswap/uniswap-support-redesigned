@@ -9,13 +9,7 @@ A simple SPA to manage redirect rules for Zendesk. Built with React, Vite, shadc
    ```bash
    bun i
    ```
-3. Create a `.env` file in the root directory based on `.env.example`:
-   ```
-   VITE_ZENDESK_SUBDOMAIN=https://your-subdomain.zendesk.com
-   VITE_ZENDESK_EMAIL=your-email@example.com
-   VITE_ZENDESK_API_TOKEN=your-api-token
-   ```
-4. Start the development server:
+3. Start the development server:
    ```bash
    bun dev
    ```
