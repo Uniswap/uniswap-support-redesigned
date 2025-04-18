@@ -89,7 +89,6 @@ export default function RedirectManager() {
   const { 
     data, 
     isLoading, 
-    isError,
     error: queryError,
     refetch 
   } = useQuery({
