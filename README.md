@@ -1,5 +1,8 @@
 # Copenhagen Theme by Zendesk - Uniswap Support Site
 
+## ‼️Disclaimer: To allow content editors of the Uniswap Support website to edit Handlebars (.hbs) code from the Uniswap lab's Zendesk Guide theme editor interface, we will treat the Handlebars files from the active Zendesk theme on the web as the source of truth.
+Please download the Handlebars files from the currently active Zendesk theme and use those files when editing code in this repository.
+
 A customized Zendesk Guide theme 'Copenhagen' for Uniswap's support site
 
 ### Stack
