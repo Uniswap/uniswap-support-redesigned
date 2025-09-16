@@ -190,7 +190,7 @@ const Homepage: FC<Props> = ({ homepageData }) => {
           <div className="FAQBlock py-padding-x-large">
             <div className="flex flex-row items-center">
               <BookOpen className="w-6 h-6 mr-2" color="neutral-1" />
-              <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Guides</h3>
+              <h3 className="heading-2 text-light-neutral-1 dark:text-dark-neutral-2">Featured Articles</h3>
             </div>
             <div className="default-grid gap-4 mt-padding-x-large">
               {homepageData.guidesBlock.promotedArticles.map((article) => {
