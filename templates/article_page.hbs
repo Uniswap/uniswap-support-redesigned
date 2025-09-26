@@ -13,6 +13,20 @@
         <div id='article-body-element' class="article-body my-5">{{article.body}}</div>
       </div>
       <div class="article-info-bottom space-y-4 sm:space-y-0 py-8 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center pt-margin-mobile sm:pt-padding-x-large">
+      {{#if (compare article.content_tags.length ">" 0)}}
+        <section class="content-tags">
+          <p class="text-light-neutral-1 dark:text-dark-neutral-1">{{t 'content_tags_label'}}</p>
+          <ul class="content-tag-list">
+            {{#each article.content_tags}}
+              <span class="content-tag-item text-light-neutral-1 dark:text-dark-neutral-1" data-content-tag-id="{{id}}">
+                {{#link "search_result" content_tag_id=id target="_blank"}}
+                  {{name}}
+                {{/link}}{{#unless @last}}, {{/unless}}
+              </span>
+            {{/each}}
+          </ul>
+        </section>
+      {{/if}}  
         {{#with article}}
           <div class="article-votes">
             <h2 class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</h2>
