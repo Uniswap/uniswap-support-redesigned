@@ -12,6 +12,20 @@
         </h1>
         <div id='article-body-element' class="article-body my-5">{{article.body}}</div>
       </div>
+      {{#if (compare article.content_tags.length ">" 0)}}
+        <section class="content-tags sm:pt-padding-x-large py-8">
+          <p class="text-light-neutral-1 dark:text-dark-neutral-1">{{t 'content_tags_label'}}</p>
+          <ul class="content-tag-list">
+            {{#each article.content_tags}}
+              <span class="content-tag-item body-2 text-light-neutral-2 dark:text-dark-neutral-2" data-content-tag-id="{{id}}">
+                {{#link "search_result" content_tag_id=id target="_blank"}}
+                  {{name}}{{#unless @last}}, {{/unless}}
+                {{/link}}
+              </span>
+            {{/each}}
+          </ul>
+        </section>
+      {{/if}}  
       <div class="article-info-bottom space-y-4 sm:space-y-0 py-8 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center pt-margin-mobile sm:pt-padding-x-large">
         {{#with article}}
           <div class="article-votes">
@@ -37,7 +51,7 @@
       </div>
 
       <div class="divider"></div>
-
+      
       {{related_articles}} 
     </div>
     <div id="article-content-nav-container" class="hidden sm:block sm:col-span-2">
