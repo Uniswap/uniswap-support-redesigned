@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/41428255616909--Draft-Troubleshooting-Clearing-App-Storage-App-State-Reset</loc>
+    <lastmod>2025-11-25T22:19:42Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/41428255616909--Draft-Troubleshooting-Clearing-App-Storage-App-State-Reset" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks</loc>
+    <lastmod>2025-11-20T21:58:09Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40533771259533-Warnings-when-providing-liquidity</loc>
+    <lastmod>2025-10-22T15:07:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40533771259533-Warnings-when-providing-liquidity" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40420536034061-The-Liquidity-Position-Details-Screen</loc>
+    <lastmod>2025-10-17T17:55:02Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40420536034061-The-Liquidity-Position-Details-Screen" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40050562560781-Crypto-Wallet-Signature-Scams</loc>
+    <lastmod>2025-10-02T21:28:20Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40050562560781-Crypto-Wallet-Signature-Scams" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39884112333197-How-do-I-use-testnets-on-Uniswap</loc>
+    <lastmod>2025-11-04T21:51:34Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39884112333197-How-do-I-use-testnets-on-Uniswap" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39884112333197" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39884112333197" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39862756339341-Uniswap-Web-App-The-Swap-Screen</loc>
+    <lastmod>2025-09-25T17:45:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39862756339341-Uniswap-Web-App-The-Swap-Screen" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39829559404685-What-is-Solana</loc>
+    <lastmod>2025-11-05T14:45:05Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39829559404685-What-is-Solana" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39829559404685" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39829559404685" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39683402190733-What-is-a-Permit2-approval</loc>
+    <lastmod>2025-11-06T16:06:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39683402190733-What-is-a-Permit2-approval" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39683402190733" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39683402190733" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39530204759693-How-do-I-add-liquidity-to-an-existing-position</loc>
+    <lastmod>2025-11-04T21:41:57Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39530204759693-How-do-I-add-liquidity-to-an-existing-position" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39530204759693" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39530204759693" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-and-Stargate</loc>
+    <lastmod>2025-11-25T15:58:17Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-and-Stargate" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39264728322317" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39264728322317" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39160763756173-Transaction-Integrity-Protection</loc>
+    <lastmod>2025-10-23T17:12:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39160763756173-Transaction-Integrity-Protection" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/38225957094541-How-do-I-set-up-Touch-ID-or-Windows-Hello-on-the-Uniswap-Extension</loc>
+    <lastmod>2025-07-21T23:11:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/38225957094541-How-do-I-set-up-Touch-ID-or-Windows-Hello-on-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36394497329933--DRAFT-Batched-approval-transactions</loc>
+    <lastmod>2025-05-06T17:45:43Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36394497329933--DRAFT-Batched-approval-transactions" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36393697148045--DRAFT-1-click-swaps</loc>
+    <lastmod>2025-05-06T17:35:56Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36393697148045--DRAFT-1-click-swaps" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36393527081997--DRAFT-Mismatched-Imports</loc>
+    <lastmod>2025-05-06T17:24:41Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36393527081997--DRAFT-Mismatched-Imports" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36392482755341--DRAFT-What-is-multichain-how-does-delegation-work</loc>
+    <lastmod>2025-05-06T17:03:42Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36392482755341--DRAFT-What-is-multichain-how-does-delegation-work" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36391987158797-Smart-Wallets-and-Delegation</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36391987158797-Smart-Wallets-and-Delegation" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/36391987158797" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/36391987158797" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/35522111260173--DRAFT-How-to-recover-your-passkey</loc>
+    <lastmod>2025-04-15T22:13:09Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35522111260173--DRAFT-How-to-recover-your-passkey" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/35506888223501-What-are-UNI-Rewards</loc>
+    <lastmod>2025-09-05T17:18:24Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35506888223501-What-are-UNI-Rewards" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/35506888223501" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/35506888223501" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32601103371917-Top-10-Questions-About-Uniswap</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32601103371917-Top-10-Questions-About-Uniswap" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32397163357325-What-is-Alchemy-Pay</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32397163357325-What-is-Alchemy-Pay" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31092697261837-How-to-bridge-tokens-using-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31092697261837-How-to-bridge-tokens-using-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30998263256717-What-is-a-hook-on-Uniswap-v4</loc>
+    <lastmod>2025-10-03T15:55:45Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30998263256717-What-is-a-hook-on-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/30998263256717" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30998263256717" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30948517268877-What-is-Unichain</loc>
+    <lastmod>2025-07-21T23:47:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30948517268877-What-is-Unichain" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25811961063821-How-to-download-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25811961063821-How-to-download-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25755505699597-How-to-open-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25755505699597-How-to-open-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25655102348813-How-to-buy-crypto-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-11-17T18:18:40Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25655102348813-How-to-buy-crypto-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470337797005-What-is-a-limit-order</loc>
+    <lastmod>2025-06-16T18:26:39Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470337797005-What-is-a-limit-order" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/24470337797005" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/24470337797005" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24327620285709-What-is-a-uni-eth-username</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24327620285709-What-is-a-uni-eth-username" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21320090268557-Settings-How-to-change-the-language-on-Uniswap-interfaces</loc>
+    <lastmod>2025-04-17T22:54:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21320090268557-Settings-How-to-change-the-language-on-Uniswap-interfaces" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20901935681677-What-is-a-liquidity-provider-LP-fee</loc>
+    <lastmod>2025-09-05T18:01:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20901935681677-What-is-a-liquidity-provider-LP-fee" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20901935681677" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20901935681677" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20899457003917-How-to-remove-liquidity-from-Uniswap-v2</loc>
+    <lastmod>2025-04-17T18:29:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20899457003917-How-to-remove-liquidity-from-Uniswap-v2" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20571999964685-What-is-Decentralized-Finance-DeFi</loc>
+    <lastmod>2025-09-05T18:40:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20571999964685-What-is-Decentralized-Finance-DeFi" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20571999964685" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20571999964685" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20317941356429-Getting-Started-with-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-03T15:28:38Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20317941356429-Getting-Started-with-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523327223437-Checking-your-wallet-s-approvals</loc>
+    <lastmod>2025-10-14T21:13:13Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523327223437-Checking-your-wallet-s-approvals" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523317540877-Reporting-scams</loc>
+    <lastmod>2025-06-16T17:37:54Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523317540877-Reporting-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523317540877" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523317540877" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523088290573-Unsellable-token-scams</loc>
+    <lastmod>2025-06-09T20:38:47Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523088290573-Unsellable-token-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523088290573" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523088290573" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17522892515341-Official-Uniswap-Labs-links</loc>
+    <lastmod>2025-10-03T19:51:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17522892515341-Official-Uniswap-Labs-links" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17515415311501-What-is-UniswapX</loc>
+    <lastmod>2025-06-16T17:49:22Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17515415311501-What-is-UniswapX" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17515415311501" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17515415311501" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14569415293325-Networks-on-Uniswap</loc>
+    <lastmod>2025-11-24T14:00:15Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14569415293325-Networks-on-Uniswap" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/14569415293325" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/14569415293325" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11374437553421-What-is-a-crypto-wallet-address</loc>
+    <lastmod>2025-11-06T15:35:56Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11374437553421-What-is-a-crypto-wallet-address" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11374437553421" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11374437553421" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306460803981-My-Uniswap-Wallet-transaction-has-been-pending-for-a-long-time-What-can-I-do</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306460803981-My-Uniswap-Wallet-transaction-has-been-pending-for-a-long-time-What-can-I-do" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306313365005-What-is-a-recovery-phrase</loc>
+    <lastmod>2025-04-24T20:42:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306313365005-What-is-a-recovery-phrase" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306214484237-Can-I-create-or-view-my-liquidity-position-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-09-26T19:54:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306214484237-Can-I-create-or-view-my-liquidity-position-in-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306214484237" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306214484237" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306186131725-How-to-find-your-wallet-address-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306186131725-How-to-find-your-wallet-address-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306183979661-How-to-send-tokens-using-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-24T21:19:22Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306183979661-How-to-send-tokens-using-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8672184917005-How-is-a-network-cost-determined</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8672184917005-How-is-a-network-cost-determined" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8671701219853-What-is-the-Uniswap-protocol</loc>
+    <lastmod>2025-05-06T19:13:35Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8671701219853-What-is-the-Uniswap-protocol" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8121191796749-How-to-connect-a-wallet-to-the-Uniswap-web-app</loc>
+    <lastmod>2025-11-14T21:36:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8121191796749-How-to-connect-a-wallet-to-the-Uniswap-web-app" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/8121191796749" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8121191796749" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425482965517-Uniswap-v2-v3-and-v4</loc>
+    <lastmod>2025-04-17T22:37:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425482965517-Uniswap-v2-v3-and-v4" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425219666061-How-to-provide-liquidity-on-the-Arbitrum-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425219666061-How-to-provide-liquidity-on-the-Arbitrum-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423608592781-Can-I-provide-liquidity-over-the-full-price-range</loc>
+    <lastmod>2025-09-26T21:46:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423608592781-Can-I-provide-liquidity-over-the-full-price-range" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423608592781" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423608592781" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074236290445-What-are-token-warnings</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074236290445-What-are-token-warnings" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074236290445" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074236290445" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect</loc>
+    <lastmod>2025-10-14T21:13:13Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/37781087046029" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/37781087046029" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33829289869965-How-do-custom-hooks-work-in-the-Labs-interface</loc>
+    <lastmod>2025-11-20T21:55:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829289869965-How-do-custom-hooks-work-in-the-Labs-interface" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31092864580877-How-to-bridge-tokens-using-the-Uniswap-web-app</loc>
+    <lastmod>2025-11-24T19:31:46Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31092864580877-How-to-bridge-tokens-using-the-Uniswap-web-app" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30998269400333-Providing-liquidity-on-different-versions-of-the-Uniswap-Protocol</loc>
+    <lastmod>2025-09-16T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30998269400333-Providing-liquidity-on-different-versions-of-the-Uniswap-Protocol" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30948569726989-What-is-the-Unichain-Testnet</loc>
+    <lastmod>2025-04-17T22:13:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30948569726989-What-is-the-Unichain-Testnet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30935100859661-Uniswap-Labs-Terms-of-Service</loc>
+    <lastmod>2025-10-03T15:55:32Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30935100859661-Uniswap-Labs-Terms-of-Service" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/30935100859661" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30935100859661" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27362707722637-How-to-change-default-trade-options</loc>
+    <lastmod>2025-06-17T22:36:47Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27362707722637-How-to-change-default-trade-options" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/27362707722637" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/27362707722637" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27168645068173-I-forgot-my-Uniswap-Extension-password-What-can-I-do</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27168645068173-I-forgot-my-Uniswap-Extension-password-What-can-I-do" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27168571148045-How-to-create-a-new-Uniswap-Extension-password</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27168571148045-How-to-create-a-new-Uniswap-Extension-password" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25980714951181-What-is-Banxa</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25980714951181-What-is-Banxa" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24468305718541-How-to-create-a-limit-order</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24468305718541-How-to-create-a-limit-order" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24458735271181-Getting-Started-with-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-17T21:59:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24458735271181-Getting-Started-with-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24325885613197-How-to-claim-a-uni-eth-username</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24325885613197-How-to-claim-a-uni-eth-username" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21319867619981-Settings-How-to-change-the-currency-on-the-Uniswap-Interfaces</loc>
+    <lastmod>2025-04-17T22:56:20Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21319867619981-Settings-How-to-change-the-currency-on-the-Uniswap-Interfaces" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20915582427917-How-to-add-a-new-liquidity-position-to-Uniswap-v2</loc>
+    <lastmod>2025-11-25T18:51:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20915582427917-How-to-add-a-new-liquidity-position-to-Uniswap-v2" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20915582427917" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20915582427917" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20904283758349-What-are-fee-tiers</loc>
+    <lastmod>2025-11-06T15:12:22Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20904283758349-What-are-fee-tiers" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20904283758349" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20904283758349" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20900676762893-How-to-remove-liquidity-from-Uniswap-v3</loc>
+    <lastmod>2025-11-25T20:13:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20900676762893-How-to-remove-liquidity-from-Uniswap-v3" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20900676762893" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20900676762893" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17544661827853-How-does-UniswapX-save-me-money</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544661827853-How-does-UniswapX-save-me-money" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17531471723533-How-to-provide-liquidity-on-the-Avalanche-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17531471723533-How-to-provide-liquidity-on-the-Avalanche-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523020772365-Airdropped-NFT-or-Token-scams</loc>
+    <lastmod>2025-11-04T19:28:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523020772365-Airdropped-NFT-or-Token-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523020772365" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523020772365" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16912665313677-How-to-switch-between-wallets-in-the-Uniswap-Wallet-app</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16912665313677-How-to-switch-between-wallets-in-the-Uniswap-Wallet-app" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16747656529933-What-is-Uniswap-v4</loc>
+    <lastmod>2025-04-24T21:19:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16747656529933-What-is-Uniswap-v4" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/15588335114765-How-to-receive-funds-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-07-21T23:45:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/15588335114765-How-to-receive-funds-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14580495154445-Testnets-on-Uniswap</loc>
+    <lastmod>2025-11-21T17:48:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14580495154445-Testnets-on-Uniswap" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/14580495154445" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/14580495154445" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-buy-crypto-using-the-Uniswap-web-app</loc>
+    <lastmod>2025-09-23T17:41:29Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-buy-crypto-using-the-Uniswap-web-app" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306574799117" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306574799117" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306360177677-How-to-find-your-recovery-phrase-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-06-06T23:40:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306360177677-How-to-find-your-recovery-phrase-in-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306360177677" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306360177677" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302250051597-How-to-download-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302250051597-How-to-download-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8723118437133-What-are-token-warnings</loc>
+    <lastmod>2025-10-03T15:25:59Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8723118437133-What-are-token-warnings" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8723118437133" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8723118437133" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8671577468813-How-does-the-Uniswap-protocol-work</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8671577468813-How-does-the-Uniswap-protocol-work" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8664958202253-What-is-a-blockchain-network</loc>
+    <lastmod>2025-11-06T15:21:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8664958202253-What-is-a-blockchain-network" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8664958202253" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8664958202253" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8015114520205-What-is-a-transaction-hash</loc>
+    <lastmod>2025-09-26T21:00:11Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8015114520205-What-is-a-transaction-hash" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8015114520205" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8015114520205" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7797017638157-How-to-disconnect-a-wallet-from-the-Uniswap-web-app</loc>
+    <lastmod>2025-04-16T00:13:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7797017638157-How-to-disconnect-a-wallet-from-the-Uniswap-web-app" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7422909292813-My-transaction-has-been-pending-for-a-long-time-What-can-I-do</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7422909292813-My-transaction-has-been-pending-for-a-long-time-What-can-I-do" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074675562125-What-is-an-approval-transaction</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074675562125-What-is-an-approval-transaction" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074675562125" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074675562125" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/37113550065549-What-are-the-risks-when-providing-liquidity</loc>
+    <lastmod>2025-09-05T16:19:56Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/37113550065549-What-are-the-risks-when-providing-liquidity" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/37113550065549" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/37113550065549" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33829751588109-Uniswap-v4-licensing</loc>
+    <lastmod>2025-04-24T21:19:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829751588109-Uniswap-v4-licensing" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33829355779853-How-to-remove-liquidity-from-Uniswap-v4</loc>
+    <lastmod>2025-09-26T18:51:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829355779853-How-to-remove-liquidity-from-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33829355779853" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33829355779853" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33673037030797-What-is-a-network-token</loc>
+    <lastmod>2025-11-24T14:00:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33673037030797-What-is-a-network-token" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33673037030797" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33673037030797" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings</loc>
+    <lastmod>2025-04-17T22:24:28Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32397095416845-What-is-BinancePay</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32397095416845-What-is-BinancePay" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31453009838477-How-to-create-a-new-wallet-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31453009838477-How-to-create-a-new-wallet-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30934457771405-Uniswap-Labs-Privacy-Policy</loc>
+    <lastmod>2025-10-03T18:57:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30934457771405-Uniswap-Labs-Privacy-Policy" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30677918339341-What-is-the-Across-Bridge</loc>
+    <lastmod>2025-06-16T18:43:34Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30677918339341-What-is-the-Across-Bridge" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/30677918339341" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30677918339341" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/29883356032525-How-do-I-change-my-token-s-logo-or-information-on-Uniswap-interfaces</loc>
+    <lastmod>2025-04-17T23:00:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/29883356032525-How-do-I-change-my-token-s-logo-or-information-on-Uniswap-interfaces" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/28278904584077-Uniswap-Wallet-Security-Measures</loc>
+    <lastmod>2025-10-14T21:13:13Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/28278904584077-Uniswap-Wallet-Security-Measures" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/28278904584077" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/28278904584077" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25755016730765-Where-is-my-wallet-address-in-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25755016730765-Where-is-my-wallet-address-in-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25751833036045-How-to-import-your-Uniswap-Wallet-to-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25751833036045-How-to-import-your-Uniswap-Wallet-to-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470181596941-How-to-view-limit-order-history</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470181596941-How-to-view-limit-order-history" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24333368275853-Guidelines-for-usernames</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24333368275853-Guidelines-for-usernames" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23627774111629-How-to-send-tokens-with-the-Uniswap-Web-app</loc>
+    <lastmod>2025-11-04T18:52:57Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23627774111629-How-to-send-tokens-with-the-Uniswap-Web-app" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20903989864205-How-to-provide-liquidity-on-the-Base-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20903989864205-How-to-provide-liquidity-on-the-Base-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20901267003789-How-to-collect-fees-from-a-liquidity-pool-on-Uniswap-v3</loc>
+    <lastmod>2025-11-25T21:59:39Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20901267003789-How-to-collect-fees-from-a-liquidity-pool-on-Uniswap-v3" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20901267003789" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20901267003789" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18783818770701-Unsupported-Token-List</loc>
+    <lastmod>2025-11-13T20:20:49Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18783818770701-Unsupported-Token-List" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18783818770701" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18783818770701" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18674038953613-Approval-transaction-troubleshooting</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18674038953613-Approval-transaction-troubleshooting" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17542712707725-How-does-UniswapX-work</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17542712707725-How-does-UniswapX-work" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17531849878157-What-is-the-Avalanche-network</loc>
+    <lastmod>2025-10-14T17:47:21Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17531849878157-What-is-the-Avalanche-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17522955185421-Giveaway-promotion-scams</loc>
+    <lastmod>2025-09-05T15:35:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17522955185421-Giveaway-promotion-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17522955185421" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17522955185421" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/15724901841037-How-to-revoke-a-token-approval</loc>
+    <lastmod>2025-08-26T20:35:29Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/15724901841037-How-to-revoke-a-token-approval" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/15724901841037" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/15724901841037" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11386716842253-How-to-back-up-your-recovery-phrase-manually</loc>
+    <lastmod>2025-06-16T23:24:11Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11386716842253-How-to-back-up-your-recovery-phrase-manually" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11386716842253" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11386716842253" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306614164877-What-payment-methods-are-accepted-when-buying-crypto</loc>
+    <lastmod>2025-09-23T17:41:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306614164877-What-payment-methods-are-accepted-when-buying-crypto" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306225627789-How-to-view-your-Uniswap-Wallet-activity</loc>
+    <lastmod>2025-11-18T15:13:24Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306225627789-How-to-view-your-Uniswap-Wallet-activity" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11045742405517-How-to-switch-networks</loc>
+    <lastmod>2025-11-24T19:35:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11045742405517-How-to-switch-networks" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/9818094509453-How-to-use-the-Uniswap-Explore-page</loc>
+    <lastmod>2025-04-16T00:13:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/9818094509453-How-to-use-the-Uniswap-Explore-page" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8699353449229-What-is-a-crypto-wallet</loc>
+    <lastmod>2025-10-09T19:18:15Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8699353449229-What-is-a-crypto-wallet" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/8699353449229" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8699353449229" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8121972059661-Who-uses-the-Uniswap-protocol</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8121972059661-Who-uses-the-Uniswap-protocol" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423194619661-How-to-add-a-new-liquidity-position-to-Uniswap-v3</loc>
+    <lastmod>2025-11-07T20:26:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423194619661-How-to-add-a-new-liquidity-position-to-Uniswap-v3" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423194619661" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423194619661" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074336993549-What-is-a-network-cost</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074336993549-What-is-a-network-cost" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074336993549" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074336993549" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/35118661572237-How-to-bridge-tokens-to-and-from-the-Unichain-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35118661572237-How-to-bridge-tokens-to-and-from-the-Unichain-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/34833457434637-Troubleshooting-How-to-clear-browser-data</loc>
+    <lastmod>2025-06-20T19:02:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/34833457434637-Troubleshooting-How-to-clear-browser-data" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33829507086989-How-to-collect-fees-from-a-liquidity-pool-on-Uniswap-v4</loc>
+    <lastmod>2025-09-05T15:51:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829507086989-How-to-collect-fees-from-a-liquidity-pool-on-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33829507086989" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33829507086989" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33249383397005-How-to-update-the-Uniswap-extension</loc>
+    <lastmod>2025-06-05T19:29:15Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33249383397005-How-to-update-the-Uniswap-extension" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33249383397005" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33249383397005" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32233918539533-How-to-add-a-new-liquidity-position-to-Uniswap-v4</loc>
+    <lastmod>2025-11-07T20:19:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32233918539533-How-to-add-a-new-liquidity-position-to-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/32233918539533" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/32233918539533" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27103878635661-How-to-transfer-crypto-from-a-Robinhood-or-Coinbase-account</loc>
+    <lastmod>2025-06-06T17:28:37Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27103878635661-How-to-transfer-crypto-from-a-Robinhood-or-Coinbase-account" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/27103878635661" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/27103878635661" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25753861673357-How-to-send-tokens-using-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T23:35:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25753861673357-How-to-send-tokens-using-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25751583912077-How-to-import-a-recovery-phrase-to-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25751583912077-How-to-import-a-recovery-phrase-to-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25655453481101-What-is-Coinbase-Pay</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25655453481101-What-is-Coinbase-Pay" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25352193291917-How-to-provide-liquidity-on-the-Blast-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25352193291917-How-to-provide-liquidity-on-the-Blast-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470251716237-What-networks-support-limit-orders</loc>
+    <lastmod>2025-06-16T17:34:21Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470251716237-What-networks-support-limit-orders" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/24470251716237" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/24470251716237" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24326361676173-How-many-usernames-can-I-claim</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24326361676173-How-many-usernames-can-I-claim" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23331763733517-Error-message-Swap-failed</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23331763733517-Error-message-Swap-failed" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20981158150029-I-can-t-remove-my-liquidity-position</loc>
+    <lastmod>2025-04-17T18:29:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20981158150029-I-can-t-remove-my-liquidity-position" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20980786685069-Why-is-liquidity-position-ownership-represented-by-tokens-or-NFTs</loc>
+    <lastmod>2025-09-29T14:15:32Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20980786685069-Why-is-liquidity-position-ownership-represented-by-tokens-or-NFTs" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20980786685069" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20980786685069" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20131678274957-What-are-Uniswap-Labs-fees</loc>
+    <lastmod>2025-06-16T23:41:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20131678274957-What-are-Uniswap-Labs-fees" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20131678274957" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20131678274957" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18783694078989-Unsupported-Token-and-NFT-Policy</loc>
+    <lastmod>2025-06-14T00:15:41Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18783694078989-Unsupported-Token-and-NFT-Policy" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18783694078989" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18783694078989" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18099721514125-What-is-the-Base-network</loc>
+    <lastmod>2025-09-23T17:25:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18099721514125-What-is-the-Base-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523161879821-Employment-scams</loc>
+    <lastmod>2025-09-26T21:26:57Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523161879821-Employment-scams" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523161879821" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523161879821" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17081681967757-Who-fills-UniswapX-orders</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17081681967757-Who-fills-UniswapX-orders" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16948032550285-Where-are-my-tokens-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-11-14T15:41:27Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16948032550285-Where-are-my-tokens-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14569783029645-Uniswap-v3-licensing</loc>
+    <lastmod>2025-04-17T22:37:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14569783029645-Uniswap-v3-licensing" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11382985633421-How-to-back-up-your-recovery-phrase-on-iCloud-or-Google-Drive</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11382985633421-How-to-back-up-your-recovery-phrase-on-iCloud-or-Google-Drive" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306129919501-How-to-sign-a-transaction-using-WalletConnect</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306129919501-How-to-sign-a-transaction-using-WalletConnect" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302413221773-How-to-add-a-new-wallet-address-to-the-Uniswap-Wallet-app</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302413221773-How-to-add-a-new-wallet-address-to-the-Uniswap-Wallet-app" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11302413221773" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11302413221773" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/9818052307341-What-is-the-Token-Details-page</loc>
+    <lastmod>2025-04-16T15:40:38Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/9818052307341-What-is-the-Token-Details-page" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8699029297677-How-to-get-a-crypto-wallet</loc>
+    <lastmod>2025-11-05T16:13:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8699029297677-How-to-get-a-crypto-wallet" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8699029297677" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8699029297677" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8370337377805-What-is-a-network-cost</loc>
+    <lastmod>2025-10-03T16:14:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8370337377805-What-is-a-network-cost" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8370337377805" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8370337377805" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7422670207373-How-are-token-prices-determined</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7422670207373-How-are-token-prices-determined" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074715860365-What-is-price-impact</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074715860365-What-is-price-impact" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074715860365" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074715860365" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33827089858701-Adding-liquidity-to-Uniswap-v4-with-a-hook</loc>
+    <lastmod>2025-06-05T21:47:47Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33827089858701-Adding-liquidity-to-Uniswap-v4-with-a-hook" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33827089858701" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33827089858701" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32633376860173-How-to-claim-a-username-in-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32633376860173-How-to-claim-a-username-in-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30948735350413-How-to-bridge-tokens-to-and-from-the-Unichain-Testnet</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30948735350413-How-to-bridge-tokens-to-and-from-the-Unichain-Testnet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30934762216973-Uniswap-Labs-Trademark-Guidelines</loc>
+    <lastmod>2025-09-29T18:23:14Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30934762216973-Uniswap-Labs-Trademark-Guidelines" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/30934762216973" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30934762216973" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30432674756749-How-to-hide-and-unhide-tokens-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30432674756749-How-to-hide-and-unhide-tokens-in-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/30432674756749" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30432674756749" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/29802839428365-How-to-download-transaction-history-on-Etherscan</loc>
+    <lastmod>2025-11-26T15:21:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/29802839428365-How-to-download-transaction-history-on-Etherscan" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/29802839428365" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25752583851021-How-to-back-up-my-recovery-phrase-in-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25752583851021-How-to-back-up-my-recovery-phrase-in-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25351482786829-What-is-the-Blast-network</loc>
+    <lastmod>2025-04-17T22:13:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25351482786829-What-is-the-Blast-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25236173303053-Uniswap-Protocol-deployment-addresses</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25236173303053-Uniswap-Protocol-deployment-addresses" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24468354860557-What-tokens-are-available-with-limit-orders</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24468354860557-What-tokens-are-available-with-limit-orders" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24326227512333-How-to-claim-a-username-for-another-address-in-your-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24326227512333-How-to-claim-a-username-for-another-address-in-your-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23952001935373-Troubleshooting-Subgraph-downtime</loc>
+    <lastmod>2025-04-17T22:59:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23952001935373-Troubleshooting-Subgraph-downtime" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23334343679501-Error-message-Transaction-is-expected-to-fail</loc>
+    <lastmod>2025-05-09T16:20:38Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23334343679501-Error-message-Transaction-is-expected-to-fail" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20981468309517-What-is-the-difference-between-removing-liquidity-as-WETH-and-ETH</loc>
+    <lastmod>2025-09-26T20:21:42Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20981468309517-What-is-the-difference-between-removing-liquidity-as-WETH-and-ETH" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20981468309517" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20981468309517" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20904153769101-How-to-provide-liquidity-on-the-Celo-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20904153769101-How-to-provide-liquidity-on-the-Celo-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523201861389-WhatsApp-or-Telegram-support-scams</loc>
+    <lastmod>2025-09-04T21:05:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523201861389-WhatsApp-or-Telegram-support-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523201861389" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523201861389" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17515489874189-Why-can-my-swap-not-be-filled</loc>
+    <lastmod>2025-06-09T17:57:20Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17515489874189-Why-can-my-swap-not-be-filled" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17515489874189" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17515489874189" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11393433921549-I-accidentally-sent-funds-to-the-wrong-address</loc>
+    <lastmod>2025-04-16T23:35:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11393433921549-I-accidentally-sent-funds-to-the-wrong-address" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11380692567949-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11380692567949-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/11380692567949" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11380692567949" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306612644493-What-tokens-can-I-buy-on-Uniswap</loc>
+    <lastmod>2025-04-24T21:18:08Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306612644493-What-tokens-can-I-buy-on-Uniswap" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306567662093-What-is-MoonPay</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306567662093-What-is-MoonPay" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306315270029-How-to-protect-your-recovery-phrase</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306315270029-How-to-protect-your-recovery-phrase" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8671777747597-Address-Screening-Guide</loc>
+    <lastmod>2025-09-26T20:32:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8671777747597-Address-Screening-Guide" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8671777747597" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8671777747597" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425541255565-The-Uniswap-web-app-fails-to-load</loc>
+    <lastmod>2025-04-16T00:13:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425541255565-The-Uniswap-web-app-fails-to-load" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7424975828749-What-is-a-Layer-2-Network</loc>
+    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7424975828749-What-is-a-Layer-2-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423759991821-Do-I-need-to-hold-both-tokens-to-provide-liquidity-using-Uniswap-v3-and-v4</loc>
+    <lastmod>2025-11-04T21:21:29Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423759991821-Do-I-need-to-hold-both-tokens-to-provide-liquidity-using-Uniswap-v3-and-v4" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423759991821" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423759991821" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423123748493-How-do-I-make-sure-my-transaction-succeeds</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423123748493-How-do-I-make-sure-my-transaction-succeeds" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074147375757-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074147375757-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/40074147375757" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/40074147375757" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33859269119501-How-to-migrate-liquidity-from-Uniswap-v2-to-Uniswap-v4</loc>
+    <lastmod>2025-06-05T22:34:44Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33859269119501-How-to-migrate-liquidity-from-Uniswap-v2-to-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33859269119501" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33859269119501" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/29425131525901-How-to-transfer-crypto-to-a-Uniswap-Wallet-in-Korea</loc>
+    <lastmod>2025-04-16T23:35:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/29425131525901-How-to-transfer-crypto-to-a-Uniswap-Wallet-in-Korea" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/28370503343245-How-to-pin-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/28370503343245-How-to-pin-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/28370177587213-How-to-create-a-new-wallet-in-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/28370177587213-How-to-create-a-new-wallet-in-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/26757826138637-What-is-a-token-contract-address</loc>
+    <lastmod>2025-06-09T18:17:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/26757826138637-What-is-a-token-contract-address" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/26757826138637" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/26757826138637" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25249713199501-Uniswap-Protocol-Security</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25249713199501-Uniswap-Protocol-Security" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24468312159885-Why-can-t-I-submit-my-limit-order</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24468312159885-Why-can-t-I-submit-my-limit-order" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24325997548173-How-to-change-or-delete-a-username</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24325997548173-How-to-change-or-delete-a-username" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21069524840589-What-is-a-tick-when-providing-liquidity</loc>
+    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21069524840589-What-is-a-tick-when-providing-liquidity" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20904158825101-How-to-provide-liquidity-on-the-BNB-Smart-Chain</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20904158825101-How-to-provide-liquidity-on-the-BNB-Smart-Chain" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/19044299522573-How-to-initiate-an-appeal-request</loc>
+    <lastmod>2025-11-05T16:24:37Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/19044299522573-How-to-initiate-an-appeal-request" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/19044299522573" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/19044299522573" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17544687771789-What-tokens-are-available-on-UniswapX</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544687771789-What-tokens-are-available-on-UniswapX" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523194533645-Impersonation-scams</loc>
+    <lastmod>2025-09-26T21:51:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523194533645-Impersonation-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523194533645" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523194533645" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16574085865613-Emails-from-Uniswap-Labs</loc>
+    <lastmod>2025-04-17T23:03:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16574085865613-Emails-from-Uniswap-Labs" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11581208974861-What-are-the-minimum-or-maximum-order-amounts-on-MoonPay</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11581208974861-What-are-the-minimum-or-maximum-order-amounts-on-MoonPay" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11316824767757-How-to-bridge-tokens-to-and-from-the-Arbitrum-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11316824767757-How-to-bridge-tokens-to-and-from-the-Arbitrum-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306666789901-Why-did-my-crypto-purchase-fail</loc>
+    <lastmod>2025-09-23T17:41:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306666789901-Why-did-my-crypto-purchase-fail" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306520039309-Can-other-people-see-my-tokens-NFTs-and-transaction-history</loc>
+    <lastmod>2025-11-04T19:56:44Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306520039309-Can-other-people-see-my-tokens-NFTs-and-transaction-history" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306520039309" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306520039309" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306367118349-I-forgot-my-recovery-phrase-What-can-I-do</loc>
+    <lastmod>2025-06-06T23:13:51Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306367118349-I-forgot-my-recovery-phrase-What-can-I-do" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306367118349" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306367118349" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306127816845-How-to-connect-my-wallet-to-a-site-dapp-using-WalletConnect</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306127816845-How-to-connect-my-wallet-to-a-site-dapp-using-WalletConnect" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306083998733-What-tokens-are-available-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306083998733-What-tokens-are-available-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306054635277-How-to-swap-tokens-using-the-Uniswap-Wallet</loc>
+    <lastmod>2025-06-04T22:11:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306054635277-How-to-swap-tokens-using-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425500641421-How-do-I-resolve-a-network-warning</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425500641421-How-do-I-resolve-a-network-warning" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074712942989-Getting-Started-with-the-Uniswap-Wallet</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074712942989-Getting-Started-with-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/33829431902733-How-to-migrate-liquidity-from-Uniswap-v3-to-Uniswap-v4</loc>
+    <lastmod>2025-09-26T19:46:42Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829431902733-How-to-migrate-liquidity-from-Uniswap-v3-to-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/33829431902733" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/33829431902733" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/30678956427533-How-to-report-an-NFT-as-spam-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-17T20:05:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30678956427533-How-to-report-an-NFT-as-spam-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25754534751629-How-to-add-another-wallet-in-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:31:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25754534751629-How-to-add-another-wallet-in-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25754169597197-How-to-lock-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T00:32:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25754169597197-How-to-lock-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25351747812109-Does-Uniswap-support-Blast-rebase-tokens</loc>
+    <lastmod>2025-04-17T22:37:48Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25351747812109-Does-Uniswap-support-Blast-rebase-tokens" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24327571592333-Can-I-transfer-or-sell-my-username</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24327571592333-Can-I-transfer-or-sell-my-username" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24300813697933-Why-did-my-limit-order-fail-or-not-execute</loc>
+    <lastmod>2025-06-16T17:58:59Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24300813697933-Why-did-my-limit-order-fail-or-not-execute" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/24300813697933" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/24300813697933" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23831547589901-Guidelines-for-forking-the-Uniswap-Interface</loc>
+    <lastmod>2025-04-17T23:03:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23831547589901-Guidelines-for-forking-the-Uniswap-Interface" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23334674406541-My-token-s-price-chart-is-missing</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23334674406541-My-token-s-price-chart-is-missing" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20915975893645-How-to-change-the-price-range-of-a-liquidity-position</loc>
+    <lastmod>2025-11-25T19:53:53Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20915975893645-How-to-change-the-price-range-of-a-liquidity-position" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20915975893645" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20915975893645" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/19503913435405-How-to-find-a-token-s-fee</loc>
+    <lastmod>2025-05-01T17:19:04Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/19503913435405-How-to-find-a-token-s-fee" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18734550354061-How-to-restore-your-Uniswap-Wallet-on-a-new-device</loc>
+    <lastmod>2025-06-17T21:22:39Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18734550354061-How-to-restore-your-Uniswap-Wallet-on-a-new-device" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18734550354061" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18734550354061" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18673568523789-What-is-a-token-fee</loc>
+    <lastmod>2025-06-06T00:02:09Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18673568523789-What-is-a-token-fee" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18673568523789" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18673568523789" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17542724911501-What-networks-are-supported-by-UniswapX</loc>
+    <lastmod>2025-04-29T18:02:32Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17542724911501-What-networks-are-supported-by-UniswapX" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17531690533389-How-to-bridge-tokens-to-and-from-the-Avalanche-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17531690533389-How-to-bridge-tokens-to-and-from-the-Avalanche-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523108474381-Impersonation-website-scams</loc>
+    <lastmod>2025-09-26T21:09:40Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523108474381-Impersonation-website-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523108474381" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523108474381" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16248300505101-How-do-I-set-up-Face-ID-Touch-ID-or-Biometrics-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16248300505101-How-do-I-set-up-Face-ID-Touch-ID-or-Biometrics-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/13999537225997-What-is-the-BNB-Smart-Chain</loc>
+    <lastmod>2025-04-17T22:13:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/13999537225997-What-is-the-BNB-Smart-Chain" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306664890381-Why-isn-t-MoonPay-available-in-my-region</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306664890381-Why-isn-t-MoonPay-available-in-my-region" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306664890381" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306664890381" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306663402509-My-crypto-purchase-did-not-complete</loc>
+    <lastmod>2025-09-23T17:41:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306663402509-My-crypto-purchase-did-not-complete" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306522166413-How-to-manage-Uniswap-Wallet-connections</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306522166413-How-to-manage-Uniswap-Wallet-connections" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306088153485-How-to-swap-on-different-networks-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306088153485-How-to-swap-on-different-networks-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7424466077069-How-to-provide-liquidity-on-the-Optimism-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7424466077069-How-to-provide-liquidity-on-the-Optimism-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074102704141-Uniswap-Labs-Privacy-Policy</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074102704141-Uniswap-Labs-Privacy-Policy" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/36639030129421-Does-the-Uniswap-Wallet-support-validating-or-mining-crypto</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36639030129421-Does-the-Uniswap-Wallet-support-validating-or-mining-crypto" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/36639030129421" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/36639030129421" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/35914743559309-What-is-Revolut</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35914743559309-What-is-Revolut" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31110575520269-What-is-the-World-Chain-network</loc>
+    <lastmod>2025-04-17T22:13:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31110575520269-What-is-the-World-Chain-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25811698471565-Connecting-the-Uniswap-Extension-to-other-dapps</loc>
+    <lastmod>2025-06-17T22:06:13Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25811698471565-Connecting-the-Uniswap-Extension-to-other-dapps" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/25811698471565" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/25811698471565" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24327082166285-Can-I-use-my-username-in-other-wallets</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24327082166285-Can-I-use-my-username-in-other-wallets" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24300788956301-How-to-cancel-a-limit-order</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24300788956301-How-to-cancel-a-limit-order" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23334061651981-My-token-s-price-is-N-A</loc>
+    <lastmod>2025-04-16T22:53:31Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23334061651981-My-token-s-price-is-N-A" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23059705287181-How-to-read-a-candlestick-chart</loc>
+    <lastmod>2025-09-26T20:11:38Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23059705287181-How-to-read-a-candlestick-chart" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/23059705287181" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/23059705287181" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21068898875661-How-to-convert-a-price-to-a-tick-that-can-be-initialized</loc>
+    <lastmod>2025-11-25T21:33:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21068898875661-How-to-convert-a-price-to-a-tick-that-can-be-initialized" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/21068898875661" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/21068898875661" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20904040289037-How-to-provide-liquidity-on-the-Polygon-Network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20904040289037-How-to-provide-liquidity-on-the-Polygon-Network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18099676861965-How-to-bridge-tokens-to-and-from-the-Base-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18099676861965-How-to-bridge-tokens-to-and-from-the-Base-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17674084283149-How-to-swap-on-UniswapX</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17674084283149-How-to-swap-on-UniswapX" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523135529997-Investment-scams</loc>
+    <lastmod>2025-11-06T15:26:15Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523135529997-Investment-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523135529997" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523135529997" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14185089983501-How-to-switch-to-light-or-dark-mode-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14185089983501-How-to-switch-to-light-or-dark-mode-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/13464110828685-What-is-Know-Your-Customer-KYC-when-buying-crypto</loc>
+    <lastmod>2025-09-23T17:41:29Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/13464110828685-What-is-Know-Your-Customer-KYC-when-buying-crypto" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306373214861-I-entered-my-recovery-phrase-but-my-account-is-missing</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306373214861-I-entered-my-recovery-phrase-but-my-account-is-missing" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306371824653-What-is-a-private-key</loc>
+    <lastmod>2025-11-05T17:51:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306371824653-What-is-a-private-key" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/11306371824653" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/11306371824653" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306124372749-How-to-change-slippage-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306124372749-How-to-change-slippage-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11003585318413-How-do-I-claim-my-Genie-airdrop-on-Uniswap</loc>
+    <lastmod>2025-04-17T23:03:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11003585318413-How-do-I-claim-my-Genie-airdrop-on-Uniswap" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3</loc>
+    <lastmod>2025-11-07T16:43:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074184880525-Networks-on-Uniswap</loc>
+    <lastmod>2025-11-24T14:00:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074184880525-Networks-on-Uniswap" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/40074184880525" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/40074184880525" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31110692954637-How-to-provide-liquidity-on-the-World-Chain-network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31110692954637-How-to-provide-liquidity-on-the-World-Chain-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/29769330885005-How-to-swap-on-UniswapX-using-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/29769330885005-How-to-swap-on-UniswapX-using-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/29328261056525-How-to-adjust-haptic-touch-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/29328261056525-How-to-adjust-haptic-touch-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27561653650957-What-is-the-ZKsync-network</loc>
+    <lastmod>2025-04-17T22:13:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27561653650957-What-is-the-ZKsync-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25654025775501-What-is-Robinhood</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25654025775501-What-is-Robinhood" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25351681360141-How-to-bridge-tokens-to-and-from-the-Blast-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25351681360141-How-to-bridge-tokens-to-and-from-the-Blast-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470186783373-Why-was-my-limit-order-cancelled</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470186783373-Why-was-my-limit-order-cancelled" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24326856005773-How-to-search-for-a-wallet-profile-using-a-Uniswap-Wallet-username</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24326856005773-How-to-search-for-a-wallet-profile-using-a-Uniswap-Wallet-username" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523139392397-WhatsApp-or-Telegram-investment-scams</loc>
+    <lastmod>2025-09-05T18:45:34Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523139392397-WhatsApp-or-Telegram-investment-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523139392397" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523139392397" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/13600679159181-Where-are-my-Layer-2-transactions-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/13600679159181-Where-are-my-Layer-2-transactions-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306414636685-I-bought-crypto-using-the-Uniswap-Wallet-but-I-have-not-received-it-yet</loc>
+    <lastmod>2025-04-17T00:21:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306414636685-I-bought-crypto-using-the-Uniswap-Wallet-but-I-have-not-received-it-yet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306369604749-How-do-I-restore-my-wallet-using-my-iCloud-or-Google-Drive-backup</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306369604749-How-do-I-restore-my-wallet-using-my-iCloud-or-Google-Drive-backup" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/10991941232397-ERC-721-vs-ERC-1155</loc>
+    <lastmod>2025-11-25T16:07:12Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/10991941232397-ERC-721-vs-ERC-1155" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/10991941232397" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/10991941232397" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/10794055772813-How-do-I-claim-the-Uniswap-UNI-Token-Airdrop</loc>
+    <lastmod>2025-04-17T23:03:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/10794055772813-How-do-I-claim-the-Uniswap-UNI-Token-Airdrop" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8643975058829-Why-did-my-transaction-fail</loc>
+    <lastmod>2025-06-09T19:32:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8643975058829-Why-did-my-transaction-fail" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8643975058829" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8643975058829" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8370549680909-How-to-swap-tokens-with-the-Uniswap-web-app</loc>
+    <lastmod>2025-10-09T19:21:19Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8370549680909-How-to-swap-tokens-with-the-Uniswap-web-app" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://support.uniswap.org/hc/ko/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://support.uniswap.org/hc/ru/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://support.uniswap.org/hc/tr/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://support.uniswap.org/hc/zh-cn/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://support.uniswap.org/hc/zh-tw/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://support.uniswap.org/hc/id/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://support.uniswap.org/hc/fil/articles/8370549680909" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8370549680909" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8120520483085-What-is-an-approval-transaction</loc>
+    <lastmod>2025-10-03T15:28:21Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8120520483085-What-is-an-approval-transaction" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8120520483085" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8120520483085" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423663459597-Why-does-the-price-input-automatically-round</loc>
+    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423663459597-Why-does-the-price-input-automatically-round" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074478311437-Uniswap-Labs-Terms-of-Service</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074478311437-Uniswap-Labs-Terms-of-Service" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074478311437" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074478311437" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/35404008704909-What-is-a-signature-permit</loc>
+    <lastmod>2025-10-14T21:25:43Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35404008704909-What-is-a-signature-permit" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27879533498893-What-is-the-Zora-network</loc>
+    <lastmod>2025-07-22T00:05:14Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27879533498893-What-is-the-Zora-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27561068575117-How-to-provide-liquidity-on-the-ZKsync-network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27561068575117-How-to-provide-liquidity-on-the-ZKsync-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25980577444109-What-is-Stripe</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25980577444109-What-is-Stripe" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24468737611277-Is-there-slippage-on-limit-orders</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24468737611277-Is-there-slippage-on-limit-orders" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24325648673421-How-to-update-your-Uniswap-Wallet-profile</loc>
+    <lastmod>2025-04-15T22:05:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24325648673421-How-to-update-your-Uniswap-Wallet-profile" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23548436751629-How-do-I-opt-out-of-analytics-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23548436751629-How-do-I-opt-out-of-analytics-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/19423240914317-What-is-an-iCloud-backup-password</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/19423240914317-What-is-an-iCloud-backup-password" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/19387081481741-What-is-a-sandwich-attack</loc>
+    <lastmod>2025-11-05T15:04:29Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/19387081481741-What-is-a-sandwich-attack" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/19387081481741" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/19387081481741" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17544708791821-Are-there-network-costs-for-UniswapX</loc>
+    <lastmod>2025-06-09T17:11:37Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544708791821-Are-there-network-costs-for-UniswapX" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17544708791821" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17544708791821" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14008691660557-How-to-bridge-tokens-to-and-from-the-BNB-Smart-Chain-network</loc>
+    <lastmod>2025-10-09T18:30:49Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14008691660557-How-to-bridge-tokens-to-and-from-the-BNB-Smart-Chain-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306626912269-Why-do-I-have-to-verify-my-identity-when-buying-crypto</loc>
+    <lastmod>2025-09-23T17:41:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306626912269-Why-do-I-have-to-verify-my-identity-when-buying-crypto" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8643879653261-How-to-change-slippage-on-the-Uniswap-Web-app</loc>
+    <lastmod>2025-06-06T20:23:58Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8643879653261-How-to-change-slippage-on-the-Uniswap-Web-app" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8643879653261" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8643879653261" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8122264374925-Why-aren-t-my-tokens-showing-up-in-my-wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8122264374925-Why-aren-t-my-tokens-showing-up-in-my-wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425600872973-Tax-Information</loc>
+    <lastmod>2025-04-17T21:53:46Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425600872973-Tax-Information" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423702800141-Why-is-my-liquidity-position-not-evenly-split-between-the-two-tokens</loc>
+    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423702800141-Why-is-my-liquidity-position-not-evenly-split-between-the-two-tokens" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/40074426609421-What-is-a-hook-on-Uniswap-v4</loc>
+    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074426609421-What-is-a-hook-on-Uniswap-v4" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074426609421" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40074426609421" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/34020466671757-How-to-sell-crypto-for-fiat-local-currency</loc>
+    <lastmod>2025-09-23T14:14:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/34020466671757-How-to-sell-crypto-for-fiat-local-currency" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32397050207629-What-is-Topper</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32397050207629-What-is-Topper" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31124253467277-How-to-bridge-tokens-to-and-from-the-Celo-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31124253467277-How-to-bridge-tokens-to-and-from-the-Celo-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27879595386765-How-to-provide-liquidity-on-the-Zora-network</loc>
+    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27879595386765-How-to-provide-liquidity-on-the-Zora-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25752918511373-How-to-swap-tokens-using-the-Uniswap-Extension</loc>
+    <lastmod>2025-04-16T23:42:30Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25752918511373-How-to-swap-tokens-using-the-Uniswap-Extension" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470649474189-Do-limit-orders-lock-my-funds</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470649474189-Do-limit-orders-lock-my-funds" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24326664338189-How-to-change-or-remove-a-Uniswap-Wallet-profile-picture</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24326664338189-How-to-change-or-remove-a-Uniswap-Wallet-profile-picture" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20902968738317-What-is-single-sided-liquidity</loc>
+    <lastmod>2025-09-26T20:39:49Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20902968738317-What-is-single-sided-liquidity" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20902968738317" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20902968738317" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17544737176717-What-does-a-UniswapX-transaction-look-like</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544737176717-What-does-a-UniswapX-transaction-look-like" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17523009693197-Malicious-NFT-contract-scams</loc>
+    <lastmod>2025-11-05T17:12:47Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17523009693197-Malicious-NFT-contract-scams" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17523009693197" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17523009693197" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306472067469-My-Uniswap-Wallet-does-not-load</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306472067469-My-Uniswap-Wallet-does-not-load" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306419058061-I-forgot-my-iCloud-or-Google-Drive-backup-password-What-can-I-do</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306419058061-I-forgot-my-iCloud-or-Google-Drive-backup-password-What-can-I-do" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8671539602317-What-is-price-impact</loc>
+    <lastmod>2025-10-03T15:53:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8671539602317-What-is-price-impact" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8671539602317" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8671539602317" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7425696813709-Tax-Resources</loc>
+    <lastmod>2025-04-17T21:53:46Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7425696813709-Tax-Resources" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/34006552258957-Why-is-my-crypto-sale-pending</loc>
+    <lastmod>2025-06-05T18:34:56Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/34006552258957-Why-is-my-crypto-sale-pending" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/34006552258957" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/34006552258957" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32514988932877-What-does-out-of-range-liquidity-mean</loc>
+    <lastmod>2025-09-05T17:43:17Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32514988932877-What-does-out-of-range-liquidity-mean" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/32514988932877" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/32514988932877" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25655344877709-What-is-Transak</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25655344877709-What-is-Transak" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24468577178637-What-happens-if-my-limit-order-expires</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24468577178637-What-happens-if-my-limit-order-expires" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18814993155853-What-is-swap-protection</loc>
+    <lastmod>2025-06-05T23:47:37Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18814993155853-What-is-swap-protection" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18814993155853" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18814993155853" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18732680929293-How-to-add-a-Uniswap-widget-on-iOS</loc>
+    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18732680929293-How-to-add-a-Uniswap-widget-on-iOS" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17544704348301-Is-there-a-swap-minimum-for-a-UniswapX-transaction</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544704348301-Is-there-a-swap-minimum-for-a-UniswapX-transaction" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16948389055373-How-to-find-the-Uniswap-Wallet-version</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16948389055373-How-to-find-the-Uniswap-Wallet-version" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/13668122224397-How-to-create-a-new-iCloud-or-Google-Drive-backup-password</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/13668122224397-How-to-create-a-new-iCloud-or-Google-Drive-backup-password" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8643794102669-Price-Impact-vs-Price-Slippage</loc>
+    <lastmod>2025-09-26T21:33:36Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8643794102669-Price-Impact-vs-Price-Slippage" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8643794102669" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8643794102669" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7424510983437-How-to-bridge-tokens-to-and-from-the-Optimism-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7424510983437-How-to-bridge-tokens-to-and-from-the-Optimism-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/39800486340493-What-is-Unlimit</loc>
+    <lastmod>2025-10-14T21:20:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39800486340493-What-is-Unlimit" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31138737951629-How-to-bridge-tokens-to-and-from-the-Polygon-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31138737951629-How-to-bridge-tokens-to-and-from-the-Polygon-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/24470417413773-What-is-a-limit-order-s-expiry</loc>
+    <lastmod>2025-04-16T18:01:55Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/24470417413773-What-is-a-limit-order-s-expiry" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20980601560717-What-is-a-range-order</loc>
+    <lastmod>2025-09-26T21:19:26Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20980601560717-What-is-a-range-order" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20980601560717" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20980601560717" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17515426867213-Why-did-my-UniswapX-swap-expire</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17515426867213-Why-did-my-UniswapX-swap-expire" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16015852009997-Why-do-ETH-swaps-involve-converting-to-WETH</loc>
+    <lastmod>2025-06-14T00:06:43Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16015852009997-Why-do-ETH-swaps-involve-converting-to-WETH" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/16015852009997" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/16015852009997" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306362826125-Are-Apple-iCloud-and-Google-Drive-backups-secure</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306362826125-Are-Apple-iCloud-and-Google-Drive-backups-secure" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306167069581-How-to-pin-your-favorite-tokens-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306167069581-How-to-pin-your-favorite-tokens-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423614928909-Do-I-get-liquidated-if-the-price-goes-outside-of-my-range</loc>
+    <lastmod>2025-11-04T20:10:15Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423614928909-Do-I-get-liquidated-if-the-price-goes-outside-of-my-range" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423614928909" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423614928909" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31110673292557-How-to-bridge-tokens-to-and-from-the-World-Chain-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31110673292557-How-to-bridge-tokens-to-and-from-the-World-Chain-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/25845512413069-Why-is-a-pool-out-of-sync</loc>
+    <lastmod>2025-06-17T21:42:06Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25845512413069-Why-is-a-pool-out-of-sync" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/25845512413069" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/25845512413069" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20071671202189-Can-I-change-slippage-when-using-UniswapX</loc>
+    <lastmod>2025-04-16T22:47:33Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20071671202189-Can-I-change-slippage-when-using-UniswapX" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/18307272247565-How-to-share-tokens-and-NFTs-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18307272247565-How-to-share-tokens-and-NFTs-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14786588188173-How-to-remove-your-recovery-phrase-from-the-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T21:46:01Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14786588188173-How-to-remove-your-recovery-phrase-from-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/8829880740109-What-is-a-liquidity-pool</loc>
+    <lastmod>2025-06-07T00:24:18Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/8829880740109-What-is-a-liquidity-pool" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/8829880740109" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/8829880740109" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27561582025229-How-to-bridge-tokens-to-and-from-the-ZKsync-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27561582025229-How-to-bridge-tokens-to-and-from-the-ZKsync-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/23967600631693-How-to-manage-liquidity-during-subgraph-downtime</loc>
+    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23967600631693-How-to-manage-liquidity-during-subgraph-downtime" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss</loc>
+    <lastmod>2025-06-07T00:11:14Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/20904453751693" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/20904453751693" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302450055565-How-to-follow-a-wallet-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302450055565-How-to-follow-a-wallet-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/32515045953293-What-does-closed-liquidity-mean</loc>
+    <lastmod>2025-09-05T17:26:43Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32515045953293-What-does-closed-liquidity-mean" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/32515045953293" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/32515045953293" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/27879546951437-How-to-bridge-tokens-to-and-from-the-Zora-network</loc>
+    <lastmod>2025-04-16T21:50:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/27879546951437-How-to-bridge-tokens-to-and-from-the-Zora-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21197549275661-What-is-a-view-only-wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21197549275661-What-is-a-view-only-wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/21302572675597-What-is-a-stablecoin</loc>
+    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21302572675597-What-is-a-stablecoin" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/13520440420365-How-to-add-a-view-only-wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/13520440420365-How-to-add-a-view-only-wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/34258911235469-Rebasing-reflection-and-debasing-tokens</loc>
+    <lastmod>2025-09-05T16:01:38Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/34258911235469-Rebasing-reflection-and-debasing-tokens" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/34258911235469" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/34258911235469" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306093473037-How-can-I-search-for-tokens-and-NFTs-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306093473037-How-can-I-search-for-tokens-and-NFTs-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/17151836920461-I-m-a-Trust-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T22:43:42Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17151836920461-I-m-a-Trust-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/16295607190669-How-to-copy-an-NFT-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/16295607190669-How-to-copy-an-NFT-in-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11306212181261-How-do-I-bridge-tokens-to-a-different-network</loc>
+    <lastmod>2025-05-30T20:54:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306212181261-How-do-I-bridge-tokens-to-a-different-network" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/10991844590861-What-are-NFTs</loc>
+    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/10991844590861-What-are-NFTs" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/14185028445837-How-to-hide-and-unhide-NFTs-in-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/14185028445837-How-to-hide-and-unhide-NFTs-in-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/14185028445837" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/14185028445837" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302355296525-I-m-a-Metamask-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T22:43:49Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302355296525-I-m-a-Metamask-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/10992219973773-What-is-a-floor-price</loc>
+    <lastmod>2025-11-04T22:05:10Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/10992219973773-What-is-a-floor-price" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/10992219973773" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/10992219973773" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/31861708826509-Can-I-send-NFTs-from-the-Uniswap-Wallet</loc>
+    <lastmod>2025-10-14T21:15:25Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/31861708826509-Can-I-send-NFTs-from-the-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302329039117-I-m-a-Coinbase-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T22:43:56Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302329039117-I-m-a-Coinbase-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet" />
+  </url>
+  <url>
+    <loc>https://support.uniswap.org/hc/en-us/articles/11302356850061-I-m-a-Rainbow-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet</loc>
+    <lastmod>2025-04-15T22:44:07Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11302356850061-I-m-a-Rainbow-Wallet-user-how-do-I-import-my-recovery-phrase-to-Uniswap-Wallet" />
+  </url>
+</urlset>
