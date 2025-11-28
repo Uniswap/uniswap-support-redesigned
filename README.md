@@ -1,6 +1,7 @@
 # Copenhagen Theme by Zendesk - Uniswap Support Site
 
 ## ‼️Disclaimer: To allow content editors of the Uniswap Support website to edit Handlebars (.hbs) code from the Uniswap lab's Zendesk Guide theme editor interface, we will treat the Handlebars files from the active Zendesk theme on the web as the source of truth.
+
 Please download the Handlebars files from the currently active Zendesk theme and use those files when editing code in this repository.
 
 A customized Zendesk Guide theme 'Copenhagen' for Uniswap's support site
@@ -33,6 +34,7 @@ zcli login -i
 - zcli is a command-line interface tool used to interact with Zendesk products, allowing you to manage and deploy themes. For more information, visit the [zcli documentation](https://developer.zendesk.com/documentation/apps/zcli/).
   - To login to zcli, use Uniswap team's Zendesk account credentials to login
     - Subdomain: uniswaplabs
+    - Email: User that has access to Uniswap team's Zendesk account
     - API token: use existing one if you have one saved or create a new one from Zendesk
 - Access the [Zendesk login page](https://uniswaplabs.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Fsupport.uniswap.org%2Fhc%2Fen-us%2Fsignin&theme=hc&locale=en-us&brand_id=5291581488781&auth_origin=5291581488781%2Ctrue%2Ctrue) via Browser to preview the page
 
