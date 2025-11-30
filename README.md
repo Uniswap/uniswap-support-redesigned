@@ -28,6 +28,7 @@ yarn install
 
 ```bash
 zcli login -i
+
 ```
 
 - zcli is a command-line interface tool used to interact with Zendesk products, allowing you to manage and deploy themes. For more information, visit the [zcli documentation](https://developer.zendesk.com/documentation/apps/zcli/).
