@@ -436,3 +436,14 @@ iframe#launcher {
 #new-article-breadcrumbs > div {
   @apply relative;
 }
+
+/*
+Zendesk theme defaults to using the first X characters of
+each article as meta/OG descriptions.
+
+For more custom control, we will use a visually-hidden
+summary block at the start of articles only for this purpose.
+*/
+zd-summary-block {
+  display: none !important;
+}
