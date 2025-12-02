@@ -1,3 +1,68 @@
+{{!-- JSON-LD Structured Data for SEO --}}
+{{#with article}}
+
+{{!-- Article Schema --}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{json title}},
+  "image": "{{asset 'thumbnail.jpg'}}",
+  "url": "https://support.uniswap.org{{url}}",
+  "datePublished": "{{created_at}}",
+  "dateModified": "{{edited_at}}",
+  "author": {
+    "@type": "Organization",
+    "name": "Uniswap Labs",
+    "url": "https://uniswap.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{asset 'thumbnail.jpg'}}",
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Uniswap Labs",
+    "url": "https://uniswap.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{asset 'thumbnail.jpg'}}",
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "inLanguage": "{{locale}}"{{#if labels}},
+  "keywords": [{{#each labels}}"{{identifier}}"{{#unless @last}},{{/unless}}{{/each}}]{{/if}},
+  "articleSection": "{{#if ../section}}{{../section.name}}{{/if}}",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/LikeAction",
+    "userInteractionCount": {{upvote_count}}
+  }
+}
+</script>
+
+{{!-- Breadcrumb Structured Data --}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{#each path_steps}}
+    {
+      "@type": "ListItem",
+      "position": {{calc @index "+" 1}},
+      "name": {{json name}},
+      "item": "{{url}}"
+    }{{#unless @last}},{{/unless}}
+    {{/each}}
+  ]
+}
+</script>
+{{/with}}
+
 <div class="ArticlePage flex flex-row bg-light-surface-1 dark:bg-dark-surface-1">
   <div id="new-side-nav" class="min-w-[15rem] max-w-[15rem] hidden md:block relative mt-nav-h"></div>
 
