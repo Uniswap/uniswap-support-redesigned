@@ -68,14 +68,45 @@ src/
 
 ## Deployment
 
-1. Push changes to the `master` branch.
-2. Run the command below to upload the theme to the production Zendesk Guide site.
+### Automated Weekly Deployment
+
+The theme is automatically deployed via GitHub Actions every Sunday at 2 AM UTC. The workflow:
+
+1. **Syncs handlebars from Zendesk** - Downloads the live theme and checks for editor changes
+2. **If changes detected** - Creates a PR and blocks deployment until merged
+3. **If no changes** - Generates sitemap and updates the live theme
+
+### Manual Deployment (Local Development)
+
+Requires one-time zcli authentication setup (`zcli login -i`):
 
 ```bash
-node ./bin/theme-upload.js
+# Optional: Sync handlebars from live theme first
+yarn sync-theme
+
+# Deploy (generates sitemap and uploads theme)
+yarn deploy
 ```
 
-CI pipeline for automated deployment is not available since theme related commands cannot use Zendesk environment variables for zcli(Mentioned [here](https://developer.zendesk.com/documentation/apps/getting-started/using-zcli/#supported-authentication-schemes))
+### Theme Sync Workflow
+
+Since content editors can modify handlebars files in the Zendesk UI, we automatically sync those changes before deployment:
+
+- **Automatic**: The weekly deployment workflow checks for handlebars changes
+- **Manual**: Run `node ./bin/sync-theme-from-zendesk.js` to check for changes
+- **If changes exist**: A PR is created for review and deployment is blocked
+
+### Environment Variables
+
+**For Local Development** (`.env` file):
+- `ZENDESK_EMAIL` - Zendesk admin email
+- `ZENDESK_API_TOKEN` - Zendesk API token
+- `GITHUB_TOKEN` - GitHub personal access token with `repo` scope (for creating PRs via sync-theme script)
+
+**For CI/CD** (GitHub Secrets):
+- `ZENDESK_EMAIL` - Zendesk admin email
+- `ZENDESK_API_TOKEN` - Zendesk API token
+- `GITHUB_TOKEN` - Automatically provided by GitHub Actions (no setup needed)
 
 ## Hard-coded values
 
