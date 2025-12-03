@@ -224,7 +224,7 @@ async function pollJobStatus(jobId) {
 // Main function
 async function main() {
   try {
-    console.log('🚀 Starting Zendesk theme deployment (CI mode)...\n');
+    console.log('🚀 Starting Zendesk theme deployment...\n');
 
     validateEnv();
 

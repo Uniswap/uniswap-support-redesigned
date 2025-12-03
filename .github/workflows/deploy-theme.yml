@@ -2,6 +2,7 @@ name: Deploy Zendesk Theme & Update Sitemap
 
 on:
   schedule:
+    # TODO: Uncomment cron job when ready to be auto-scheduled
     # Run every Sunday at 2 AM UTC (weekly)
     # - cron: '0 2 * * 0'
 
@@ -22,11 +23,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '23.7.0'
           cache: 'yarn'
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Build theme
+        run: yarn build
 
       - name: Configure Git
         run: |
@@ -50,7 +54,7 @@ jobs:
         env:
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
           ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
-        run: node bin/theme-deploy-ci.js
+        run: node bin/theme-deploy.js
 
       - name: Report deployment status
         if: success()

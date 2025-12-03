@@ -78,13 +78,11 @@ The theme is automatically deployed via GitHub Actions every Sunday at 2 AM UTC.
 
 ### Manual Deployment (Local Development)
 
-Requires one-time zcli authentication setup (`zcli login -i`):
-
 ```bash
-# Optional: Sync handlebars from live theme first
+# Sync handlebars from live theme
 yarn sync-theme
 
-# Deploy (generates sitemap and uploads theme)
+# Deploy (builds scripts, generates sitemap, and uploads theme)
 yarn deploy
 ```
 
@@ -93,17 +91,19 @@ yarn deploy
 Since content editors can modify handlebars files in the Zendesk UI, we automatically sync those changes before deployment:
 
 - **Automatic**: The weekly deployment workflow checks for handlebars changes
-- **Manual**: Run `node ./bin/sync-theme-from-zendesk.js` to check for changes
+- **Manual**: Run `node ./bin/sync-theme-from-zendesk.js` to check for changes via `yarn sync-theme`
 - **If changes exist**: A PR is created for review and deployment is blocked
 
 ### Environment Variables
 
 **For Local Development** (`.env` file):
+
 - `ZENDESK_EMAIL` - Zendesk admin email
 - `ZENDESK_API_TOKEN` - Zendesk API token
 - `GITHUB_TOKEN` - GitHub personal access token with `repo` scope (for creating PRs via sync-theme script)
 
 **For CI/CD** (GitHub Secrets):
+
 - `ZENDESK_EMAIL` - Zendesk admin email
 - `ZENDESK_API_TOKEN` - Zendesk API token
 - `GITHUB_TOKEN` - Automatically provided by GitHub Actions (no setup needed)

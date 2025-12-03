@@ -7,7 +7,7 @@
     "prebuild": "rm -f assets/*-bundle.js",
     "generate-sitemap": "node ./bin/generate-sitemap.js && mv sitemap.xml assets/",
     "sync-theme": "node ./bin/sync-theme-from-zendesk.js",
-    "deploy": "npm run generate-sitemap && node ./bin/theme-upload.js",
+    "deploy": "yarn build && yarn generate-sitemap && node ./bin/theme-deploy.js",
     "eslint": "eslint src",
     "download-locales": "node ./bin/update-translations",
     "test": "jest",
