@@ -61,6 +61,22 @@ function makeZendeskRequest(method, endpoint, body = null) {
   });
 }
 
+// Bump version in manifest.json using timestamp
+function bumpVersion() {
+  const manifestPath = path.join(__dirname, '..', 'manifest.json');
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+
+  // Use timestamp to ensure always-incrementing unique version
+  const [major, minor] = manifest.version.split('.').map(Number);
+  const timestamp = Math.floor(Date.now() / 1000);
+  manifest.version = `${major}.${minor}.${timestamp}`;
+
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
+  console.log(`✓ Version bumped to ${manifest.version}`);
+
+  return manifest.version;
+}
+
 // Create theme ZIP file
 function createThemeZip() {
   console.log('📦 Creating theme ZIP file...');
@@ -128,6 +144,7 @@ async function createUpdateJob(themeId) {
       attributes: {
         theme_id: themeId,
         format: 'zip',
+        replace_settings: false, // Preserve existing theme settings
       },
     },
   });
@@ -228,22 +245,25 @@ async function main() {
 
     validateEnv();
 
-    // Step 1: Get live theme ID
+    // Step 1: Bump version
+    bumpVersion();
+
+    // Step 2: Get live theme ID
     const liveThemeId = await getLiveThemeId();
 
-    // Step 2: Create theme ZIP
+    // Step 3: Create theme ZIP
     const zipPath = createThemeZip();
 
-    // Step 3: Create update job
+    // Step 4: Create update job
     const { jobId, uploadUrl, uploadParameters } = await createUpdateJob(liveThemeId);
 
-    // Step 4: Upload ZIP to storage
+    // Step 5: Upload ZIP to storage
     await uploadThemeZip(uploadUrl, uploadParameters, zipPath);
 
-    // Step 5: Poll until complete
+    // Step 6: Poll until complete
     await pollJobStatus(jobId);
 
-    // Step 6: Clean up ZIP file
+    // Step 7: Clean up ZIP file
     fs.unlinkSync(zipPath);
 
     console.log('\n✅ Live theme updated successfully!\n');

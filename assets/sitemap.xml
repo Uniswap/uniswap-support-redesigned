@@ -10,18 +10,21 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks</loc>
-    <lastmod>2025-11-20T21:58:09Z</lastmod>
+    <lastmod>2025-12-01T20:01:23Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40533771259533-Warnings-when-providing-liquidity</loc>
-    <lastmod>2025-10-22T15:07:06Z</lastmod>
+    <lastmod>2025-12-02T20:22:58Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40533771259533-Warnings-when-providing-liquidity" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40533771259533" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40420536034061-The-Liquidity-Position-Details-Screen</loc>
-    <lastmod>2025-10-17T17:55:02Z</lastmod>
+    <lastmod>2025-12-02T19:06:47Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40420536034061-The-Liquidity-Position-Details-Screen" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/40420536034061" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40420536034061" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40050562560781-Crypto-Wallet-Signature-Scams</loc>
@@ -119,7 +122,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/32601103371917-Top-10-Questions-About-Uniswap</loc>
-    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <lastmod>2025-12-01T18:19:43Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32601103371917-Top-10-Questions-About-Uniswap" />
   </url>
   <url>
@@ -221,8 +224,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/17522892515341-Official-Uniswap-Labs-links</loc>
-    <lastmod>2025-10-03T19:51:36Z</lastmod>
+    <lastmod>2025-12-02T16:55:18Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17522892515341-Official-Uniswap-Labs-links" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17522892515341" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17522892515341" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/17515415311501-What-is-UniswapX</loc>
@@ -342,7 +347,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/33829289869965-How-do-custom-hooks-work-in-the-Labs-interface</loc>
-    <lastmod>2025-11-20T21:55:25Z</lastmod>
+    <lastmod>2025-11-28T16:49:26Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/33829289869965-How-do-custom-hooks-work-in-the-Labs-interface" />
   </url>
   <url>
@@ -569,8 +574,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings</loc>
-    <lastmod>2025-04-17T22:24:28Z</lastmod>
+    <lastmod>2025-12-02T21:31:31Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/32402040565133" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/32402040565133" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/32397095416845-What-is-BinancePay</loc>
@@ -703,7 +710,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/9818094509453-How-to-use-the-Uniswap-Explore-page</loc>
-    <lastmod>2025-04-16T00:13:36Z</lastmod>
+    <lastmod>2025-12-02T18:36:29Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/9818094509453-How-to-use-the-Uniswap-Explore-page" />
   </url>
   <url>
@@ -797,8 +804,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/25352193291917-How-to-provide-liquidity-on-the-Blast-Network</loc>
-    <lastmod>2025-04-17T18:46:00Z</lastmod>
+    <lastmod>2025-12-02T15:06:41Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/25352193291917-How-to-provide-liquidity-on-the-Blast-Network" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/25352193291917" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/25352193291917" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/24470251716237-What-networks-support-limit-orders</loc>
@@ -819,7 +828,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/20981158150029-I-can-t-remove-my-liquidity-position</loc>
-    <lastmod>2025-04-17T18:29:58Z</lastmod>
+    <lastmod>2025-12-02T16:22:47Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/20981158150029-I-can-t-remove-my-liquidity-position" />
   </url>
   <url>
@@ -982,8 +991,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/23952001935373-Troubleshooting-Subgraph-downtime</loc>
-    <lastmod>2025-04-17T22:59:18Z</lastmod>
+    <lastmod>2025-12-02T19:29:50Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/23952001935373-Troubleshooting-Subgraph-downtime" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/23952001935373" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/23952001935373" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/23334343679501-Error-message-Transaction-is-expected-to-fail</loc>
@@ -1023,7 +1034,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/11380692567949-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet</loc>
-    <lastmod>2025-10-14T21:12:23Z</lastmod>
+    <lastmod>2025-12-02T20:01:46Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11380692567949-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/11380692567949" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://support.uniswap.org/hc/ja/articles/11380692567949" />
@@ -1067,8 +1078,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/7424975828749-What-is-a-Layer-2-Network</loc>
-    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <lastmod>2025-12-02T22:10:01Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7424975828749-What-is-a-Layer-2-Network" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7424975828749" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7424975828749" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/7423759991821-Do-I-need-to-hold-both-tokens-to-provide-liquidity-using-Uniswap-v3-and-v4</loc>
@@ -1084,7 +1097,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40074147375757-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet</loc>
-    <lastmod>2025-11-03T20:29:26Z</lastmod>
+    <lastmod>2025-12-02T20:01:46Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/40074147375757-How-to-import-a-recovery-phrase-into-the-Uniswap-Wallet" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://support.uniswap.org/hc/nl/articles/40074147375757" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://support.uniswap.org/hc/fr/articles/40074147375757" />
@@ -1145,8 +1158,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/21069524840589-What-is-a-tick-when-providing-liquidity</loc>
-    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <lastmod>2025-12-02T22:30:38Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21069524840589-What-is-a-tick-when-providing-liquidity" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/21069524840589" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/21069524840589" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/20904158825101-How-to-provide-liquidity-on-the-BNB-Smart-Chain</loc>
@@ -1240,8 +1255,9 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/30678956427533-How-to-report-an-NFT-as-spam-in-the-Uniswap-Wallet</loc>
-    <lastmod>2025-04-17T20:05:30Z</lastmod>
+    <lastmod>2025-12-02T15:19:26Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/30678956427533-How-to-report-an-NFT-as-spam-in-the-Uniswap-Wallet" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/30678956427533" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/25754534751629-How-to-add-another-wallet-in-the-Uniswap-Extension</loc>
@@ -1289,8 +1305,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/19503913435405-How-to-find-a-token-s-fee</loc>
-    <lastmod>2025-05-01T17:19:04Z</lastmod>
+    <lastmod>2025-12-01T22:01:35Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/19503913435405-How-to-find-a-token-s-fee" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/19503913435405" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/19503913435405" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/18734550354061-How-to-restore-your-Uniswap-Wallet-on-a-new-device</loc>
@@ -1474,8 +1492,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3</loc>
-    <lastmod>2025-11-07T16:43:52Z</lastmod>
+    <lastmod>2025-12-01T22:34:30Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423351004173" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423351004173" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40074184880525-Networks-on-Uniswap</loc>
@@ -1601,7 +1621,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/7423663459597-Why-does-the-price-input-automatically-round</loc>
-    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <lastmod>2025-12-03T14:51:03Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423663459597-Why-does-the-price-input-automatically-round" />
   </url>
   <url>
@@ -1694,8 +1714,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/7423702800141-Why-is-my-liquidity-position-not-evenly-split-between-the-two-tokens</loc>
-    <lastmod>2025-06-03T19:05:16Z</lastmod>
+    <lastmod>2025-12-03T15:10:51Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423702800141-Why-is-my-liquidity-position-not-evenly-split-between-the-two-tokens" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423702800141" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423702800141" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/40074426609421-What-is-a-hook-on-Uniswap-v4</loc>
@@ -1969,8 +1991,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/21302572675597-What-is-a-stablecoin</loc>
-    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <lastmod>2025-12-02T22:16:44Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/21302572675597-What-is-a-stablecoin" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/21302572675597" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/21302572675597" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/13520440420365-How-to-add-a-view-only-wallet</loc>
@@ -2006,8 +2030,10 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/10991844590861-What-are-NFTs</loc>
-    <lastmod>2025-04-17T21:45:03Z</lastmod>
+    <lastmod>2025-12-02T21:55:40Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/10991844590861-What-are-NFTs" />
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/10991844590861" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/10991844590861" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/14185028445837-How-to-hide-and-unhide-NFTs-in-the-Uniswap-Wallet</loc>
