@@ -3,7 +3,7 @@ name: Checks
 on:
   pull_request:
     branches:
-      - "*"
+      - '*'
   push:
     branches:
       - master
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: '.tool-versions'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: ESlint
@@ -36,7 +36,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: '.tool-versions'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build

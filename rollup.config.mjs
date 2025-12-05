@@ -10,7 +10,6 @@ import terser from '@rollup/plugin-terser';
 import svgr from '@svgr/rollup';
 import { generateImportMap } from './generate-import-map.mjs';
 import { defineConfig } from 'rollup';
-import sass from 'rollup-plugin-sass';
 
 const fileNames = '[name]-bundle.js';
 const isProduction = process.env.NODE_ENV === 'production';
@@ -42,7 +41,7 @@ export default defineConfig([
       'category-page': 'src/modules/category-page/index.ts',
       'section-page': 'src/modules/section-page/index.ts',
       'side-nav': 'src/modules/side-nav/index.ts',
-      "search-result-page": "src/modules/search-result-page/index.ts",
+      'search-result-page': 'src/modules/search-result-page/index.ts',
     },
     output: {
       dir: 'assets',
