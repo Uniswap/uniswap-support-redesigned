@@ -1,10 +1,10 @@
 name: Deploy Zendesk Theme & Update Sitemap
 
 on:
-  schedule:
-    # TODO: Uncomment cron job when ready to be auto-scheduled
-    # Run every Sunday at 2 AM UTC (weekly)
-    # - cron: '0 2 * * 0'
+  # TODO: Uncomment cron job when ready to be auto-scheduled
+  # schedule:
+  # Run every Sunday at 2 AM UTC (weekly)
+  # - cron: '0 2 * * 0'
 
   # Allow manual triggering from GitHub UI
   workflow_dispatch:
