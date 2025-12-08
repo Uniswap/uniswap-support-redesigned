@@ -146,7 +146,8 @@ function generateSitemapXML(articlesMap, translations) {
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n';
-  xml += '        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"\n';
+  xml +=
+    '        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"\n';
   xml += '        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
@@ -163,8 +164,8 @@ function generateSitemapXML(articlesMap, translations) {
   for (const [articleId, data] of articlesMap) {
     const article = data.canonical;
 
-    // Skip draft articles
-    if (article.draft) continue;
+    // Skip draft articles or articles with [Draft] in the title
+    if (article.draft || article.title.toLowerCase().includes('draft')) continue;
 
     xml += '  <url>\n';
     xml += `    <loc>${escapeXml(article.html_url)}</loc>\n`;
@@ -180,7 +181,11 @@ function generateSitemapXML(articlesMap, translations) {
 
     // Add all translation locales
     for (const translation of articleTranslations) {
-      if (translation.locale !== article.locale && !translation.draft) {
+      if (
+        translation.locale !== article.locale &&
+        !translation.draft &&
+        !translation.title.toLowerCase().includes('draft')
+      ) {
         xml += `    <xhtml:link rel="alternate" hreflang="${translation.locale}" href="${escapeXml(
           translation.html_url
         )}" />\n`;

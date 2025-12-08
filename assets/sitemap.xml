@@ -4,13 +4,8 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/41428255616909--Draft-Troubleshooting-Clearing-App-Storage-App-State-Reset</loc>
-    <lastmod>2025-11-25T22:19:42Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/41428255616909--Draft-Troubleshooting-Clearing-App-Storage-App-State-Reset" />
-  </url>
-  <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks</loc>
-    <lastmod>2025-12-01T20:01:23Z</lastmod>
+    <lastmod>2025-12-05T22:10:58Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/41305283155597-Allowlisted-Hooks" />
   </url>
   <url>
@@ -82,36 +77,11 @@
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/38225957094541-How-do-I-set-up-Touch-ID-or-Windows-Hello-on-the-Uniswap-Extension" />
   </url>
   <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/36394497329933--DRAFT-Batched-approval-transactions</loc>
-    <lastmod>2025-05-06T17:45:43Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36394497329933--DRAFT-Batched-approval-transactions" />
-  </url>
-  <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/36393697148045--DRAFT-1-click-swaps</loc>
-    <lastmod>2025-05-06T17:35:56Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36393697148045--DRAFT-1-click-swaps" />
-  </url>
-  <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/36393527081997--DRAFT-Mismatched-Imports</loc>
-    <lastmod>2025-05-06T17:24:41Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36393527081997--DRAFT-Mismatched-Imports" />
-  </url>
-  <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/36392482755341--DRAFT-What-is-multichain-how-does-delegation-work</loc>
-    <lastmod>2025-05-06T17:03:42Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36392482755341--DRAFT-What-is-multichain-how-does-delegation-work" />
-  </url>
-  <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/36391987158797-Smart-Wallets-and-Delegation</loc>
     <lastmod>2025-10-14T21:12:23Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/36391987158797-Smart-Wallets-and-Delegation" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/36391987158797" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/36391987158797" />
-  </url>
-  <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/35522111260173--DRAFT-How-to-recover-your-passkey</loc>
-    <lastmod>2025-04-15T22:13:09Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/35522111260173--DRAFT-How-to-recover-your-passkey" />
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/35506888223501-What-are-UNI-Rewards</loc>
@@ -267,7 +237,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/11306313365005-What-is-a-recovery-phrase</loc>
-    <lastmod>2025-04-24T20:42:07Z</lastmod>
+    <lastmod>2025-12-03T21:44:49Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11306313365005-What-is-a-recovery-phrase" />
   </url>
   <url>
@@ -339,9 +309,9 @@
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/40074236290445" />
   </url>
   <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect</loc>
-    <lastmod>2025-10-14T21:13:13Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect" />
+    <loc>https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect-and-Blockaid</loc>
+    <lastmod>2025-12-05T21:52:09Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/37781087046029-Dapp-Protection-via-WalletConnect-and-Blockaid" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/37781087046029" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/37781087046029" />
   </url>
@@ -847,7 +817,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/18783694078989-Unsupported-Token-and-NFT-Policy</loc>
-    <lastmod>2025-06-14T00:15:41Z</lastmod>
+    <lastmod>2025-12-05T14:43:05Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/18783694078989-Unsupported-Token-and-NFT-Policy" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/18783694078989" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/18783694078989" />
@@ -1680,7 +1650,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/17544708791821-Are-there-network-costs-for-UniswapX</loc>
-    <lastmod>2025-06-09T17:11:37Z</lastmod>
+    <lastmod>2025-12-08T15:12:48Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/17544708791821-Are-there-network-costs-for-UniswapX" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/17544708791821" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/17544708791821" />
