@@ -456,8 +456,8 @@ function getChangedFiles() {
 
 // Create branch and commit changes
 function createBranchAndCommit() {
-  const date = new Date().toISOString().split('T')[0];
-  const branchName = `sync/monthly-theme-sitemap-${date}`;
+  const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/, '');
+  const branchName = `sync/monthly-theme-sitemap-${timestamp}`;
 
   console.log(`\n🌿 Creating branch: ${branchName}`);
 
