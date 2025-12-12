@@ -11,8 +11,10 @@ on:
 
 jobs:
   deploy:
-    # Only run if the PR was merged (not just closed) or if manually triggered
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+    # Only run if:
+    # 1. Manually triggered, OR
+    # 2. PR was merged from a sync/* branch (monthly sync)
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'sync/'))
     runs-on: ubuntu-latest
 
     steps:
