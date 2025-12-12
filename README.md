@@ -54,8 +54,8 @@ This will:
 
 ```
 src/
-├── modules/          # React components
-├── styles/          # Tailwind & SCSS styles(use `main.css` to override existing Zendesk theme styles)
+├── modules/         # React components
+├── styles/          # Tailwind & SCSS styles (use `main.css` to override existing Zendesk theme styles)
 └── templates/       # Handlebars templates
 ```
 
@@ -68,31 +68,20 @@ src/
 
 ## Deployment
 
-### Automated Weekly Deployment
+### Automated Monthly Deployment
 
-The theme is automatically deployed via GitHub Actions every Sunday at 2 AM UTC. The workflow:
+The theme is automatically deployed via a cron job in GitHub Actions. The workflow:
 
-1. **Syncs handlebars from Zendesk** - Downloads the live theme and checks for editor changes
-2. **If changes detected** - Creates a PR and blocks deployment until merged
-3. **If no changes** - Generates sitemap and updates the live theme
+1. **Sync handlebars from Zendesk** - Downloads the live theme and checks for editor changes
+2. **Generate sitmeap** - Updates the sitemap with current articles and translations
+3. **Create PR with changes** - Creates a pull request with changes
+4. **Review and merge** - Uniswap team will review and merge the PR
+5. **Deployment** - Upon merge, the theme deploy workflow is triggered
 
-### Manual Deployment (Local Development)
+### Manual Deployment
 
-```bash
-# Sync handlebars from live theme
-yarn sync-theme
-
-# Deploy (builds scripts, generates sitemap, and uploads theme)
-yarn deploy
-```
-
-### Theme Sync Workflow
-
-Since content editors can modify handlebars files in the Zendesk UI, we automatically sync those changes before deployment:
-
-- **Automatic**: The weekly deployment workflow checks for handlebars changes
-- **Manual**: Run `node ./bin/sync-theme-from-zendesk.js` to check for changes via `yarn sync-theme`
-- **If changes exist**: A PR is created for review and deployment is blocked
+- Preferred: Dispatch the Monthly Theme & Sitemap Sync workflow from Github Actions
+- Alternatively, you can also run `yarn deploy` to kick off the workflow
 
 ### Environment Variables
 
@@ -100,7 +89,7 @@ Since content editors can modify handlebars files in the Zendesk UI, we automati
 
 - `ZENDESK_EMAIL` - Zendesk admin email
 - `ZENDESK_API_TOKEN` - Zendesk API token
-- `GITHUB_TOKEN` - GitHub personal access token with `repo` scope (for creating PRs via sync-theme script)
+- `GITHUB_TOKEN` - GitHub personal access token with `repo` scope
 
 **For CI/CD** (GitHub Secrets):
 
