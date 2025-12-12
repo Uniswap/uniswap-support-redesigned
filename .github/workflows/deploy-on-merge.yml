@@ -1,0 +1,55 @@
+name: Deploy to Zendesk on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+  # Allow manual triggering from GitHub UI
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    # Only run if the PR was merged (not just closed) or if manually triggered
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bullfrog Security
+        uses: bullfrogsec/bullfrog@dcde5841b19b7ef693224207a7fdec67fce604db # v0.8.3
+        with:
+          egress-policy: audit
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23.7.0'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build theme
+        run: yarn build
+
+      - name: Deploy theme to Zendesk
+        env:
+          ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
+          ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
+        run: node bin/theme-deploy.js
+
+      - name: Report deployment status
+        if: success()
+        run: |
+          echo "✓ Theme deployed successfully to Zendesk!"
+          echo "✓ PR #${{ github.event.pull_request.number }} changes are now live"
+
+      - name: Report failure
+        if: failure()
+        run: |
+          echo "✗ Deployment failed. Check logs above."
+          exit 1

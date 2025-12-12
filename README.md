@@ -54,8 +54,8 @@ This will:
 
 ```
 src/
-├── modules/          # React components
-├── styles/          # Tailwind & SCSS styles(use `main.css` to override existing Zendesk theme styles)
+├── modules/         # React components
+├── styles/          # Tailwind & SCSS styles (use `main.css` to override existing Zendesk theme styles)
 └── templates/       # Handlebars templates
 ```
 
@@ -68,14 +68,34 @@ src/
 
 ## Deployment
 
-1. Push changes to the `master` branch.
-2. Run the command below to upload the theme to the production Zendesk Guide site.
+### Automated Monthly Deployment
 
-```bash
-node ./bin/theme-upload.js
-```
+The theme is automatically deployed via a cron job in GitHub Actions. The workflow:
 
-CI pipeline for automated deployment is not available since theme related commands cannot use Zendesk environment variables for zcli(Mentioned [here](https://developer.zendesk.com/documentation/apps/getting-started/using-zcli/#supported-authentication-schemes))
+1. **Sync handlebars from Zendesk** - Downloads the live theme and checks for editor changes
+2. **Generate sitmeap** - Updates the sitemap with current articles and translations
+3. **Create PR with changes** - Creates a pull request with changes
+4. **Review and merge** - Uniswap team will review and merge the PR
+5. **Deployment** - Upon merge, the theme deploy workflow is triggered
+
+### Manual Deployment
+
+- Preferred: Dispatch the Monthly Theme & Sitemap Sync workflow from Github Actions
+- Alternatively, you can also run `yarn deploy` to kick off the workflow
+
+### Environment Variables
+
+**For Local Development** (`.env` file):
+
+- `ZENDESK_EMAIL` - Zendesk admin email
+- `ZENDESK_API_TOKEN` - Zendesk API token
+- `GITHUB_TOKEN` - GitHub personal access token with `repo` scope
+
+**For CI/CD** (GitHub Secrets):
+
+- `ZENDESK_EMAIL` - Zendesk admin email
+- `ZENDESK_API_TOKEN` - Zendesk API token
+- `GITHUB_TOKEN` - Automatically provided by GitHub Actions (no setup needed)
 
 ## Hard-coded values
 

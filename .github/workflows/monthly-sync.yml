@@ -1,0 +1,55 @@
+name: Monthly Theme & Sitemap Sync
+
+on:
+  # Run on 3rd Tuesday of every month at 2 AM UTC
+  # Days 15-21 always contain the 3rd Tuesday
+  schedule:
+    - cron: '0 2 15-21 * 2'
+
+  # Allow manual triggering from GitHub UI
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # To push branches
+      pull-requests: write # To create PRs
+
+    steps:
+      - name: Bullfrog Security
+        uses: bullfrogsec/bullfrog@dcde5841b19b7ef693224207a7fdec67fce604db # v0.8.3
+        with:
+          egress-policy: audit
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23.7.0'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build theme
+        run: yarn build
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run monthly sync (theme + sitemap)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
+          ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_API_TOKEN }}
+        run: node bin/monthly-sync.js
+
+      - name: Report status
+        if: success()
+        run: |
+          echo "✓ Monthly sync completed successfully!"

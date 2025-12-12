@@ -1,9 +1,10 @@
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
   }
 }
 
@@ -14,9 +15,13 @@
 }
 
 $group-count: 10;
+// Fixed values that mimic the old random() behavior (4-6s duration, 0-2s delay)
+$durations: 5, 4, 6, 4, 5, 4, 4, 5, 6, 6;
+$delays: 1, 1, 2, 2, 2, 1, 1, 2, 1, 1;
+
 @for $i from 1 through $group-count {
   .avatar-wrapper g:nth-of-type(#{$i}) {
-    animation-duration: #{3 + random(3)}s; 
-    animation-delay: #{random(2)}s;   
+    animation-duration: #{nth($durations, $i)}s;
+    animation-delay: #{nth($delays, $i)}s;
   }
 }
