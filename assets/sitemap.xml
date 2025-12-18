@@ -60,9 +60,9 @@
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39530204759693" />
   </url>
   <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-and-Stargate</loc>
-    <lastmod>2025-12-12T15:00:01Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-and-Stargate" />
+    <loc>https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-Stargate-and-Pendle</loc>
+    <lastmod>2025-12-15T20:46:17Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/39264728322317-Bridging-Tokens-with-Wormhole-Universal-Stargate-and-Pendle" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/39264728322317" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/39264728322317" />
   </url>
@@ -544,7 +544,7 @@
   </url>
   <url>
     <loc>https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings</loc>
-    <lastmod>2025-12-02T21:31:31Z</lastmod>
+    <lastmod>2025-12-16T18:24:42Z</lastmod>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/32402040565133-What-are-hook-warnings" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/32402040565133" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/32402040565133" />
@@ -1461,9 +1461,9 @@
     <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/11003585318413-How-do-I-claim-my-Genie-airdrop-on-Uniswap" />
   </url>
   <url>
-    <loc>https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3</loc>
-    <lastmod>2025-12-01T22:34:30Z</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-v3" />
+    <loc>https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-Uniswap-v3</loc>
+    <lastmod>2025-12-17T16:57:52Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://support.uniswap.org/hc/en-us/articles/7423351004173-How-to-migrate-liquidity-from-Uniswap-v2-to-Uniswap-v3" />
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://support.uniswap.org/hc/pt-br/articles/7423351004173" />
     <xhtml:link rel="alternate" hreflang="es-419" href="https://support.uniswap.org/hc/es-419/articles/7423351004173" />
   </url>
