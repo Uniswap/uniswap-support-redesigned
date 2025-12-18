@@ -1,10 +1,9 @@
 name: Monthly Theme & Sitemap Sync
 
 on:
-  # Run on 3rd Tuesday of every month at 2 AM UTC
-  # Days 15-21 always contain the 3rd Tuesday
+  # Run on 15th of every month at 2 AM UTC
   schedule:
-    - cron: '0 2 15-21 * 2'
+    - cron: '0 2 15 * *'
 
   # Allow manual triggering from GitHub UI
   workflow_dispatch:
